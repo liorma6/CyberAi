@@ -16,12 +16,12 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
 endobj
 6 0 obj
-<< /Length 12158  >>
+<< /Length 12085  >>
 stream
 0.06 0.38 0.42 rg BT /F2 8 Tf 1 0 0 1 40.000 810.890 Tm (HIT | AI-Driven Cybersecurity) Tj ET
 0.08 0.2 0.31 rg BT /F2 21 Tf 1 0 0 1 40.000 781.890 Tm (Laboratory 1a - MITRE SOC Report) Tj ET
 0.06 0.38 0.42 RG 1.0 w 40 771.89 m 555.28 771.89 l S
-0.12 0.17 0.21 rg BT /F2 10.7 Tf 1 0 0 1 40.000 753.190 Tm (Lior Mashiach | 16 November 2026 | Individual laboratory report) Tj ET
+0.12 0.17 0.21 rg BT /F2 10.7 Tf 1 0 0 1 40.000 753.190 Tm (16 November 2026 | Laboratory report) Tj ET
 0.12 0.17 0.21 rg BT /F1 10.3 Tf 1 0 0 1 40.000 727.090 Tm (Raw security logs -> rule-based detection -> MITRE ATT&CK enrichment -> SOC dashboard. All results in) Tj ET
 0.12 0.17 0.21 rg BT /F1 10.3 Tf 1 0 0 1 40.000 712.590 Tm (this report are from the completed Docker run; the earlier native Python check is excluded.) Tj ET
 0.08 0.2 0.31 rg BT /F2 12.2 Tf 1 0 0 1 40.000 683.190 Tm (1. Environment and Docker verification) Tj ET
@@ -91,9 +91,9 @@ stream
 0.78 0.83 0.86 RG 0.6 w 40 461.9899999999999 m 555 461.9899999999999 l S
 0.94 0.97 0.98 rg 40 390.9899999999999 515.28 58 re f
 0.12 0.17 0.21 rg BT /F3 8.2 Tf 1 0 0 1 48.000 433.790 Tm (docker version) Tj ET
-0.12 0.17 0.21 rg BT /F3 8.2 Tf 1 0 0 1 48.000 422.790 Tm (docker compose -p lior-lab1a-20261116 config) Tj ET
-0.12 0.17 0.21 rg BT /F3 8.2 Tf 1 0 0 1 48.000 411.790 Tm (docker compose -p lior-lab1a-20261116 up --build -d) Tj ET
-0.12 0.17 0.21 rg BT /F3 8.2 Tf 1 0 0 1 48.000 400.790 Tm (docker compose -p lior-lab1a-20261116 ps) Tj ET
+0.12 0.17 0.21 rg BT /F3 8.2 Tf 1 0 0 1 48.000 422.790 Tm (docker compose -p <project> config) Tj ET
+0.12 0.17 0.21 rg BT /F3 8.2 Tf 1 0 0 1 48.000 411.790 Tm (docker compose -p <project> up --build -d) Tj ET
+0.12 0.17 0.21 rg BT /F3 8.2 Tf 1 0 0 1 48.000 400.790 Tm (docker compose -p <project> ps) Tj ET
 0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 373.190 Tm (The version output includes a running Server/Engine section. Compose recorded both services as Up, and the) Tj ET
 0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 359.390 Tm (dashboard was retrieved over HTTP at http://localhost:8000. The actual browser screenshot is on page 2. Full) Tj ET
 0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 345.590 Tm (command outputs are retained in the embedded evidence archive.) Tj ET
@@ -174,7 +174,7 @@ stream
 0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 101.890 Tm (Docker provides a reproducible Python runtime and service configuration, with shared log/output volumes and) Tj ET
 0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 88.090 Tm (separate services. Containers run locally; cloud services are not required.) Tj ET
 0.78 0.83 0.86 RG 0.6 w 40 37.0 m 555.28 37.0 l S
-0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 40.000 21.000 Tm (Lior Mashiach | Laboratory 1a | 16 November 2026) Tj ET
+0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 40.000 21.000 Tm (Laboratory 1a | 16 November 2026) Tj ET
 0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 529.280 21.000 Tm (1 / 6) Tj ET
 endstream
 endobj
@@ -356,7 +356,7 @@ z¬(ƒŸãpA­ıëJ÷L%®OŞÍ¿åó"     `LI¿r’EëxVqVç£X)á™–‚ÉnãüvDOU.p1i5¹Q‹êWíñW
 endstream
 endobj
 9 0 obj
-<< /Length 721  >>
+<< /Length 705  >>
 stream
 0.06 0.38 0.42 rg BT /F2 8 Tf 1 0 0 1 40.000 564.280 Tm (HIT | AI-Driven Cybersecurity) Tj ET
 0.08 0.2 0.31 rg BT /F2 21 Tf 1 0 0 1 40.000 535.280 Tm (Baseline SOC dashboard - actual Docker run) Tj ET
@@ -364,7 +364,7 @@ stream
 0.12 0.17 0.21 rg BT /F1 9.3 Tf 1 0 0 1 40.000 507.980 Tm (Browser capture of http://localhost:8000 | 06:11:04 UTC | 2 total findings, 1 High, 1 Medium) Tj ET
 q 616.3478260869565 0 0 443 112.77108695652174 54.27999999999997 cm /Im1 Do Q
 0.78 0.83 0.86 RG 0.6 w 40 37.0 m 801.89 37.0 l S
-0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 40.000 21.000 Tm (Lior Mashiach | Laboratory 1a | 16 November 2026) Tj ET
+0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 40.000 21.000 Tm (Laboratory 1a | 16 November 2026) Tj ET
 0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 775.890 21.000 Tm (2 / 6) Tj ET
 endstream
 endobj
@@ -372,7 +372,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 841.89 595.28] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> /XObject << /Im1 8 0 R >> >> /Contents 9 0 R >>
 endobj
 11 0 obj
-<< /Length 8477  >>
+<< /Length 8461  >>
 stream
 0.06 0.38 0.42 rg BT /F2 8 Tf 1 0 0 1 40.000 810.890 Tm (HIT | AI-Driven Cybersecurity) Tj ET
 0.08 0.2 0.31 rg BT /F2 21 Tf 1 0 0 1 40.000 781.890 Tm (Evidence, rules and interpretation) Tj ET
@@ -464,7 +464,7 @@ stream
 0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 198.890 Tm (attack-pattern--lab1a-t1110 and attack-pattern--lab1a-t1046. These are teaching-bundle metadata, not a claim) Tj ET
 0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 185.390 Tm (about the latest official ATT&CK release.) Tj ET
 0.78 0.83 0.86 RG 0.6 w 40 37.0 m 555.28 37.0 l S
-0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 40.000 21.000 Tm (Lior Mashiach | Laboratory 1a | 16 November 2026) Tj ET
+0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 40.000 21.000 Tm (Laboratory 1a | 16 November 2026) Tj ET
 0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 529.280 21.000 Tm (3 / 6) Tj ET
 endstream
 endobj
@@ -472,7 +472,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> /XObject <<  >> >> /Contents 11 0 R >>
 endobj
 13 0 obj
-<< /Length 7989  >>
+<< /Length 7973  >>
 stream
 0.06 0.38 0.42 rg BT /F2 8 Tf 1 0 0 1 40.000 810.890 Tm (HIT | AI-Driven Cybersecurity) Tj ET
 0.08 0.2 0.31 rg BT /F2 21 Tf 1 0 0 1 40.000 781.890 Tm (Controlled experiments C1-C4) Tj ET
@@ -576,7 +576,7 @@ stream
 0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 166.690 Tm (Appended to C3. A second Medium T1046 appears for 192.0.2.77; the existing scan and brute-force findings) Tj ET
 0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 153.190 Tm (remain. Final controlled count before simulation: 3 \(1 High, 2 Medium\).) Tj ET
 0.78 0.83 0.86 RG 0.6 w 40 37.0 m 555.28 37.0 l S
-0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 40.000 21.000 Tm (Lior Mashiach | Laboratory 1a | 16 November 2026) Tj ET
+0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 40.000 21.000 Tm (Laboratory 1a | 16 November 2026) Tj ET
 0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 529.280 21.000 Tm (4 / 6) Tj ET
 endstream
 endobj
@@ -584,7 +584,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> /XObject <<  >> >> /Contents 13 0 R >>
 endobj
 15 0 obj
-<< /Length 7690  >>
+<< /Length 7674  >>
 stream
 0.06 0.38 0.42 rg BT /F2 8 Tf 1 0 0 1 40.000 810.890 Tm (HIT | AI-Driven Cybersecurity) Tj ET
 0.08 0.2 0.31 rg BT /F2 21 Tf 1 0 0 1 40.000 781.890 Tm (Simulator observations and SOC narrative) Tj ET
@@ -659,7 +659,7 @@ stream
 0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 172.890 Tm (0 and removed this lab's three containers and network. Only supplied or synthetic log records were used; no real) Tj ET
 0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 159.390 Tm (network scans were performed.) Tj ET
 0.78 0.83 0.86 RG 0.6 w 40 37.0 m 555.28 37.0 l S
-0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 40.000 21.000 Tm (Lior Mashiach | Laboratory 1a | 16 November 2026) Tj ET
+0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 40.000 21.000 Tm (Laboratory 1a | 16 November 2026) Tj ET
 0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 529.280 21.000 Tm (5 / 6) Tj ET
 endstream
 endobj
@@ -667,7 +667,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> /XObject <<  >> >> /Contents 15 0 R >>
 endobj
 17 0 obj
-<< /Length 7821  >>
+<< /Length 8164  >>
 stream
 0.06 0.38 0.42 rg BT /F2 8 Tf 1 0 0 1 40.000 810.890 Tm (HIT | AI-Driven Cybersecurity) Tj ET
 0.08 0.2 0.31 rg BT /F2 21 Tf 1 0 0 1 40.000 781.890 Tm (Sources and reproducibility) Tj ET
@@ -689,75 +689,76 @@ stream
 0.12 0.17 0.21 rg BT /F3 8.7 Tf 1 0 0 1 48.000 530.990 Tm (https://attack.mitre.org/techniques/T1110/) Tj ET
 0.12 0.17 0.21 rg BT /F3 8.7 Tf 1 0 0 1 48.000 519.990 Tm (https://attack.mitre.org/techniques/T1046/) Tj ET
 0.08 0.2 0.31 rg BT /F2 12.2 Tf 1 0 0 1 40.000 485.490 Tm (Preserved evidence) Tj ET
-0.12 0.17 0.21 rg BT /F1 10.1 Tf 1 0 0 1 40.000 464.590 Tm (The PDF includes an attachment named Lab1a_Evidence.zip. A PDF reader's attachments panel can extract it. The) Tj ET
-0.12 0.17 0.21 rg BT /F1 10.1 Tf 1 0 0 1 40.000 450.290 Tm (report is self-contained; the archive provides the underlying logs, JSON, source files and collection scripts for) Tj ET
-0.12 0.17 0.21 rg BT /F1 10.1 Tf 1 0 0 1 40.000 435.990 Tm (verification.) Tj ET
-0.94 0.97 0.98 rg 40 397.38999999999993 515 26.4 re f
-0.12 0.17 0.21 rg BT /F2 9.4 Tf 1 0 0 1 46.500 408.390 Tm (Evidence) Tj ET
-0.78 0.83 0.86 RG 0.6 w 40 423.7899999999999 m 40 397.38999999999993 l S
-0.12 0.17 0.21 rg BT /F2 9.4 Tf 1 0 0 1 286.500 408.390 Tm (Purpose) Tj ET
-0.78 0.83 0.86 RG 0.6 w 280 423.7899999999999 m 280 397.38999999999993 l S
-0.78 0.83 0.86 RG 0.6 w 555 423.7899999999999 m 555 397.38999999999993 l S
-0.78 0.83 0.86 RG 0.6 w 40 423.7899999999999 m 555 423.7899999999999 l S
-0.78 0.83 0.86 RG 0.6 w 40 397.38999999999993 m 555 397.38999999999993 l S
-1 1 1 rg 40 358.5899999999999 515 38.8 re f
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 381.990 Tm (docker-version.txt, compose-config.txt,) Tj ET
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 369.590 Tm (compose-build.txt, compose-ps.txt) Tj ET
-0.78 0.83 0.86 RG 0.6 w 40 397.38999999999993 m 40 358.5899999999999 l S
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 381.990 Tm (Client/server, configuration, successful build and running) Tj ET
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 369.590 Tm (services) Tj ET
-0.78 0.83 0.86 RG 0.6 w 280 397.38999999999993 m 280 358.5899999999999 l S
-0.78 0.83 0.86 RG 0.6 w 555 397.38999999999993 m 555 358.5899999999999 l S
-0.78 0.83 0.86 RG 0.6 w 40 397.38999999999993 m 555 397.38999999999993 l S
-0.78 0.83 0.86 RG 0.6 w 40 358.5899999999999 m 555 358.5899999999999 l S
-1 1 1 rg 40 319.7899999999999 515 38.8 re f
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 343.190 Tm (A_baseline, C1-C4 folders) Tj ET
-0.78 0.83 0.86 RG 0.6 w 40 358.5899999999999 m 40 319.78999999999996 l S
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 343.190 Tm (Exact input logs, fresh findings.json snapshots and) Tj ET
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 330.790 Tm (dashboard HTML) Tj ET
-0.78 0.83 0.86 RG 0.6 w 280 358.5899999999999 m 280 319.78999999999996 l S
-0.78 0.83 0.86 RG 0.6 w 555 358.5899999999999 m 555 319.78999999999996 l S
-0.78 0.83 0.86 RG 0.6 w 40 358.5899999999999 m 555 358.5899999999999 l S
-0.78 0.83 0.86 RG 0.6 w 40 319.78999999999996 m 555 319.78999999999996 l S
-1 1 1 rg 40 293.39 515 26.4 re f
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 304.390 Tm (A_baseline/dashboard.png) Tj ET
-0.78 0.83 0.86 RG 0.6 w 40 319.78999999999996 m 40 293.39 l S
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 304.390 Tm (Unmodified browser screenshot embedded on page 2) Tj ET
-0.78 0.83 0.86 RG 0.6 w 280 319.78999999999996 m 280 293.39 l S
-0.78 0.83 0.86 RG 0.6 w 555 319.78999999999996 m 555 293.39 l S
-0.78 0.83 0.86 RG 0.6 w 40 319.78999999999996 m 555 319.78999999999996 l S
-0.78 0.83 0.86 RG 0.6 w 40 293.39 m 555 293.39 l S
-1 1 1 rg 40 266.99 515 26.4 re f
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 277.990 Tm (D_simulator_stopped, simulator-runtime.txt) Tj ET
-0.78 0.83 0.86 RG 0.6 w 40 293.39 m 40 266.99 l S
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 277.990 Tm (Observed random events and final findings) Tj ET
-0.78 0.83 0.86 RG 0.6 w 280 293.39 m 280 266.99 l S
-0.78 0.83 0.86 RG 0.6 w 555 293.39 m 555 266.99 l S
-0.78 0.83 0.86 RG 0.6 w 40 293.39 m 555 293.39 l S
-0.78 0.83 0.86 RG 0.6 w 40 266.99 m 555 266.99 l S
-1 1 1 rg 40 240.59 515 26.4 re f
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 251.590 Tm (E_restored_baseline, cleanup.txt) Tj ET
-0.78 0.83 0.86 RG 0.6 w 40 266.99 m 40 240.59000000000003 l S
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 251.590 Tm (Restored baseline and successful shutdown) Tj ET
-0.78 0.83 0.86 RG 0.6 w 280 266.99 m 280 240.59000000000003 l S
-0.78 0.83 0.86 RG 0.6 w 555 266.99 m 555 240.59000000000003 l S
-0.78 0.83 0.86 RG 0.6 w 40 266.99 m 555 266.99 l S
-0.78 0.83 0.86 RG 0.6 w 40 240.59000000000003 m 555 240.59000000000003 l S
-1 1 1 rg 40 214.19000000000003 515 26.4 re f
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 225.190 Tm (summary.json, source_verification.json) Tj ET
-0.78 0.83 0.86 RG 0.6 w 40 240.59000000000003 m 40 214.19000000000005 l S
-0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 225.190 Tm (Machine-readable run results and source hashes) Tj ET
-0.78 0.83 0.86 RG 0.6 w 280 240.59000000000003 m 280 214.19000000000005 l S
-0.78 0.83 0.86 RG 0.6 w 555 240.59000000000003 m 555 214.19000000000005 l S
-0.78 0.83 0.86 RG 0.6 w 40 240.59000000000003 m 555 240.59000000000003 l S
-0.78 0.83 0.86 RG 0.6 w 40 214.19000000000005 m 555 214.19000000000005 l S
-0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 191.390 Tm (Run period: 06:10:50-06:12:51 UTC on 16 November 2026 \(08:10:50-08:12:51 Israel time\). Controlled log records) Tj ET
-0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 177.590 Tm (retain the dates specified in the assignment; the detector does not apply a time window.) Tj ET
-0.12 0.17 0.21 rg BT /F2 9 Tf 1 0 0 1 40.000 156.590 Tm (Restored baseline SHA-256:) Tj ET
-0.94 0.97 0.98 rg 40 125.59000000000015 515.28 25 re f
-0.12 0.17 0.21 rg BT /F3 7.7 Tf 1 0 0 1 48.000 135.890 Tm (71213d38c6f4573f68c0800b14cca82329fdf475ae70a83220632d3417490276) Tj ET
+0.12 0.17 0.21 rg BT /F1 10.1 Tf 1 0 0 1 40.000 464.590 Tm (The PDF includes an attachment named Lab1a_Evidence.zip. Personal attribution, workstation paths and) Tj ET
+0.12 0.17 0.21 rg BT /F1 10.1 Tf 1 0 0 1 40.000 450.290 Tm (run-specific project labels are omitted from the attached files. A PDF reader's attachments panel can extract it. The) Tj ET
+0.12 0.17 0.21 rg BT /F1 10.1 Tf 1 0 0 1 40.000 435.990 Tm (report is self-contained; the archive provides the underlying logs, JSON, source files and collection scripts for) Tj ET
+0.12 0.17 0.21 rg BT /F1 10.1 Tf 1 0 0 1 40.000 421.690 Tm (verification.) Tj ET
+0.94 0.97 0.98 rg 40 383.0899999999999 515 26.4 re f
+0.12 0.17 0.21 rg BT /F2 9.4 Tf 1 0 0 1 46.500 394.090 Tm (Evidence) Tj ET
+0.78 0.83 0.86 RG 0.6 w 40 409.4899999999999 m 40 383.0899999999999 l S
+0.12 0.17 0.21 rg BT /F2 9.4 Tf 1 0 0 1 286.500 394.090 Tm (Purpose) Tj ET
+0.78 0.83 0.86 RG 0.6 w 280 409.4899999999999 m 280 383.0899999999999 l S
+0.78 0.83 0.86 RG 0.6 w 555 409.4899999999999 m 555 383.0899999999999 l S
+0.78 0.83 0.86 RG 0.6 w 40 409.4899999999999 m 555 409.4899999999999 l S
+0.78 0.83 0.86 RG 0.6 w 40 383.0899999999999 m 555 383.0899999999999 l S
+1 1 1 rg 40 344.2899999999999 515 38.8 re f
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 367.690 Tm (docker-version.txt, compose-config.txt,) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 355.290 Tm (compose-build.txt, compose-ps.txt) Tj ET
+0.78 0.83 0.86 RG 0.6 w 40 383.0899999999999 m 40 344.2899999999999 l S
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 367.690 Tm (Client/server, configuration, successful build and running) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 355.290 Tm (services) Tj ET
+0.78 0.83 0.86 RG 0.6 w 280 383.0899999999999 m 280 344.2899999999999 l S
+0.78 0.83 0.86 RG 0.6 w 555 383.0899999999999 m 555 344.2899999999999 l S
+0.78 0.83 0.86 RG 0.6 w 40 383.0899999999999 m 555 383.0899999999999 l S
+0.78 0.83 0.86 RG 0.6 w 40 344.2899999999999 m 555 344.2899999999999 l S
+1 1 1 rg 40 305.4899999999999 515 38.8 re f
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 328.890 Tm (A_baseline, C1-C4 folders) Tj ET
+0.78 0.83 0.86 RG 0.6 w 40 344.2899999999999 m 40 305.4899999999999 l S
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 328.890 Tm (Exact input logs, fresh findings.json snapshots and) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 316.490 Tm (dashboard HTML) Tj ET
+0.78 0.83 0.86 RG 0.6 w 280 344.2899999999999 m 280 305.4899999999999 l S
+0.78 0.83 0.86 RG 0.6 w 555 344.2899999999999 m 555 305.4899999999999 l S
+0.78 0.83 0.86 RG 0.6 w 40 344.2899999999999 m 555 344.2899999999999 l S
+0.78 0.83 0.86 RG 0.6 w 40 305.4899999999999 m 555 305.4899999999999 l S
+1 1 1 rg 40 279.0899999999999 515 26.4 re f
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 290.090 Tm (A_baseline/dashboard.png) Tj ET
+0.78 0.83 0.86 RG 0.6 w 40 305.4899999999999 m 40 279.0899999999999 l S
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 290.090 Tm (Unmodified browser screenshot embedded on page 2) Tj ET
+0.78 0.83 0.86 RG 0.6 w 280 305.4899999999999 m 280 279.0899999999999 l S
+0.78 0.83 0.86 RG 0.6 w 555 305.4899999999999 m 555 279.0899999999999 l S
+0.78 0.83 0.86 RG 0.6 w 40 305.4899999999999 m 555 305.4899999999999 l S
+0.78 0.83 0.86 RG 0.6 w 40 279.0899999999999 m 555 279.0899999999999 l S
+1 1 1 rg 40 252.6899999999999 515 26.4 re f
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 263.690 Tm (D_simulator_stopped, simulator-runtime.txt) Tj ET
+0.78 0.83 0.86 RG 0.6 w 40 279.0899999999999 m 40 252.68999999999994 l S
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 263.690 Tm (Observed random events and final findings) Tj ET
+0.78 0.83 0.86 RG 0.6 w 280 279.0899999999999 m 280 252.68999999999994 l S
+0.78 0.83 0.86 RG 0.6 w 555 279.0899999999999 m 555 252.68999999999994 l S
+0.78 0.83 0.86 RG 0.6 w 40 279.0899999999999 m 555 279.0899999999999 l S
+0.78 0.83 0.86 RG 0.6 w 40 252.68999999999994 m 555 252.68999999999994 l S
+1 1 1 rg 40 226.28999999999994 515 26.4 re f
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 237.290 Tm (E_restored_baseline, cleanup.txt) Tj ET
+0.78 0.83 0.86 RG 0.6 w 40 252.68999999999994 m 40 226.28999999999996 l S
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 237.290 Tm (Restored baseline and successful shutdown) Tj ET
+0.78 0.83 0.86 RG 0.6 w 280 252.68999999999994 m 280 226.28999999999996 l S
+0.78 0.83 0.86 RG 0.6 w 555 252.68999999999994 m 555 226.28999999999996 l S
+0.78 0.83 0.86 RG 0.6 w 40 252.68999999999994 m 555 252.68999999999994 l S
+0.78 0.83 0.86 RG 0.6 w 40 226.28999999999996 m 555 226.28999999999996 l S
+1 1 1 rg 40 199.88999999999996 515 26.4 re f
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 46.500 210.890 Tm (summary.json, source_verification.json) Tj ET
+0.78 0.83 0.86 RG 0.6 w 40 226.28999999999996 m 40 199.89 l S
+0.12 0.17 0.21 rg BT /F1 9.4 Tf 1 0 0 1 286.500 210.890 Tm (Machine-readable run results and source hashes) Tj ET
+0.78 0.83 0.86 RG 0.6 w 280 226.28999999999996 m 280 199.89 l S
+0.78 0.83 0.86 RG 0.6 w 555 226.28999999999996 m 555 199.89 l S
+0.78 0.83 0.86 RG 0.6 w 40 226.28999999999996 m 555 226.28999999999996 l S
+0.78 0.83 0.86 RG 0.6 w 40 199.89 m 555 199.89 l S
+0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 177.090 Tm (Run period: 06:10:50-06:12:51 UTC on 16 November 2026 \(08:10:50-08:12:51 Israel time\). Controlled log records) Tj ET
+0.12 0.17 0.21 rg BT /F1 9.8 Tf 1 0 0 1 40.000 163.290 Tm (retain the dates specified in the assignment; the detector does not apply a time window.) Tj ET
+0.12 0.17 0.21 rg BT /F2 9 Tf 1 0 0 1 40.000 142.290 Tm (Restored baseline SHA-256:) Tj ET
+0.94 0.97 0.98 rg 40 111.29000000000008 515.28 25 re f
+0.12 0.17 0.21 rg BT /F3 7.7 Tf 1 0 0 1 48.000 121.590 Tm (71213d38c6f4573f68c0800b14cca82329fdf475ae70a83220632d3417490276) Tj ET
 0.78 0.83 0.86 RG 0.6 w 40 37.0 m 555.28 37.0 l S
-0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 40.000 21.000 Tm (Lior Mashiach | Laboratory 1a | 16 November 2026) Tj ET
+0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 40.000 21.000 Tm (Laboratory 1a | 16 November 2026) Tj ET
 0.4 0.46 0.51 rg BT /F1 8 Tf 1 0 0 1 529.280 21.000 Tm (6 / 6) Tj ET
 endstream
 endobj
@@ -765,36 +766,40 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> /XObject <<  >> >> /Contents 17 0 R >>
 endobj
 19 0 obj
-<< /Length 156131 /Type /EmbeddedFile /Subtype /application#2Fzip /Params << /Size 156131 >> >>
+<< /Length 147049 /Type /EmbeddedFile /Subtype /application#2Fzip /Params << /Size 147049 >> >>
 stream
-PK    ª8p]›GAÀš  “>     build_writeup.py½[ksËıÎ_UjwÈ29|èa›•å•íXY_Û%)›Í:*Vs$;vÏíî!Åèê¿oİó %çõa«rcŠìé€à sttôÕè´HÜ
-ak¤s¨@(‘í¬´°0z‰Î2L¦€™¢J°[éVºp Õ•“j	¦P6>::jÉu®ƒ•[g]ø‹Õª»`w¶ÅÓåÂ­29‡0î«p«ÖÍ—/wúÔÍ2ÃÙ¬´:Û`»çÂ r­µNqbw6f¹ù6¼¹€U»üªs9Ì,B¤„“ŒZå~'4?*ÿŒú4UËëµ0»	í1Î´Hm»]éGá×˜~h7"9|pmT‰N¥ZN¢Â-zo¢N§%¬Eã <ò-Jô:ÏĞaİ·táÂòºpyálD_Åëï©4m|ÖÍô÷É)°ÓJX¸‰ÒÚåòKtí(ÕÉw4³¹˜F*…ı!Â®æZ˜tfƒ¨ìJ;ÚZ&æ˜M¢Ob>³iëìİÍôÃ]DÈK†kÛµ,&Nje'ßî[).@¤iÛI—a—.¢3†r@,òUÚnü[gdŞîĞí¤i;zÿ€IAƒÁ:á
-u[íˆ·=xÇç¬ÆĞñTƒú` ‚u2ËÀà/…4˜ÆVQ¢»‚[4Á;ƒ9fzËãy6¯ğuçVZ±Î‚^°îÛ"Ï3‰)¤è0qÚø;–ë"N›Âô;XÖ	i´¨È6„QÄ*.?'™Då`ô6~`KÃ6Bfb!¯àe¤2Ú"$Z-äl‘$ˆ)¦]^w^8I‚Ö‚Ó¼İ0û{µ”
-A‰5¦Ëy…•Ä4†ÏšæsB*40/d–vioJªe¯şÁ«UÂÖmšM³é9L«+ +6tQ¥db²u »µ°E¾j•¢Áæ»ƒ»­Éw –B*ëx„H\!2°Jä´®=§ow,7ºézG6ú‹Êv~ÉuH ¥¬ÊU;H¥ñ .l«Íw›‹cxÇ&=3E†¶neĞ®t–Ú.,ä{MÒO„‚Lë¼[+¡R½Vhm—èPUãı šY*GJ˜ùí*Y	µÄ4:-2;Æ²I	Tl-hGÏî¿4ûò6&Ú¤˜Ò–eD{tÈ[˜×_4™ dzikù€ww_F‹%+L¾“:á,¤"°³Œƒ1D¯h›SoLsa1#õ›½µøLq‘»‚l“‘æ€«€Cï^2ù0H,-­•jIš"-\Ó†AxD‹£
-y†1Ü¢+ò.äFoP	•xËK2ª:DÔ]DQÔºuEŠÊá“Ô~v%E²j½Ç0<ƒÏzƒë9FgĞZ)ú¿GSX‘áºÓú]!SÃ'1ŸÅ,L6ãog¤ÙìwÒ},æ³éÚÇ8ÕÉC·‚R8é½[7˜k+6»1¬œËí¸ß_J·*æq¢×ı5fz¡Uÿãõ]OÈ^²›£±˜Fº]/sÛw±O7Òç?3BöŞZ:ƒ=«“Ö­.LB`³^K7†×‹Ó·oæÇ8|3š‡¯_§o“4Aq:8ÅáàøtşúÍY2x}<oM³†oèx0`ı,Ã_ KVds+£‹å
-üaım(–[¡44 æ™ÃJØÚ^V˜e°”’L+„…©?&¢°
-s	ˆ¤iÉİ¹u¤	•á„–èÒeLdBn2ØZ»(2¿`Üjñ6äCÕ{_QH(bJDâ²Œ*+Ã>Êå
-ÚwÃápĞ…áëQ<|âSï³‡ğ3¦²XÓ€ÁÉYcÀëN8|½™L/¥÷…™^R´å-ßÖ;Pº6P~ºr^>Øğ÷ğûÛ/ŸAÏÿ‚‰ãÀÖèD*œ~¶œ„1bóáç…JéÒÉ¹™ÜH‹=áœH¾÷ÖRIF ˜	SÃd¥ä/Ús˜k·ªg´+½…£Ê¥>¼½»şŸ£>L¯?½7û:½½ıã—›w³»7ïo?~ùônrÌûº½š~]¾{óßÓO³Û÷W_>¿»œÆ­ŸJA0<;¹FëÄ:‡öî®:cx¬Â0ÂA´Ñı·Áı·h‰
-p˜Î„‹îŸZïC¤7®¢Úş#¡òS:+Eİ/*Îô’7µ‡­(Š:­rô¤=ş`¿HÆ6Ï¤£‡l;€×(†iâäFºL¡å®É«±‹É:ö8¿ŞCLn«{Fo«‚ã°ƒìC%YAÂ“Š}ÊÇ»Ÿ?•ş$è¡X#M „íìˆËì€4Ñ‡Um¼¹å™ªG§ª&iµnô†Ğ6…Æ}W†Ä'…Qï„2„C«·“•iø/ZªvùÔ·áøä¾óÔº)2C¢E¾ÁbO*‹ÊJïdäÂÚ­6é¬!“…¥ÑEî}i@…ë¯çašË	—¶e‡l¹g‘€ÄíJá‡c×_ı]U'òóHÇqë®4Š±¿èÁO¦p´I0nİ‰ÄÉdWÉIH‘Á”M?nıA%h(èr»1‰Çz,zIP°#­£¸’íyY ûBŠè6ˆÌj0¸ ÄÜ.§m¯¥uâ;Å;Ö‰!©¶õ	Èp)\‡ 
-§×>’	+s4Ù '¾]ğ¨€H¼®IX‹L&R¤h¼Mi¬tI»Â4(Çˆ•cprö#å€ÓhF¥'÷¥& HVş¡ÙÒ‘IµŸ)G&‘A¾2Â"•ş„áÄ(¦GûŠàQû™*Hypr=øæ»±×;i½A³«eŞøê@ÖÊ‚3…uŞ¹Á§‰t‚¡5Z+–xÒAªÑ²3“*EJÁP‘C’jÁÑ˜ğa^H»“ïèXÒ‰V*À‹LomSE_i#ÿÊ˜@I½6»ş¦È5ç2£Có%ºÈÒòr|tOH¡´“[{ü!7Uo®’<g9F¯¥Å€rÇû	zğQo} KÑ9èœq;ê¼ıĞi@ŠQd¤cØHÚR¬‰jsş²/Ù{ä4†ŸÈs‘y±ñXt€9é±¿Ò©õB¦ïÖYL6$Î¡R™Ò§ÒA´;é-Ò>ÛPNÆ#—K$+qÉŠ´ğÁ‘¸™‡¤%ÎÀ¶Ê÷°†&ı¨™…CBŸZ-æÂpfrä%}DR ƒó“r6b)7É3Ê©D.Œ’ÏõWJíS‘Ñ9<€à\P¨Rålêƒr09«<?GÖÊ¥ÂØ@*+S¯$9LQ:Ã”!²,8 §İìÍJäWÂ]Bæ¤ÜàmA8F±¹Şø«¤ôÉğ¸ùÉ#ôQ_Â/…ÈäbG×tı5HØ£€ÇñÒà%6ÒA&ø8IRpˆÖÚÔ Ã{R€RŞ!¯d¬
-³‹RŒ`¤òè>íQšƒØJ•ê-¥–<-$Úi'IÌc´¿­®üí0Üğ½J“)±j½{5Ğ”R+¤p•+7İÌ‡“]’‘œ8ßô	&MKA¥ªeàWÅÚìˆÖzã¯,"tü-Öñ'åi^›ÊTf½Eæ1o‚Â÷5
-Ké%Ñ¼Ä(½h‚L=šòÍó¬%¹é cu£©r£õ‚)E/Âì‚Ûj‚ÔI¤® WZ9CÌ(ù¥\Ó¥y”òÙCIP‚BË”YwZ°	NIXWÃŞÕI¸iOğğ…Î=øğ¶‚TL+Â·
-N)]Ô*ˆ Éßğ)`Aš¿«Öqrïëıú´Íâ/…Æp5"—›	²9ff
-·¢ßÂü!OíÂÕ1xÖáójäÉ«“½oãVëÖ‰%Â¯ğI/ƒ±ÿ
-_‰Ÿav¦R˜_áóvûßq2õkp¿uäÿ+œÁ¯0
-ÿé¿ÖısZş	¿ÂÀ=
-£¾>†_áíóINèrş£ïG-š½7^c÷c”“q‹¸€Şàuo8¼¼Fãáøãôæ3|ØCıÖÎuSá''£ãc°v5jİmuòynƒ®é†|êâ Q©´$a¼†Ğmä’ˆ€//‰KQ”¬«A[dÄÒ º¢pí­#d£ËÄ¼WÏ‹—CR? •‹2ÌTxm_º®á¿z]C]Ïg<ù§f<«gıhÆN¤o‰”m<\ÃŠhÕÀl\Ñïá×ÄhKQÃ¡hµY#àaìCKYÒ¥‰^Ï=cKHT‘ŞïøH­T€†Œ»Äaç¥e’Ä¡S6ç…x©Úr+t2©	F€ Øá 7İãÁp<üïoÍ¡-oíí(Ä£ø´”ì`0hJvoÊÑ¿<åèGSüËSÙ6~RzËâ­-„¤Õ…À?ò—™å~<á…u`¦9eÓÖı=;­(ÛISlÌr<Î€üLH#Òõç_ªÄe/Ú?ûë×Gw`a4ê¾tONÙé‰4•´E‘ÕÁN“3#8Òn…¦¤Áöƒ¸n¤4ÁùƒvT¥ß{†öúï\ÍqíNÚœëÂ(,ß¡ —o;©½y¹ŒÏåç¸ğx×ğècJï?YRÉFäz×³lUÃ×v*"›ù_	L[¨±Ã$uŒ´ĞYŠÆÆpM?SØã‹W¦P]°ÏKVd@²k2øç”ĞÓğ@Î÷Ëz”^çÂH
-	JÎœ4…1>Š¢8\{;úÿZ5êVKÕå³n™2mğ°JaĞæZY(½À*ûx˜Æ°÷Äâ+¡ø’òj¾ø/×g·$!–-XÑˆ^y—{Kü+7Ğé´¬\0Ôüe©p3…ÛYø9º§±ÒÚ‰"‘¢EÄ´À3æ“ë.ß"*F÷“IônVÏiÎs*&Ó|2·«Ã´ıHë©ÈväOu‡oÃûğeçÛà×dË¦e«½Ózå3ôx
-ôi#€~=¦á»ÒÛÓ¥¯ÈT›k™£m‘È¬fñ½¯¨i˜ŞİıÇÕÒš6ê²]`´ÙÒ×`µ‰ÃæÌÇƒnõ'‹Ø‹…L¸jK›¢¯
-K/ÙN.ïùòÈêí'±”‹2UçĞ¨À½ñö]æ„ÇıÓ~Š¹Á„•©º,\¿í¾jãg¤œ–A¬r-´Ëì“ş®é»mbdÎ5¥.8ælşpóÉCSYˆ•‘Éª".f¾ùƒñqÂvÊ¬WåeU6×ïöÇärŠşfkùòõúµ8ßõr•Zı-"Ë¢ê°×m|ÏÓ¯Ò—+²1nµ~.+R«Ê³#K%<ğ*0n±ï7)ÙóçTìyIgÃ0~}îU–N»'Ş•Ü†¢çhÆ¸Å.mücğ¼ù±œ~şşôƒ“³¸Å,Uuš 7°›’LH©»Å×½ªœÏB3Œùñ`0ø_“EvH¥udb^éÇ^­ŒØ"˜u ÙNè²¼ùÌÕZ·ÈIö‚U¦z«Èh|Ok¦È*ã<ÍB›5ÅŸ¤únëÚ§¿‘˜µ2ÖfÙ¯+N}dŸ'úÇ†NÎúU‰¯™¤›Â'Yş”¥­¥"õ`fÄ3o”à†-S^EÛ¨ƒø“F®Q"_Áğ0ÛyŠ[a¬DÉ1sEµÂÑ Çƒ.œºp:àeÎe¦¿?“3í‡oQ0ÙG*Ñ}‡7ÿ°ïj¸÷‹E÷§F°è£Ÿ\[×£“T^ŒÊhÁËP;Ï_?×mşº’ËıÈ-mºñÛšÃ,úÕ\]i™^Î8m¤ADoóÏÄ“¬´¦”È7_x†Šê\Í¨®›—÷qiÙ FìÒ¥>H½4e2\:•~ˆK7 Šƒãx³lá Ì*¨’ĞAà;é#EãcÆŒX¸²|!©ğÆä§ÉhO>ŞãÒÆğ*¹¤¢ê’bƒ”Bˆ+”3ş¥Å©E/Dõ‡9ø¼ ²¸L!Ù8"
-5LïúkMva»"@{9aÉF²Äpƒ9Js²uPu‰ÜÜ™XR^yı•
-Š†_:[r¸„_ëÜ1«\`%…­ÂH¦Õù±²V£
-î­Ğ‹†Š2÷¬efÜ îH‹nsLˆ k¨K£¬fä<ÎÚ<3U/öSŠc_€)HÃ]LÃÅr·X3³;xv4ô¸P>L.¦ÁŠÃüDU9i\^úâíñğcJßÎ‚Ô˜`6À‡’˜Rıâö sàpkÃ‘oA¨ş†]t½&k,ãºTÒ0"ÛŠ%êUŠ{_NŠZH@“(ò­b¥®º)ÅR®Ó5SeL™K©µÙSÑÏø6>…U¦ì	é5%û,OÜ'«ª"Õ¸ëşıŠ¯OĞJÛ¼‹ÃÂ Ohıu•Ï×–Åi!ÑTıj¡C¢¨l¡ôÆxwê]õZäTÏµ!Æ›#Ìq%6Ô¯tX¹ÙŸÁ}u]êÂÜaÁö…º®ol´Ê4hö&’s#¹òŠÄÂ^°˜&q5£²F9¾†éªÄ•ÕE¨²zF€É0[7İù„KÈŞ½›fíªü«¶–Ñxî—tHªP÷Uè‹àZùúšEr…ºLZÖWc¸ır(û^‘SÏ•HË²Ìs
-İß!7
-³D×[ië@©¬Z|¨Ñà–È=.Ñv±œ¿‘s$œ€+ÛÚB ìu]Ì-»*®	4JG%É$?£×˜¹Q¸äË‚dr-}VmAµt«Ğ/kKSâş_‚X²W;¡†ì
-Ê„±êx1ºü‘ÓÃEtæï±zÚüóµn¦¶u«ŸBFùš\·8”ÔwjyHÿ¸ÚJá·Ä,QœÅEubŒ¸¦îæ+jvMúfÜÂí*Ã»CTÔD¿r@eNF…bj‚T¦:ì!ß¢ªä}Ç\ƒˆZsPá‹;u©£’7
-™ND–íÎ©_­¨ö[ÀUWt#º&YIÚrA&Eş†Ş'µ{íÏ”ßù°¿î¢t«dg84òîÚªjW[­?ÒÈ-À
-³¼‚½âàoaú¢EôK„¨Œ@$lÇ½L'ßuáú?˜—Ğ6šÜh~Ò'âJËéö9”öFµE$–\qÇ[“ªŠ}ê,õ2rÌuUÙ2›¡W’@º†m"†¸VÂ·à;%|ÏâBÉÄMrƒö·ğ©îµ)¨uö°9'4àì#©à†‘ñŠUÊŸ§waKÔ/âÂv¥3ìq6ÎwKÔ·upÉ kJe5H*?R)u“csFÎú•@o£³b}­…ÚqP^õ#áFp7@İ@aiÀıºĞÑj]y3æŞ§š¯"2¤²ëSû6s‡½…6=úPrÀtê²R¬İÂ¨¦ƒË¦ÌNU…ñöã´7:=k¶–ËÌ®Äèô,ºŠ[ä;xùÍ°Å<¨iÙ&[%Ÿuõš@mäaˆ 6Déëä¡‹ú…ÆqßÓMI{Ù í›=‰ÍZD¯lËÖ‘ºï_ëaÆbèr-òØ=8Frãø ]h'£§Vë†ÃM¶bÎØÔ@,'¨MÜìaHy0­W.Eİ2w]_´Ş1r¡ésCA?ô­ûÖÕnxïào½âa–ìË­èÜù¯AÍ‡_ß}ˆŸ½ëbp#1´!—sXhS‹”úc­oã&j†™ ¹¨[,Cw‘_¦ áÓ=Q§\ıIÁ·T‘û7Q?Ä2òºê×ä%*8&ı©Êm¤øÌn•œdˆº	Æ&Ñ§éO_n¦w_nşCêıùúîæ=ûÔéçé§?İ^ßşYıYE¯"şÇ3	üÂ}½škÊèèæø%ş“¨„àã;<ªÕ&ns°ğ*"]‰:˜@|S+ı_÷Ygk‹¸ğÉ·oÑOÏz?¹B³_w³Í¾é¨M¹YÃº0’!æ ˆ9êF/4ZFİèYäu£ŸÅŞß)a—ïù°+òœk²‡-Lãè¾{p8×I#ivyGİèÓKQ-'úçˆø$§™0êFÍÏ_!œ_õüĞûáÈ—Ïåû{nêXM£ûûÇE“è‚ÿ½¼p+éå…3—Ñ«(èMtáV—Ñ«‡WÑEŸ>ÕÔÓ·¨læŒºµfÒaÊüƒ>3u£Fãctßá‰Ì%ÍæW#ıÛ_ğ`ıô2zE/Åõ9¶?G6“ĞfL9¯ÿÎğwzKÊ|Ñ÷K\ôı1£V.Œãwİ~luàå;oÑEøñòb5:ØOÂkÑO~X.üÜ1#¼¥4Ú¼£ŸûÙü¼»ÎëV7‘¬šwê"ŞŸ‰ÿ¸˜›Ëˆ·‘‡‹ÈéPt¸²ÎÃ@¯Ì¼p¾~yÀ¨ÓÊÅ’Sû‹KuB¿çyyÁo€eB-'G¨./ˆ¦†&cÑM./øà—áí‘ò=Ã‹¾ÿúÂº]†—­ÿ¤5­ü+§'çka–R‡oÖë'ÚğãB+7s×Æ§05Rd]+”íYò(ç‰Î´ÿføfôöøÍùZ<ô¶2u«ñÛÓAşPÎv|š?p„õ´>–OŒÓ³á9MßãÅGg¹{Z~øûğ4wçsƒâ{=ëXl´LŸòÇ-…Ù=~×l¬´Y‹ìœ¬”BĞŞÖˆ|,ÔnK,áËöÑop8üûùœ^ì¢Ó,¹Åqù¡±ìÛÜ=¹U×¥~ğx˜?€Õ™Lá7ó7ÉÛôõyNexµ¿ÉÎ7h(ÌÎz"“K5v:r«Ç¹H¾Sî­ÒñoP,†‹×OÎ<úÃø¦Ípš úGq½¹vN¯Ç£Óüá‰Øvo®Åbq’Î«Oó‡òL.Üø´±××oÃ³'¹^>ÖR¢Kxj]ô½*\¬†¤,š»[w0ıÕğò"¿Ü{7‹z´ŞËbEj´`…fñx	ÍÛax;™b¾³oj9ió›¼UDøâ÷áŠEé=oQK|5‰!*ñR@sA@q!×K™›…:Aˆ¢ªÀšdrD‘ÀX®Åû¹Zû­v£WşC<?;a?Œí\-;qŠü¹ó*:b¬óê³ùºuúòÀ¯Ó/øõÜHåšá ‡0ş…Ğğ¾Èù~Z?|ÖßøŸs•£.ÿÛiıPK    bAp]Œ?
+PK    |Ep]zÙş©»  	?     build_writeup.py½[ksÛ:’ı®*ı‡^OíRªPÔÃ$²åY]'™x67IÙÍ¸T	I˜P / JÖøú¿ou )Ù™×‡­š;‘%¯î>İ}ºyttôU«¬L9Ø‡­Ör	L²|g„…VkHUóÔòøFd\¦<†­°+UZrÃ¥r	º”&9::j·ÄºPÚÂÊ®óşb”ŒAóÌÎ´[4aÁì*sğ¿2»j·n¾|¹›àÇÎl¶9ŸÍº‰æFåŞé&Ó\Úvk­2>1;“0½Ü|ŞƒX@Îe'|Õ½Ï‡H2+6<j·Â¦'¸B?
+F}œ«İ2åzÍôn‚MrÅ2Óé„1ıÈÿšà¯nˆe3Ël‡ËTeB.'Qi½7Q·Ûn1c¸¶àŸù¥j]äÜò,ºo·TiıTi‹Òšˆ¾KÖß3¡;üA;Sß'wºäİv+Óla'RYè„-,¹íD™J¿s=Ûp-‚gQ˜Ì`3«¹b:›™Ts.ÍJYÚ^Îæ<ŸDŸØ|ÈfS/âÙ»›é‡»ï‘Öô··?(j·O­PÒL¾İ·[_ Ë²6ç1ŞGwaDÂŠ‚Ë¬Óø51V‹¢Ó¥KÊ²Nôş§%c™-M·[ˆ¶=xG‡^Â32ĞœåPêÓÓŒyšÿR
+Í³äÏ2j· º[qPsÃõ†Ñæ`Îsµ¥h:§%ğugWJ’ƒZ-˜²(rÁ3È¸å©UÚİ´X—9³J'æßÁº4PVs…æ†K4f€…£èR&ásš.-ŒŞ&o“lqØ†‰œÍsNK8*2R%b	¦LSÎ3Ånáyi¥)7¬¢ûéßË¥$[ó
+QpZ"ãRğ,Ï
+'´LH®a^Š<‹qsRÈe¯şÁ©WJWƒÒÍ»ÆÙÔœfõ%€a¼« ­Ğl9İ¶Ì¸æÌw×[=Rì€-™ÆÒ–Ú’å`$+pasßîHtx×õ–Lö™ïÜš;c9—4–I[m!Ú™¿²­ÒßMÁRÀ;’2*›.snb°+ÍÍJå™‰a!6¼gxªPR&!Wªˆke Íd¦Ö’“-—Õx7gÒ¢"æn;¥LWL.y–DİvÀm‹,±İ‚NôÌPÂ…j*ñ0$7/Ş+¯HÎÒœs½)‡\-MC†^àãİİ×†¡ájéŠ§ßQ©½€B"úÆ¢W´Ñ©3ª93<G%œkµ5ü™ú¤¬°%)ÁÎ? ^”Ş½dû~2ÆCÀZ#äÕEĞ|;æà-‰j&pËmYÄPhµá’ÉÔY`šs&«SDñ"Š¢vë³|Ã3ø¬6|=çFƒÑt¦F°şï¹.ËùºÛnı®Ã'6ŸÙìÖ–—vFßÎ>ÉòÙï„ıXÎg7œe;èw“L¥q… pÒ{›´[7¼PFX¥wcXY[˜q¿¿vUÎ“T­ûk«…’ı×w=&zénÎµái©…İõr67}«9ïãñûôg˜Ş[«yÏ¨´İºU¥NaÖkaÇğzqúöÍü˜ßŒæÃáë×ÙÛ4K9;œòáàøtşúÍY:x}<o·¦yÃ7xB20nš†±/¸MWhf+­Êå
+Üyİİ(’]q¡q Ìs5‡3+n HYñ<‡¥°æJrX0‘£¾ó”•†ƒäí7  *–æèhĞÂ½ô
+¾²¿Ñ€(1áƒ4gÁ’ Ö˜E™»“v«İ¢ˆ‡éó¾b Ú`è”`©Íw0ªìbCø(–+èÜ‡ÃAÃ×£dø&$§Îeág‰r'g¯»şøõvrµÎæj‰a—3vSï@ªÚ$ééÊk¹hÃİÄïo¿|5ÿO-Ep°æ–eÌ2ïaÃÀ´f»Ä~^Êï½š.´0¼Ç¬eé÷ŞZHA  7ñF`yº’â—’›s˜+»ª§4+µ…£Ñe.²¼½»şŸ£>L¯?½7û:½½ıã—›w³»7ïo?~ùônrL»½š~]¾{óßÓO³Û÷W_>¿»œ&íÖOA„ÊV¬¹±l]@çwWİ1<V¡‚7Ñı·Áı·hÉ%×ÌòlÆltÿÔn½÷ñŞ¸ŠpûÆOıé,H»l+ÉÕ’¶µíV!‡ñ“FùƒYşv@™˜"2 Y£¦©aw0…„£C#ïRhnÉÙÔ"\÷AØ­êiµ­N	–¢4™æ%ŠPHò&ï~ş<‰WG¶æ8 ¦“Ù*¤«J;»+r&dÏUM‚Æt£¶0„M4¯½2):.Œz'˜3Ú×¸İzLWº3t“¿(!;á±oÃñÉ}÷©İº)s>†T•ƒá=!—FPwä¤`Æl•Î`Í§,µ*çJ=F\=÷Ó\Nà8Ø™Ä!´ëá+v´ÀŸY¸şê.¬:“›G8F‹
+2v· =øI—–Ã¥S„œ;–Z‘áJsô‚å0% HÚ­?È”k½ìnŒb2KÍD0àÆbxIæ½,9ùBŒğB$°Ü(Ğ|	Ø];_cÙwŒyŒe9‡´ZÙ`ìÇ çKaÅšY¬´jí¢¿2Å”¬rpƒÃ®elñ¦”†5ËE*T‰
+GÛĞdç¹0+UJ2"%œœıPIàôGR)ÅÉ}¥œ¥+÷˜rñÜ¨çÏ”$–k–C±ÒÌp8
+^† Æ*ÏöÂ!ù3•8”öàäzğÙOxëc°wÂ¤jÃõ®!ûæw2Ç¦Ì9X]‹˜^hŞ£ì„Ğ´æÆ°%?a!SÜ—2ã˜•q‰~JÈEeÌÅ{>)O¿sKO•”>^äjk˜J”üJiñWÂLú•Şõ7eP:9›î(Ue…ûq¡>"‡TV`œíğ½W½¹J(éÑj-¯ğ”pï¸{?A>ª­z1VUœG1!Ş½	d|ÁÊÜRÆtÁ@;¹Üœ¿ìdö9Mà'tihidG†[àª´»UŸ»õ|î–ìÖy‚æÄ,Ÿ¥Lf"ÃOÁotº«-×¨ƒ¦¡¢„$Z,—Æ¦+Ô%àV³ÔÎ@Í02[ºˆ…ĞL©ïÈŞ,,G,ª•Ùğ‚iJTœ°Ph{nRJN¦*E‰‚F­(˜vØ"ºşŠ	¿Æ@kÃr<GÀô”2ôÎÄP•‚ÍYPbŒXJÁYÄiDæ4¥àÚZ˜_%0¥ƒ°<÷nÁgíYìCÁY@r)ï… ³@? sÌ¤ÍÕÆ­Xey¨”à‡›Ÿ`%ğErø¥d¹Xìğ¢®¿z;4p°Üßp‰Y°3:Nš–”rk¥kOà=ª@¸O4	³üì,’{4©†½Ë‚¤¢@¶Bfj‹Y…A©ÒšûLeæ ÛİWWî~vèf´Ñ¥”™7Šî*(Ì²%Ç(‚K¶İL‘Ó]š£¤(u'N‹ñB¥®!*¬bqòKkµq—æã¼ú–×Ñ)fmh›êÒà2wĞG7áıš3ƒÙ&bÒ<@•Z4±¦TéîiÖÀZÈIápªB+µÀ'Y†AÓ;ïÅö±ê¤UWĞƒ+%­F
+½TÁµXãµy°réE 0‡Á•B"•d‰S”×Õ°wuâ/Û4|¡r:?ƒ-C=S¡Ã®˜„SL*•ôRhò:tX úïG²uÀûzÃ.³3ü—ÒÅc¸¡Î6¥]áo~~ŸÍÆpu$½9Šäêdï[ŒÚ­[Ë–~…OjémşWøŠ¼±6•Öü
+_ˆÓÛÿò­_½7nä¿Âü
+#ÿßÿk·®ğßÓğ7ü
+ÿıÈ?üş~…·/Ìs‚ÿâ cÿş0ÂÃ\a¨{ã´w?v9·[Hô¯{Ãáİàíx0ßÀ§7ŸáÃ~”Jî@+er×y$y~r2:>cV£vën«êxĞôtıLìõ=èK<deÂ D˜vÊ‚c”Kd,<Şx2%	2	Ü¬æ¦Ì-°¥æH‘ìáÒÆr7ÜXÄ:\3$ò½ê„NÒ±º™X,8ÁN…àæÅ+ş«W6ôWö|Ê“jÊ³zÊÑ§üçûæ¹`ÉèıU¬õlHIu…ïMµ2M
+XY–7rF5xÎ@«¦j=wÔ.BSÅQ:oä‚¸ IÇÈvÁPÜ¡S²pŸª8Ùš´+nEZ‘
+A¼ÃAo4ºÆƒáx0øßßœå&ÜÜÛQ2HFÉiï`0Ø“ïŞœ£yÎÑç<ù—çnü&Õ–„\Û
+Ê,ÏZ CYè~¬áDv`²¦ßÆş=›­™+'¼“¦ğˆF¥ú¹¨F$ªëÏ¾TéÍ^¾´ş×¯+öïÁÀh¿Ä''ÇÎ²,¸M–×ÁP“oCxRvÅu Ğöƒ!¸nä=ŞA¹<·T¥ë{6÷úï\Ïqíg:Ø‹aä—ïº0˜î<­}}XÈeÿs¾pø×p÷c">”yB"G‡t|ìHºªêáJBñM¼Œ«¥x¢Î—œÈzò†B…:ˆZ¨<ãÚ$p?c\äŠ^º”1MØ§%+ò İ5)ÿs$ p¸'óû¡Œ¥ÖÓ†À±£º8Ø¢(ñWß‰ş¿–âj©ºì‡ÄjÃëš›BIãâ¨xi1ãä\\éÂl\Öç
+6ğâq]Œ""â‚	éT‘v¹·Ä¿rXÛ0bí‘uRÓŸAçf’ogşg¬J±^ æN$rNj@r1§Tªùa]1ºŸL¢w³zRcUQ`5š&…™¥-Ï:h·ÈìDî Q<ì~Şû/»ß÷´(8®[íÏà/8â)Ù§ ûôˆI†ïRms-]§Ú^“
+­hqÃ‘óÙšàûŠŞ†éİİ\ı—'¾q¾¨ÁÎÇØ3<8%H«?IÎ¦\,DJ%_Ü~U”zàJ©6ŒºO8«Stº”íbÒJt{Á¬åZzéºï¢@hŞ¨ï<ëg¼Ğ<%ªFø
+×ï|3‡+ÿ¸1ıçqKsŠ·Rô3¸KÏ ¯ñ»Œ›T‹‚ªS1X¢©L¸ùä *ÔàR‹tUq3ŒêÜÁè8~;!SëUé[•vÃõ»†5ñw³µ€ézİZ”;¹
+%ÿíåaaÙ)Ò®òçx[áŠ“EI°şs(xh­ÊÖaÁ)Á¸İ"_<n²¹çÏIÜóÀ‡Ã0y}îÔ¼'á–ï†¬gqF¤Ñ¿Ì7?†ùGÉèïÏ?89Ã*
+²ZÕ¼òÀŠmõa¯Œ«¡UÉ¡f ;Óÿ’Á`ğ¿$+ÃÉ7ÉÙ¼R’½ºr1ÈM{šA‘±àu9Ô<çÈÃÖ
+†ş²çM3S[‰–ãšH=Y^™åì\/”^SLúIÈï¦.¥º;IH7¥—ıºvÕ'Yöi¦løàä¬ß¨6z]º,ÌC·µ¨#D¤8²“a¿kÌ¡Á*6A İÒH…à1Š!r5¸İ§¤İòƒC¸.¬<1b8Äp: uÎØŸÊêÎÃ·ÈÛîŒ"—è¾K»Øw
+5ô»Å¢ûîS3„táP¡ŒíáY*§†59ïr°?Š¨Œ›¿®Är…?R ‹»nü¶¦Èu1XìÀ­1"WËå•8iqúã¥+¥0cr-ÔÂÊÕCª+§¸h5´¾!!õ€™Ç¦œ1Ó÷ÁªvvTw„†FŒÉ,²°,µZñ-®g	qÑó–.xÔ.ŒÌ‘¸Õ%<"{³†{r E•&Ÿ¸K,Ò.1XÈ0_´ëâ‚iÄbdÁ(çèù`ÿ0MŸ—È1‡“L$ÂØC÷®¿ÖÉfÛ‚3ÛK…I–’À/Wê””,ëSèòv°ÈÙÓÎë¯XšÔ„Âš@ü"­KdtÉ+‘HË´ 6…YRË†Z4µÔ±vÏ:oÆí P‡[t[ğ9³†Æ4úÉ,càÉP›çÆÚÇ~®qìŠÚ,Ãr«¿©¿\ê=k¦}Ï†ÂÃè`êÙÏAOTu—Æf/Ş ?ÆÌîÌK¸"\|É3,}Ü´#nm8r}ÕßC¿ËƒÖ„ÒÓŞh“!ÒË³Àò-Ûdl¥çÆe%±3…4‰"×wrÕ¤Ñ¨»R©¯™IóŒ—Z§‡ıŒ'"”¼ªî„f“^S¶ÏRÈ½ ³*MbÍ¼nÙ/»ü½Ätîy¬@»8¬-º\×=Q—	]aªQg¡™‚ëª÷Í÷]”•E×L1‚ó­Îo¯Yuaã£¾9‡9_±p•Á½³÷ÒÍ®jÒóSö¿/Ô‡]£a£§ÁÏ79ôµ˜º"Ñ¯WLïy›iBö)JkTök°®êc)“=_¿
+¥7„MÛºÏåqä`|Zï6iW¥â_•1„És»¨C‘;»|ŸÕÜwØrĞ,¶,ÔeÖPŸMàöË•'ú{e4XbõœçÄ»»CjbdzÉmo¥ŒVf¢êÂFÍ·È R‰7nvî~XA±q6tÇùĞÙé:›rXTIhÔœ<’zFIªQS÷q C­r±.Ù6Vs¹´+ßk‚)QK1¡,¬™`·w…!‹¬›¯‡ƒÁÅ„F^L†§ƒ˜>º¤q¹«¬‡Î#ış„ ™éFqõSH4_£³¢v‰ÀQXY„¬ò«§~‹Ì–ÑédT™GF‰Zlêcº§f¦kğ-µW±)˜ıp¢¢-ú•#
+©–š±¿Ša‘ë°9	\Ï«Ò‚ftıxšjMñ…³0jşÅöLÚ(ä*ey¾;Çn¸²ÚoMW½ÖxŸét%pË%ÚºÔz—ëîõTcÚçº	³°ÀÜP”ä<·UÕıJ1Üqì–ì`Åó"àÁ^qñ·0}Ñ0ú(*[`)™s/WéwUÚşÏ¦Ş3Ä@¶ShEO:r<]0 şa»D0;¬MrdÔ%5B‘QÉÊ®È•P•Ï`¯$`W•I“5:5ñ½g¹I¢‘¯®Ğ=¸–×¹`HBQã¨Øpó[øT7ï”Ø‹{Øíã;zö¡ÕpCĞˆÏ8å
+Äóçéß!ö‹€…è°]©œ÷(Q§ÛEêŠúC¨ÀPG8Aá}	«—T
+•%èá¬óEôÛ¨¼\FGk&w£WN|Ã¨£ îiÀ(Õ;€º,BL·³fj§ª¹ó*˜@s
+¥Êµ¯[Ş[(İÃ)Æs‡’I5²ö£š4mŸİªúäíÇiotzÖlW1ÌÌ¬Øèô,ºÇôî‘o/¿• ¦œ{]½¸U*ùYUo Ô¶î‡0dëPš®Øî;³_èGwâ˜Í‡¶òB+×OŠ\×ªDòezPê:¾{…ˆøÃ}#mY$öÁ8 KçÂú&õ$z¢N0
+?ÉDÊ9µucµ”·"FQ×ˆFâY}¼°ö‰‹ÂÆ®ğ½#ãºO}	}ßïúccÿNÃßzÍÄá-™]áÉ]‰ F7|}÷!yö:æÁ}Ë§â‰í`j–a®qãHÛC u§or@rL—(~º)lÀ«BA¸-/u÷¢‹'HLN_İ¢´FÌ¨BU•ŸÈ¯@ZVa8Ú$ú4ıéËÍôîËÍŸ`ˆİ¨?_ßİ¼';ı<ıô§ÛëÛ?Ë?ËèUDÿ8^
+Âo¢Ws…‰^½(D"Éà~—Fµ[Dä…¯"Ô˜¨ÛM¨—Ä5ÎâÿÅÏºgÛ-dÍ'ß¾E?=ë-¥zÎ~©Î4;´£8šRã‡±~$ÍAGtG/tqFqô,˜âèg¶Ã7„ Ó]6\S-÷°›ÒÑ”YİÇçÓq¤4’“f?yGŸ^
+t‰8÷€D'ù;ŠQ5?mDunÕóCo€ˆ‚a:—k1ìå|Ã±äå)ç$º¿o·(LšDôïå…]q–]^X}½Š¼êDvu½zx]ôñSÍK}‹B—hGØñ‰§	9	~&Â:Š£F3etß¥‰ô%ÎæVCÜ_ğ`ıì2z…o6%ˆùï¤nÌo&ÅÍè0¯ûNÓwj‹ú|ÑwK\ôİ1£v«`Úº—ê~l	 ¡áíºèÂÿzy±ìŠf¡åğ'|¹ a„¾Oí¦oØOuıìÏV -v_Zººâ`á¢[WışŒäÈÅ\_F´“Â_GÃ†ªa½”óÂûáxŠ‚-)í¿ø·L¥˜=Ñ+¦—ôªYÎärrÄåÑårÅØ"¥·“#Âƒ£Ë:ü¥e%¼ØxÑw__»Ëùe»õŸ¸È£åãéÉùšé¥ãá›õú	÷ü¸PÒ‡ÃÂö‡É)Lµ`yl˜4=ƒæ<U¹ÒãßßŒŞ¿9_³‡ŞVdv5~{:(ÂlÇ§ÅE]O«ácxbtœÏqú->:+ìÓjôÃß‡§…=ŸkÎ¾÷ÈÕÙF‰ì©xÜbøİ£—ÚÆRé5ËÏÑ^10ím5+ÆLî¶H$>‘|İ‡ƒÁ¿ŸÏñı1l^ÍsV>Ë¾-ì“]Å6{tƒÇÃâŒÊE¿™¿Ißf¯Ï,ßËåøMñp¾áƒï¼Çr±”c«Š'»zœ³ô;&æ2ÿ†³ÅpñúÉêGw×êOã…ÿè.®7WÖªõxtZ<<¡ÛÒìÍµX,N²yµáiñÎ”ó…Ÿ6öúúÍ`xö$ÖËÇZJx	OíÖEß)ÃÅjˆê¢¨qvCvÑ_//ŠËÃWÀH¹£'H‡¯ø¼ÛæÍÏ¿ßÙ‰·¹œtè•á*.|qŠ{ÿ	F¤ôªˆ3¤%5‰*‡ñRPCq!ÖK`¹ù‚¤ªÀètr„ÁÀX¬Ù’÷¹<w›£WîC2?;!?Ì;…\v“ŒÓçî«èÈ!ÛQŸ¬ö™cÇo<;>ñ’g/´¶P ã^9õ/¥œï'úãÈqDÿœ»àlÅôo·İú?PK    |Ep]Œ?
   b  )   evidence/docker/A_baseline/dashboard.html­WÛnã6}˜:hÑ¢‘-Ê×È ›İ A³$.Ú·‚GYÔ’#;n°ÿ^²dÇq€`Qˆä!çÌ™33¤=ùA¨˜6BJËlvz2±OÈx¾˜¶0o9raŸK$qÊµAš¶JJ¼Q«±§D…‡_K¹š¶4&MÚ‚Xå„9M[İİÆœ/qÚZI\JÓŞµ”N®dŒûp2—$yæ™˜g8e…$e8»å0÷Ÿ¯à=7i¤¸“Nµvz21´q/‘x‚Dåä%|)³M—ZòìÏgPËdK®2!ècˆxü°ĞªÌEgI/$£1Ä*S:„3–İá¾¤¶®^¤ˆÔ2„øvzÒ6eäØÀSãÚ‹úıAw|è2j\ˆSi^b~½#æZØBš"ã›’Ç°àEÌ…¶o­­Áş¬Ê°Æ‚§gÉ®SI8†‚!óEÌQ‹”¨=Í…,MÌ±YÊ¼*’İå,‘zôLÊ…Z‡àCP<ÚÄ@/"ş³nÿÚşè—½Ğ†´ÊuqŒüCú©É.ÊTüĞ¤@ªØéK<rÚÖ|ÿÇ†i¬²ŒC¨ßÆÇÒ|;aÛŠäÄrB`Å#•Ig‚‰¾ˆöD»°	Éã™\ä!d˜ĞV¨IÆ<«­¤Š-öAÎ°CŒÜb¡ñp•16
 †»~L.ìÇ¯úàhÑÔ
 u’©µ÷/I¹|¯C™è¡9ó¤SÏĞ¤SŸ všÜ‰À^™¿”Ùe!WgÜ˜i«‚Öìjg2„1I•ÃZR
@@ -802,7 +807,7 @@ u’©µ÷/I¹|¯C™è¡9ó¤SÏĞ¤SŸ všÜ‰À^™¿”Ùe!WgÜ˜i«‚Öìjg2„1I•ÃZR
 Y.ßà¼—RÌŞ7u]3î¤»)ìá^ê&'*¥³³I‡Ò™}»ŒI®l¸Úpï
 
 7_Ë~o:c…1ç1ÉxçWónUÑÔCY4¶+)0±†éTŒ:;†õŒ‘MHØìI¸·/Êi½i­ôÔö®´Çel'{ÓleÃ ÍFm¿=lL©ÆdÚ²µ	;ª7ÛKIÛJ/:Ô´cgÎüŞ Óâzaïú¿£Œç­™³ƒŸ¶î·ŞïğYrÏºµTn>Ş¡QÙ
-$Z-İĞ7K®¯ı¡ÇØÜ¿ı^øpóéúsÚøvàk€]ÖÀ\æ†À~Å0ç#ÿ¼×ëw»ş Ša…¯5^jé’ĞK”í„L-dœ—½Ô¸ÿ½3æÕ˜1<xgÀµeğLÕ+sû­.ãiVìè½EÛ.$\f( àÆ¬•€+ÌÉÀ5¾¦i¿½ÓÍ5lİ§zÊªi¼ãk¸Ç¸´“ ·jQÏb¡ñ°¨~È¶EıÃ C¥MÌÊ½@2Sº“2Ë6t˜zr „ŒÁŸ—wŸàú ½DiĞJÑaJ®= ×ºŒIƒc½ï…^…}/d÷8äÿ9/À‡a·»W$.ìefHs{ÏnK¥J²`KlŸMg¸ŸÿPK    cAp](Kí*½  @ (   evidence/docker/A_baseline/dashboard.pngÜ¼ePqó?…’ÜîîàNpw×Å%	A‚w‡‚,°,ìwgqX‚;Áşõ„çwuWw/şo®êêæUÏTÍwª{ºûÓıéïÌÏªr¯±È°=zôZA^ZãÑ#Œ=¾xòèÑ#Ì¯.Ï=zûHAú“–oÖî-¶¯6ªeó§"¹åúÛß×Z¥'"¾Èç£Vgµ¾/ÓÒ¨şòDÃÀÀÜ•oÄêØWül$/èÔbş5£Ù¨™ÔSéÚR{(Qä<FÂô1ñÙLÛÙçS‰î´sØºQCÅ–¿·¢ê“ƒsi–‹@Ç›®æ³åîÜşïõi¤/da?ˆ
+$Z-İĞ7K®¯ı¡ÇØÜ¿ı^øpóéúsÚøvàk€]ÖÀ\æ†À~Å0ç#ÿ¼×ëw»ş Ša…¯5^jé’ĞK”í„L-dœ—½Ô¸ÿ½3æÕ˜1<xgÀµeğLÕ+sû­.ãiVìè½EÛ.$\f( àÆ¬•€+ÌÉÀ5¾¦i¿½ÓÍ5lİ§zÊªi¼ãk¸Ç¸´“ ·jQÏb¡ñ°¨~È¶EıÃ C¥MÌÊ½@2Sº“2Ë6t˜zr „ŒÁŸ—wŸàú ½DiĞJÑaJ®= ×ºŒIƒc½ï…^…}/d÷8äÿ9/À‡a·»W$.ìefHs{ÏnK¥J²`KlŸMg¸ŸÿPK    |Ep](Kí*½  @ (   evidence/docker/A_baseline/dashboard.pngÜ¼ePqó?…’ÜîîàNpw×Å%	A‚w‡‚,°,ìwgqX‚;Áşõ„çwuWw/şo®êêæUÏTÍwª{ºûÓıéïÌÏªr¯±È°=zôZA^ZãÑ#Œ=¾xòèÑ#Ì¯.Ï=zûHAú“–oÖî-¶¯6ªeó§"¹åúÛß×Z¥'"¾Èç£Vgµ¾/ÓÒ¨şòDÃÀÀÜ•oÄêØWül$/èÔbş5£Ù¨™ÔSéÚR{(Qä<FÂô1ñÙLÛÙçS‰î´sØºQCÅ–¿·¢ê“ƒsi–‹@Ç›®æ³åîÜşïõi¤/da?ˆ
 1ˆ¤²Ç¬Ò¾'z’¼Ã³_ÒÏ‰f–)Ãııı=ú¨AûåùÃ‚Eÿ?Zp*ò»czº±ë˜ï8@õ²¾WLÛ¡e¦ÅØµW—½<•ôrî\Y	²1¶Õp¾¿Xïspº1dÌ+¾3QìØPG]xpq7Qq· ,Ëƒ®b\ljXn¹
 _EFì{©ì‰XyNŠ­$àJ‹&
 ëÏY±{ÃméX|&‹Ü¼c€’a]+üSa×²%•LÆşÁtmÑ \WÆºvàŠ5ˆ^€¯g˜ª.o §ò—ûí7 ü@ğŸÂ,rßêé–zÀHFËu¼ËÎÖšgÈ>ìV¿;7Øs8æ®Tg&ùŒÃ‡ç\u–‡äöÒr‘3¶4©9år*Ví^·(Âl(mâÅh~‚±øyë5¦°àÖ‹¢¦ÎÕBú#†ÛXtªè6¹YÛä(ñ ¦$Ê|°£.ÆZãš%¾‚×ûiÂ½şkŞû1¯…x¼³Î¨|ÿ,´Q½É­Z–f§
@@ -1047,13 +1052,13 @@ WsÇËå¹ì(ÌqÓ°'¨~us€ìõGk”·)ÄßÙ]	Õ0QvŸ³œ	”JVÉÒ’‰Šô}«`{ŸD9HHu½KK;ŞšÜËÚ
 ˜àsp»ûÊêÇ{1±‡”U=kº²5ëX!H ÿ«2Hˆúáıhò†Ñ0~;U[°µÛ†Kpé¿YËZî–ßågƒmrŒë€£·`VIÖª#"÷9
  0Éw5WFªÓz"9ı¦^;k<Ñc×P•œp =Pév;¢š·ÆO©qŠûJ–;X5j¸ªv(ÃkkÙPuÖŒU2¡È-Ş`a®0O~]HAãr¼¾~¿¸f7â¨ã6XôzMŠ¥Ñ(4lé J×1ejrhÍXĞ«ï«BêSVWe¿m Ñ.Yo5‚×ñ¯@|Q…„Ş™±ŸaC¥wTël6€µ–+#Z:T±$İª5B ­Bè1™®®Ö»9ÿ#qŒ×­ú.âDw{()eûö+’*e´¦µ6~ó¥8òµûùûW_nÎãnÒ¡NŠoğ`TJÀ°mÇy?Ú¥°&[*RêİTÔù”¿{&øİ¼ñPM³®¢É•õ7Í¢„z@æ“ó¡=¯ş;Yãÿ¢B—í-óüú‰ÇŞ’UL\LGó{&PŸY»~ñÏØß]|n]rÚ“´îæâ
 3à"©º®rq_X‡¾nŸfštç08^ÓAáá|ÑkX.¦Óã¦Ÿ^¿|D~LŠ€&ã“İ¾Ó>_Ê³‹Øë´Dù”=şµCI,~V«ïÍ´\<<
-ÜY/àgÅRLÔ£SiliúÄ·ØôÓ¹Ÿß¿™_l¿Ã¶ö:áåÏƒJİø¼×µo$‡¾¾=ú'73xÏª_¢ÄhûEÓOœ¶…~>QYD¬Ïá1ºÉî[àÃöĞ«†(^Ş“¦ûcÆÇÃcŞßVƒ)è¹A²l€‹›ö{Ó·xkãb[ÜÿüÈé?ÕŸêOõ§úSı©ş?W~?Ó¢ç‡óâ‘À ³+vg=!?Aÿ³ƒesòùõ&Jç®á²»çßLªó3Gñ¥óæè|‡?Ëş,û³ìÏ²?Ëş,ûß¶ŒïçÏqsêoxxx€3Â%Äk¸==s¤:û¢âÉÉ(K—HšüPK    bAp]è~ğÄ^  ²	  (   evidence/docker/A_baseline/findings.jsonÍVMÛ6½Èè’C×2)ë¶It6Š@“c‹Y‰TÉ‘İEÿ^P¶¯»›ö’“aÎ¼áÌ›yC}~ù Ú¡A'U&(J!JX2q>âó5›§œ§l'3¾\Î`,e,ºi`^
+ÜY/àgÅRLÔ£SiliúÄ·ØôÓ¹Ÿß¿™_l¿Ã¶ö:áåÏƒJİø¼×µo$‡¾¾=ú'73xÏª_¢ÄhûEÓOœ¶…~>QYD¬Ïá1ºÉî[àÃöĞ«†(^Ş“¦ûcÆÇÃcŞßVƒ)è¹A²l€‹›ö{Ó·xkãb[ÜÿüÈé?ÕŸêOõ§úSı©ş?W~?Ó¢ç‡óâ‘À ³+vg=!?Aÿ³ƒesòùõ&Jç®á²»çßLªó3Gñ¥óæè|‡?Ëş,û³ìÏ²?Ëş,ûß¶ŒïçÏqsêoxxx€3Â%Äk¸==s¤:û¢âÉÉ(K—HšüPK    |Ep]è~ğÄ^  ²	  (   evidence/docker/A_baseline/findings.jsonÍVMÛ6½Èè’C×2)ë¶It6Š@“c‹Y‰TÉ‘İEÿ^P¶¯»›ö’“aÎ¼áÌ›yC}~ù Ú¡A'U&(J!JX2q>âó5›§œ§l'3¾\Î`,e,ºi`^
 “iCèö¢È<Jk”R˜µæ­Ğª¬Ş¬Så}n¥0é\´QÚì2iknNÚãR“ÃìŞØCj‡Q
 ŸÃy¸ÒÖNb¶ÕE80\^9íq$ˆ„¼•Úèø“·¦Íñ©å2n‚Ÿƒ$”¹ÑÕøU~ Qa…ºFKg«8™¬’ÒÕ”[`VZ¥·U†••!%¾XM—lÆ“U¼XòdÅÇÔIP~nî‹Âù—3ê‚õÏÖ½ãèdÀ÷Ö{½)ÒÁº{ğèöZ"(í¥İ£{è³;Q¥«€ä‹$æË˜Å‹‡Fi%³¶GGŠbÍÙt>‡{tš‚íTº.FÜk…Fâ‘@¶q¾f«”MÓ„Áİ»·¿Â»>i)($”„
 ¶Î–pJÄNhã	*ëÈC’Ü,ÙÍt:¹™LØ0BÌL]nĞ‡´1´µ5™«Û¹Zç…İ´†BlxeËäU<ÿBZ#ÊÆÚ÷¡ëÈt¤*$i9huc;ù÷‡OÀ®¹¶vEpÈ‰*ŸÇ­âÆ[·kñã¦’ñEOúïLAGŠ*A„ÎŒF…Øp1¢GPè¥ÓU <@oÕN£‡R<@QVd!ÌéíC?¶\mŒ6;°––rëÉƒ0
 
 +Eqœtm¶Nxrµ¤Úáe«¤Ã°ó¾À Ø”±˜1öÇ¦ï7Bu]©Iœ\˜kïë*;‰ı7ô¶Ø÷ƒşa}÷{×áVúO)}ãjÂÑÖ:Ù±6=¡O*}6ğè¶wõÇıœ5À9»²~Ò»üÊ˜@{%ôày8 ÃkâŸÛz©ã[‚…'¸¼	G9‚%BKÜ½RØç%ûuh ¼x¦”ß8l]p+%zÿï’¾tÿ_Òæœı'i?ÆÁÒ®}7ŸĞÎç) ö°ÇA4…¿B6ï®‡CæØ9Â!Ô&|°îÜ
-¹ğ9¶>v–7ªïCúüì!ıfé‡Ÿ/_|ùPK    cAp]‘k+È   í   1   evidence/docker/A_baseline/screenshot-capture.txtÍÑJÃ0àûÁŞ!`kOµ]—;™»¡ ^x¤¤É¿.ØæŒ$vúö¢÷|ïÔÜµ®kj5µ·UGT5eG÷úØ÷/½¶²\$ äÄp¤Äë˜+±´VSU}¨g1îìlV<-fÂ›:?Ãİ(Ä(QıiÕìvÛMGûºQãOFR×èsFPYÔÉÏPÍ¯	1ñì%.ü(ökù¿âğÍuU·QA-\{6™±z‡`ÁNì'"?£I˜} ;“Î£˜èÊK˜¶›_PK    =8p]"›ÊÍ   ×  '   evidence/docker/A_baseline/security.logÑAjÃ0@Ñ}N1pÌh¤Æ®wİºq!´t-,Ùu4A3&äö…ÒBkÒM.ğÿÒn‹ÍÖ˜W|ì;ƒğÜï_àMbÑ%Ä¬0ó4Å )ƒ,ÃEÆe¯0>i¨6mµÁıÕ¨3ŞŸ=ì}šc€³¹p	0rÂ¬+âÎ\œ#k@äH7Dw¯Hÿ‰í½¢½)º¾öQ/\>@Ÿ!DƒÆ°âğ“OYô‹ ªZ¬œ³•µ¸[ÛMgí¯?>œRN¢Å+—ŸK¼èæPK    fAp]áŸÚ±  ×
+¹ğ9¶>v–7ªïCúüì!ıfé‡Ÿ/_|ùPK    |Ep]æíÆ®   Æ   1   evidence/docker/A_baseline/screenshot-capture.txtÊÁŠÂ0Ğ½à?¼ÚW§µÁ…a` ›YL¤¤Éµk^IBeş^<ëóÇõ®iUUq£˜¹Ù–-sY-¨S×ıtÊÊc–€“†Ñ#%½©G°âk—å…¾Å¸S°“Yp~˜¿t5~‚Ûb”HïMõ~¿^µüYÕ4üg$zFŸ3e¡«Ÿ@_O‰÷4‹ƒÆâ‚…vbïˆúØ&aòÚ™tÄDWÌa\¯^PK    |Ep]"›ÊÍ   ×  '   evidence/docker/A_baseline/security.logÑAjÃ0@Ñ}N1pÌh¤Æ®wİºq!´t-,Ùu4A3&äö…ÒBkÒM.ğÿÒn‹ÍÖ˜W|ì;ƒğÜï_àMbÑ%Ä¬0ó4Å )ƒ,ÃEÆe¯0>i¨6mµÁıÕ¨3ŞŸ=ì}šc€³¹p	0rÂ¬+âÎ\œ#k@äH7Dw¯Hÿ‰í½¢½)º¾öQ/\>@Ÿ!DƒÆ°âğ“OYô‹ ªZ¬œ³•µ¸[ÛMgí¯?>œRN¢Å+—ŸK¼èæPK    |Ep]áŸÚ±  ×
   1   evidence/docker/C1_below_threshold/dashboard.html­VYoã6~ÿ0uĞE‹F¶(ßò{ A³í[A‰#‰,jÉ‘ûßR–âu¼À¢(Xôpæ›oNyşƒP1íK„ŒÖùòòbnŸó"]t°è8	raŸk$qÆµAZt*J¼I§•gD¥‡Ÿ+¹Yt4&MÖX„-:ıgÅ‚¯qÑÙHÜ–JÓ‘ÎV
 Ê72FÏı¸YH’<÷LÌs\0‡B’r\Şñ‡‡¯á7Y¤¸ó^}wy17´w‡H‰=<A¢
 ò¾–ù>„-y~†Æ3¨e2ƒ5×©,BånS­ªB„p•’Q2™A¬r¥C¸bI0ígğåò"cğt0õ"E¤Ö!Œ,À—Ë‹®©"ÇZÓA4ú³S“IkBœ*ó3ğ˜ka„4eÎ÷!$9îfò2æ\[·ÕV`¿_8«#l°àé«`·™$œAÉ…EsÔ"¥jOs!+slÖ²¨‹dµœ$R;Ïd\¨m>åÎ:øOşµıtıÉÏG®iU¤MqŒüC†©.ÊUüØ†@ª|Î/ñÈå¶áàû?¶Lc•ç¼4Bsšóû	ÛV$—,ç VîÀ¨\
@@ -1061,20 +1066,20 @@ WsÇËå¹ì(ÌqÓ°'¨~us€ìõGk”·)ÄßÙ]	Õ0QvŸ³œ	”JVÉÒ’‰Šô}«`{ŸD9HHu½KK;ŞšÜËÚ
 Y­_¿ô{R,ß´õ®aÜË÷¦°;Âš&—TÊ–WóeK{º‰In¬»Fğà
 
 ·ŸZÉqo:a±â1ÉøÙ®áİ
-ê¢©Çªleo7R`cÓ«õ63Fz9'a£'áNŸ”1Ò.½i«ô#Ôö]i×el'{ßª²qĞe“®ß·¢9‡Lc²èØµ	{½º7»kI»J§=jÛ±·bş`Ôë qÚwı_QÎ‹ÇÎÒÉÁƒoğeëòHzÔnŞ£Qù$Z­İĞ·W®¯ı±ÇØÊŸ†ş |¸ığîcëÚøaà€ç¨§\†ÀşÅ0×ÿz0è_÷ûş¨öÑ&¾Éw¯é–º«îù0®lEáN¥MO•OÉù!;ûİ C•À‚ WiŠd¦Šc4&©ò|B•ù—'pAÈüqsÿŞq™£€’³UZ@¢4h¥ècèÂ„Á è30&ÎAş+dpòÿ¬ÈğqØïe”»Ain—û!¯ª"[5[ûlËèşÇşPK    fAp]¬Êpéš  ·  0   evidence/docker/C1_below_threshold/findings.json•TMoÛ0½è|éaµ#9ŸömÀ0 ÀÖkÃ†BP%&Ñ"KD§Šş÷AvgKt'||Ôã#éÇ‹7„$k°à‚â“’$9Íg)c)›-é¬d¬¤E–O‹Åtú–Ò’Òäª¥),×Áï„á¤³*$%™vğJhŠ×"„çÇ‡°qF%%R´UÚ®¹t/³.\iôÀ·Ö=PkHJòãñI×x	|¥MŒ&¯½
+ê¢©Çªleo7R`cÓ«õ63Fz9'a£'áNŸ”1Ò.½i«ô#Ôö]i×el'{ßª²qĞe“®ß·¢9‡Lc²èØµ	{½º7»kI»J§=jÛ±·bş`Ôë qÚwı_QÎ‹ÇÎÒÉÁƒoğeëòHzÔnŞ£Qù$Z­İĞ·W®¯ı±ÇØÊŸ†ş |¸ığîcëÚøaà€ç¨§\†ÀşÅ0×ÿz0è_÷ûş¨öÑ&¾Éw¯é–º«îù0®lEáN¥MO•OÉù!;ûİ C•À‚ WiŠd¦Šc4&©ò|B•ù—'pAÈüqsÿŞq™£€’³UZ@¢4h¥ècèÂ„Á è30&ÎAş+dpòÿ¬ÈğqØïe”»Ain—û!¯ª"[5[ûlËèşÇşPK    |Ep]¬Êpéš  ·  0   evidence/docker/C1_below_threshold/findings.json•TMoÛ0½è|éaµ#9ŸömÀ0 ÀÖkÃ†BP%&Ñ"KD§Šş÷AvgKt'||Ôã#éÇ‹7„$k°à‚â“’$9Íg)c)›-é¬d¬¤E–O‹Åtú–Ò’Òäª¥),×Áï„á¤³*$%™vğJhŠ×"„çÇ‡°qF%%R´UÚ®¹t/³.\iôÀ·Ö=PkHJòãñI×x	|¥MŒ&¯½
 D!·i¥­Î~g;¥¸‰”Q[|ô&‚ÜXı«£¾¼‡Œê%»h9-²|\äsvjWÛ®^9¥W‡ÚÉ(‰Í‹É‚NY^dóË6?JGMt4ùØ¾—ÄøÓ_ÖEôG—~ğhÀ"ñ‹Aß ğÁù-	àwZQ:H·¿ïÕVé:2Ù<ÏØ"£Ùü$C
 «´¼›ÑÑ¢ÈX2:™–ƒxûˆ}¥›ê„V`%¤ó”±%-J:)sJ®o>|&7½h),Q€ YyW‘Ak¡m@R;äùÕ‚^M&ã«ñ˜Ê1Ú·Mu>)Éd ºÂÚYî›n¯– Æ­‰tcmriŸSr™”…!]ŠU‹öÍİ&òş™‰Š
-‰ZŒºÅ†ü>x7;J|æå²71aƒX‡r4êî k±ÌùõèØKµŒÎ*Ô¿¹®¨ˆàmšqÏDŠÏ:  H¯ëhy¤¾S;ğAxTbOb‰ªF‚ÄA½Ú÷kˆo¬ÕvMœ%*‡@6.` Â*bœæ¸éÚ®¼è‰‡óQIñŸ÷ïÆ‹-)Í(¥ßÏ8ıñş)vwh5Ïò3Ø8·mj>ûWÎìúE¿]^;Lø)~î.Ş<ıPK    cAp]&H,ˆÊ   Š  /   evidence/docker/C1_below_threshold/security.logĞÁJ1€á{¡ï0°]&“Ø­¹y)ô²Q<‡Mvn3%3KñíQĞÚ“/ğÁÿÒvƒİÆ˜'¼÷ˆŞ úı%U]b*
-3OSŠÈ2Id\æùÆÊ'0µf×bkp½¢ßycàåá±‡}ÈsŠp"®F®P™õÊ¸ƒ3WçÈy¥[¤û/I·Içé+ºOzáú2„1i4Å+¯ƒ0…\D?]¢f‡s¶±·ğÎ[ûãhˆ§\²hÊõû+/º^} PK    iAp]£Íz¾  *  3   evidence/docker/C2_different_sources/dashboard.html­VYoã6~ÿ0uĞ¢E#[”ÏÈìÍH\´o%$6²¨%G>ì/HY²×ñ»@aÀ¢†3ß|s‘šı TL»!£U¾¸¼˜Ù'ä¼Hç,:N‚\Øç
+‰ZŒºÅ†ü>x7;J|æå²71aƒX‡r4êî k±ÌùõèØKµŒÎ*Ô¿¹®¨ˆàmšqÏDŠÏ:  H¯ëhy¤¾S;ğAxTbOb‰ªF‚ÄA½Ú÷kˆo¬ÕvMœ%*‡@6.` Â*bœæ¸éÚ®¼è‰‡óQIñŸ÷ïÆ‹-)Í(¥ßÏ8ıñş)vwh5Ïò3Ø8·mj>ûWÎìúE¿]^;Lø)~î.Ş<ıPK    |Ep]&H,ˆÊ   Š  /   evidence/docker/C1_below_threshold/security.logĞÁJ1€á{¡ï0°]&“Ø­¹y)ô²Q<‡Mvn3%3KñíQĞÚ“/ğÁÿÒvƒİÆ˜'¼÷ˆŞ úı%U]b*
+3OSŠÈ2Id\æùÆÊ'0µf×bkp½¢ßycàåá±‡}ÈsŠp"®F®P™õÊ¸ƒ3WçÈy¥[¤û/I·Içé+ºOzáú2„1i4Å+¯ƒ0…\D?]¢f‡s¶±·ğÎ[ûãhˆ§\²hÊõû+/º^} PK    |Ep]£Íz¾  *  3   evidence/docker/C2_different_sources/dashboard.html­VYoã6~ÿ0uĞ¢E#[”ÏÈìÍH\´o%$6²¨%G>ì/HY²×ñ»@aÀ¢†3ß|s‘šı TL»!£U¾¸¼˜Ù'ä¼Hç,:N‚\Øç
 ‰CœqmæŠoÒiåQéá§J®ç‰F“u VaAóNÿ XğÎ;k‰›Ri:ÒÙHAÙ\àZÆè¹—k…$ÉsÏÄ<Ç9s($)ÇÅ=€qxüğ
 ^s“EŠk1ëÕ{—3C;·ˆ”ØÁ3$ª /á+™ïB¸Õ’ç×`xa<ƒZ&SXqÊ"„`Pn§ñø)Õª*DWÉ %“)Ä*W:„+–7ıñ>_^d÷¦^¤ˆÔ*„‘ø|yÑ5UäØÀsk:ˆ†ÃQzj2iMˆSe^b~£s-¬‚¦Ìù.„$ÇíR^†Àœk+ğ6Ú
 ìÿgu„<ì&“„S(¹²HC`Z¤´@íi.deB`ÍJu‘¬–“Djë™Œµ	Á‡ ÜÚÀ@§ÿÙ¿¶¿®?ùåÈµ!­Š´)‘ÿbÁĞ"µÑE¹ŠŸÚH•‡ü\n¾ÿcË4VyÎKƒ!4«é¹0¿°mErÉrB`åŒÊ¥€+ÁÄPDGI»±	·äñ\¦E9&4…5j’1Ï)©r}R„+â#·Yj<İeŒM‚ñ¡“›„'Çşë>8[4µFäjãmCà)çƒu('õššõšÀN“;ØWæ/cv[È5Ä97fŞi¦ ³xµ‹sƒ@Â˜¤*`#)ƒµTBÆğînùğn—ËŸ^ıË»¿`ŠÌzB®OQİ ¸Ó î¢Å=7´ÇVLÌ‹Ğàö ğƒ‘Ç˜ÇFK2²A7ÿ«ï‡¾?‹ô”s^{8Â¸W\ 8§©*ã‘&„ºÔÒ Ç‰xüä­d!»ÿU|i¾Ä8+ä§
 äı˜òOµpúzh~8¼éı›`ÌêĞlõêü}™AwØœŠ;‹¥"C"ÛP¦áÀZ¯ä9ÛßdšÁ5jI»ÆÔÿ&Ów(dµzaüÒïQHY°xİvÔÛ†q/ÜMaÏ·h˜\R)[\Íz”-ìê6&¹¶îÁ£+(Ü}l%Ç½é„5Æ’Ç$ãƒ]Ã»ÔESOUÙÊŞ¬¥À"Æ¦W3ê63Fz1#a£'áV•1ÒzÒFé'0¨í]iËØNö®Ueã Ë&]¿;nE3™ÆdŞ±µ	{½º7»+I»J§=jÛ±·dş`Ôë qÚ»şï(çÅSgáäàÁû=ƒÇ=ƒ×|Ñº<’î%u…Û×4*_£€D«•úvËõµ?ö[ú7¡?îŞ¿ıĞº¶#¾øà5ğ”ËÂØOAp=ñ¯ƒşu¿ïjmâ›|÷šn©»êoàãÊVîUÚôT©ñ”œ²=¹?j0T	,r•¦(@`ª8Fc’*Ïw'T™yq„ŒÁŸ·ïá-—9
-(¹1¥$JƒVŠN0†.L‚>c²àäà» GÈà«“ï‚œ ûç!ÿÏ"¿ ‡ışQ‘¸°‡²!Íí}±/•ªÈ6‚-±}¶á>ÿPK    iAp]i?†™  ·  2   evidence/docker/C2_different_sources/findings.json•TMoÛ0½è|éa±#9iœø6`P`ë†5‡aCa¨“p‘%O¢ÓEÿû ;_[Z ;àã£I?^¼a,Y‚/	t%))Y’ó|’
+(¹1¥$JƒVŠN0†.L‚>c²àäà» GÈà«“ï‚œ ûç!ÿÏ"¿ ‡ışQ‘¸°‡²!Íí}±/•ªÈ6‚-±}¶á>ÿPK    |Ep]i?†™  ·  2   evidence/docker/C2_different_sources/findings.json•TMoÛ0½è|éa±#9iœø6`P`ë†5‡aCa¨“p‘%O¢ÓEÿû ;_[Z ;àã£I?^¼a,Y‚/	t%))Y’ó|’
 ‘ŠÉœOJ!J1ÎòI1Îù[ÎKÎ“AGJÚ
 -ßHSPÎê”ìª‡èª‘!<8¯+Zy+gtR²Ñ.­F»¬”km|YôáÉCµ¶îÁ€^BR²ÇOºÖ+¨hb4øxã1@*‰¤Z§5ZÌ~g{GJ#i)Ã®øğ5Lµ²ø«…ƒ¾|'õKvñòj–å£Y^ˆS»ºvTµÓ¸@Ğ4NEI¢˜§üJä³¬˜Š|&Šƒt’ÔFG“İ{IŒ?ıe]Dôé;X$~q!à½fœ_³ ~ƒ
 ˜Æ Üüv¯îh6‘)Š<ÓŒgÅI†’V£–U?£ƒE‘1|<9-ğHÛˆ}m}Â5Xy‘
-1ç³’Ëœ³ë›ŸÙÍ^´’–i Pš-¼«ÙQ“K‰6kœ§Àò|0åƒñx4ø©ƒ*ÛÖ÷àKÚ}at¶òm¿Wó0ã–L9K±6»´Ï)¹ÌNÊ¿Â>ÅÊºC÷Íİî&òş™‰ìŠJE¨NFİaÇü}ğîHì)ñ™—Ë¶ŞÄ„QÊá°¿ƒ¬Ã2ç—ÃC/aØu2<«W:Ù]Q#‰ÀÛ45ò^È”u@CP›hy¤¾ÓğAz„Àj¹e±Dİ#Çâ.¶ûµÌ·Ö¢]2g™‡Ú°•˜´š§¤9l:Ú…—|«¨õp>*å!şóş]Àx±%ççüûg¼ÿEŠİíZÍ³ü6Î­Û¦:ûWÎlö‹~;¿ş¶›ğSüÜ]¼yúPK    fAp]kPÖ   İ  1   evidence/docker/C2_different_sources/security.log•ÑANÃ0@Ñ}¥ŞaFã±I‚wl*±	umÅN°HíÊ3QÅí‘¨´”E/ğÿR³Áv£ÔŞ[D«ûí¼r(À²øæ<MÁCLÀË0æq™çKŞƒj©V]µÂõŠÎ9²JÁîá¹‡­‹sğppÌÇ\<Œ¹@ÉY.Œ;8ä"`iÌot47‘Í‰¤Éî&²;‘ú:i,}wìƒsy\$ü…×‚›\L,_.QÕaeŒ®´ÆæŞZ­Mr~Sd)NrùY•Y¯>PK    lAp]7ÔlE  ^  6   evidence/docker/C3_new_source_threshold/dashboard.html­WmoÛ6ş ÿáæ`Ã†E6)¿Ä–_€,m°`}CãaÃ¾”x²¸È¢JìxAÿû@Ú’×ÚbÉGŞs÷<wGÚ“ï¤NhS"d´Ìgçg÷„\‹i‹–· î¹DdÂX¤i«¢4¶{FTø¡R«iË`jĞf-HtAXĞ´Õİo,Ä§­•Âu©ìY+IÙTâJ%ø— 
+1ç³’Ëœ³ë›ŸÙÍ^´’–i Pš-¼«ÙQ“K‰6kœ§Àò|0åƒñx4ø©ƒ*ÛÖ÷àKÚ}at¶òm¿Wó0ã–L9K±6»´Ï)¹ÌNÊ¿Â>ÅÊºC÷Íİî&òş™‰ìŠJE¨NFİaÇü}ğîHì)ñ™—Ë¶ŞÄ„QÊá°¿ƒ¬Ã2ç—ÃC/aØu2<«W:Ù]Q#‰ÀÛ45ò^È”u@CP›hy¤¾ÓğAz„Àj¹e±Dİ#Çâ.¶ûµÌ·Ö¢]2g™‡Ú°•˜´š§¤9l:Ú…—|«¨õp>*å!şóş]Àx±%ççüûg¼ÿEŠİíZÍ³ü6Î­Û¦:ûWÎlö‹~;¿ş¶›ğSüÜ]¼yúPK    |Ep]kPÖ   İ  1   evidence/docker/C2_different_sources/security.log•ÑANÃ0@Ñ}¥ŞaFã±I‚wl*±	umÅN°HíÊ3QÅí‘¨´”E/ğÿR³Áv£ÔŞ[D«ûí¼r(À²øæ<MÁCLÀË0æq™çKŞƒj©V]µÂõŠÎ9²JÁîá¹‡­‹sğppÌÇ\<Œ¹@ÉY.Œ;8ä"`iÌot47‘Í‰¤Éî&²;‘ú:i,}wìƒsy\$ü…×‚›\L,_.QÕaeŒ®´ÆæŞZ­Mr~Sd)NrùY•Y¯>PK    |Ep]7ÔlE  ^  6   evidence/docker/C3_new_source_threshold/dashboard.html­WmoÛ6ş ÿáæ`Ã†E6)¿Ä–_€,m°`}CãaÃ¾”x²¸È¢JìxAÿû@Ú’×ÚbÉGŞs÷<wGÚ“ï¤NhS"d´Ìgçg÷„\‹i‹–· î¹DdÂX¤i«¢4¶{FTø¡R«iË`jĞf-HtAXĞ´Õİo,Ä§­•Âu©ìY+IÙTâJ%ø— 
 EJäMDSîQHQ³W".àşí¼6‹µ0rÒÙ®ŸM,müK¬å Õ©Xª|ÁµQ"¿+
 X4*ÃR˜…*"{åãb‘<,Œ®
 ÁEÚKép‰Îµ‰à‚§á¨{5†çg‡§kk"½Œ`à >Ÿµmûlà©qíÅış ;>v6.$¨²Ÿb†¬Ş‘#İ©l™‹MicXˆ2îC;C°6ÎàşlË°Æ‚§gd×™"C)¤TÅ"îS‹µ‘h#¤ªlÜg³TÅ¶Hn—·Äú1°™zƒ°|tÄÀ,bñ#»tm6üé ´%£‹E]«şÅÂ¾CjØÅ¹N
@@ -1083,72 +1088,61 @@ EJäMDSîQHQ³W".àşí¼6‹µ0rÒÙ®ŸM,müK¬å Õ©Xª|ÁµQ"¿+
 c¿X<^åœÃ«}?¦£T¤‡ñ·}p²hz…&Íõ:xŒ@T¤}qĞ¡\öP½yÒ©ghÒ©O 7MşDàŸ™¿Œ»e©VäÂÚi«‚Öìf“ä*‰„	)]ÀZQ%¥¥JàõİüıK¸Ï¸ùîçwÂî™t¤Z£úAñ§Á¶‹f¯„¥¶6`QD€_ƒ…ƒ€ó€ælq…½v8ìFÃŸ‹›Äæ ÊßF8Àx¥…Dyj§®L‚;± 4¥QA$’‡`©
 ÕşÇêâ¹û“¬P*´{ôÃ”ODÚnAŸ§Æ¢ş¨vGáßRsÕÛê÷\A8Í­Ù\“È!U…k([ç6QkÈS¾¿ªEWhmjWşE®¯QªjùÎ”²pö¢é¨Û:ãNú›Âş¥n`ò¢R6»˜t(›¹·ë„ÔÊ…«÷¾ p÷®±ö¦7n1æ"!•ìıê¼Ã¶hú¡*ÛË•’X$XÃt¶uöÖ3Ff6!éØ“ôoï´µÊzÒZ›°hÜ]éËÄMö¦ÙÊ¯Â6¶Yûª1MdÓiË]Ô6êt¶½Ù^*2ØÖfÑ¡¦;sÎzƒNH˜…»ëÿsQ<´fŞ¼Ùep¿ËàÅ>1kBXw–m…›ïÑê|…R£—~è›%ß×ì*à|ÎFëE!ƒ»7·o›ĞnÄw_ìYƒXUX÷ÃB^Ùe¯×½ìvÙ`Ã	_k~ªql*Â Õ®r½P"\–´×x¶Y;l÷ûßª1çì¤Æœ3à—Üº©zcPbá¾Áu’ µÍŠ½/Ñ¶©P9J(…µkm$à
 ²°FƒÇš6,Û{İ|ÃÖ}Ú©§l;ïÅî1©Ü$À+½¨g±4x\Tñ]Q·hÀRåˆ9¹(A`+O0­ò|sTbÎÎÏàÂˆsøãúı¸=¢—jFk:Âèûö€^/ìr°6OAö¾
-r°‡?9ü*Èá²{òÿOÀ¯¢n÷ HBºËÌ’îİ•JW´óã,Ã9gãc}(¡­‰6¶#Ê{Vg˜á7c>«Ç3ÌŞ7cÖ™t\{»g3şçÔPK    lAp]B}Kg  ²	  5   evidence/docker/C3_new_source_threshold/findings.jsonÍVMÛ6½Èè’C×2)Ûk[·M‹ ´iĞø¤š[ìJ¤Jì.‚ü÷‚ú°åõº»I.9æÌÎ¼™7Ôç—/ ¢-t‚Pe‚¢¢„%×#ÎGüzÅ®SÎÓd'‹Ér¹ø‰±”±èªy)L¦¡Û‰"ó(­Q>JaÖš7B¨²Jx¿·Ne”;ô¹-T”Â¤sÑFi³Í¤­M¸9iKM³;c÷ª-F)|çáJ[;‰ÙFá4Âpyå´Ç‘ ònTj£ã¿½5mGH%(q|ü$¡Ìş§ÆùD…ê],-ãd²Læ|HWSnYi•ŞhTVV†”ø|9]°O–ñ|Á“%ŸR'Au`4ú­¹/
+r°‡?9ü*Èá²{òÿOÀ¯¢n÷ HBºËÌ’îİ•JW´óã,Ã9gãc}(¡­‰6¶#Ê{Vg˜á7c>«Ç3ÌŞ7cÖ™t\{»g3şçÔPK    |Ep]B}Kg  ²	  5   evidence/docker/C3_new_source_threshold/findings.jsonÍVMÛ6½Èè’C×2)Ûk[·M‹ ´iĞø¤š[ìJ¤Jì.‚ü÷‚ú°åõº»I.9æÌÎ¼™7Ôç—/ ¢-t‚Pe‚¢¢„%×#ÎGüzÅ®SÎÓd'‹Ér¹ø‰±”±èªy)L¦¡Û‰"ó(­Q>JaÖš7B¨²Jx¿·Ne”;ô¹-T”Â¤sÑFi³Í¤­M¸9iKM³;c÷ª-F)|çáJ[;‰ÙFá4Âpyå´Ç‘ ònTj£ã¿½5mGH%(q|ü$¡Ìş§ÆùD…ê],-ãd²Læ|HWSnYi•ŞhTVV†”ø|9]°O–ñ|Á“%ŸR'Au`4ú­¹/
 ç_N¨Ö¿Z÷££- ßYïõº@0H{ëîÀ£Ûi‰ ´—v‡î¾ÏîH•®’Ï“˜/bÏR¥• ÌÚ(
 ˆgÓëa8Ü¡Ótl¿£Òu90âN+4²ùˆó[¦lš&nß¾ùŞöIKa@!¡$T°q¶„cz ¶BOPYG’äjÁ®¦ÓÉÕdÂ†éÚ`fêrî0¤¡¬­É\İÎÕ*G(ì¤5bÃ+óX&¯âAøgÒºQ6Ö¾¸÷]G~y¤#]P!IËA«ÛÑ¿?üt¶pÍå°µ+‚CNTùt<nu7¶ØºíøP‹7•ŒÏ"xÒÿf::êTT	"tf4*Äš‹=Ê€B/®åz£vè¼p=”âBˆ²" aFHoîû±õàjc´Ù‚5à°´„[O„QPX)ŠÃ¤k³qÂ“«%ÕÏ[%†÷p ƒbSÆbÆØÇ3L/Ş¯…êºR“893ÖŞÕUvûŸèm±ëııêöC×áVúO)}íjÂÑÆ:Ù±6=¡•¾Lb'ñl6ğè¶wõ‡ıœ5À9»°~ÕÛüÂ˜@{%ôàyØ£Ã‡â?d<lë¹o
 àbğ&å^”--pûîIaŸ–x*ì×¡ğ&4à™RşÙa3è¢€)Ñûÿ—ô¹ûwI›söMÒ~Œƒ'¤]ûn>¡ÏcAíaƒh*
-…lŞ]ûÍ¡s„C¨Mø<0`İ©rásl}ì:,oT?†ôùÉCúÕÒ?Ÿ^¾øòPK    iAp]ş€lÿ   Ù  4   evidence/docker/C3_new_source_threshold/security.logÑAjÃ0…á}¡w˜Øb4RlG»nİ¸PR
-İ	KvM+hdBo_(1©Ód‘`>xóR‘c™K¹ÅµA4á¹Ş¼Àûœ&çÇCè:ï §¦ñÌí4ßĞÆ°Y’•@!ññ–)áıéµ†íï`o™!:hC„B:3V°1Ö¤$0Ò%RßD'’®’ÕMdu"ÕeR:ş±öéâpcGp>ù&ywæ•`;Ûœ~]¢¬ÂLk•)…Å?¼4Jı‰dİ®{NÑ¦çTaJÇ;‰9ÑV¢Ai?®Mç¡k(H¬æˆ¸È±0énsÑcaê»Í9ÈPK    oAp]†€c    -   evidence/docker/C4_second_scan/dashboard.htmlÕWmoÛ6ş ÿáæ`Ã†E6)¿Ë/@–¶X±®öe Ä“ÅEUòdÇ+úßÒ–ü’ëŠ}Xô‘÷Üİs/”§_HĞ¶DÈh•Ï//¦î	¹(–³-/A!İs…$ É„±H³VEi0j5òŒ¨ğ}¥Ö³–ÁÔ ÍZè‚° Y«{8XˆÎZk…›R::³Q’²™ÄµJ0ğ?®AŠ”È›ˆgÜ£¢çoD\ÀİO·ğBØ,ÖÂÈig·wy1µ´õ‹XË-|€T¤b¥òm7F‰ü¬(l`Ñ¨t+a–ªˆ ì•ˆEr¿4º*dWi/¤£	$:×&‚+†ãîp//2öªA¬‰ô*‚øxyÑ¶Uì½j/î÷İÉ¹Ê¨Q!A•}Œ²úD"Œt¤²e.¶¤9>L`)Ê¸7íÁÆ8û~dlaN‚İdŠp¥RË¸w-ÖF¢	Œª²pïÍJ»$¹S^ë‡ÀfBêMÂòÁf‹¯Ùµû´Ùè›#Ó–Œ.–ur¬ú#û©‰.Îurß„@º<ğK"öÜÖ>0öeãi¢ó\”#¨W“§Âüt‡])’'Ëˆ€—`u®$\I.û2>"mì<$| @äjYDcJX£!•ˆ¼–’.÷ØgI¸Â>1ö›¥Áó]Îù(ê1§"=¶¿«ƒ'“¦×hÒ\o‚‡DEÚÛGÊeåÈ‹§º‡¦z¸nò?ÓwÛR­!É…µ³Vİ­ùí6ÉU	Rº€¢J4JK•À¯ï^ÂÍbñÕíp·xıì§È´#ÕúÕ7ŠŸ»*š¿–öØÚ€MD¹ ü„,œ|°`ƒˆó(·ÃqØño‹›ÆæÊßY8Âx£…DùÔI]™NbAhJ£,‚H$÷ÁJªı§ÕÅ©ú“¬Pï+´{ôc—Ÿ°´;‚Eıq;ìÃá>4—½§úAâ8·æM"‡T® líC·±ZC>¥û½Zf`qFÑ¶VåŸ¤ú#JU­)‡”BÊÂù‹¦¢^Õw²ĞßnFøE]ÀäI¥l~5íP6w«›„ÔÚ™«w>¡ğúçFr\›^¸ÃXˆ„TrĞ«ın»¤éûªld/×Jb‘`ÓÙyÔ9xX÷™ù”¤£¤_ı¬­UnèHmîÁ¢qw¥—‰ëìms”Ã6µY{Øˆ¦2ƒé¬å.ju:»Úl¯lk³ìPSg½A§$ÌÒİõÄ¹(î[s/‡ Şî=¸Û{ğâà˜7&¤{É.ÃÍÏwhu¾F	©Ñ+ßôÍ–¯k68_°qÄzQÈàõÛW?5¦]‹ï¾8Db)Ta	Ü+†…0¼±ë^¯{İí²ÁÎ†#¾æ8ü,Ça›µÃöğÿÍ1gA.8‹X1öû?“Ü„ıÉùí>æ76aj×i¹^ª®JzÄo¿ÿ¹ürÎä—s|ç<€WÎƒFoJ,Ü['Ü$	ZÛì¸Ñö)¼v!*G	¥°v£\cA6hğ:ûıö7?ê9Ğ©§ØnÚ½¸Ã¤r“Şèe=ëJƒçMÃ"¾oš_,°T¹ÀİK” 
-°•0­ò|{ÖBœ]^œÁ…çğëÍ»·ğê,¼T0ZÓFßWôza—ƒµYødï_Aá³£9:@vŸ†ü/‡Ï#ğaÔí%IH÷²`É÷³O•®h¯wèVî»õÙ@	-WØ>PÆØI:N0ÃÏÆ<ÉÇ	fï³1OòßO*×]®oÜ³i7ÿ?øoPK    oAp]IÁõˆ  ™  ,   evidence/docker/C4_second_scan/findings.jsoní—KÛ6€ïòºäĞ•LÒöÚÖmÛ"èm4>	&Ç»©’”Eÿ^PO;^w7mQEN†9ÎëPŸ?ˆv¨Ñr2ã>J!b„]Ç”ÆôzM®SJS¶JØŠÍ—ôBRB¢«ÆÌ	®3¥=Ú=/2‡Âhé¢æ­xËU2«¸sceæs‹.7…ŒR˜v*JK¥w™0µöãq©¼ÅìN›Cr‡Q
+…lŞ]ûÍ¡s„C¨Mø<0`İ©rásl}ì:,oT?†ôùÉCúÕÒ?Ÿ^¾øòPK    |Ep]ş€lÿ   Ù  4   evidence/docker/C3_new_source_threshold/security.logÑAjÃ0…á}¡w˜Øb4RlG»nİ¸PR
+İ	KvM+hdBo_(1©Ód‘`>xóR‘c™K¹ÅµA4á¹Ş¼Àûœ&çÇCè:ï §¦ñÌí4ßĞÆ°Y’•@!ññ–)áıéµ†íï`o™!:hC„B:3V°1Ö¤$0Ò%RßD'’®’ÕMdu"ÕeR:ş±öéâpcGp>ù&ywæ•`;Ûœ~]¢¬ÂLk•)…Å?¼4Jı‰dİ®{NÑ¦çTaJÇ;‰9ÑV¢Ai?®Mç¡k(H¬æˆ¸È±0énsÑcaê»Í9ÈPK    |Ep]†€c    -   evidence/docker/C4_second_scan/dashboard.htmlÕWmoÛ6ş ÿáæ`Ã†E6)¿Ë/@–¶X±®öe Ä“ÅEUòdÇ+úßÒ–ü’ëŠ}Xô‘÷Üİs/”§_HĞ¶DÈh•Ï//¦î	¹(–³-/A!İs…$ É„±H³VEi0j5òŒ¨ğ}¥Ö³–ÁÔ ÍZè‚° Y«{8XˆÎZk…›R::³Q’²™ÄµJ0ğ?®AŠ”È›ˆgÜ£¢çoD\ÀİO·ğBØ,ÖÂÈig·wy1µ´õ‹XË-|€T¤b¥òm7F‰ü¬(l`Ñ¨t+a–ªˆ ì•ˆEr¿4º*dWi/¤£	$:×&‚+†ãîp//2öªA¬‰ô*‚øxyÑ¶Uì½j/î÷İÉ¹Ê¨Q!A•}Œ²úD"Œt¤²e.¶¤9>L`)Ê¸7íÁÆ8û~dlaN‚İdŠp¥RË¸w-ÖF¢	Œª²pïÍJ»$¹S^ë‡ÀfBêMÂòÁf‹¯Ùµû´Ùè›#Ó–Œ.–ur¬ú#û©‰.Îurß„@º<ğK"öÜÖ>0öeãi¢ó\”#¨W“§Âüt‡])’'Ëˆ€—`u®$\I.û2>"mì<$| @äjYDcJX£!•ˆ¼–’.÷ØgI¸Â>1ö›¥Áó]Îù(ê1§"=¶¿«ƒ'“¦×hÒ\o‚‡DEÚÛGÊeåÈ‹§º‡¦z¸nò?ÓwÛR­!É…µ³Vİ­ùí6ÉU	Rº€¢J4JK•À¯ï^ÂÍbñÕíp·xıì§È´#ÕúÕ7ŠŸ»*š¿–öØÚ€MD¹ ü„,œ|°`ƒˆó(·ÃqØño‹›ÆæÊßY8Âx£…DùÔI]™NbAhJ£,‚H$÷ÁJªı§ÕÅ©ú“¬Pï+´{ôc—Ÿ°´;‚Eıq;ìÃá>4—½§úAâ8·æM"‡T® líC·±ZC>¥û½Zf`qFÑ¶VåŸ¤ú#JU­)‡”BÊÂù‹¦¢^Õw²ĞßnFøE]ÀäI¥l~5íP6w«›„ÔÚ™«w>¡ğúçFr\›^¸ÃXˆ„TrĞ«ın»¤éûªld/×Jb‘`ÓÙyÔ9xX÷™ù”¤£¤_ı¬­UnèHmîÁ¢qw¥—‰ëìms”Ã6µY{Øˆ¦2ƒé¬å.ju:»Úl¯lk³ìPSg½A§$ÌÒİõÄ¹(î[s/‡ Şî=¸Û{ğâà˜7&¤{É.ÃÍÏwhu¾F	©Ñ+ßôÍ–¯k68_°qÄzQÈàõÛW?5¦]‹ï¾8Db)Ta	Ü+†…0¼±ë^¯{İí²ÁÎ†#¾æ8ü,Ça›µÃöğÿÍ1gA.8‹X1öû?“Ü„ıÉùí>æ76aj×i¹^ª®JzÄo¿ÿ¹ürÎä—s|ç<€WÎƒFoJ,Ü['Ü$	ZÛì¸Ñö)¼v!*G	¥°v£\cA6hğ:ûıö7?ê9Ğ©§ØnÚ½¸Ã¤r“Şèe=ëJƒçMÃ"¾oš_,°T¹ÀİK” 
+°•0­ò|{ÖBœ]^œÁ…çğëÍ»·ğê,¼T0ZÓFßWôza—ƒµYødï_Aá³£9:@vŸ†ü/‡Ï#ğaÔí%IH÷²`É÷³O•®h¯wèVî»õÙ@	-WØ>PÆØI:N0ÃÏÆ<ÉÇ	fï³1OòßO*×]®oÜ³i7ÿ?øoPK    |Ep]IÁõˆ  ™  ,   evidence/docker/C4_second_scan/findings.jsoní—KÛ6€ïòºäĞ•LÒöÚÖmÛ"èm4>	&Ç»©’”Eÿ^PO;^w7mQEN†9ÎëPŸ?ˆv¨Ñr2ã>J!b„]Ç”ÆôzM®SJS¶JØŠÍ—ôBRB¢«ÆÌ	®3¥=Ú=/2‡Âhé¢æ­xËU2«¸sceæs‹.7…ŒR˜v*JK¥w™0µöãq©¼ÅìN›Cr‡Q
 Ãy¸ÒÔV`¶UE80\^Yå0æŞsq—J«ä7gtãhRqŸ“Iã|òK"×ê÷‡øX/*——ÊEÒù*aÓ[œ”«I·À¬4RmÊ+#BHt±š-Éœ²U²XR¶¢‹!tÏ}*ıØÜ…óO'¥Òw­zW£Q_çÔ¦@ĞèÆŞC»WA*'Ìí}İX*UKº`	]&$Yi®¥’ÜcÖöh(Q°XS2»>v‡{´ÊßÙO(U]	q¯$jCÉ"¦tMV)™¥ŒÀí«—?Ã«>hÁ5Hô(<JØZSÂğWÚy¨Œõ»Z’«Ùlz5’ãp
 ¥1Óu¹A;i#h+£3[·sµÎ
 ³a´¾á…~(’É‘û'¤UÑ¼l¤}roº|ÿ@G:§\x%ZİÈFışğıhØš„k.»­mrï+—N&-I#KŒİM†\Ü¤ÉdræÁyõ!Sè¨£¨âŞ£Õq\ğå±°°ª
-%¦7rÖq«ĞAÉï!¸(+Ş@˜¯¶÷ıØ:°µÖJïÀh°Xçp-¡0‚Ã¤+½µÜy[_[<o•°vŞçˆM	I!oÏlzx¿È(d×¥Êv&.Œ¹««l„ıt¦Ø÷ƒşf}ûk×áıôKHÂ’Å¿D:%1ckJRÂRBŞ>úß%Ô/RNÉWÌ¿bş¿Ä|ckñÖXÑ±Ò}AÃ|>?Òèi©Ş`OÙ”’;àµË/l€)´WBÿ.Ü£öhñøóùq[Ï9¾ñP w.:oÜùÁñ¡-Ü¾~ìÓOÁş64 ^†<åï,6ƒÎ¸ûs¤ÏÕÿÚ”’¿„öC5xíÚuó	í|qÚÃŞdşrÑ<¯rÔCçp‹Pëğ ÁØS)äÜåØê˜MXŞ(ÿèÓ“÷ò£~Ş?öéPK    lAp]”s·¶  2  +   evidence/docker/C4_second_scan/security.logÑÁjÂ@Æñ»à;Ì˜03»š¸·^„^,K¡·%»jhÌÊÎéÛ$¢±JÑ˜|ógäY†EF´Â¹A4„ğº\¼Á‡ø’:çÛMØl¼ƒºéªÊ‹¬»¦ùu; ‚s*sÌ	Ç#rlˆàóå}	[7ŞÁŞŠBt°béÊ˜Â>ÄZ³"Ùò-R?DÎÎ$ß%Ë‡ÈòLªÛ¤6ÜÿqéÓ!ÄoÊ¶à|òUòîÊ+ÀnlİJ:ºÌ“'Z«‰R8ûƒF©‹HÖíê¶–m
-ñ”*t©¿#Ì˜W„É ~İš¼œ†Î9Çœóé)"rĞ¥ÉO›ƒS?m‚œM>nÿ·Hw‹ŒG¿PK    ™Ap]Ë¹        evidence/docker/cleanup.txt•Ò±ƒ €áİÄw¸¡+‰88tmºvh A8-8‚XûøM´KV»üw Hv@’õÔ#0FS`FÔ\°²(+ÎyŒù@6½¶ƒQ“E£Ë38‘‹B;0R¢Ô$‚‚[$ïµk!¡µìÓ¢ğ¯Dµ¯hé¹+9Étrq—-ôkæB-SVÇ€Ób
-#ÊõGYƒ;‚éõÖà¼`)t©_qWØˆÁÄ¯în?åóìüÒ$)<B‘goPK    ]Ap]ÓXwy    !   evidence/docker/compose-build.txtİWMoã6½È °½Z!‡"sj7Ù¢‹¢›"=ECr˜–%Cf¶›_H¶cYµó±İ^z%ß¼73|#Rß±Ø†9u,´‹e»"6[²ºj»Y^à8!„aK6›ù‡ªlOOØÇŞÑ!ä,R¦Û½ïÑUsÇ‡ãêŞ·ØÅ1ş`7U“©k°¾eu‹‘ÕmÀšyœ‹”ª¦ÊUÛ¬hG8Ä¥®]°UUÃDfşñ‚¯Xlp—WŸ>K§'§'ï€İ<¥:ÑZ×¹“Y3_JUİ³Ë6«D]×KÇ§½s&”ÚW†­²X+Kv³«úÒÅSä@t<‰’ï'!'I¨g’XPÆˆYj»kQµguå;ìÏ–ù¾mÎe!`¶ª«ÅÀVÅÀ«Ù>äû[6A/êšåvNÍÀÚÑ]µÊİãLOCôş!}ë,vQÈ5»9nMVÕ]Óv}ûÌ~«CÛdú’Ï¼ß6ØLR/GäâLŞ²¯¯~yEß¯î´9×>záyÔ
-¢æÒ…”¼V£äÜI§œp
-Òè˜zp"!Q%Ô~H¡£U[¦ÿ¿ì`ìíQ”ìâ‡‹Ÿ>\ç`_šóÍYĞÃ‡,xaÔüé¤íd”Ü‹ó¼“pG$t¡ôNÁM½™~¿ºşùòã5;Ãår˜DˆQ„ì#.®~ıƒm—Šåãz6ZXGMh`\Ûˆg»¶#­¬'Lã¯Ş-£/Ë¶Ë}rËªşvXcvë5>R·:¼Êx»ûxM•h•ÙÆW¤ƒ	Aú “FĞsÄˆ.
-®A@2*¦dT*“HXj‚ZùˆÊhaî_!c¥Ğ6©ºÛê)¢+=4Â9LÑ+!…’-FR)êS¿åGNA'ã\©¢=®ƒ9Ó*ãpL«s"iŒãV;£¥sBîã>y‹©Ô)WÂ{’GQ28%rïqoj÷±®vrµV\H!*•t2¤Œõ"N’k4É(Àp¥ŞF¥¡I:=-²ÁÅÆÿüP<ûV8¯±oÊˆê¡Yb˜ÿ+¶oFÄ °ã2‡AÛKGôwÚfêÍzÁñãı©'‚a£±ª?¯l" U"ES&+-X)-’¾LÂJä}Ê–àÄñê¸ã½@Dt\E‰´5¢W\J%%ŠÜc†ƒ
-QRÒÁ†Ròã:Ï9Ş”“p‚ÀËÉq_
- L²J
-FÆdÑ!Î•p%¥àE@X†HûW/:¾ŒA‚B¡‡è<x	ÚºH†‹@eJR’«”,Æ¸D
-µçÉ¦E¾Ùñ£L¯¾Ê§²=›ª©MõŞ÷z}£÷rË®ıL6†‡×î¶~‹éNŒ^YoáÙ{O½ö#¿ågc ¢üWÛÍÁÿŒ”ğ¡Îì¢#<ò_â)~ü¢m2VulQåfu{·kÈ8—4!\‹ï:v˜í ê¹ı–q=v¯¾”Ûa¶ƒ¨êôäÃ—*³ĞF:güôäoPK    YAp]®xÏû    "   evidence/docker/compose-config.txtíUM‹Û0½üDèUm¼¥¡èâ”]I‰·íÅ`di’ˆ•5®>²YJÿ{ñGœlH¡=”m¡s0òÌèùÍèüŠH`‰ÀªF„ÖD+´Tó2áôf|3I’dBšÚÆ‘á°kqäÀî• ÇâˆÉİ®DneûFˆç¹õŒ£Á9ê<Ö5È.(Ğx®Ø¢‡o‘ˆ.É€DûĞÁ7&aÃƒöŒ˜ uçÜ£UÏ 1JüSŒ”Êô(9V #3–r`]Ş”Så)ŠPñ.Ÿ¡„CŞTF“„&“ÜÀ#;îsÍKÚmo–®y$œVÊ[ E®qëNòÜnÁ3òFrÏOn\hô#Ş8šŒ|ûşbô1ø:ø+\~±„2(}T@wÌpğ‚ù ‰VÌ¥‘tX¿¾’„Œtš31yíàhéJåFzi­†ªíúğ5(ò¼5Z.Á
-%0¢ÌÖ‚»"÷ãñøä­C©•Û5ˆ£&2:Yô(P3âEİÎØsÎ¿5b]ç4né¥Ë³WMsC	¦w‹yZ|œfÙ—Õ:-îo×óìvµH½f³é²¸[ŞÏ×Ÿ§‹"›ÏVË4cdô®Ïø?¿Ñü¾8Óvu…è…ßşS÷L=ùQà½şöç,ú¼8Š£ùAy"ÚcG? PK    ]Ap]­÷‘ñ   ù     evidence/docker/compose-ps.txtÁJÃ@E÷ó—âÒi&]ÉB1HÁ´’¤İˆ‹éÌĞÓÌ™…îü?Ì/µ5Qè{ğ÷ÜçÊÈ'İAš½5NƒY4µéX#¶¡`3>›‡a8‡u”,ã,ÅpY|;N“¬²,^ŞŒA‘æ›EÒ¿&y—éO©(ãr]Œ_îWyYPÒ«)áª­êÙÒ¿*ûâ+Ó"Ößàıõmà´ÂiiZ±3 ÖwÚ9øJ´ğé×FWœsvıy/í%¢èqR²¯}§YcvLi¯¥7İ¾G<ğíÁÁ÷¤v¦/%”¤Ïµ‡4JGà”| PK    ”Ap]w›ú¾  v  2   evidence/docker/D_simulator_stopped/dashboard.htmlåYmoÛ6ş ÿáæ`Ã†E6IÉoò¥-V,}AãaÃ¾”HY\dQ%);^Ğÿ>¶dÇ/H“¶º"@$yÏİ=w<ááwLÆfYpHÍ,Ÿí2šOG7œ„SfŸ3n(Ä)Uš›Q£4‰×kÔòÔ˜ÂãïK15O×ib™›QÃßlÌéŒsÁ…TfkÏB0“Ÿ‹˜{îÃ9ˆ\A3OÇ4ã#ìPŒ0_Ñ0…ë7—ğŒê4’T±akµvz2Ôfé^"É–p‰Ì—Ğ™È–!\(A³sĞ4×æJ$˜Q5y$(nÑøfªd™³Î’ é$½Ä2“*„3œ¾ßÀ‡Ó“ÃİZÕ‹¤1rBÇ|8=iê2rŞÀ]­DívÇìªôjCM©÷1	ªvÄT1»	]dtB’ñÛLiv¦­À[(+°ÿ÷Œ­"¬°àî^°‹T>€‚2&òiØ¹IÅ¸òe¢Ô!`çÍLä«$Ù]NÉ[O§”ÉEHqk5èèÜş5Qï§-ÓÚ(™O«ähñ/´-R]”Éø¦ÁÈbÃ¯¡‘ã¶ò¡ïkOc™e´Ğ<„êmp(ÌwØ–¢qd9!àâ´Ìƒ3†Y›E[¤õ­‡†ßfbš‡ñÄ`Î•1Í*©‘Å{'	g¼Í»<r‹…â»«ãénê1é'4Ù¶¿ªƒƒI“s®’L.¼Ûhi¤³A·*³€³[Õ¶ª`O“ëøÈùK±]fbqFµ5ªSĞ_.ãLÄÀ¸á±2‡…0)\	ÉD¯^NŞ=‡‹Éä‡ËßàzòòOXw‘a‹‰ù.ª;(®¬ªh|EµYcK:¦yhpk@éx{¸3A“Ğï7„{ò3B!BÃHmA9ã+[W’2Îí”¥ŠùÖN®
+%¦7rÖq«ĞAÉï!¸(+Ş@˜¯¶÷ıØ:°µÖJïÀh°Xçp-¡0‚Ã¤+½µÜy[_[<o•°vŞçˆM	I!oÏlzx¿È(d×¥Êv&.Œ¹««l„ıt¦Ø÷ƒşf}ûk×áıôKHÂ’Å¿D:%1ckJRÂRBŞ>úß%Ô/RNÉWÌ¿bş¿Ä|ckñÖXÑ±Ò}AÃ|>?Òèi©Ş`OÙ”’;àµË/l€)´WBÿ.Ü£öhñøóùq[Ï9¾ñP w.:oÜùÁñ¡-Ü¾~ìÓOÁş64 ^†<åï,6ƒÎ¸ûs¤ÏÕÿÚ”’¿„öC5xíÚuó	í|qÚÃŞdşrÑ<¯rÔCçp‹Pëğ ÁØS)äÜåØê˜MXŞ(ÿèÓ“÷ò£~Ş?öéPK    |Ep]”s·¶  2  +   evidence/docker/C4_second_scan/security.logÑÁjÂ@Æñ»à;Ì˜03»š¸·^„^,K¡·%»jhÌÊÎéÛ$¢±JÑ˜|ógäY†EF´Â¹A4„ğº\¼Á‡ø’:çÛMØl¼ƒºéªÊ‹¬»¦ùu; ‚s*sÌ	Ç#rlˆàóå}	[7ŞÁŞŠBt°béÊ˜Â>ÄZ³"Ùò-R?DÎÎ$ß%Ë‡ÈòLªÛ¤6ÜÿqéÓ!ÄoÊ¶à|òUòîÊ+ÀnlİJ:ºÌ“'Z«‰R8ûƒF©‹HÖíê¶–m
+ñ”*t©¿#Ì˜W„É ~İš¼œ†Î9Çœóé)"rĞ¥ÉO›ƒS?m‚œM>nÿ·Hw‹ŒG¿PK    |Ep]š6p€·   Š     evidence/docker/cleanup.txt•Ò±‚0€á„w¸Áµ‰®Æ¸W} SzVK¯)‡øøFdAp»áËßkÓ ›E0\®T€M7«ùJF¶ ^cnAeËÚi±ì¹ñi;ö¢­§Ng+­PW—ŒuD8	‡`}Êq¡ºÇ%á4<RÉ÷YÉV'{w™B¿Îì©~ª´©]IÈŒ?Êœ^o¾ƒ’†ãíûOœ‘r];ù¨ÎÔm:Mö+`iË4yPK    |Ep]jùkb{  ê  !   evidence/docker/compose-build.txtİWMoã6½È °½Z!‡"ƒ¢h7Ù¢‹¢›b{(Š (†ä0Q-K†Ì´›_H¶cYkç£İ^z3¨7ïÍßôW,¶aNíbÙ®ˆÍ–ìëÍïÙ²kÿ ¿a÷K6›ùûªlOOØûŞÒç¸Y¤L!·{Ûc«æ–=ÆÕo±‹côÁ®«&S×`}Ãê#«Û€5ó8')UM•«¶YĞpˆK]»`««†‰Ìü-ã_±Ø64à.¯>¼–NONOŞ »~Lt¢µ®q'³f¾Z”ªºg–;lV‰º®—ßÎ™Pj_¶Êb­,Ùõ®êWJ‘Ññ$J¾Ÿ„œ$¡HbA#fd©í6¬EÕÕ•ï°{8[>ä»¶9—…€Ùª®[Q¯f×xŸïnØ½¼¯k–Û95kG·Õ*w3Q<
+Ñû›ô¥³ØE!×ìæ¸6YU·MÛõí3û­m“éS>gğvÛ`3I½‘‹3yÃ¾ÿxõÓòüvu‡ Í¹&ğÑÏ£V5—.¤ä­°"í$çN:å„ShtFÇÔƒ	‰*¡öC
+­ÚúOúÿËÆŞnEÉ.¾»øáİå°ö¹9ßìå =¼É‚FÍwÚNFÉ=;Ï;	wDBJïÜDAğQĞ›é×«?^¾ÿÈÎp¹\&b!ûˆ‹«ŸcÛ¥bù0„ÖQ×6âÙ®íˆF+ëÀ	ÓøÔ»aôiÙv¹oAnYÕßkÌn½ÆêV‡W/`w°¿/°©­2ÛøŠt0!HdÒhzÑEÁ5HFÅ”ŒJe	KBMA+Q-¬Ãı+d¬Ú&U·[a"Et¥‡€F8‡)z%¤P’£ÅH*Ebê?ùÄQ“BĞÉ8Wªhë`Î´Ê8\ÓêœHZCã¸ÕÎhéœP{ç¸OŞb*uJà•ğ^…äQ”†ŒÎE‰Ü{Ü›šÃ}¬«œF@­’GˆJ%)c½“äÚM2
+0ÜBi·Q)ChC’NO‹lp±qÀçÅ/…óû–Œˆî›%†ù¿àúB4
+;.p¹½nD›mæíØ¨g¼>ş>uCĞ l4Võİ÷Ê&R%R4e²Ò‚•Ò" áË$¬t@Ş'¡lé)N¼®{İ´ ADÇUÔ˜H[ƒ!:0ÁpÅ¥TRB È=i8¨%%h(%?®ó”×M	1	'l°œGğ¥à Ê$©¤`dLrà\	WR
+^Ä€eˆ´ïuõ¬×Ë$ø zˆÎƒ— ­‹d¸T¦$%I¸ŠAÉÒ¹`ŒK¤P{¼ĞaZä+½¾±ÉÔêêxtBµgQ5µ¨Ş;¥×÷x/¶ìÚ?©Á&ĞğÜÚ½½ÖÏa1}¸‰ÑÛê5<{¯¨—ıÃÈ/ÿ{1@?Pş«íæŸƒ”ğ¾Îì¢#œñ_¡)¾|Ñ6«†:¶¨rG³º½İµaœÂó@šÖè:u˜í ê¹ı’q=f/>—Ûa¶ƒ¨êôäİ§*³ĞF:güôäoPK    |Ep]ÿöÍ“Ø  †  "   evidence/docker/compose-config.txtíUMkÛ@½ôÓ«Z‡R(K	˜Ø%c+´—€XímV;Ûİ‘›Púß‹>,;®I¡‡îAŒŞOo4oØW Iİa E•§ˆyøĞÇ™ôŸƒ"·6›4q²Bñ{>M"†­QEš hoK’A·o #ËÀjg1Æ,2yºK*r,ÃPtäV–g2(º"‡üÂ]GßkY[àjk;pK¶®zÍÉ€<
+(ëYš©ªé¡åóRáù•eÖáM›Ç™Ì*Ã³HêÆÒ&îX†²€7Z²ÜÃ¥.ÈÙjÜ'šïøñóåuQÍ¾æÊ¨­¬İÍ¬Şó“$ãi=µ6L‡øõÑT5zt:äæÊ¨˜Â ´:´aCN@ï²¢µÓÎ@]ƒßjPöç)ğ¡*Ò(À¸MÀxbœïÇãñõuiM¼mGMft
+Ä¤È
+`å[»?Öü$·wÎÒ&Û±tuè¶&«ĞñĞÂÇÉÕ|6->MòüËr5-®/W³ür9Ÿ
+½æ“Eqµ¸­>OæE>»X.¦¹€Ñ»¾âÿ*=k•ş„ª‰N(8Âÿ‘]N“GFÚ™¨÷Øék¢è«Ò$Mf÷†Aµ+9N“_PK    |Ep]äıúì   ó     evidence/docker/compose-ps.txtÁJÃ@†ïû?Å£kÒ›),i(ÓJ’zÛİ¥©¶™%»½ù4>˜O"šÖÖÄƒ30óıßégÛBÓŞ‘·7‡]¸–¬8ÏÙBæú5Ïålx=UºÌs¹˜A™÷ó´{M‹LVÙO¨¬dµ*‡/wË¢*9Û©õX	£|½&Õš”Fî5ÔÔ RÎEğñö>pÃ[MÚ€•Ã­õ¡VÔ‘ñÕw'×q‹É×Œ‚v—xH’ÇŞ‘³ı6´Vìh#ŒVjÿ¶=Ám¶g±ÚrÆYö²Ğdl‚˜³OPK    |Ep]w›ú¾  v  2   evidence/docker/D_simulator_stopped/dashboard.htmlåYmoÛ6ş ÿáæ`Ã†E6IÉoò¥-V,}AãaÃ¾”HY\dQ%);^Ğÿ>¶dÇ/H“¶º"@$yÏİ=w<ááwLÆfYpHÍ,Ÿí2šOG7œ„SfŸ3n(Ä)Uš›Q£4‰×kÔòÔ˜ÂãïK15O×ib™›QÃßlÌéŒsÁ…TfkÏB0“Ÿ‹˜{îÃ9ˆ\A3OÇ4ã#ìPŒ0_Ñ0…ë7—ğŒê4’T±akµvz2Ôfé^"É–p‰Ì—Ğ™È–!\(A³sĞ4×æJ$˜Q5y$(nÑøfªd™³Î’ é$½Ä2“*„3œ¾ßÀ‡Ó“ÃİZÕ‹¤1rBÇ|8=iê2rŞÀ]­DívÇìªôjCM©÷1	ªvÄT1»	]dtB’ñÛLiv¦­À[(+°ÿ÷Œ­"¬°àî^°‹T>€‚2&òiØ¹IÅ¸òe¢Ô!`çÍLä«$Ù]NÉ[O§”ÉEHqk5èèÜş5Qï§-ÓÚ(™O«ähñ/´-R]”Éø¦ÁÈbÃ¯¡‘ã¶ò¡ïkOc™e´Ğ<„êmp(ÌwØ–¢qd9!àâ´Ìƒ3†Y›E[¤õ­‡†ßfbš‡ñÄ`Î•1Í*©‘Å{'	g¼Í»<r‹…â»«ãénê1é'4Ù¶¿ªƒƒI“s®’L.¼Ûhi¤³A·*³€³[Õ¶ª`O“ëøÈùK±]fbqFµ5ªSĞ_.ãLÄÀ¸á±2‡…0)\	ÉD¯^NŞ=‡‹Éä‡ËßàzòòOXw‘a‹‰ù.ª;(®¬ªh|EµYcK:¦yhpk@éx{¸3A“Ğï7„{ò3B!BÃHmA9ã+[W’2Îí”¥ŠùÖN®
 %4÷¨14¾ñf"Í´Ìï«Oxœæâ}É5d}Ûå–V›€šã¡¡°İo¿OºxšÍŞŠ¿ûºFb	Ø7Æih‰ÈmAéÊ‡nmµ‚<¤û«˜¦ ùœ+a–•jğQª¯8ålOÙßSŞ
 )%ãguE½¨<n¥Äİ¶G¸—ª€#Õ¤ã³aË¤cûv1·æ*ÁµK(¼|[K¶kÓ	Woô*¿kÁ*iò¦,jÙó¹`<yÓZyÔÚxX1£ÆCÃÆxØ2Ì½½•ZÛôrnRİ€æÊŞ•¶]Æöd/ë­¸Kš¸×DÍn-RHOF{Që°ÕZÕfs&ŒâM©¦-S—ck‚QĞi5ÀP5µwıßQFó›ÆØÉÁƒ×k®×<Ûx@ÇµÉ-éZ²Êpıñ×2›s‰’3wèë%W×¨ëa<Aı!Ağòõ‹7µi{Ä×¾ØDtJE®ØC!ç=tş¹ï£ÎÊ†%¾â˜<‰ã>i¢&iv¿n1ò™`""ô×Ã$×a#yŸ_ÿ“jØ'_7Á[÷ö?¾ˆ}²CpÛ¯ª¸‡zhŸå`ŸåH•†{‰´ı,“S‘5†Ï
 ³Ï2ÁOecteŒxğ‹u^Xîñz©8ã¹îá"¹ÖõŠ½A>†]*2Î  Z/¤bÀç<7\ñc¬ÜÜg®ıiÌ‘oƒ9r€¹Î§1çÌù˜ë>‰¹uóm·ÿ×ÄÕQnñæ†¤j6jU“İj|GpÍãÒN_p%§ÕüW(¾;H ¯‰ß5W Mi³tO9‘ƒ.]€I™eË<btz²GBŒá‹w¯áÅNx‰T ¤4;m×Ì!ˆAë”‚ÙÙ@’£½GAö6şaÈÏ9íwCßßJeö”6ŠÚïvëTÉÒ¬õ6vÌÑ@×f·ÂÖ"„î¥ã&y2&9Š<ó^B>ÿôV×S¶ÉxLñ¼v¶ƒ;÷Iı<˜ä`úÇ0ƒñ€¶é¨_9Úïu9ú	˜½/€Ù?ŒIBôHL²Ælû„|Lÿ`Ç0?ãøºN¶KõqÛ!gnÁƒ[ö
-¶Ïúæv?3üPK    ”Ap]c/KÒÜ  }  1   evidence/docker/D_simulator_stopped/findings.jsoní˜IÛ6€ïòtÉ¡c™¤¼ê6mt€6Š@SÏ;©’”İAÿ^P›íxÜ™¦Aiu2Ì·ğmiúıóg Áî0M¸ba³¥#:[‘YLY-Ã	¡‹û†˜àª6³‚«D*‡fÇóÄ¢Ğ*µAÓF¼á2Ç4)¹µ{mÒÄem¦ó4ˆ!jU¤J¥Ú&BWÊï<o–é&·JïsL·ÄğŞ¯û-ue&™ûÕ ıæ¥‘GÜ9.nG…T2üİjÕÄx0)¹Ë¼É¸v>~Œ¥C‘)ùG…}|¬åš§—ÊEâé2dÑ’Íéq¹êtsL
+¶Ïúæv?3üPK    |Ep]c/KÒÜ  }  1   evidence/docker/D_simulator_stopped/findings.jsoní˜IÛ6€ïòtÉ¡c™¤¼ê6mt€6Š@SÏ;©’”İAÿ^P›íxÜ™¦Aiu2Ì·ğmiúıóg Áî0M¸ba³¥#:[‘YLY-Ã	¡‹û†˜àª6³‚«D*‡fÇóÄ¢Ğ*µAÓF¼á2Ç4)¹µ{mÒÄem¦ó4ˆ!jU¤J¥Ú&BWÊï<o–é&·JïsL·ÄğŞ¯û-ue&™ûÕ ıæ¥‘GÜ9.nG…T2üİjÕÄx0)¹Ë¼É¸v>~Œ¥C‘)ùG…}|¬åš§—ÊEâé2dÑ’Íéq¹êtsL
 ÊÄ4ÁR/'2¥lÎ”-é¼İqWùŠ?Öû~ıÃIé¼ô·F½­ÑAæ_kkå:GPèöÚÜ‚E³“!•Vèš».ºC©dé-éœ…t’p~¤!¸JeÊ&Múy‹%“Ù±;Ü¡‘îÎË~ÂTVÅ‘w2E%°/ ™(]‘eL&1#póêåÏğªZp):SØ]À!<à[.•uPjã,0vµ W“ItEä8œ\*LTU¬ÑôCZÇR«ÄTÍ\­2„\oAhå¼ox¡î‹äExäşiT/ji—Ü›¶#ßßÓ‘Ö)NŠ£V×²ƒ~·øî`Ø˜øm.»­Lî2çJÇa-µÙû\ì¸Îd|æÁ:ùg"=ĞAKQÉC£F£œ¯)¹{+¢F–¾äŞô:İ¡±ÜH´Pğ;ğ.ŠÒÓàgÄÉÍ]7¶L¥”T[Ğ
-Ú!dÚ:\¥kÁó~Ò¥Ún©„«·JôgŞÇè‰			!oÏl:xÿ‘‘Ï®M•…ìLœk}[•Éö_Ğê|×ú›ÕÍ¯m‡ô??éK’…ó/D:%#ÆV”Ä„Å„¼}õ>¾K¨_¤œ’óóó“=b_ˆó£_4zü±8ŸFİ•¾ rvFØØÿ“°¯Måp´ÑFÔC,UWĞagôH¥}’µ¶¶ˆ=æ$ ”\8	~ÛìÂ9A³%t¯@À*ga/ñÏèqcÏI¾v#·.z¯ı¹Áò¡)Ü¼~íÓOÑşÖ· ^ú<æïÖ£Îs¸­ı{¨ÏÕÿÜ”’O‚û¾< weÛ	…fBqxŞıQ¼ÎÈå¢~M[Øg¨úÎYà¡RşÑ¯@›S)dÜfØèèµ?¾1ı:à§'Ïã¯~öôàgüüüŸşèéÁğğğ:üí_eÓé“a¿x@@?û? ï?Ş=öá/PK    Ap]‹Ô†xq  p  0   evidence/docker/D_simulator_stopped/security.log­ÕÍjÃ0ğû`ï h‚$;õm—Â.ŒÁn¡q»°4.¶CÙÛu	]Û„,]À?$ÿe™‘ã “€h…s…¨áq¹x‚§-8_çºòPšíVçPTàêõZ;·©Ëò6Öì€)1$¼¿ãs¼></a‘¥ÎaŸ9w06‡±`ñF{c=HÉ‚À¹wî"å(2>‘ÜK¦£ÈôDŠnR*nîq©ıÁØpë¬‚\{½ö:¿ğÈ¶YQ9t0ÏRœI)fB`|…'Jˆ_!eù®¨
-çmæm£2µoÎÌ+B…¤ßúõÚµÎ9ÄÃ¨Ïâ83ùf“{My³)ºM>ö>˜H&½‰´0¯0VDßaŒ¦¦Ø˜âŸK”äéIÑCÊÁ)XtmF#Ëm™ó4é)ód:=9ï$YáH’2ÌÓ“bzRöÔLÑ_¥à‹w‰vS¦˜â5Î¿GtÜoÖQêğÚ4¿ PK    ”Ap]şLÁ’s      %   evidence/docker/dashboard-runtime.txt=ŠA
-Ã ÷‚wx‹nm¾)„"t—Ä¨$RëµĞEH!Ìj†¹À³{…
-ÇïÂ-@¤ÈU%»h«F'­õ„ÄkƒRİÆô¸¼mÛÂ¶z)şã€æSê'ç˜WpÆÖ{1Ã@×s'")¤x~c‡cHŠPK    ”Ap]*dYAn  ğ	  $   evidence/docker/detector-runtime.txt½ÔAkÛ0à{ ÿá=”ÑT,Çñ°Ë™ë³”Ç°•²ƒ&õ´(Rf)éûñ%Ğ’ô0°®}Ï÷Jğ^ µrM=¤İl­#°-´²=Óâ',â”sBÛÎ1/”ş”FhÉ“ô¶6Ê÷Ä´íØÛğËùgğ9Š‡bY¸)›²hîj|«šîËºº»©
-¬šê;êòK]®gGÙN
-e<õ{¡sÌàHZÓºswn«¦.1ošÅW¬}ÖÔvmEK-z»¦m{åˆ	ï…\³2êê·³&G!½Ú<É_FıÙÑ¥›\Ó£4çQ>Ë~`uXôğ”š<æ<)Ó*Ó]ºÉõëVÎîzIù{¼/ñ<J‚IÇ™ø0O‚IÁş)öOñq¦é0Òô8S2”…’’`™’`™fÇ™fIY)>Õ{é@RJ:Ñ{’²PÒ‰ŞJ
-–i,Ó‰Şûi<*ÿ*i[ÊG/PK    YAp]|ªëy  3  "   evidence/docker/docker-version.txtuÒÁnã à;ï0‡º‡P˜`Çø–¦Qµ§®ÔÕŞm )ª‘ƒÓ<~…-§i×áÈ?ÌHs&èwÛÁÉvG<%›ÆYKJàßxUÂ×AÅCJ`ıç÷ôdÊËrJà9ü`Ãœ	bA‡¶uñWÚJà±wÍ×ıpşö^tä T)eÉW€Ó¤—×‡u§ß®ë?œ7áãøPµ&—”À&øhÏßZ{|á°hœïÏ”Pòj»“íJx!Æ$Sãp2“ˆ¿(­ß;o“ÌÍEf†&ÉÀ}ë¼kûvÊ@0ÉSÛ±k°1¾ÌWº¶)ü_ì¬(eVrœÀfÄ…lÏÛ¹ÖúX5cÕ®ji’>VÎÛÎÜ 8!“#À³‹›ï?\¯*Ì0–£2y¡VE]ïPq³ãU;]U/u&(®÷úÆÁ²[NC¶à‹=*c–F§ºq³Î»ag:r&›´4VòÊğ´!ÛóğÆ–À)ùPK    —Ap]w£M
+Ú!dÚ:\¥kÁó~Ò¥Ún©„«·JôgŞÇè‰			!oÏl:xÿ‘‘Ï®M•…ìLœk}[•Éö_Ğê|×ú›ÕÍ¯m‡ô??éK’…ó/D:%#ÆV”Ä„Å„¼}õ>¾K¨_¤œ’óóó“=b_ˆó£_4zü±8ŸFİ•¾ rvFØØÿ“°¯Måp´ÑFÔC,UWĞagôH¥}’µ¶¶ˆ=æ$ ”\8	~ÛìÂ9A³%t¯@À*ga/ñÏèqcÏI¾v#·.z¯ı¹Áò¡)Ü¼~íÓOÑşÖ· ^ú<æïÖ£Îs¸­ı{¨ÏÕÿÜ”’O‚û¾< weÛ	…fBqxŞıQ¼ÎÈå¢~M[Øg¨úÎYà¡RşÑ¯@›S)dÜfØèèµ?¾1ı:à§'Ïã¯~öôàgüüüŸşèéÁğğğ:üí_eÓé“a¿x@@?û? ï?Ş=öá/PK    |Ep]‹Ô†xq  p  0   evidence/docker/D_simulator_stopped/security.log­ÕÍjÃ0ğû`ï h‚$;õm—Â.ŒÁn¡q»°4.¶CÙÛu	]Û„,]À?$ÿe™‘ã “€h…s…¨áq¹x‚§-8_çºòPšíVçPTàêõZ;·©Ëò6Öì€)1$¼¿ãs¼></a‘¥ÎaŸ9w06‡±`ñF{c=HÉ‚À¹wî"å(2>‘ÜK¦£ÈôDŠnR*nîq©ıÁØpë¬‚\{½ö:¿ğÈ¶YQ9t0ÏRœI)fB`|…'Jˆ_!eù®¨
+çmæm£2µoÎÌ+B…¤ßúõÚµÎ9ÄÃ¨Ïâ83ùf“{My³)ºM>ö>˜H&½‰´0¯0VDßaŒ¦¦Ø˜âŸK”äéIÑCÊÁ)XtmF#Ëm™ó4é)ód:=9ï$YáH’2ÌÓ“bzRöÔLÑ_¥à‹w‰vS¦˜â5Î¿GtÜoÖQêğÚ4¿ PK    |Ep]šş áq      %   evidence/docker/dashboard-runtime.txt=ˆAÂ ÷$Üá-Üb¿qcˆºª¡@Zù¾I¾‰1Ílfæ€Àş<¿+÷Sqı»©ŸÑË™çcÄ¥|;‚ëËÄ®­²›NÎìøbÜ£}JIe,"ÕØi¥ÕcMÏ!ZVPK    |Ep]P¼Âßi  î	  $   evidence/docker/detector-runtime.txt½ÔMkÂ@à»àx¥ØÃJ¢Ñ’ôlL1Ôb‰¶”ÂfLWã®Í®¶‡şø"Ø“‡Bö¶,ì<óîÀœ!W|A¸Z®”&°®wg¶ªÔœ¸¹E©
+ÆL&Ê›¾ƒœq£ªfc)LE¬Tû»~0ÜÁ€!|Çqˆa”Fa:Iğ§#<EI<Æ!¦iü‚$ºO¢éèh)U@óLBHCÕ&+ô ‰+™ëcoã4‰0HÓóğ©¾JÊB©²œrÌ*µm«­*¡‰eÆd|Á–BŠö\+ ƒŒ±!âR|®©¥/ÚÇ´7§¸NĞóß1İ6ºı¼’mëÌ„Ì…,Zúâj×•VëŠSpªÓ’85i?“[äzÖ$ksêX›Sg?S·©»ŸÉ«IòmIµLµL½ıL½š$ßÔ9´÷ú5I¾-éÀŞ»¬IòmIö^]’µL]k™ì½ÿKÍFô-¸Ê)€ÓlüPK    |Ep]|ªëy  3  "   evidence/docker/docker-version.txtuÒÁnã à;ï0‡º‡P˜`Çø–¦Qµ§®ÔÕŞm )ª‘ƒÓ<~…-§i×áÈ?ÌHs&èwÛÁÉvG<%›ÆYKJàßxUÂ×AÅCJ`ıç÷ôdÊËrJà9ü`Ãœ	bA‡¶uñWÚJà±wÍ×ıpşö^tä T)eÉW€Ó¤—×‡u§ß®ë?œ7áãøPµ&—”À&øhÏßZ{|á°hœïÏ”Pòj»“íJx!Æ$Sãp2“ˆ¿(­ß;o“ÌÍEf†&ÉÀ}ë¼kûvÊ@0ÉSÛ±k°1¾ÌWº¶)ü_ì¬(eVrœÀfÄ…lÏÛ¹ÖúX5cÕ®ji’>VÎÛÎÜ 8!“#À³‹›ï?\¯*Ì0–£2y¡VE]ïPq³ãU;]U/u&(®÷úÆÁ²[NC¶à‹=*c–F§ºq³Î»ag:r&›´4VòÊğ´!ÛóğÆ–À)ùPK    |Ep]w£M
   b  2   evidence/docker/E_restored_baseline/dashboard.html­Wmoã6ş^ ÿK±aÃêÄrŞ ë]±b½»¡Í°}d‹µ:–O¢“fÅı÷Arì¤i
 CÚ¡Ä‡’R2ıN¨˜¶BJ«l~~6µOÈx¾œµ0o9raŸ+$qÊµAšµJJ¼Q«±§D…‡ŸK¹µ4&MÚ‚Xå„9ÍZİıÆœ¯pÖZKÜJÓÁ”Î®eŒûp	2—$yæ™˜g8c…$e8¿ã0Ÿ®á7i¤¸ÓNµv~65´u/‘[x†Dåä%|%³mWZòìÏgPËd+®—2!èOˆxü¸ÔªÌEI/$£	Ä*S:„–ãîp_ÎÏRÏ;W/RDjÂÀ|9?k›2rlà¹qíEış ;9v5.Ä©4¯1¿Şs-ì!M‘ñmI†OXò"æB[ƒ·ÑÖ`ÿ¿
 VeXcÁó‹d7©$œ@Á…ù2æ¨EJÔæB–&æØ¬d^Éîr–H=y&åBmBğ!(lb —ÿÑ¿´môÓAhCZåËº8Fş‹!}‹Ôde*~lR Uìõ%9mk¾ÿ}Ã4VYÆƒ!Ôo“Si~=aÛŠäÄrB`Å•I‚‰¾ˆD[†„OäñL.ó2LhkÔ$cÕVRÅû¨ØÇ!Fn±Ğx¼ÊÃ}?&ã„'‡ñ«>8Y4µFdjã=…ÀKR.?èP&z(FÎ<íÔ34íÔ'€&w"°7æ/evYÈ5Ä7fÖª§ 5¿ŞÆ™ŒA aLRå°‘”BZ*!cøp»¸W‹Å×¿ÁÃâö/Ø"ÓëcT7(î4¨ºh~Çí°•ó<´	¸5ü`à1æ±ÁÂ„,{½vÏÇãŸ}?ôıi¤ \ğ*ÂÆâÅ©ªÔ1ìÄœPZô8½•Ìeû£ò—îŒÓ\~.Ñ@æĞ)ŸˆTmNo§æ‡ıq;èƒ!«R³Õ«ô{© ;H¬€ ÇæÖ|¡ˆgÈÜ6”©9MÔò”ï¯r™‚Á5jIÛÚ•}•ë²\}…óAJi0×tÔMÍ¸“î¦°g„{©˜œ¨”Î/¦Jçöí*&¹¶ájÃƒ+(ÜşŞX{Ó+ŒIÆ{¿šwc¨Š¦Ë¢±½_KyŒ5L§bÔÙ3¬gŒô|JÂfOÂ½ı®Œ‘öĞË‘6J?‚AmïJ{\Æv²·ÍV6ÚlÔöÛÃÆ4åjLf-{Q›°Ó©z³½’¤±­ô²CM;vÌï:- ®—ö®ÿ;ÊxşØš;;xğqÇàaÇàİŸ7!¬;KUáæã=•­Q@¢ÕÊ}³äúÚzŒ-üqè÷ÂÀ‡Û7ŸšĞvÄw_ì³¾ä27ö+† ¸ù—½^÷²ÛõU+|­qğZãH—„^¢l'dj)sàD¸*èµÆıoÕ˜1ÿ¤ÆŒùàÁ/–ÜX/T½Ö(0·ßŠà*Ñ˜fÅŞ×hÛ…„ËÜ˜Òp9Ø Æ·4í·÷º¹†­û´SOY5÷|—vàN-ëY,4ÕÙ®¨Ô`¨´‰Y¹—(@æ`J—`RfÙöˆóÏÏà‚1øóêş#Ü¥—(Z):NÉµôzA—1ip
-²÷­Á›£o…ì†ü?‡ãø0ìvŠÄ…½ÌinïÙ]©TI¶l‰í³é÷“â?PK    —Ap]^GL`  ²	  1   evidence/docker/E_restored_baseline/findings.jsonÍVMÛ6½Èè’C×2)Ûë•nÛAhÓ ñ¡h49¶Ø•H•Ù]ùïõaËñº»I.=æÌÎ¼™7ÔÇ—/ ¢-t‚På‚¢¢„%×Î'üzÅ®3dóy<gé2M`,c,ºja^
+²÷­Á›£o…ì†ü?‡ãø0ìvŠÄ…½ÌinïÙ]©TI¶l‰í³é÷“â?PK    |Ep]^GL`  ²	  1   evidence/docker/E_restored_baseline/findings.jsonÍVMÛ6½Èè’C×2)Ûë•nÛAhÓ ñ¡h49¶Ø•H•Ù]ùïõaËñº»I.=æÌÎ¼™7ÔÇ—/ ¢-t‚På‚¢¢„%×Î'üzÅ®3dóy<gé2M`,c,ºja^
 “kCèv¢Ì=Jk”2XtæĞ%ª¼Şï­S9}aKe0ë]´QÚlsinNºãJ“ÃüŞØ}‰j‹QÃy¸Ò6Nb¾Ñe80\^;íq"ˆ„¼ŸTÚèøooM—ãR*dÚŸ>I(£ÿiğ‹ü ¢Ò
 u‰.–-Ò8™¥É’éjË-1¯¬Ò*ÇÚÊ_¦ó¶àI/ox’òå!uÔF£_Ûû¢pşé„º`ı«sï9:Úğ­õ^¯Kƒ´·î<º–J{iwè†ìTé: ù2‰ùMÌâåÈC
 £´„y×£E±âl~=‡;tš‚í7Tº©FFÜi…Fâ@¶œp¾biÆæYÂàîÍëßáÍ´JBg+8¦b+´ñµuä!I®nØÕ|>»šÍØ8RÌMS­Ñ†´5tµ5¹kº¹Z¥İ‚´†BlxeËäU<
 ÿB:#ªÖ:÷¾ïÈÏt¤*$i9juk;ú‡À®¹¶qep(ˆjŸM§âÖ[·jñÓ¶’éYOúß\AG½ŠjA„ÎL&¥Xs1¡GPè¥Óu <@oÕN£‡J<@QÕd!ÌéÍÃ0¶\cŒ6[°V–
 ëÉƒ0
 J+Ey˜tm6Nxr¤Æáy«¤Ã°ó¾À ØŒ±˜1öçfïWBu}©Iœœ™Kkï›:?Šız[î†A¿ºû£ïp'ı§”¾vádcl‡X›Ğ'•¾yôÛ»‡úÃÎ~Îàœ]X¿èmqa	Ì »†p‡†<ìÑá%ñ/Æm=×ñ-A‰Â\Ş†£Á‹
-¡£îŞ>)ìÓO…ıch ¼x¦”rØº(áVJôş¿%}îş]Òæœ}“´ãà	i7¾ŸOèæó˜GP{Øã ÚŠÂ_!Ûw×Ã¾@sèœá>Xwj…Bø;»ËÕÿCúüä!ıjé‡Ÿ/_|úPK    ”Ap]"›ÊÍ   ×  0   evidence/docker/E_restored_baseline/security.logÑAjÃ0@Ñ}N1pÌh¤Æ®wİºq!´t-,Ùu4A3&äö…ÒBkÒM.ğÿÒn‹ÍÖ˜W|ì;ƒğÜï_àMbÑ%Ä¬0ó4Å )ƒ,ÃEÆe¯0>i¨6mµÁıÕ¨3ŞŸ=ì}šc€³¹p	0rÂ¬+âÎ\œ#k@äH7Dw¯Hÿ‰í½¢½)º¾öQ/\>@Ÿ!DƒÆ°âğ“OYô‹ ªZ¬œ³•µ¸[ÛMgí¯?>œRN¢Å+—ŸK¼èæPK    YAp]­¾ãf   ’   '   evidence/docker/existing-containers.txtË1Â0Ğ=RîàÕˆ2²³r…È?‘Æ•¤JUïÎxû;‘ZıÀib!æ§ù"ƒöıüq95™¯Rñú*è27h‰ñUôÁ]¥«pµÖÀÓÿeÊ)§ûöTMq£KN?PK    ‘Ap]²®ØZ¾   î  %   evidence/docker/simulator-runtime.txtÍÒ±ª1Ğ~aÿá¯Ğ"ëFÁB°°°°~_“aÆLÈÌÊŞÇ‹Z‰…ípçpæı‘*<Ÿ
-Á¤ÈÕ$··ÎÌûùÒZ»DâA`Œº˜Ö‹OcrÊµmîÁÄƒyü^²H£¿­>óuU)tØe¥zviÛCÈsÒ½ä6¥P°€<d:SÖ‰L¡ŒYpêfB~¬Q/]âá½e?h}²×·Şh¿Ëzıb\
-…®mÚfû­Ğ·ÍPK    pAp]Lm_  V  #   evidence/docker/simulator-start.txt½XMÛ8½7ĞÿÀÌÕn~¿ú4“N,v3Èƒ ‡"«ØbK†¬$ÿ~!ÉmÉJ»ã¹’¯Ş#«^Q"ÔäÏÜŠÜlwÍÅj'6UÓ®6˜®´ÔN)åÄjµk›RmXì«íÃ»ª©ÅÃN¬Vé¡ÚXÑõ•x»Å{~*|EÜqîšV¼êÑU}/‡ãşSj°¥ñ‡5òÿ¢Ä‡ªî¸­qóQl$±i2nDÂÏ,ˆKUWı6ö´eâJÛlÅ¾£ªjìçWB®å^PSó€{ıî?o†¡ë«ë«_´øpÜÚBkÌË$32¿²İ'rˆîZ¬÷…Û¶—¦ãÜ­P ¯EõBÔˆS‚^¨º>FDçõ½<ê›…>ˆSÂ_ªŒˆÎë[Ô‡G}5êÛgô·Ü!a‡¢4íp]57›*µØ~½Ù}í>5õ­Y+½ÚoªíÀv`w#»{†}=2V÷uÓö+s§ÈMİñ—îVèãÚİ"wş»µ;Ø§Ùíz_üB!|·:“B8·şµu“BX(Ä¹‚º1Å?Ş¿û÷Ùşmÿ	µu·–u¢¤’$š¬41—’‚
-*;”ÑDˆ*:›³Tzpae
-Ú4¬¡å}³ù‹¢ìàÀÇ¤Ä…)•œWÖôY¹{÷ÇŸâ8¶Ş}7¸ÛİÌGÆÀ»ßïşùæõH£æ4º§ùß»÷ÿzıöı<"æx=Ãüe×´]_Ë®U^˜i|ƒ_¹Î³ùÔëªğ¾‡|±Í.g“²)]Æ$	#)iµÒÅ•â ø¢
-zFËš´…DÎªñI‘ÜÔ¥º”P˜0ú¤3:#J Œ#1 1²…J?•ŠDĞÑd³-.FFöõz=&Ã|ï8¬¯Ìï+¹v0™_™e¡a&2«óah*ó40FÍ«vr„M$Ç±#Ë|d\¬æ¥õÿ±ù?ı8Îu°ëxßÿ	KcÉÜ³P oU@P²xÒxK%;ecÊàYY™ÉgH9 ñ9“;¯zTÚT3#Dé!E£$9<!zMdULÒsB³ÌQøä•§€9û¢ÁıSD–{ªq{(ã·Ü³¿L·ì3¿ä{¨w˜?ÿPÊƒõÁ‰nê‹sFtç¢ùÔÒ/ÙjÈAû¡°fğÈä|	&è`L@ìTòE5§TŸ¸hÄ'Em´¢(,¶Áa¦¨]v¤1`ŒÎL2a6NjÈd¸ØµÕŞÈÓÜ¸!„„ÁÈbE]<—XlĞ˜ÈÆèR*ˆ9$c9I‡èq)6ël<ù"=Â¹G1%Î•%mbßåÁ3«`%ƒ´Å'¶o°]	YGç©@„˜ A-7ùbìñè§‰éï¸sA¶XÛÂœ~vàs§ÿÖrm&Òùü7Gh
-’g­Nf&veÂˆ‚
-Ş'$¯£ö|pEûeÑA¦Óåû³>ÊY¢lcR.„¤Y;Øà$Êˆàu´ ®„¬r4Úfˆ2s1Ae8¯óœO=:ŞF`t
-CJ&ød X]p!)´+
-ËÀ!CÊcBP%1âyÕ'}*¥5&s0.HÅL¶dKÒII¬# *Ùg¶@1HÕ¦dôl8Ä„Òpú)"Ë=½´v\vƒÿ;İğÛbu‡v°‡v'ã¯t¯·k›¿¸Æ:ópšnSã…U-¯*ÎıËyâò-Oúób"-çD¿tâò×Šî%Oø®©;¬jnÅˆ ïêúğ˜1¶U×òjÓÜOºOâF²7mæ®e,~’éûÀÿv8vÍeÈòúêÍ—ª¹!¾òúêÿPK    ‘Ap]­’Õh   ›   "   evidence/docker/simulator-stop.txtÊ1
-!Ğ^ğ¿H+¬[l‘6ä9ÑaâúE'ã§XHú½
-óK2Î)U9BMÏ˜Âº¬[ŒqÃ4vL=Ş5‡w¸±YÒ&ç¬ÜÃÏñ0ö®mÇS
-¼óîşQCf‘+ï¾PK    ]Ap]L
-‹MI   H   %   evidence/docker/simulator-stopped.txtÁ1
-À À^ğ[¤<‹ôyˆQ‹#ÊŠÈó3s 0?u"³®
-7Ğ”ÓµtKrÁ‡("ks`i[ÚœÖXs}º‘Yê	oÍPK    ™Ap]€Œİª¸        evidence/docker/summary.jsoníX[‹ã6~_Øÿ üÚ¬$ÛòÛÒv¡ĞN¡léCSŒÆ:Í:Vœ–eÿ{qâ\6·Ïd:4/rĞç/ß¹F_Ş¾!$š;‹QF"ëŠOè£ÉÊ:ã;´ù²+ú=`¿ãü?²8ã,SŒ&\$Œ}ÇXÆØöÔÒbÛõ'~®'¿˜PÕ¦¨v †(#ö_	ù²^‰Z3_qxŸßš€MİâúÈjs†-zÓ³1İ	2<c’‚âiï“YmÜ,ïÑú—Æ;sá–+–°3Uõ¬Š2Âw–9Úz9ÿÖVÖ­­ÛÙŞoè?{„D9“ñÃÊÆ <¥Œ&ÑÎş×ä<çì„Ú‡Ø<_'ç”ıç·Ø¸»¼«<†Ê5v”Âš‚Ò©RVÇ
-ó#…Ù©ğÃåÜÖe‰Û.nécâ’BœH`cCğÕ$òïiD )¤Bëô¢Fú•§©Ê(PõÈ4•yÀÂµ6…iG©«)hP)¿¨.gÇòŠÉ/ ï	ˆAŞäÅ<ôCêù²1óyèÜb#’ 2¡©d<á¢›@»)9r“<á&ñ:İt…€§÷LàWÀ¸ñRaûcî1tÎ£}Äˆ™”T2hıÿˆÕ/kÜadÎ?£¯Ëm”‘Î/qØ3¡ºuÆ÷•Ü#¶¡r+iñsm±-p:]ŸNwCïtº=Eíl›Ëº5M~‹¥ó¸+>Û\öê‘™/šÓ66fĞİå°¢ç¯ÉGh*XœÂ&4ÎEâ1¸©© .·­ïáÄj¥©I"`4yA<"A™¦BÖÉhêƒd®©ˆµæj4ƒøJ@S‘& 4ØKØ]ªôÃ¬ÇÂy»—.'‚[?ŞÿvC>˜ºAK&„;ç-)'Ş¹”ŞÍÉ^Ÿ!ç;"csB›sUhx>hq´ä§›¿’ßzbì¼nëĞù^RÒ¸Ù-©[–E!”Ë¦ùçà]œŸÇV#i‹m&÷Ğ~tú|Ğú"4dl$4ĞJ <´x>hy4¢ï»;ç?‘şO±ØaÑ¡=À@ÌÌÔmèVø(1IÙDÊ~I·½ÿDÙñáJëÁ}ºxjâÀª…¬p}§ïfŞêæEƒ¦].rü»îòb}¿·®±ÑfÔØƒß lwCe@Å}•M8paEZÄ¥T‰(ã´`)c·\…IA€.m)e0a& ,`…ä‰Ô’aLëëzª³7Š)NÓTp½¹Ä{ûæë¿PK    X7p]äğY7Í     *   lab-source/labs/lab1a-mitre-soc/.gitignore-ŒÁjÃ0Dïû="}CiÒBh©}7²´µ•ÈZ!­Zô÷Åm.3Ã0oöøF‘²rèHÈ
+¡£îŞ>)ìÓO…ıch ¼x¦”rØº(áVJôş¿%}îş]Òæœ}“´ãà	i7¾ŸOèæó˜GP{Øã ÚŠÂ_!Ûw×Ã¾@sèœá>Xwj…Bø;»ËÕÿCúüä!ıjé‡Ÿ/_|úPK    |Ep]"›ÊÍ   ×  0   evidence/docker/E_restored_baseline/security.logÑAjÃ0@Ñ}N1pÌh¤Æ®wİºq!´t-,Ùu4A3&äö…ÒBkÒM.ğÿÒn‹ÍÖ˜W|ì;ƒğÜï_àMbÑ%Ä¬0ó4Å )ƒ,ÃEÆe¯0>i¨6mµÁıÕ¨3ŞŸ=ì}šc€³¹p	0rÂ¬+âÎ\œ#k@äH7Dw¯Hÿ‰í½¢½)º¾öQ/\>@Ÿ!DƒÆ°âğ“OYô‹ ªZ¬œ³•µ¸[ÛMgí¯?>œRN¢Å+—ŸK¼èæPK    |Ep]­¾ãf   ’   '   evidence/docker/existing-containers.txtË1Â0Ğ=RîàÕˆ2²³r…È?‘Æ•¤JUïÎxû;‘ZıÀib!æ§ù"ƒöıüq95™¯Rñú*è27h‰ñUôÁ]¥«pµÖÀÓÿeÊ)§ûöTMq£KN?PK    |Ep]Dñ[S¹   ì  %   evidence/docker/simulator-runtime.txtÍÒ±
+1àıàŞátèy‡›¨àààìÔ6œÕÚ”&Š‚/‚è$.n!äÿH xv*p|Ì,“1{Ö&Ş“Ó"÷cÔ†8Ÿ´p<E«\ê*ÚmgMäŞ¼šÀ›kÒipè{¢¶(ùë¤TÎ6NÑµrœ¼4¹eÎ”<yL /™Î”t(#(cì­Ú±;• ×&rÿİê~hır¯½±û/ëó‹qÎä›ºª«Õ%({š¢­«;PK    |Ep]Ó—»ó`  <  #   evidence/docker/simulator-start.txt½XMÜ¸½0ÿÀîµ{øQüAÖc/²Î!Š¬âXën©¡Ö,ìHêi©5Óã`á›@>¾W¬zEQúYP“¿p+r³İ5{«øËáyµk›ß9w«ş±Tûjû°Á®jjñ°«Uz¨6$Vt}%~Ûâ=?]¼"î8wM+ŞôØª¾/qÿ95ØÒEèC4§Ü?)ñ±ª;nkÜ|›IlšŒ‘ğâRÕU¿ı m‡u¥m¶bßQUµöË!×r/¨©yÀ½}ÿ¯wÃĞõÕõÕOZ|<nk¡5fd’™ßYîS8¬îZ¬÷…Û¶—¦ãÜ­P oEõBÔˆSz^©º>®ˆÎë{yÔ7}§„¿Vÿ¸r :¯oıQõÕ¨o_Ğßr‡„ŠÒ´ÂuÕÜlªÔbûíf÷­ûÜÔ·f­ôj¿©¶ÛİìîöõÈXİ×MÛGæN7›ºã¯İ­ĞÇØİ"wş»µ;ØçÙíz_üB!|·:“B8ÿÚºI!,â\Aİ˜Oâ×ïÿyA¶ÿ¶ÿŒÚº[Ë:QRI’MVš˜KIA•FÊh"DÍÆY*=¸°2mbhyßlşà(;8ğ1)qaJ%ç•5}VîŞÿûâ8¶Ş}7¸ÛİÌGÆ…w¿ÜııİÛ‘FÍitOóß÷şñö·Ãâ1Çëş“à¯»¦íúZv¨úÓrÄLãüÆítÍ§¶XW…÷8ä‹mv9›”M±è2&‰HII«•.¨ÅUĞ3ZÖ¤-$BpV…ˆÏŠä¦.Õı£„rÄ„Ñ'Ñ©±Pe‰‰¡-Tú©T$‚&ëœmq1z 0²¯×ë1æ{Çñd}eÎx_ÉµƒÉüÊ,3‘YCS™§qÕ¼j'GØDr;²ÌGÆ…‹h^[ÿ?7ÿ§/Ç¹vï»ñ†°4–Ì= òV%‹7 ·T²S6¦•õÑ)‘|†”Ÿ3¹óªG¥M5ó1B”R4J’SÁ¢×DÖXeÀ$m1'ô1Ë5O^y
+˜³/œÑ?Dd¹§·‡2>=à^¸.İn°Ïû’í¡Şaşò'\¨.tSOœ3¡;Í§–^ÉV«@.€Ú'…5ƒG&çK0Acjd§’/*˜¨9¥¢ øÄE#>+²h‚¤0h£E	d±°3Eí²“ ctf’	³qRC&ÃÅæ¨­öFæÆ]Ø!$F[(êâ¹ÄbƒÆD6F—RA´È!ËI:D¯ˆK±YdãÉÛèùÎı‰)qÖ¨,iûY+¤->q´}s•@èJ È::O"Äj¹ÉWúó`G7M<¯wæ‚j×Â˜~vĞs¦êL¹6é|şÉQÚ€‚äYkDc£“„™‰C™0$¢ ‚÷	Éë¨=\Ñ>FYté4|Ö£Q9K”mLÊ…4k§sœ„@¼À•UFÃQf.&¨çu^ò¨GçÀÛŒNaHÉŸk£.$¥‚vÅSa8dbHÙcLª$F<¯ú¬G¥´ÆdÆ©˜É–lI:)‰uT%ûÌ(©ú×“Œ‡˜P.@?Dd¹§×5ÂÑŒËNğ¯ï„'\‹È­`­Nn
+ãõ¹WÛµÍ\cyøhš¾ ÆTµ¼ş«8?ì/ç‰ËogyÒ›i9'ºğŸ@'.ı3Ñ]ş[b€Ş5u‡UÍ­Ø`R8ƒ|x¨ëÃ‹	´­º–W›æ~R}7’õ¸i#w-ã`ìËLßş§Ã±W.C”×Wï¾VÈñ­×WÿPK    |Ep]Ç/èg   ™   "   evidence/docker/simulator-stop.txtÊ1
+Ã0DÑ^ ;LáV´Á¤1>AN H‹Q,ki>~š:İ‡÷'d¦]:åÅüí /IvÇ0*F9Ş5»wXØ,–&5>¯1TnáçxUKÛğß)Şy·Å˜å†‹wPK    |Ep])€a¬B   F   %   evidence/docker/simulator-stopped.txtSQHÉOÎN-RHÎÏ-È/NUĞ-P°²uŠò³R“KìŠKòŠ3sKsKò‹x¹x¹\+2K’óSR­x¹ PK    |Ep]„[©       evidence/docker/summary.jsoníXËÛ6İÈ?ÚvB—¤$j´ĞÍ(RtQG¼²…È¢AÒ™Aş½-?â×Œæ‘Á ñFò%xx|îÓüòö!ÉÜYL
+’XW}BŸ\­Œ!Ñ–ËXõkÀ }Çù;~diÁY¡Í¸Èû‰±‚±İ®ˆ!)ÈßıWB¾¬„$™¯y_Ş˜€mÓázËjqŠzÓgâ‰ÓxÁ$Åó<İ?mµµuÓ²GëMwæÊ-»
+v¦Y3%á;Ëm³œk«›Î6İtï7ôŸ½WB’œÉtÇaeãPSF³dgÿçê<çì„Ú‡Ø¼/_¯Î)û3/o°u·eœy3×ÚQ
+k
+JçJ]TX+ÌfßSáûË¥mê=v±né+câ’BšI`cCğÕ$ÊoiD )äBëü¢Fú•§©Ê(PõÀ4•eÀÊu¶•éF©«)hP9¿¨.gÇòŠ{É/ ï	ˆAŞìÅ<ôKšù²5Ñù2D·Xàˆ$€Bh*ÏS¸è&ÇnÊÜ$O¸I¼N7]`!àñ=ø`<ñRaûké1DçÑ>`Ä‚BJ*™Î´ş1bõ5î0—ŸÑ7uƒ6)HôKÖL˜İ8ãûJî»0s+iñsc±«p2YïLvCïd²İEİt›ë¦3myƒµó¸+>Û\Oöê‘™/ÚÓ6¶fĞİå°¢—¯ÉGh*XšÃ&4ÎEâ1x"RS\n[ßıˆÔJS!²LÀhòƒtD‚2M…­³ÑÔÙ\S‘jÍÕhé1 ME:Ğ`/aw©Ò³+çí^ºœnAşzÿÇ5ù`š-Y˜n·¤vxç"©½›“½>CÎG"SrÂ6%æI¡áù ÅĞRß®?üNşè‰±ó¦kBô½¤¤uÓ)ZÒt$,«
+C¨—mûßÁYœŸÇV#i‹mgwĞ~tş|Ğú"4l$4ĞJ <´x>hy4¢ïã­óŸHÿ'‰XŒXE´¸ˆ™š¦q…ˆW9»’²äÛŞ¢Œì‡xˆK‹]¼gp_ .›8°ªgC!«\ßéãÁÌÑ[]À²jÑtËE‰ÿ6±¬Öxë›lFí8øÀv5Ì¨´¯².¬È«´–*ušW,gì†Ëª29Ğµ­e¦fÌä€¥¬<“šA6Œi}]oÂìì•!ŠÓ<\o.ñŞ¾ùú?PK    |Ep]äğY7Í     *   lab-source/labs/lab1a-mitre-soc/.gitignore-ŒÁjÃ0Dïû="}CiÒBh©}7²´µ•ÈZ!­Zô÷Åm.3Ã0oöøF‘²rèHÈ
 gä*©
 ü›î`÷Hjör'J {|­!àõ<|ğy^.8ÕèáÿÄÀÆa¡d¶ëĞ`õ’ISÊ)ûB#bì]İ
 Çíî£ÉÂÆ15kìBã¨¡S©Ù?åmr>ĞD‡ï=~ù@Ôw±ìHƒòŒuìÇ^8K]§¢Ü´q­‰³ÉíuJÖ
-<Ã.ğ\t![³—¶U¿PK    X7p]ö%e+  C  5   lab-source/labs/lab1a-mitre-soc/analysis_template.txt½ÁJ+AE÷õwõv
+<Ã.ğ\t![³—¶U¿PK    |Ep]ö%e+  C  5   lab-source/labs/lab1a-mitre-soc/analysis_template.txt½ÁJ+AE÷õwõv
 Ñ]oB0yT¸®t×d
-Ûî±»zâøõ2ü kWpï=ç†÷X0V‰ãTµ=X’‰ŸÅ}Ûµ£5›8¢ÿš‚¦töu´ò¦£Úäè!·âÛ;G›Qƒ$/n·»ûV»İ¿«k˜ø>éKG;ö¦ŞÑc?A+¬×Šî4_[ÔknuùÃ¼øCæUNÆš¤è›æôƒş2Ø¼‘5a_Tº8áØOXgÿ$G®hUd”ës;ô°^yŸ[.‚¤ls>æP¥Œê¥:¢{é¢ø_\ZœãäÍbŸoıyl(9wÈ8ÍØ?-ébn±CĞ¹À1*¹Å€^â ŸS§åùCñ4W—ty*ú çÙ”Ñq¬‚!W5eIïPK    X7p]'_oB  "  ,   lab-source/labs/lab1a-mitre-soc/dashboard.py•XmoÛ8şî_1Ç`/òÁ¶ì4mSÅ6Ğíö¶ÅuÛ¢uŠB ¥‘ÄF&U’²“üßCJòKÜm› ±CÎ<3œ7Î0ÓjqœÕ¶ÖÇ V•Ò¸”Êr+”4½^³VØUÙ~ÿj”ìeÄ[X[ê5ê–ùwnğÕbñş~«ÑØW\¦%ê,
+Ûî±»zâøõ2ü kWpï=ç†÷X0V‰ãTµ=X’‰ŸÅ}Ûµ£5›8¢ÿš‚¦töu´ò¦£Úäè!·âÛ;G›Qƒ$/n·»ûV»İ¿«k˜ø>éKG;ö¦ŞÑc?A+¬×Šî4_[ÔknuùÃ¼øCæUNÆš¤è›æôƒş2Ø¼‘5a_Tº8áØOXgÿ$G®hUd”ës;ô°^yŸ[.‚¤ls>æP¥Œê¥:¢{é¢ø_\ZœãäÍbŸoıyl(9wÈ8ÍØ?-ébn±CĞ¹À1*¹Å€^â ŸS§åùCñ4W—ty*ú çÙ”Ñq¬‚!W5eIïPK    |Ep]'_oB  "  ,   lab-source/labs/lab1a-mitre-soc/dashboard.py•XmoÛ8şî_1Ç`/òÁ¶ì4mSÅ6Ğíö¶ÅuÛ¢uŠB ¥‘ÄF&U’²“üßCJòKÜm› ±CÎ<3œ7Î0ÓjqœÕ¶ÖÇ V•Ò¸”Êr+”4½^³VØUÙ~ÿj”ìeÄ[X[ê5ê–ùwnğÕbñş~«ÑØW\¦%ê,
 <2§ÍÅcTÜ¥X¶üï¹-üF­ËR,G×ÛİZ—îÿ^ïİ§ÅûO‹øıóÅ+˜9®€…ª¶UmÃLH’dF¤)ë÷Ş¼ûóˆ0å–‡“Z{7*UÎú½^/ÅJÅÓØH^™BÙ Ã9¤"±Q Àê;ÿ…~fÎ#â2ÁN#:mlñÖ(EêÌXm³áë÷;‘0BËe‚œ´şN
 ıh´µ–N [ÇÛ+/İ‡PrG]qcz½=ûn‹å(Qs‹iÌ-‹€½U¢ÅÄ*Şpp‡–vãDÕ’XÆ{{+a5Æ7RmJLsdÑ(G`,·µ!AŸ$‘É=dO j`œ‰’¸ß*‰G“BŠo5RÀQÙÛólƒtùüÅ¯o÷½]ªÜ;ÚX}ÂÏ%Û ú;ÏşÀ;ûÀ7Pª„©,ğ5%_–8bZh^a°æe¨åWLì¡†¥å¨¡fŒâÉñ2Ù°4HLªß¹F™¢+ãÑÉÛÈ‡Ùq&¸íÖ”0ë(G9Ú`gã|şâi»Øx@|;¸ßzÍ7äVºóLÏjCR?ñz(B¦x; aqBÊzåâ;hu€±\ÛÙd/º˜"¥¬ˆ{_©nŸ€í§j­K˜Á1y­KÖ¥!8ÌŒQe4Qrkyr3rÔ#¥ó°`Âûîû6dü"ÛSÔùí(vJYX‘]œÃïì¹ãa½ihP
 s\rüs˜côU	ÍnûÎş·dõc'‚´ı;(è˜v™¡6fÄ«
@@ -1159,8 +1153,8 @@ ezhI6µz~hœŒMm:¿wîßNC›Şo²¢3Ìyçış¯p5UJTßã;'¾)‡Bc6c-@­Ëş–å:G;cñ²äò†ÍÏd¶ä·û[Â
 Ùööi—©ôñ[-Ö3¦1Óh
 ‰’¥±GEÓŒ­n¨µÚ#ÙˆÔ³×"Á¡ûg B
 +x94	/q6!+l‰ó7|	ß½€?¸)–Šëtú½ŞÔØ;ú\ªôîï!SÒ3¾å]Ïµàå —fhP‹ìV\çBFpqYİ^Ã’'7¹VµL#8Ë.³'ÙÕ5$ªT:‚³IvñìÑÓkØn{Å„°=ïp©¬U«ÂvÛ™zé´!š–ùrùøñ“G×Ç<WØ¨ã–$á:u©0UÉï"ÈJ¼½†œWLœtZn4-Ğßâü)[0ÂÚ?ñ¦¯¡â)…T§İRéõPóTÔ&‚‰Óg%¤÷Q¹•¥ºš‚§jÁ.ª[:è|Éƒñ€~Gã«şlcµ’yç"#ş‡\<&¨î|ËR%7İ!¬ªvF¶Ô½w«Åxü[§k¢Ê’W#h¿]Ÿ:èÏ«Lñh½½œ„&Õ-UŠÎÒIú8]îÙíéHeoÈK‘ËJÌì5¬Q[‘ğ²]µªjÀq†ñ).İn¥ñÁöd2¹ºxº‹ÌìYÆ³}|4œôœZ£ÎJµŞFÀk«œ¾ª“ôÓ+·>›tš†M ¼¢¢0ùN“yošŠ5$%7fÆÚ\`ówI)’f JÂFØ*ÔB¥"¿^/>¼„ç‹Å?_ü>.^ÿšJ2S±>õ¾ËvŠ¢ùnìn´0	—©îöº»í°#<˜M¨à/õÏÉ÷RN umdSo½6§1Ü]ş{“‰ëî5ÓìrÑur®YÅôÇÀÇÍ Æ'õxÀí!w#P«©mØYŸBÆ¹ëÀ_®r±yàx•Íîúl¯±V§{w«n;]ÔS t[B{çuüt÷ş»¿ø›÷Dw¼âbşGÊÿnÕ‹º§¨8Ñg“4–¬m‹ùÙ4´Åœ¾=O¬X“¸vá£ xı¾[ÙO·è ®©Ú±µjwŞ™Ôuk/›¾¦A¡.†ş¶Êù”¾??÷ı65Æ}j'ÜüãFs:ÁÔ¦T"LÅåŒ]±ù[µk>|êa:rm““pN¡Ğ`OÃÆ"Îl4‹~lBàÊ£U»¬Ê¨£åŞ4l\—Â­ÎĞ<÷§_šƒ&ĞTÅ¾\ËÌ ”`»±AdİK#Ñ#Qßıu³°¦’Ğ#R„0Ñ LcÔZéàr|¹Sv×nq]Êìp8¹ƒƒ	ÿ]£©”4\ŒÇ§öÉ³¨öÂ÷WÃÅ]å¦Kº“œ¯»NîûBAŞ ÌmÁhÄÕ5»¤|¿Äºã4ÁÑÖ†ªÛh£…EÏëíàEòx…Æˆv@îŠÛˆ„à_\çæàUâĞy•Ò~¢¦w‘Aì&˜8vp¯¸qÌš‡ÿŠ8;õPl<r¿l Wãñ¸?h#ÍŸÊ‹dİÍº–RÈ=‘Ø*
-Ã "v6€¬¬M1[è=‚ïß2ãLiÊä ßû?PK    X7p]İ
-?Ò   d)  +   lab-source/labs/lab1a-mitre-soc/detector.pyµZmoã¸şî_ÁØ„:ŞKßPøàÒ${›6›‰÷®EŒ4²¹‘I—¤òriş{1|‘(YÊeïPI,Î‡Ãg†ÃG.•Ü,+kS+È2Â7[©aBHÃ—BO&şÙ-Eø_êğŸæ+ÁªğÍğLJ´™Ëª‚ÜZFe-(7^0(Ã÷©µñ³ŞÎ–™uÅoƒØ3k7`¶\¬Âóñ4™œÿ],?’…•Kèû‚ö^C^+nf•\ÑtrşyyñyÙ”µÙÖæ}ÉEÁÅJÏp±4L>|>=Í>,/{
+Ã "v6€¬¬M1[è=‚ïß2ãLiÊä ßû?PK    |Ep]İ
+?Òÿ  d)  +   lab-source/labs/lab1a-mitre-soc/detector.pyµZmoã¸şî_ÁØ„:ŞKßPøàÒ${›6›‰÷®EŒ4²¹‘I—¤òriş{1|‘(YÊeïPI,Î‡Ãg†ÃG.•Ü,+kS+È2Â7[©aBHÃ—BO&şÙ-Eø_êğŸæ+ÁªğÍğLJ´™Ëª‚ÜZFe-(7^0(Ã÷©µñ³ŞÎ–™uÅoƒØ3k7`¶\¬Âóñ4™œÿ],?’…•Kèû‚ö^C^+nf•\ÑtrşyyñyÙ”µÙÖæ}ÉEÁÅJÏp±4L>|>=Í>,/{
 n¼\ĞVq{Ì–ßÅO'g'_£··á‚·³œœeWW?_eË—ÇWÏOÈ‚pa’	!„H=[qŸĞQy:%ôO4¤“«Ãƒ³ìäly|ùãÁivu|x~vt5bnPMıÅšš¨ZŒı‚,U»¤Œ‹ç¤à¹¹ÖFM£ÿÄÓÍYç/«e­rÈpoç60ä¿äL
  ûÇKUL›l#^r(æ¤¬$3Ã‚’PdÌÌ‰6ª'2™Pmä6[3QT Äl½™ãÚ§¤Tls"o¿@nR²÷½U›Û˜¬*yË*â×kµkÿÀ*æ]ÌÜk›U³«“–Ç—Ÿ¦‰ÓQÙ“³e_Ôû˜E™['Æ+±.F1sRJ/” ˆY)ëª"ÇÆÈÁrùûÃ’ÛmG¤YƒzÀZƒU@ô‘’W0£”Zƒ¼$=ìÏà‘k£“ÔÍhƒ¦V¢/ô{90®ßœDCÑÂ£Q,7<P‚U™]/ˆ€]"ap|ŞÃßtbgêmøÔG£ş¿iByüZ^ùZğÿÔ@N‘eÉsÎ*òùò”ØZÄÈÕòä_Şƒ=ïAÊR*ÒøJ¸èyŠi—ĞİUi:%×7Q´xÙšqJ>Û MÉï„Z øšB[UüäR.j˜4O›•e¼ ‹¾ñÆ#^Ğt@§VÕ®R­*,`‘Ëñ$]‡ük£’X(·¡ñ§+T«*íÚFg Òà kzo"<McTaíğéu'äCÅ
 ’¶0YĞŒÖ´0§’.>× ákŒÆº#	‹€ekgƒ<´ÈÂ·3tO[f
@@ -1170,17 +1164,16 @@ i×\hÃ0}¼Ì”T\›8=ÖˆYUÃ±RR%t¹·2WJH!A[k.†ĞnW‰Æfo;št‘·_0Q¼©N
 rfbÁ¯ÉËéNÆ½Råí—´«ñü˜˜å†ç ë›æ!îÇvÍ´-]ÍúîxUeùšq‘ÙÁj5¼]VvpÃã«bkY¸/ÎƒöyTü¬íØî$~‘3¶İ‚(vKM(7­t¦`[±º‡m¡éÌpSAÒ?qñCÌ_Çñ·0ï¨Pë¿m?Üªì÷)¡Ÿ–#AÓiW¾ +¾ÅÆ:V‹O	İQó‹¦ó°üŞ8Öíyj=	mø#Ñ¤x0ô¤rë‘TxÔ],Û<ëßƒÒ½%‡C‘ÊK§æÛ}ğå^A©@¯½ªqU§•º¬»¶3rEİÖ¼æ|°yXƒ Ü’+m¢‰)5 _3±İÔsßEFSî>:âİÁN#<0Ú_·j×2Ba‘ÅPékrÙ“å:
 ƒ—Øq¥0©m-U¼¬n®mUs·èleç˜ìÅÔÚ&•+P„İ3^±[lJ»hÀOYÕz½ÀjÚk32rÌ.İxIşªĞèD}D$D¾?ìçÂœ×Jè˜ê„}¦3I:ÃÙìıÙjÕÂÁÅ“×\ïYkD±S\ÈbÇ£Î­”UÅÎ´i¿ú]¼sÛ¨§v@ÀCÿÁ>«ã¹›sØ’œ_Ù–cJ>ËÂ5 S×ıãêüì¢§m‹’¦ÑFëÄ Ë.•Ëö’ñ
 
-{Ü=w7kòËœ<ÃcşÒƒâÓÁÈtáØ„f2†Èİ]†åàfîÂ3ğ+3!’@±Ìj“§3®e)ÕAè\í…¬KYgß]†CF##Ïˆ°^E÷Ğ;‰Nã\ï7\ŠCäÆ·IÅØË¿­åÚ(·ÿ¼$Ô¹G]#"ˆ•ì_@iíOÛøØ@É™ŞVÜ$ÁÈ”ì§×û7şizıí÷ÈqYÎDÁ1ÒY ’\+¹ŠÈÅşøzìBqh’Æ 	'F1¡·7T2g)À8º¨ºŠß‚†.á¶ËÿÀ+8“æƒ¬Eášı’Ê•+Ëh¡Ä‘9y–^BkqÂ–±™â•‹Š‹œÕğ½SX×|0m'ê²3Û2­¤*üŞëy`Q	Åı× eÌfœ.õæ^q„mdAÔPÌ€ÅF€)³Ø#0)*ş³M3‹†J>´¦À|İQ´ŞªvÏÄ‘U\#:½!XıîtÌƒTwDçLø]‡_˜4šco·%êõèœĞ©5¿E$„ÙAİóHÁu.ïA=ÑÖH³":ÉÛtD³M&W4š*-÷¿ıó_Gç„{@Â?AÁëÍ˜$ÜóoNá'`D*p–or1Ã\¤ó>£‘Åu%Wá­É7ƒüÍ¬-¥ñg xm£cÚ<hÂ>%9f	bFKe HFp9ã6:I»$”Sş~AFiçÿşnUm`¯”*·asdl¶æ-øk02¡‹‚·ˆ—%»Ô_‡Ïııoß‚Ï|µ~:ÇTÒgëåKh`Â&¸a4y ¢y×?ÈC”^Ş¹¯…}I©€iCGQÔ¬hÜgÚ_¬;×@4òn)ääâ7fïC"Ï×ÍQŸ=pã/–É¶·t— eu·1­	[aÉ0vÁ¾tWÕ.¡èÅw(ãglS%¼×Xš41i1oc/àïù£ù0À“EÜ[È¹Äö«‰¬CØÄòÜ$~Òˆè2°¹¦ıIq]±¹aRºÇWE–,ƒFÙˆ éN±hĞC-Û5àÆ­&r8³/’‹İz³Ñq‘ìğÏq÷cJÿPCãÊ1=5` 7ˆ¤Ç4ªÜ0KÚ›†uU$Ó€vÃ?*WRŞÕÛïùµCFÈlyÂœm+¾Çx.ŠğMXŒİaÄÑ_„ËÎ«•1x¼*8ŒeSš‹–•6,¾Š…6vësïNÙ}t{½ïr€?)õÛ3f@„JeYômÏÍ·Áª«Ûêµ4MÍ~e0sµÙæ®à*q_´»Ö{Ëäı®ßìÉ1WLW ìuÛ:ãu¾=Ş(v“Ç«Ñ=«2¹v8ƒïú#½~ghÖÈŸÊ
-iÛÑ“;ÖwaÏl‚İ3ˆf+bÿzÔ÷‰rß–à}t°µØáP,1La¼)ì3Ş­ÆàŒx`íØNËŒ-ÿ‡+æLz
-ÃCç}Î§'‰qkŠ`[™ã¢(¥ÚßæéĞúí[O{÷]1=“¦åq»%&æëwƒS†İ¨'õãÄzÀuTCcÀ2„E½ÙâkS›HSÛ	³øc4eŸšè2LÆEÿ½€cÅèéÁßÉşÙ#‡ÿ><=9$GÇËãÃåù%ùédù‘\_œº6ìòøfFTV:L±!×bo|!Gçäy07_HHŞW‰2üó°FòÆÿb%&½ŞD/c
-?M…,Ï8Ó~}Õ=ŞjñZ¿ÜNÑÕ.á‘³Öa¾mØfÛ§9‘SW%~Mè»ówŸæï®zÇ´¿!ÄûëeGlü;B.„t°°5ì•^mäÍII¯Ÿ›µ¾Ü+„K.7Û
- 3—Ö—ùD§ßÜ ©ë¼‡kßË¯{×âYûcûIÈ>Oše•ÔúÈ16œz'?ZXKE2ì¾qHÓaøóæÃçV»ÛAÏLW Ûd¿ÃÓ£pàã³¶PÌú~NxI2Ûe¾W¡Y†…#ËüÏ\™üPK    X7p]Œ¿(x7  d  2   lab-source/labs/lab1a-mitre-soc/docker-compose.yml¥Rßkƒ0~÷¯8|×¶ŒÁÈ›TGWGí¶GIÍ­‹9IbÙŸ?lµ³P¤¬yÈwßıúî,šƒ¬Ğ2@ ÃÊ‘ét€]+•8© i‡?AØUßh>¥BñY÷,—M©yjéŠöÁPàC}†tÚUŠe´.Óõ6Ù¼GYY$Ë|üG¿<Gi–ÄåkTù&.·«MR¬ò,fà?œ@Rm}š§{„3E{Ëf‚;ÎìÔº¦u¬—#Ç±cÖ‹>Ä uÜ8­Vhm`5
-¯ãÛ¯q#şO\xÎq•BÅw\b2n4¦ÿ4ŸÏY÷İÉÃàØ ¶$ı—ãbŒXY·ŠßuJá9Ç#İQ]â®]Uúò–EÛ4¿z[‹[øšœ÷¸C]Ó£ğ¾-IÚûPK    X7p]'^^O   k   *   lab-source/labs/lab1a-mitre-soc/Dockerfilesò÷U(¨,ÉÈÏ³2Ö34Ò-ÎÉÌåâ
-÷òvñRĞO,(àâröˆTHI-IM.É/Ò+¨ë#	pq9ûº(D+ARÒQPBW¡Ë PK    X7p]¼¢Ù]   {   4   lab-source/labs/lab1a-mitre-soc/Dockerfile.dashboardsò÷U(¨,ÉÈÏ³2Ö34Ò-ÎÉÌåâ
-÷òvñRĞO,(àâröˆTHI,ÎHÊO,JÑ+¨‹ë#‹pq¹Fø»*Xpq9ûº(D+AÌUÒQPÂP¯Ë PK    X7p]Ã±vP   n   4   lab-source/labs/lab1a-mitre-soc/Dockerfile.simulatorsò÷U(¨,ÉÈÏ³2Ö34Ò-ÎÉÌåâ
-÷òvñRĞO,(àâröˆT(ÎÌ-ÍI,É/Ò+¨‹ë#‹pq9ûº(D+AŒRÒQPÂP¢Ë PK    X7p]ğ!Ä[  O  8   lab-source/labs/lab1a-mitre-soc/download_attack_data.ps1u‘AOÛ@…ïû+F+«
+{Ü=w7kòËœ<ÃcşÒƒâÓÁÈtáØ„f2†Èİ]†åàfîÂ3ğ+3!’@±Ìj“§3®e)ÕAè\í…¬KYgß]†CF##Ïˆ°^E÷Ğ;‰Nã\ï7\ŠCäÆ·IÅØË¿­åÚ(·ÿ¼$Ô¹G]#"ˆ•ì_@iíOÛøØ@É™ŞVÜ$ÁÈ”ì§×û7şizıí÷ÈqYÎDÁ1ÒY ’\+¹ŠÈÅşøzìBqh’Æ 	'F1¡·7T2g)À8º¨ºŠß‚†.á¶ËÿÀ+8“æƒ¬Eášı’Ê•+Ëh¡Ä‘9y–^BkqÂ–±™â•‹Š‹œÕğ½SX×|0m'ê²3Û2­¤*üŞëy`Q	Åı× eÌfœ.õæ^q„mdAÔPÌ€ÅF€)³Ø#0)*ş³M3‹†J>´¦À|İQ´ŞªvÏÄ‘U\#:½!XıîtÌƒTwDçLø]‡_˜4šco·%êõèœĞ©5¿E$„ÙAİóHÁu.ïA=ÑÖH³":ÉÛtD³M&W4š*-÷¿ıó_Gç„{@Â?AÁëÍ˜$ÜóoNá'`D*p–or1Ã\¤ó>£‘Åu%Wá­É7ƒüÍ¬-¥ñg xm£cÚ<hÂ>%9f	bFKe HFp9ã6:I»$”Sş~AFiçÿşnUm`¯”*·asdl¶æ-øk02¡‹‚·ˆ—%»Ô_‡Ïııoß‚Ï|µ~:ÇTÒgëåKh`Â&¸a4y ¢y×?ÈC”^Ş¹¯…}I©€iCGQÔ¬hÜgÚ_¬;×@4òn)ääâ7fïC"Ï×ÍQŸ=pã/–É¶·t— eu·1­	[aÉ0vÁ¾tWÕ.¡èÅw(ãglS%¼×Xš41i1oc/àïù£ù0À“EÜ[È¹Äö«‰¬CØÄòÜ$~Òˆè2°¹¦ıIq]±¹aRºÇWE–,ƒFÙˆ éN±hĞC-Û5àÆ­&r8³/’‹İz³Ñq‘ìğÏq÷cJÿPCãÊ1=5` 7ˆ¤Ç4ªÜ0KÚ-ë4ªH¦í†U®¤¼«·Şók‡ŒÙşò„9ÛV(|ñ\6á›°ºÃˆ£¿—W+cğxUp Ë¦*4,?.*mX|míÖç Ş²ûè"öz5Şå Rë-¶gÌ€6ş•Ê²$èÛ›oƒUW¶ÕkiššıÊ`æ.j³Í]ÁUâ¾hw­%ö:–É;û5\¿Ù“%$b®˜®@Øë
+¶'tşÆë|{¼Qì&3W£{Ver)
+ìpßõGzıÎĞ¬‘?•Ò¶£'w¬ïÂÙ»gÍVÄşõ¨!:ïå¾-Áûè`k±Ã¡Xb˜ÂySØg¼[ÁñÀÚ±ş–[ş=WÌ™ô†‡ÎûœOOãÖÁ¶2ÇEPJ;´¿ÍÓ¡õÛ·öî9ºbz&MËãvKLÌ×ï§ÿºQOêÇ‰õ€9ê¨†Æ€e‹z³Å×¦6‘¦¶fñÇhÊ>5Ñe˜6Œ‹ş{ÇŠÑÓƒ¿“ı²Gÿ}xzrH—Ç‡ËóKòÓÉò#¹8¾<9?:9tmØåñÌ:¨¬t˜bC®ÅŞøBÎÉó`n¾¼¯eøçaäÿÅJLz¼‰^Æ.~š.
+Yq¦+üúª{6¼Õâµ~¹¢«=\Â#g­Ã|Ú°Í¶Os"§®JüšĞwçï>Íß]õiCˆ9ö×ÊØøw„\2é`akØ+½ÚÈ›“’^?7k}¹!W—\n¶@f..­/!ò‰N¿¸AR×y=×¾—_÷®Å³öÇö’}4Ë*©õcl8õN~´°–ŠdØ	(|ã¦ÃğçÌ‡Ï­v·ƒ™® ¶É~‡ÿ¦GáÀÇfm¡˜õıœğ’d¶!Ë2|¯B³G–ùŸ¸*2ùPK    |Ep]Œ¿(x7  d  2   lab-source/labs/lab1a-mitre-soc/docker-compose.yml¥Rßkƒ0~÷¯8|×¶ŒÁÈ›TGWGí¶GIÍ­‹9IbÙŸ?lµ³P¤¬yÈwßıúî,šƒ¬Ğ2@ ÃÊ‘ét€]+•8© i‡?AØUßh>¥BñY÷,—M©yjéŠöÁPàC}†tÚUŠe´.Óõ6Ù¼GYY$Ë|üG¿<Gi–ÄåkTù&.·«MR¬ò,fà?œ@Rm}š§{„3E{Ëf‚;ÎìÔº¦u¬—#Ç±cÖ‹>Ä uÜ8­Vhm`5
+¯ãÛ¯q#şO\xÎq•BÅw\b2n4¦ÿ4ŸÏY÷İÉÃàØ ¶$ı—ãbŒXY·ŠßuJá9Ç#İQ]â®]Uúò–EÛ4¿z[‹[øšœ÷¸C]Ó£ğ¾-IÚûPK    |Ep]'^^O   k   *   lab-source/labs/lab1a-mitre-soc/Dockerfilesò÷U(¨,ÉÈÏ³2Ö34Ò-ÎÉÌåâ
+÷òvñRĞO,(àâröˆTHI-IM.É/Ò+¨ë#	pq9ûº(D+ARÒQPBW¡Ë PK    |Ep]¼¢Ù]   {   4   lab-source/labs/lab1a-mitre-soc/Dockerfile.dashboardsò÷U(¨,ÉÈÏ³2Ö34Ò-ÎÉÌåâ
+÷òvñRĞO,(àâröˆTHI,ÎHÊO,JÑ+¨‹ë#‹pq¹Fø»*Xpq9ûº(D+AÌUÒQPÂP¯Ë PK    |Ep]Ã±vP   n   4   lab-source/labs/lab1a-mitre-soc/Dockerfile.simulatorsò÷U(¨,ÉÈÏ³2Ö34Ò-ÎÉÌåâ
+÷òvñRĞO,(àâröˆT(ÎÌ-ÍI,É/Ò+¨‹ë#‹pq9ûº(D+AŒRÒQPÂP¢Ë PK    |Ep]ğ!Ä[  O  8   lab-source/labs/lab1a-mitre-soc/download_attack_data.ps1u‘AOÛ@…ïû+F+«
 ‡µï‘8  ĞªQlD½lìq<àÌ¤³ã¦Pñß‘VDÀi.ï}oæM6W=©„—Š-*rp¾4Ùyç²“ÇQ Çp)Äa­ƒlY–µÒÎV"~K¦øÙPwJ	C4‹õ]~›„½ËíGhg¶KÓ¢Ğ¸Ï7dİ°j-lÈ–×²-9¯æâe„dô'4Ñb±ÉP‹w1ÅgÁîFÉ0\H2ğ§²ç^bC¼ë¤m©¦ØÃ·EµšÃIU}™]Áü?
-ÊjñÖ7=æyî!œ‰âFeàf&½(Ìî#»ÿ–;7¸^á¯“A¸V‚ç›Ã÷ÁÎ¨GxÛ£sÔÂ$°L*LöZèÅÑüu  Ö©ìÁWş[¯iû˜`´×ŠÑ°É½{t.Kô0¾nr†ÛCdşycİ‡`3=pê¹"ò¹¤œÂKêúŞ0y÷PK    X7p]¨Zôe  š  (   lab-source/labs/lab1a-mitre-soc/Lab1a.mdYÛnI’}¯¯@À>hY%%Ùn.æAå1ÑjÛÙİ³f²*Hæ¨*³&/¤‹~ê˜/ô—"²n¤¤õº6Éª¨ŒÈçœŒ:[±ÔF8möŠ(:9;±ƒfŞH·‡[½¶ğõ÷Â/0~+,æ0A‡™“Zñ?Mçw7p5ŸÿÇõüÅìã5L„İ,µ0yÎœÏQ9Ø•kïà^¡”Ê;´ğS•Ë­Ì½(@¨„4ôí¯Råzgá“Ş¡™m°(à?a¢³{40A{ïtuzEwXi+iùcØ8WÙñÙÙZº_&™.ÏJ,ôJ«³÷Óy,dœí—hl[\ˆ¥=sñ¬RñÇB,S—ÒŒ­Î¢èÒnQ%Õôòï”úm½İƒÛ  ÊA¯Àm¤…¢-æ öÚƒİh_ä°DËÁéq¥	ÜyÅ·Z_U…Är®¨6 TÎõË›ú·ôÜ:ñk]VÚb˜*[aæÀˆ,šœ’B¯`0Ó&·ªBH½«Cg|t…F8L¢ó&Ò:©Ö^ÚÌÓ4Â[ãÂ;m2äHótxñ
+ÊjñÖ7=æyî!œ‰âFeàf&½(Ìî#»ÿ–;7¸^á¯“A¸V‚ç›Ã÷ÁÎ¨GxÛ£sÔÂ$°L*LöZèÅÑüu  Ö©ìÁWş[¯iû˜`´×ŠÑ°É½{t.Kô0¾nr†ÛCdşycİ‡`3=pê¹"ò¹¤œÂKêúŞ0y÷PK    |Ep]¨Zôe  š  (   lab-source/labs/lab1a-mitre-soc/Lab1a.mdYÛnI’}¯¯@À>hY%%Ùn.æAå1ÑjÛÙİ³f²*Hæ¨*³&/¤‹~ê˜/ô—"²n¤¤õº6Éª¨ŒÈçœŒ:[±ÔF8möŠ(:9;±ƒfŞH·‡[½¶ğõ÷Â/0~+,æ0A‡™“Zñ?Mçw7p5ŸÿÇõüÅìã5L„İ,µ0yÎœÏQ9Ø•kïà^¡”Ê;´ğS•Ë­Ì½(@¨„4ôí¯Råzgá“Ş¡™m°(à?a¢³{40A{ïtuzEwXi+iùcØ8WÙñÙÙZº_&™.ÏJ,ôJ«³÷Óy,dœí—hl[\ˆ¥=sñ¬RñÇB,S—ÒŒ­Î¢èÒnQ%Õôòï”úm½İƒÛ  ÊA¯Àm¤…¢-æ öÚƒİh_ä°DËÁéq¥	ÜyÅ·Z_U…Är®¨6 TÎõË›ú·ôÜ:ñk]VÚb˜*[aæÀˆ,šœ’B¯`0Ó&·ªBH½«Cg|t…F8L¢ó&Ò:©Ö^ÚÌÓ4Â[ãÂ;m2äHótxñ
 > Ûis34[™!İ—é-š=¬Œ.!Ój%M‰9çDvo“è"_ĞÈÕf%ÿáJt"NÔéQ1–^åæ‡xšÍ§ƒ{¥wæk„•,0‰.¸©³Úmö`°Bá0Ü¢rJo•\*‡¦2H?-÷`µo2É´røà’èU—Í¹>ÙF¨5­‡jZòù´İiï*ï’èu?[Šº¢ŠŠ¬,}A›Nƒ®ÃÒ£¤òÚÛbßÅ·{å6èd,Ñ™}½Ih›}I­b°2:÷™$Ø„X‚càU†Æ	©Ü~ÀÙPñ
 YJ® 0ZYV†]NÃ£®2G-VMa²¤¤¼Á(š¢¼E{Ñ¿J÷Ş/›Û“(š:È5Z8=UÚ‚Áxi~…„[©üÃ &¿üz5€¥¨ `ë…&t‚0ktÈ
 ís ôd†–òÛÛŸDBÁÕÄ=í±Ü#Üé‚ÿÁ·BÑ^oÄVjÑcÇíßèÍÆ-ø‘Û°¯T·‘D@‹•T¹Tk›üİj®³™P–ğdöp	3­rKáaÑv&]9‘¶*ÄŞBƒ·èy„qÒøì¬Ğ™(6Úºñ›áp¸¡ZÀP¨«ªBzHÎğ±AXİş´	Ô	ÿÿ›ã°º€ö­(à1Š&ÔY«BïÆQ´X,ë-è¬OÔ¾şşGÔâ›!sğS&T.sá°îÌ®‰§“ƒ9Çú"îÛBë{_\Úçì ä-°‰]ÿÉĞ‹¦”Š+'mZ’6@i sv{ûØ½uXrœ'ğÉ £ÔòÆÓV¬ĞíIF¼ù8Šâ#•ãq÷C³ÛQ?£SQoŞY4Q·\”LWû ÄÔ›ÛN\é"GE3^KØ^ŒVÅ¾kBmzø(ôºaú„Ç¹tÁ (@¦¶t×ûé¤ZañÜó½[¼ÅpG%¬İ±r£±Œ:âiºúGÄŠ3x†ñ¬ÓU…9xådÁ­$]!H,	pT‘İƒ!²…Ú²B*„%®´AÒ*4’0°ÖE×0˜VóAª¬ğ9×ëe 3Š¦®Qc©¤“¢ >ÖŠˆğAd®Ø÷‚Œ†£Wñğuœ¦óáãápœaúáİGÚÊ6šB¯×HÁú,CkWÂ²¦¯GIú&&éğ8Úhœ¦ğëÕİx'$I^SwXQjíB\B¥ƒ‹‹Ñy
@@ -1188,14 +1181,14 @@ YJ® 0ZYV†]NÃ£®2G-VMa²¤¤¼Á(š¢¼E{Ñ¿J÷Ş/›Û“(š:È5Z8=UÚ‚Áxi~…„[©üÃ &¿
 U¯¯ºj÷Iİ6~a}MtÖÂ8vB9¶\ş­ËU y`»1Çı+ºøšŒr|BóùPhB ’%”3uÊW«¾ğN—ÂÉŒ)âÈ$ğßÚCxS!æäõZ'ŒkäA¬Ğ&—J˜=Ó4æ²¦´WlÄ˜áŠ·¹I·2G•á“½?Ú”§üö¬¨r®w,ã(n]Î—L{å—µ~²ç'ÒNßZÊ^º}·«‹âZÖÁ:á¼¢¹ŠlÓñyı0Xå;ÎID²7ª…‹KòºW’·œıÏ*Gc]cnÃaå¸,''¡éçg–a‚§¥,xlÑ;L?%Å ’ğ•$E+!oĞ†Æ¥UœZQbwËé))xîéLÁä7å‚Î2Õ´Ê‘DÑWÂÜÆ İè"ïmì»«éíÍäË§«Ùì×w“/ó÷w7³÷o'9oAr@Jƒ“%Â½GR×bxñ*Š®Ôs?HıYÂ]4Ë· j:{>¦¯6ƒ®­³Nªı‚	Œ âäjÏp{1‚Şbv}õáËôÃüæî—«Û/³›ë&³”ñôàƒ3ä´ŠâŞr:ˆ
 kåZ‘Y`Joƒ‚ñ¥pÙ&‹ÊÀ»'ì“*öÎ|Ê87=0^3æˆSŒ.;Íi='Ó×—‘yÙ!³otš–xBW×ºÚÇS‡%$Ÿ©¥?÷[ú¹ï’¥¸¯LYo0$Õ:0iö-:¦ËºCÈ+æ,nâä¬Øâ vB:
 Öu<8 ƒ+‚pàĞ†ªÃ”$\Ì%+íÖ’¤ã§Aë‹À…'príŞb¡w]Km•zKŞÓL?†¦Ä<n­Hhr2$}ÍM:‰'(†Ì¥U…Â¯L¤±}v’KÌt‰Ò°È/2ĞÃ1-Ğw¹\­Ğì—F7‚ş±™L‡ñh4O‡d&‡ÃÿyÙ[9´·úa”“Qr™ÖŞj8öıßAÈÑ÷…u!G/…¼ø¾ç]ÈÚØ-Ú¥F¤´ÍÎÖç˜Pğó¶àŒÈŒ¶4&Š¢pH~¹´éw—öò[¥M¿»´—ß*múİ¥½ü”w½Ú.º[ÉiÀõõ*ÏA(í6tŠÉ„úvIG\Òoúöúq¯_ôí/­¸§.Ä¿?ôøwÂKÖ¤›Ã<s=¶µNõã¡î†© ´şé¬ĞóLn•‘Ù†œD«@Ó‰…t›)QÒğÊ‘^ev ?ßİÚäh3#y¥<ÙÊÃT¤}&äìê4èÜ7íÊšég®wªĞâ)£'Ÿ›Ÿ¾„$¾pÄÊ¦mŠš©¥¯©Ò·¤!ëÑRsEşÏ“Cß´†Ç²ÒWÛÁg;|kb°kl¿Õ¬tĞõJ«ƒ¹OE3Ò1éšáA8´.:#ÉfÿğgôğÒa,ä¶X²°Ñ0ÂWŒµŞÏü²”åêÓäYÈùßæ<¥0¡¦şõñààœGQ»Y¿Í¢²íê	8Ÿòcã'æšKÇ³ûwœúÁ÷MUº’zzop‘À¸ŞõN¿ÿ3˜&úOkşÄ˜æÿöÏà¨&<‰¿‚NB}~ıíë‹qm!j}ô|@PÿÁ¡„wŠ+Â3ù+H‡Ã¯¿ı‘^i‘¦‚J#èÕiyóª‚ò]‰Ì‘!i‡€İäŸC†Şë­>!‡a•çé,êûŒ™²g\ÌïM˜¨<¥Ë?ÕÔì-.ÓæFûeAê¨©<ß—•Ó%<Âõ³ûş(<zl —’lJ˜
-.½#=æ5äëøQ0ëŸe›(iqÊsòÕÄ@4å~2NXz°¦ê‚‚Ñ ƒ}ĞÏŞÃ‹Å0²±ƒú]äÒğ·ûÚ’¾±ÕqHGZïöHo,¡n3¨OœÎÈõIVÜ wÀXí+Â…	"SŸlKÉvƒû¦f„£ÏV¾D(¹ó(Şu8…ŞÓÈ´%?ªm„®-ùéBí{¯*ò©dº™Á}^IáÕÊ‡8ÌN^xdxŒøi0Úon(:xµVŠŠÓ¯mÉøÖ/R2­¬´<Ja©+$Ğ¼ø! ĞäcYĞ;Ãî0ÅñèåT8VzÃQFˆÑ¥´ÈïxÚY¸Tß×½šû7PK    ™Ap]"›ÊÍ   ×  1   lab-source/labs/lab1a-mitre-soc/logs/security.logÑAjÃ0@Ñ}N1pÌh¤Æ®wİºq!´t-,Ùu4A3&äö…ÒBkÒM.ğÿÒn‹ÍÖ˜W|ì;ƒğÜï_àMbÑ%Ä¬0ó4Å )ƒ,ÃEÆe¯0>i¨6mµÁıÕ¨3ŞŸ=ì}šc€³¹p	0rÂ¬+âÎ\œ#k@äH7Dw¯Hÿ‰í½¢½)º¾öQ/\>@Ÿ!DƒÆ°âğ“OYô‹ ªZ¬œ³•µ¸[ÛMgí¯?>œRN¢Å+—ŸK¼èæPK    =8p]"›ÊÍ   ×  5   lab-source/labs/lab1a-mitre-soc/logs/security.log.bakÑAjÃ0@Ñ}N1pÌh¤Æ®wİºq!´t-,Ùu4A3&äö…ÒBkÒM.ğÿÒn‹ÍÖ˜W|ì;ƒğÜï_àMbÑ%Ä¬0ó4Å )ƒ,ÃEÆe¯0>i¨6mµÁıÕ¨3ŞŸ=ì}šc€³¹p	0rÂ¬+âÎ\œ#k@äH7Dw¯Hÿ‰í½¢½)º¾öQ/\>@Ÿ!DƒÆ°âğ“OYô‹ ªZ¬œ³•µ¸[ÛMgí¯?>œRN¢Å+—ŸK¼èæPK    X7p]eıë  À  A   lab-source/labs/lab1a-mitre-soc/mitre/enterprise-attack-mini.jsonÍSÁn›@½û+Fœ9’o­ª{iN­"4^Æfk˜¥³ƒ+ò¿W,àC“ôbUBvŞ{ÌÌã½, "=µ­!Út\Öİõg¶œNâ¸ÆM†qcU(FU4û¸±l¨Ûü"£>ZÃÏ ÀK¸Ït/ŒUI8Bİ·dŠ‰·{\dSqhàšúÚˆfY–NP#„JŸ§ù*Nâ,{LÓu¸’4MLàÆ•vk?ŠflÂŸ¥S‚¯NMÅ’¼Ûê¥ıOe?Š% ó›ÀÛö<P2ÛßyP;´hùğŠÆ¸ÕÃ±"†½?:)= t¼gwdpr]…
-}EÆm-S™LíÑs¿3¬¡-	±¡É£¹Oƒ®CÅë¼s«GÅkÕÁ Ç++¢“º¯Tª­_/—ƒH'»å´‡e`/£‘}¾<=Cìm]¦BËE[¡k„ôı1‚Øˆ3B%±Z¬ãÁ’·Zz.‚lQº-_7+I+ÖŸı+öçgÉÃ€;ßİ,Béıê¦úFzt²‡ï$k¾XoÜäôá@õ4­öq±Á®í	ü æA:fË;pBS‚Êyõ€\BíÖÀ—,o½Jg´º}`æ‹ÿ÷À¤÷«ÿ 0åhŞmƒ’'ù%(€§ÅùPK    X7p]zÔbÃ&  ã  /   lab-source/labs/lab1a-mitre-soc/mitre/README.mdm‘AKÃ@…ïû+Ú@¯ŞDz(*ˆÍÁƒĞl³³íf'îLXûïe,ˆgx3óŞ77xŞÕ¯[Ü×õíÃ#Î‘s ÷Aè| 1¦î	câµŠÌé,à®>²×E¥4&/´¶ª¶=¯}uÍ
-2Ø°¯wokÑK §è¡å¨ÖG? =A3C©í£ÿœH0	9øˆ'{ÄÆVÆÔ\z³´åa¤TŒøÖÛ€íÕÃßG+´Bš"ºÄ^8SÚ÷Â1MÓŒ¥–R›êİq­;,IÎª­FÙa!á?ù'ùz¹SŒ^ıı"\P lF¢‘Å+§K…‚Ù‘R«œ0&ê(É¼¤›B˜ÜS„WĞ—ØèÀÚSÊ%÷$´è¼åó\e¾PK    X7p]           /   lab-source/labs/lab1a-mitre-soc/output/.gitkeep PK    ˜Ap]"lQÃY  w	  4   lab-source/labs/lab1a-mitre-soc/output/findings.jsonÍUMoã6½ûWtÙC#™”í8Ö-m±h€v»èúPìb!ĞäØb#‘*9²,ö¿Ô‡å$Nm/=Š3o8óæ=êË Ú¡A'U.(Ê JYzsóë5»ÎxšÍWÉœ/Óùì;Æ2Æ¢«€òR˜\B·eîQZ£|”Á¢n….Qåµğş`Ê©pè[ª(ƒY—¡Òf—KÛ˜pmÚVšæ÷ÆJT;Œ2ø2×ÙÆIÌ·º‡†‹k§=Æ‚HÈû¸ÒF'xkÚöFD-¨ˆi[zú
+.½#=æ5äëøQ0ëŸe›(iqÊsòÕÄ@4å~2NXz°¦ê‚‚Ñ ƒ}ĞÏŞÃ‹Å0²±ƒú]äÒğ·ûÚ’¾±ÕqHGZïöHo,¡n3¨OœÎÈõIVÜ wÀXí+Â…	"SŸlKÉvƒû¦f„£ÏV¾D(¹ó(Şu8…ŞÓÈ´%?ªm„®-ùéBí{¯*ò©dº™Á}^IáÕÊ‡8ÌN^xdxŒøi0Úon(:xµVŠŠÓ¯mÉøÖ/R2­¬´<Ja©+$Ğ¼ø! ĞäcYĞ;Ãî0ÅñèåT8VzÃQFˆÑ¥´ÈïxÚY¸Tß×½šû7PK    |Ep]"›ÊÍ   ×  1   lab-source/labs/lab1a-mitre-soc/logs/security.logÑAjÃ0@Ñ}N1pÌh¤Æ®wİºq!´t-,Ùu4A3&äö…ÒBkÒM.ğÿÒn‹ÍÖ˜W|ì;ƒğÜï_àMbÑ%Ä¬0ó4Å )ƒ,ÃEÆe¯0>i¨6mµÁıÕ¨3ŞŸ=ì}šc€³¹p	0rÂ¬+âÎ\œ#k@äH7Dw¯Hÿ‰í½¢½)º¾öQ/\>@Ÿ!DƒÆ°âğ“OYô‹ ªZ¬œ³•µ¸[ÛMgí¯?>œRN¢Å+—ŸK¼èæPK    |Ep]"›ÊÍ   ×  5   lab-source/labs/lab1a-mitre-soc/logs/security.log.bakÑAjÃ0@Ñ}N1pÌh¤Æ®wİºq!´t-,Ùu4A3&äö…ÒBkÒM.ğÿÒn‹ÍÖ˜W|ì;ƒğÜï_àMbÑ%Ä¬0ó4Å )ƒ,ÃEÆe¯0>i¨6mµÁıÕ¨3ŞŸ=ì}šc€³¹p	0rÂ¬+âÎ\œ#k@äH7Dw¯Hÿ‰í½¢½)º¾öQ/\>@Ÿ!DƒÆ°âğ“OYô‹ ªZ¬œ³•µ¸[ÛMgí¯?>œRN¢Å+—ŸK¼èæPK    |Ep]eıë  À  A   lab-source/labs/lab1a-mitre-soc/mitre/enterprise-attack-mini.jsonÍSÁn›@½û+Fœ9’o­ª{iN­"4^Æfk˜¥³ƒ+ò¿W,àC“ôbUBvŞ{ÌÌã½, "=µ­!Út\Öİõg¶œNâ¸ÆM†qcU(FU4û¸±l¨Ûü"£>ZÃÏ ÀK¸Ït/ŒUI8Bİ·dŠ‰·{\dSqhàšúÚˆfY–NP#„JŸ§ù*Nâ,{LÓu¸’4MLàÆ•vk?ŠflÂŸ¥S‚¯NMÅ’¼Ûê¥ıOe?Š% ó›ÀÛö<P2ÛßyP;´hùğŠÆ¸ÕÃ±"†½?:)= t¼gwdpr]…
+}EÆm-S™LíÑs¿3¬¡-	±¡É£¹Oƒ®CÅë¼s«GÅkÕÁ Ç++¢“º¯Tª­_/—ƒH'»å´‡e`/£‘}¾<=Cìm]¦BËE[¡k„ôı1‚Øˆ3B%±Z¬ãÁ’·Zz.‚lQº-_7+I+ÖŸı+öçgÉÃ€;ßİ,Béıê¦úFzt²‡ï$k¾XoÜäôá@õ4­öq±Á®í	ü æA:fË;pBS‚Êyõ€\BíÖÀ—,o½Jg´º}`æ‹ÿ÷À¤÷«ÿ 0åhŞmƒ’'ù%(€§ÅùPK    |Ep]zÔbÃ&  ã  /   lab-source/labs/lab1a-mitre-soc/mitre/README.mdm‘AKÃ@…ïû+Ú@¯ŞDz(*ˆÍÁƒĞl³³íf'îLXûïe,ˆgx3óŞ77xŞÕ¯[Ü×õíÃ#Î‘s ÷Aè| 1¦î	câµŠÌé,à®>²×E¥4&/´¶ª¶=¯}uÍ
+2Ø°¯wokÑK §è¡å¨ÖG? =A3C©í£ÿœH0	9øˆ'{ÄÆVÆÔ\z³´åa¤TŒøÖÛ€íÕÃßG+´Bš"ºÄ^8SÚ÷Â1MÓŒ¥–R›êİq­;,IÎª­FÙa!á?ù'ùz¹SŒ^ıı"\P lF¢‘Å+§K…‚Ù‘R«œ0&ê(É¼¤›B˜ÜS„WĞ—ØèÀÚSÊ%÷$´è¼åó\e¾PK    |Ep]           /   lab-source/labs/lab1a-mitre-soc/output/.gitkeep PK    |Ep]"lQÃY  w	  4   lab-source/labs/lab1a-mitre-soc/output/findings.jsonÍUMoã6½ûWtÙC#™”í8Ö-m±h€v»èúPìb!ĞäØb#‘*9²,ö¿Ô‡å$Nm/=Š3o8óæ=êË Ú¡A'U.(Ê JYzsóë5»ÎxšÍWÉœ/Óùì;Æ2Æ¢«€òR˜\B·eîQZ£|”Á¢n….Qåµğş`Ê©pè[ª(ƒY—¡Òf—KÛ˜pmÚVšæ÷ÆJT;Œ2ø2×ÙÆIÌ·º‡†‹k§=Æ‚HÈû¸ÒF'xkÚöFD-¨ˆi[zú
  ¡,Œş³ÁÇ½D¥ê%šX¶X%él•.ù	Mí %æ•Uz«QåX[úáËÕü†-xºJ–7<]ñåĞ6	j‘ÑÏímÑàë)c!ö©Íí¨#ôŞz¯7%‚A:Xwİ^K¥½´{t}_#Cº@¾L~“°d9&Ha”V‚0ïörd& ÖœÍ¯OŠá¦‡ú•nª1†{­ĞH<ÒÆ–1çk¶ÊØ<KÜ½{û+¼–Â€BBI¨`ëlco vBOP[GÒôê†]Íç³«ÙŒ4Sjƒ¹iªºA’íyWV[“»¦Òº@(í¤5*Ãs®7ÉXü2]†UûĞoâÇç›èK
 IZûmCcvöùˆêòÃ/–l\âQí³é´“|ÒÆëvÓã~ÚÎ0}ZÀ“ş+×Á¶Qï—Z¡3q\Š1]¡—N×é€¼U{t^8*ñ ¡BU… ÒÛ‡A§\cŒ6;°V–
 ëÉƒ0
 J+Ey”¶6['<¹FRãğÙ†¤Ãğª=]ğfÆXÂûø2Øô[0a´~Î4IŸFKkï›:]ız[îeXßıŞ-¶õøOo\Co­“­hµ˜¼äéÅ˜Ğ¿Ì=ĞïñküÎ9;ï÷Ÿô®8ïöt÷Áğ' Ü£!tø’Ë'«|îØ[‚…'x±v[
-/*„¸{ÉÂÆ{láïñğ6ÿ*Óşà°Õµ(áVJôşŸÌû<ù¿˜˜söoL|fø&n|/Hè9v|ií8áSÈö_êáP 9.Ìƒp	ÿ{Ö=B!|]İ„×ÕÿÀäüôù­&Ÿ ||ıPK    X7p]8êN®Ï  Â  )   lab-source/labs/lab1a-mitre-soc/README.mdXÍn9¾÷S``BwG’8ãÅ;Á
+/*„¸{ÉÂÆ{láïñğ6ÿ*Óşà°Õµ(áVJôşŸÌû<ù¿˜˜söoL|fø&n|/Hè9v|ií8áSÈö_êáP 9.Ìƒp	ÿ{Ö=B!|]İ„×ÕÿÀäüôù­&Ÿ ||ıPK    |Ep]8êN®Ï  Â  )   lab-source/labs/lab1a-mitre-soc/README.mdXÍn9¾÷S``BwG’8ãÅ;Á
 qbÃöL‹ E–Ô³Y=$[² æ´/°û„ó$‹bÿH–í	6©)²X¬úê«}—b#şñ_¸k¸EY;6pIKàÓôîæ=Lîî~:ÿ˜$w…öP9úe …%YœèA€×ee0…à„õ•phÈÍïl
 +ÌÆkkr÷Cë³$™ÍfBÂ›÷-hÿşü÷’›Ú`6((¹G¿Ÿ«´w&Ú*m—şÑ¼ıÃÀíİôŸ€ÖiY”hÃ£‰—$…Û«sPÂsN±§ #æäD ·W[†'›¬u(à‚ä=:¸@¨Êa@z,…Á ş^k‡ @ª)©¶!…Éõîq“Âåå§&SKäñÂh¸Ô¶~Hás)ª.~ı2IAÀª6˜„RÈB[L8DBŞ> ¬ƒ&›'ÉÑÜ4›óq}’dğE[Ek×´Fw[ 1Ivp‚İÀ9•y„Õ8É`sGk.Ú½náÑ­´DßÄIÖ.‚à`}I6m=„Â!ökÏ’d·Ílá†\àBÔ&À±Òä`›l³,ëÿ“-Ì:hÌx
 åafhé_u˜È-g)ˆª2=¸Ú Oaí4ãwFu¨êğªÃMş›'ÛXòRX¸B·×Œ0²Ê³0ëÑÁ3/´¯ŒØø{i[=%¡D)àJ+´SVk†º‡-LVB›˜J`V„P½zUgo‡Ãá¬ÙÒë²6Œ>ŞrRUÈÎø-ÙMbå†*-aWC@˜¿5x%Û•§t5·r´Ğğ&ƒ]DAûøİ•ÚjÏÛD÷ûªŒ0×;Ë &ÇX¿ñË€
@@ -1203,76 +1196,30 @@ qbÃöL‹ E–Ô³Y=$[² æ´/°û„ó$‹bÿH–í	6©)²X¬úê«}—b#şñ_¸k¸EY;6pIKàÓôîæ=L
 &^CE.ÀÉÉøxŞãg,ü¨ÅñKßş¨Åãg-œÛ>ßs§ –œŸÍzÓ·Ãôää8=>¾9´}zv|¼—¡.‰´ËÕ¡AÃ—†´?ÀD«¶g]ğÕ&~°–È`0C  LÏÁƒAÁ?ô²bÙ5%¾WŞí”O¨t]ö“¸J_¬ĞX·ñ†hÅ<I®*´{½”AÏ ´‹4ºÉ“äWtz±i{bƒæŠWøØ}UÓ*Wè¼&Û=Ê¶sJ²İÖËnë¤™“ûĞ¼dº³UWeóZY«mÎ”÷-îzñ_©|³’¾W™Ï¶¯fæÄ0­‹ Wh6OÌç_]m¿1Ï+?j0ıÚÖT{p±3Ã4¨ØØd?Ñ°ØTítß·Âƒ'ÉdÁ…J‡ÈÚÏé…Õ`É•QãŠ€)×"*î²#Ïµ	e®½+Œ;2ñ¥°:pSoZR¿w« páĞ¨Ö°È\%"dÚ82\ä±áC…N·Rî.ÈáŞ˜¶Ë'Ñ=§j“M–åƒ~İ?èscù\ÜwY8‚÷½q˜4ı­£zó•$«F]„5=é½-ƒ7$2Û‘Ò,O¶Ís–dmu*íEU¡p>q-:,™n’ì Äa’Jô0zâè»¦”£Àdj‡­J/åéôÚ'É¹C¾>4RôÏS@!‹f¹Ø3Ğë‡ƒƒXjÏÒõk¦ea¹Y*½Òª¦×O|>ï}aéÈûˆøFíıµ“{d,®azæËf£ŸÇù0ç¯ŸÄ[Ä™=íBèÛEôm¢K¡à>+…í<;lÎ£a6ß†Üª†Ã}¿³´>¾ØY4>ç=äï{í½nN’›Ú60±ú¹øä®Àö
 ë{ü—e`Ş‰èf=Xå~–¡ÍßÇÃ=§ZR§
 4ßrb9/4;Şi1ì_T€ßóË³ÛL—ı«Áİ™È’}¤ğSğÔ4^Q=pÆd!ìQí3ÒşŞÒÚ Zâ!M£'³Âhª½±O/Xş÷|ÑSêàğ6
-U{ÌI›±sñbÖµ6·¬éà}?½óBÑÚO{aşµûé[cù_Ï5ôsÀ±áp&I7áU‰¡ÿ“d™PŸ%ß¬‘!;´šâ‡ ¨hİèè¦%—°áPğóU yüF¤UÅé®1æâK ¬â´")æµniL¡—NÏyvw%ú®ƒ[ãÜh_´WtÀP:lR(…ÑRsSgÇøMÇN Çó9*µo^iğ£Á€|Íˆ"şğ!äÉÿ PK    X7p].µ~§     0   lab-source/labs/lab1a-mitre-soc/reset_output.ps1mÍ
-‚@…÷óqQ}ƒVT‹"h#zµ‰i®Ì\s¾{ø¹h}¾ór+M+‰6„¬mtÊåğ”e…Ó¤Ì‚`¢n•¶¥¶µm ”®°:“—¹ós­ñV Ò“_í…ËQÂ® ¹8-íØ‚	/ñwn,Qí¸µå–;\ÉîT2æÅ¥îÈ¨É’Ë…J|e¨†]îQ¦8P½ú PK    X7p]!÷	P  Ã  +   lab-source/labs/lab1a-mitre-soc/run_lab.ps1uAK1„ïùCèAÙ®dÁƒn[
+U{ÌI›±sñbÖµ6·¬éà}?½óBÑÚO{aşµûé[cù_Ï5ôsÀ±áp&I7áU‰¡ÿ“d™PŸ%ß¬‘!;´šâ‡ ¨hİèè¦%—°áPğóU yüF¤UÅé®1æâK ¬â´")æµniL¡—NÏyvw%ú®ƒ[ãÜh_´WtÀP:lR(…ÑRsSgÇøMÇN Çó9*µo^iğ£Á€|Íˆ"şğ!äÉÿ PK    |Ep].µ~§     0   lab-source/labs/lab1a-mitre-soc/reset_output.ps1mÍ
+‚@…÷óqQ}ƒVT‹"h#zµ‰i®Ì\s¾{ø¹h}¾ór+M+‰6„¬mtÊåğ”e…Ó¤Ì‚`¢n•¶¥¶µm ”®°:“—¹ós­ñV Ò“_í…ËQÂ® ¹8-íØ‚	/ñwn,Qí¸µå–;\ÉîT2æÅ¥îÈ¨É’Ë…J|e¨†]îQ¦8P½ú PK    |Ep]!÷	P  Ã  +   lab-source/labs/lab1a-mitre-soc/run_lab.ps1uAK1„ïùCèAÙ®dÁƒn[
 ¶ /iò¶yK’¥ñ¿Ëj/zœ7óÍ›-cäxc²ã°‰ÔR¤`×Mæ^
 ñ]&uÏ)CŞÎ[öĞÁ"eó(Öz‡]…„Zq¤}ä!Øš=GÔG„eóF†ß{N„¡‡R»1
 Ê
-áZœÍÖ7Ívùü°­K¨@(Ïñ)  w‘‹ßŒú”ÑjçÉâàrúp†-a#Å×”^NÔHı3,Ò`¥ÔŞÿZq‰Âäz¡S·cm….ç¾šÏ=í;N¹º*ËrÚµra|[ªÀCî‡üÒŒâ5qB4#ˆj<QÕá`.Oö&òHùOÓ7PK    X7p] À©%å  Õ	  ,   lab-source/labs/lab1a-mitre-soc/simulator.py­VQoÛ6~×¯80 ¡Š*Ûé–ğ€`K[‰SÄî†!F:É\(R OIÃÿ} dÙ–“P¾PÇ#ï¾ûîxTnt	I’×TLe¥WJ'¡•õ¼íš¶İ—á*Óe'YQ(.;‰D‰^î¬fœĞIÍNnµ§•÷ò§•ç]^J¾œ/?Ã´YğÙûŒo1­ çHê‚Şl¾¼¸ùãü2Y\üv=ÿ}SŠ|m£	Õ£Ï³«¯—çËÙõ<9ŞÌB`Ã˜ç™Z)¡
+áZœÍÖ7Ívùü°­K¨@(Ïñ)  w‘‹ßŒú”ÑjçÉâàrúp†-a#Å×”^NÔHı3,Ò`¥ÔŞÿZq‰Âäz¡S·cm….ç¾šÏ=í;N¹º*ËrÚµra|[ªÀCî‡üÒŒâ5qB4#ˆj<QÕá`.Oö&òHùOÓ7PK    |Ep] À©%å  Õ	  ,   lab-source/labs/lab1a-mitre-soc/simulator.py­VQoÛ6~×¯80 ¡Š*Ûé–ğ€`K[‰SÄî†!F:É\(R OIÃÿ} dÙ–“P¾PÇ#ï¾ûîxTnt	I’×TLe¥WJ'¡•õ¼íš¶İ—á*Óe'YQ(.;‰D‰^î¬fœĞIÍNnµ§•÷ò§•ç]^J¾œ/?Ã´YğÙûŒo1­ çHê‚Şl¾¼¸ùãü2Y\üv=ÿ}SŠ|m£	Õ£Ï³«¯—çËÙõ<9ŞÌB`Ã˜ç™Z)¡
 ˜ÂÒÔèy^†9XÒU²â*“h|Z]NœùrÃKœ€¾ÿS
 àäW˜k…  úKØZl–öÖ?riù–¨¨Û\F‹Ù§åÅÍUØs|wïl¾<ŞÚâvÌZâeå7Ğ,™™AªÚ‘)ıä‘%“;Ñgƒ¿NåÉ [>OW“Á‚uTh8arojÂ\›[ÛRXºµdîZV×&ÅDT0İVF”®´HÑoÔnÜ²áÏ£hxÅÑhØd`'úâ˜İ5§‚Ö4qCIS ;Ûnré>ÇqÂé/qŞa¬·;¿9[ğ²?Ïoæğ‘‰TÜÚ'm2Èµ£5AS—ìğğ.´4 Ö€ŞØ€µ«ÑÁ	m@€Pjş¸âî˜O…ô¤ÍCbS®~ £ã>£ã>£ã>£º}ÃìîË6†£Q8‡£,<RÂ³8<=‡ãqüÓ±öÃ¸ÓÅgñ¶Ãòßò5›¼†yK8º CÂ”0{;Y¼àBYÚF»n¦ûN6´)¹LxJâQĞóHÈ0îe`ØÏÏpÔKHmÑ¼°zË,Õ*r'¹âòÙ¶ŸY)”°d8iÃîş_£µs·©‹3W©¶NS´6¯¥|îÑÙğ{ÀiŸ=^U¨²Q‘õÛi²gí¨;vm=ª¸AEQù	ã·‚ºæ~–ıĞˆÛÀ­ö‡u…Êgœ…€*Õ™PÅ”Õ”Ÿœ± ¸u1%¹[—İul ¹@·{eÚ‰Œ lÃ€wÀşV®	6×Å¸Vs@Ëy8f°–¨¶°ÏŠVH"mıø6 Ò°î°on@.k»jƒîîBCiÉÅ¶ì‰{á~±ó#uV”µt¥Ğ6JÌ¢^
-gŠĞ<r9õñ+¸‹©V™ŞFæ¦íMÑÆõ}‘½ò<ìM½Úë^S÷/_»ãn›ı•Ø=£ûÄíà¼¸5{ Ánw¿Pw;|÷şÖI²oÛÇ\ı¢9(M/quãŞ è­6ï®•ˆ•?ìÕÕéÔU…YÄÂƒ¤¸B9$‰â¥ûU›N%‰+›$a-¶†¼PK    8p]úkAkt  ”     native_host.pyOoÛ0Åïú‚/²±DF¯|Øa¤kP$§a0d™N¸Ê¢!ÒíòíÅé–n—]HxïG>Eñ8G-'Ğs©Ç¡×æÄ {ğB©fçà„’~A9éJO<9zrrb[…Âq¢$zi;;†•æ3«!ÑxQì®½srR‰Hšü*ÛvÀ m[ÙLáÊÊN.A\×dam‚ëÖLsòP×q.wn=¢$X3y£høÌÖ¥ãó·»ïÊ1Cç£.Ík"³2¿3™Jñ¾y{ºÍ³6Ÿ¾œÈ;AŠe†­‚ëêËë±ÓÙT•©ŸüY¦&Ë\–}6ë!Yø	¾]tåÒ^avûğ¹İ}Øiò:èÈ5ƒŸÊÙ:…Ã%[Óü	ö^i­õğpØïûÍ2ÍR{ŒG¶?˜¢¹uÜo¾nÚûÍşñãëòÅ5D4%dX;çŸÖ#Füñé°İş/âê¾:G‡±¬Ô/PK    ‰8p]¦éOçl  ˜.     run_lab1a.pyµ:isÛ8²ßõ+°™WjCQ‡d4Ã­ò$N&µíòñfë9*D¶$L(€€¶´©ü÷­ÀC²d'™zùS8¾¼xñâÌsHQÀrrÆ¦dÈˆ]æFGä-ÌX™òV¦ŸA‘¥Ì€pMÌH*K¥¡§àß%WUŠ¨sÎ¿‡z¬Šœ§Üäk¢Ë¢Èa	Â0µ&Ld$“ ‰†hf¸­«CîAñO™áRD›×Â,Àğ”ärNf<M¸°hLK‘å‘œMIÆ¤F"|2n q•À© ‹:/^¼èÌ”\’$™•¦T$„/©aBHcÏÕjHÍ¦4„dÁô"çÓĞ/Îù4*ÏCò§–"$R‡D/Üˆ.§…’)h[ë¾„”*Ç]H1ĞÆ!‘18[¡Pıv{ş#¸u3xzµì’™E§suqqãg$H”$éF
-´Ìï!èFS Lçìä·öiÎ¦=-K•B?gSÿYoÉ‚–)íœ]¼ÏN~ëÓ\Îu_CZ*nÖQ.ç´sq{ãædiŠÒôg\d\Ìu„×§ó“§×ñê årŞËÀXfĞ²^Æôb*™Êê\¦ù²Ì®ûÚùíäúôìÃùi|×!t4÷¯zÃáÍàçñ`0È‡ówäVƒ"Ú”ƒò0‡…A—)R|VæùšXš_¢áëh4|q4É'Wçäã(BÓúAªŒÌ¤"JJ³æˆXÚ†DëÅhÔÃ…:z
-êë…z°êáxäizæAªÏD§LÇ9È¶@¾"lÎ¸ĞÆ‚Öd4
-_ÂÃÃƒğà`p¼ş«ñÁA‹g,[rÁµQÈîŠs²44ìL:VËT\é[t¢æ%Z‹K;tı‚ˆeYÂü\@{=454L’§ ã;šY#BC*¬)¢“0s6,®¦º¦æ:öğì„¨ƒnçãÅÛSDAG¶su{îUîy"ÚÇ%8-?g\NÉt|£JaÅµIägû«Ûá3\İ÷©.—K¦ÖNUº‘]¦ƒî¸C!Šqäz­,OWÜôÔFX®€ekâ6DäŸ á†paXj~!¥ÂÈL^Tk+Œx°Ö˜v;
-W¨—H¦1"Rm˜2%¥Ié¸28‘Aes¢Ò¤İˆk9“jÉLĞÅMVáè˜q©ÈG¦œ¥jÁĞt|7	=‰gÂ!£ãw,×ğµ“.x)ñİ¤£¶Ôøé—{„b»¸#ŸsÁòøìâ}„H¦kÈ>#õ˜•	@¤­PLK3ë½¦İH979¸şoqePöQúfÎ1qô r>=’õo90A4_õ™2øñÒz ’.˜˜C†dv†?BŒ‚³‹÷án+MÙgÚít2˜‘T.—LdA%Ë:l	aåN@!?diâãÁÀKK7Î%R¥híO2´Ğ!RÆËãyBPJ*SEÎR ¡6ÂoÁ¼üpyŠÃ T{øúæíÅíMÿÛµ8Y!ı—42+C»İèAqIô}I	ş”¼…o÷%ı$èË"r8à/d
-IecB_j£‚"R`J…× ·şÑ
-|Fê@c‹öFG¸F ®JèŸ"-úÆñÌ¬]ªw½ÑÑ`0¸£İA¤¨ÙZH¬Œb;XZ)½ÛT	AËly 4¤½%—ªç¼%×ápxLÃ¿[è“Mğ^®œÙs*(™W'ÎbÇ&zI{Ê¡b—,@ôay½ÊF¬(@dÁ¬ûX/-ˆ;½Ö¬ -›æÒ^‰B¦gF=r©MT¬i7Dl&VrqA%³ı˜*°Ú,gsÏÁ0cTĞ
-¸è›«Ó“›Óäü"ùãÃùÛ‹?h8è:|+#T]£ØÉ@VØ °V’BÌÃÔŒ'åOäËÑ	KŒM§kk.JŠê*†U¥kw‰Óª‚‹9ùıææ’Ô°#ï\’©’6°a"›Ê‘Š\\“ÊzÆ`¸e#ÛÊòØİ~£ïl$(uâ+)¢9˜€^^]¼¿:ùøîÃÙéuğ¯×Ç]Ò7ãş¥’sÅ–ä¥ƒNt»}ú‘§Jj93ıÓlı´.ï/5ds@îÒğÙ£vœbá¿—rCÿÍBÉå&øÔYğ“öÅbF$(¬s+0Ò«nŒZ_ÔŞ´Kµ9¨èÉ5Áñ–°.ñ6Ö©z!Mb$ÄÔŞŞaIy¶Îa&K‘E´åÇ»dsˆ°ô›¢BÌİúÚ¤Äw¨ÉnH{½°,­Qó{×x^o^”ö·½WÚ ŞV>®éy ½tég;ùÀE&zšÿâáñ`‡G;ƒRÚË˜a½Œ«ØY§šşõj"õ
-6µ6tò;íu»!]SŒûı\¦,Gİ¿‹F­Ú?á½~Ôı%›`ıWÅ°æ‚=oœ}ôŞÌ…!•höó™c|-ŠÖ¹¡vüY£¬¸YSúiõúçËó÷ŸÔ'ñi5dŸõæå[•Nâš‘‚ÜÙU#-3[Wƒ\·DÿÛÅÿ7¯=Ï¬Ì[c°yyş>"—
-4¨{ UXl/ìI¶aîêSÈ’‰’åùÚ+¬R(L+SnCOWz³ïÕ×
-á	¾tÉED]w,Ìå<°Ñ¡§5†“íPå“ğ¾ß-z*äğncüìÎÕ‚U63 û«ÂfX±5Y•õŸ°±U´”B)xt_ÙŒ:·g­ö5³KtPƒè¨†U´G2ÃbLJ¢\²L·7O×$/õõİ1Ql²{Gç @1Ì3˜¡“î?ìÍ7Ï÷`*jT¶}Ÿƒá‹I*K2WKÃÙd	k4À	Zpqm¾ğY^ºØ/ü'¬íÇ–ŞajİÙ.¾õUZ3
-%³2uR__Ä¥dë1ChÇ6T7%¡şH
-Æ•nÆOä$`kMXËÂÉiCRXí G=©™ËŞ¹0 îYNì¯Œ,´Dã(:pµRğ¤˜ÖNuÉ*[Úô¯,5%Ëc-1¥‚Õ«	%Ò…àÿ.1%_İQWˆJxA']ëÚWèÚ7Ø®©±-X­ëqz~¡nèIkm‘ÔªÀäyƒY.åç²ÀÙ”¥Œ^¹"š¯€\ß|ø}GçCbŒ±‡Ö˜¯lpşQÚX;¢véÍ'YÕÜfám#Ó²ªœ•ËB[¹À”=u÷gM¶âQ—F.şD07v„|lÍCËwFflª0~”=4ÊNÊœÍ!Ş¬xFÓ’çY‚‰¨`kîRÉÕúw†Å\|ùZç$»c‹ÚıXòdYĞ2Àl/Ø¸a‹åôWm”ó¸Øe§é¾¤¿ö«eÈk¼E%ÀoØ%›VÄŸê§7ä½l½f½à‘–<:?xX.Ì2ß”Ü±‡İå(qLO’ª¤Ñb;ş{2ê<*ti¼Yp,AåquiäFhAÛ‹{‹C]±¤,¯[ø.eVæ°Şºğ¨ ÿk6á/ëÒ@Ùd4që÷gxtq{sy{“\Üü^Çî[åí­gï7—oÖÊ¿‹a¤‘J}Á>}µ•¶øEÒ±5u›nv¼Ëõ†XˆJl@CÇ9ˆà{jh]¬H nŒw*LH|¾ c].ÑjÀÊŸY[#ú;Î<a6Cº„Œ—Ëİ»?º¹'÷×?ÆwÑÏL¾vÚ±¦/iNªJıí‹Š‹KëæÂY^êEË¶·c‘Ny=aqwÔ‚îAi.’ÙgfÕH#Ã(:Ş±¹°™$³iŸÌhH¿|‰ÎqÃ×¯Ôº$.æ½T
-Ã¸ ¥‘ı6½Ù‚¶ù°ÈFR«Õ‡íìeGğtBêƒfA„Ù¶nTëş`ÈsñEUî ×F}Kyd-KEdî­>ãfR’_­¹˜cìÕ¢°­ÍİÑTŠŸ#	üXÏ4‹·JÓÈØ€J¬ÑõzÖ±áWÖ†éFw_èöºBï\¤DèMƒlÒúÑÃÙÚàëDi«?iß4Üß#q½R°{Æs¬JĞ¦¤i+öµ3¾‹Ø[`Ú2İªaÒº‘øøª~!6G–±Â5o1¼K™Ùûûv–TQáúÎ5£bíû©ıâŠy}7‘¾krÚå}kV¼å·}XM¸V3dÄHbcùD,…‹yªÌ±ƒ»À4@æY¸™KE®Îß{¹Ö>#¶·ŸH'[¾9h{ïĞîGá]@o†ClvÒ¦H»!ÛÃ¯h×Ç­i©°ƒßÙ.HÚO.ˆriIP5Rº¶Øñ·ø`²‰Î›a2…\>$õiØdÜşŒn8t8>‹Luœƒ¹»Ñ$n>#ßÉÚ7n>öBSí8h6<»¹r»Í-GIÆg3Àı‰s,ú¯Ü3‚•A÷rçÛõO‡ƒŞht3ŒÃñ`ğûÛ¾tÕöıy¢QtTµ}ƒAÓ¢Ş{ôÃ°GÏÂ>üaØM»š2ÙæÀA"àÁÓşaícBØÒ“G¼ñ®ûn#Ë“g›æî«½MóG²u˜¸,>Ap;/tğä…üp}ğs÷¬lè{­‰s›IËÙÄÎ,ñeòM¦ééĞÆû‚^¯PS‚Æ±¡Áw;Ò¶·cÊĞÙ_Æ›ş¢¹ƒšÙ²Èñm€³Y?‘k¾"
-†–-_©TšrU%¥2ÕÛ½j‰90™\ZKEJ±Ñ†±–Sd`ÃK…Áq+$j^†ƒÿ¯’œ»iü…BÎ
-™—(MÇÃÁß‹İËa7'OGöÏg_wœ^7	İÏM]ğL¯+ù=ØumGÔnç£ºUÎkªx{jwß$ÏGX;3ìë[i5ŒçñÁ`?ßeİ'¸‘µäl+yåËèqÔ%_Â­““
-|â)Í ÷µgšL'å¸ö{Ò¿;Ì+4Şrúos‘Táh¸ßJlöççÎ&™‘Ìu(8i¾·ˆü,«šgh¤îtmBiú®wS½IÙ2Ú§Iõ®°=AŒÑ*â½r0MLïµáÔşáR†o.ÓñŞ]î…M{¶ê `MVŞ–{=½º='ïN>œ¾­dàŠíwŒ~×œÛĞSëMroÔ~²›‹¬Í‚k,$RM|Çtÿcü‰oP1Şöõu–šúé±¼hÌ­íç£¹­ûñ™Œ
-™çA÷qØ²Ñ®Ø¥ƒÍìNMÄÖÇFzØîVáËÙø<^&leß¡ûÛ—µù(5$~C+n,yÒIìm=zù)Fº‡öù¤{âÑ²Ov Js¼Ç¦V©¥¿mU|³3«ÓvoÕ6::¦“Ø¿«Ü@ƒc´€UÆç ÍÖé3|D¸ğï×&ñ·=`s5ô]¯ñv×ÏİaÏVĞ½¢Ô/ö4Ã®‘^]®nÏ7İ˜}§„İ‹‰F5«ç]^ñ€å¶Ù¢8vÇ›>+ê–I¢ÍÇÒîá¸·ğØÚç‰¶÷ïêò–eaë¯[o­<lvî·_ú4/	CÑØ·ùØ—
-“Æ):€ÜÃnç¿PK    ÷Bp]òÎ\×#  SW     work/create_final_report.py­|ûsâ¸ÖàïüÚ¾u×xb6º*Çtvú‘M2÷Şı’%lšË#É:“ÿ}ëI¶!éşf¶6Õ€,Iç}üîİ»SÉ¨f„Å2–h:ÍXG³µ&WgdÅõ‚ĞD—4#g"yd’°'²<a„æ)ÉèF”š’=q¶Rá»wïZ3)–¤ z‘ñ)áËBHM®¨^˜‰È`.råŠ2×L¶ì×U04 \äw%ò€Ho¼˜ñ>d|j`]]~r0.—tÎóçLÒ•ıx!rİj]ız;†%´'€1™ø¡dJdO¬í‡•,×ê.zh¡k×s{ì¦¸g¯õõ·[ûH”º(µòZW×çÿº<ÿ·m^	ùØ•Ö2qØ¨ú„ËÇ”Ë¶h|+K°5Wz"ñ›ßºÃNÃLĞTµÛç]O•Ë%•›š=X.M'@–¶ï·¨RLjrsç%bYdL³Ô{@zÜÜyfÉ“'&ùŒ7L©bÏÙD2¥…l>0B±I’1š—Å„­¹$"eŞÃxÜsóİ)èYæÚ{ 3!‰"<‡ÑJSÍ”÷p7><ŒÇwqQı‡ÆJ«Nø¡3¸%ÔÏ£æó¸…3ÁÃÙF-BòÙø¼‹w^N—Ì{À)Õt§Ğ³ëÍxò|®ŞÄ+Œ³+†áw®÷¤ZNÆòöÖ#å=øã±ŞvkÂvjÅ’Rr½	31ß9TEÆ5ĞFµı\&ælÜI³¬=»ó–\K6É„x,‹	Œ(¬Ğ»6Œ‘›ÛËÿxH­àïÕÚ…¬Ğ…jAãá~»m¸:£Ó¥LX7£S¿"ÚÁ™;J$İLÌU÷­}M7÷.Ø:ås¦tÛ›Lh&ò¾™˜Ãêóv˜T\ä^à8³“ˆ|Æç†iÉ³´ñ½P^à)¾,3ª…ì(M¥Şiô7,îøÇnß;_sM€ãG¤çÁZÚçİv&æ{^¨×Úó·èÕj}9ù×ÿ·{aï0è…q/è…ıÈ?&—_~…Ö(zat  õöüävŞ‡~0bûÇä—ë„1€áx6„ŞW'ŸÎ¡ùhôÂ# rtˆ½/Ï ù Æöá×¾ßºøúåöfüì]DŞÈ£’Ó,ÔzæŞEì¦©kê{#`Q‰ß_Z7§0X®'	MlüüÒJÙŒ@Kû‘çi ø7æL=²Í¸Ñˆm|Í$PV5>ß=²ÍÃ¸ÒÆ¡–%Ó›‚µ½ÓQ÷ß<OÅJuá‰êz{¸Ÿ;˜å!¢ÌÓ6Lö.Õ
-¨dº”ùî¸îOõ¢4Â5£^Ø Øäšc[	çLg,ŸÛ±~§3%-ÀŒ/ùwÀÚe©2Óã;#ªÀÔ•Ğ¢´4p˜·½ûÜ‚Ÿ•©CgûÜlÓ¢P‹=Fv†ËÓ¶çùÇ$¹æyÉª ZcÏ«¾Ã:`8¬Ã€©ÁOBó”§T³qFîyÄÛƒn~¨´äEc)v9Ğ5¶Au5ƒ8ñß#¦¶ç©ä–€üc\.L¸Õ›eŠğQ¿õ(M®0‘tL%mUÓ¨ @Š‹Œ&¬íİß{wï5ÛØÖn6ùØä{>•ói;™5`]kf}ú)}Äú Ütmµ’Œ*E®èœ¼ ¨É„ç\O&mÅ²Y ¹ÎXÑ<U	-Øø‚fÊIü@§pàŸÅ¸}8ˆÂÃ£`x4ãC)ã†"úHÛ<
-LÇš`IåœçãAïØ|ßŒíÇD,— i|÷`[8H.~Ç¯ÀÉğm¢uyŒ˜‡9[µ½ë_>xÅ‹Y½c'Ø¸'Ú·ZpÍ¼•¦’Z àÔ…ğ«İœp§;ªgïãå-ù“œ\vÎ$b99İL™tVÊ½ î‡¨#ĞÍo1ôô‚şQG¦/(ı¾À€íA/8èÒ¬:æ€¢°çWäF¨†ÔÁ:Ø¼¥Id—ñå—_„o}!ÓvâÿÅ‡ÈaI¥\|?¬€Û«sÄtâ2óqŠ»ŞÃ±£úcüğBäœ|¸%İgXÔy†U¾Û‰HôHD×£°?ƒ'H¾Î¦]LÛí’´ŸAì´ÿâ“ÛßÉùí[ô4¶œ±ŞfŠöfUrÅfhìñÚf<ËÆµD4OB½LíN‹Lë°`QVQiˆ”YGÁ&
-Öq°‰--ÀêzÁ“Çœ)5÷wEòÿÅ×¿ç
-äY‘çuÔ@hôB–äy7šâ’‘›7q‰‹o¯#ƒ°`ã>¬c×b?¼Fªğñ’®Û‘Å~µ*‡şI’%–}yWÁÂ èÿ:äœ<¯›µx!Ï«ò¼x!’‘Ù›Û†åĞ|ÁŞİFíßözoeù'hoöşwö_ïl¯Ím×!cüäq4‡*hÂÆ‡ÿ¸¢7Fnå<XİpØkØÉmYkŠÇhæz€E¸ÑÂ›½±]Ü6r6{c\gµ·…ée··K®ÍŞxX«õ¶nÌÅaÜP{Õ´q¿‚î²ŒQŠAÜAxĞ˜Œñ÷V‹++Mó„áÈºo¬~§ødä´¢ñBcˆ'ğqıŸ-¶öƒ¶k$ZèÊ<\hÍOÆçAÂõŠ¢½h°#äü=*RšÑøëşÖºKÙCiï ±æ
-½QôŠBq\ÈÎ”a™T+eDÙà(ìíğ£äĞVÄòrÉ$Õ¬}gÇ?ì€f´,{@&ÉÇã!pıVGàğ‚¥ã;duP¬‰¬:Q¿ÁçÆV8ÿ7^´¥XÙõúµÑ ($ ˆ6#1²°óø?a8°×{~“Nß¥U¹lÛ©šÔÚÙU²‘Õîg=ô¶p-`FêØU¹İ¼vyaÌïŞÆ<ñl¡ƒõŞ>(Cïı½ßİ6ı_¯ıµÛ¯û°g6ë¯÷Æ«Ößôş5Vİ Ë´ÛO-”¿ u³76Ï^1|T«t>ÃCÅŸ®±‡õ;EÁrL¶øa"ò'&µqCıcH½Ë¥·L
-ìÕğmı½hÇÆ˜vgÄÚ0:À¶—|ÇŞıÆœ%0`¯,[²$İg€÷BÎùß»ÆÍºµaA•fmœ2•üsÓ];Ğ×LÑe‘ñ|~:ùrú__oüàmWkóÚÈÏ„ĞLtçå2ĞBÓìµ/jèdÔì¢3ìmBŒFY®‰xbr–‰•‡@šzsñ÷Ù‚ê4¼èªíMÿ’|¦jÁi² ’Ot*$äy6$¢äOí“/â‰-§L’¸ï£ÛoAÆGèıG^ )˜·ÀÏ¼ç¼\¾.yF¼xnaûû	Š££¢O¬m³Àİ™WĞ9› è°ÈçßjA†SÅpØö¶7Ò!Ÿ/o¯ÏÉÍ×SrÙeÏ?Æ1ã
-¿U@
-›îâ„üI^a/ó”?ñRúY=™É]{AÔ¬¯ÅÎÙ‰½z–kº".˜‚Ä"÷D–ë@n/%)Ó&¿ífõ'··ÿóôWÂrÉ“ÅX¤ó·”Rµ˜
-*Óœd™Ş1­¬\Ù5
-n $3õ˜Ìf¼İy„,óc|Â¨Ì8“$§š?1rµÑ‘“dÁ’GÂaë$+S–†¸çyQHÎó'.EƒÜ†l2è	…½àc}ï¼KÍ–^à}*&!Ñj–í=w-rçÙÑgL=šŒã <:{¤†ƒ8ö¡Ÿë”d&í’ó|Îsæ^|…1éóbpùÄĞ§(×]ºL÷ŞC óœšÄ'HİŒÏK‰ë$]â£„^§ŸdôYJ â/‹"ã,İ(™¦<ôğgHF0İ"Ç'ÒLÎ¹“‰yÇPYÈù­0;r¤Ü`Æ™¡÷1A¢öz=R”ÓŒ«Eà¤×eÆé•Ğœp8z¢¤.O.?ŸM®Nnnşıõúlrûñúüæã×Ogãş1¹9=ù2¹ür{~ı¯“O“›óÓ¯_ÎnÆCò×\¬2–Î“/ğ€-$W¬Cµ¦ÉcgÉsç#òIĞ”¥Ç$&š%‹œÿQBö=h=ä.ƒş~ï!8
-ûÀèşº”5©SÖ¶Á&¦I§ ²cPREÑ¾Åş_î^¤crŞ¤“şåQ,ş0Œké½]0·Tb²ÏQ0¡ K9Ïçä™®k¸¤X$$å$K„LYJ¦ÀcÀ¡<ñŠüV(B ÕÉŠ‚,kÉˆ˜òñööŠPMZ£n7	ÍBéğEH`™öØq
-*“D%’±\- ×¬ˆÈ	¨A‡ä¢Ì2ÇèvO
-u†ci£O=˜Â²ë#L™,ø½à(<¢~x¸¥Ná¬€¸#Ü˜(u"–lKÜh:Îú$æÆç÷ïÌ†xù|áŞg–òr	‚r·Õ¼}{/ğ"üÂtÁs
-{Êµ„ãÒÔ€µOŒz^àõí€œÌ4 Èv8ì(0J@á è|mÏÿ~°†‡à.†ÁAı¯bûš*Ä¸ó$²b’‘Û(ŠzFaGq†½pˆÈ»zƒı'†ØªL¦Ô¬ÌÀ¦ğÜœ.‹¹9]i™°”ä¢š*$Üì*§°ÅˆôöGQ4êÈo·§¤İ;´ß.•¤,#š/™:ínÏö¤^B¶ÖD–ÉÓæ0Û·@
-)€•Pt˜Y&Ÿf•í‘e“â^¬”lkİÀ°«rdbŞµ2ù$²r	pq$Ì©Y%h ˆVÅ*˜ƒ ôd›c’d¢¬¦2B ’ıQrÉ¶·Ry"·,2éìœûË2÷<¬ş®òÁŠjB]JFÄìmù&n“êOĞ· 0yøkeø/€È}“ßú¹’Í£%•æ’5ÕàøG2-ÊdŠMHÂó'èšÃ‰£frFH™3°ş*lñå”ñüNÓ>&5`ï¡Å—ÍÃò	_|1æË\öúï“Åx0è›Ï«±mû‰¯º|Ñ*L¨á í"\ulW¿G‡&î˜¬ìß`{3¢š€çVè†¦Á½ ûòÍ*5‡Äp¾ü­, ~¡‰æ	|*ó„Ià>½ÙÒ‚„Xß½Šmî­Ÿ’x¿5 Yß©bET£$îF¤Of”ƒ”BèNA•Â-TT»j&ôïNİ©Òvd)™í\¢è’s¤M.¯‘ÉˆbàëéŒFíuŸ¥fäBHÜĞ©d)0ÍÈ	*	he–’)#K®4}d
-˜Kiš1’TİUH¾ˆ¦r£ø	º.iÆ.Jpw1leRû_[¨ ÃaëhãåBƒ6ÙÑ¥Æ·R$ƒÃ^0ôƒ~¿·Û:‡`Iµƒw9ÓP±b`_¥ïp®c+p;Xéöïó/vø0ıW	˜ó½ñùV–
-Œ0OÂ€~K¦ˆ9É	-õBHşÔ.úzŠB)PÇ æš<2İÉØËÏgLk!n‚»(êğÿmSÁÉihçó5Mtm*sß–t…µ½†şÈ©D«WÍ Œ¡çdâ€uÿb‡óaÜ]4>á`Kêú!ù(VùB†ÅÆ:…œZiÔûJ°TkRŠN\Ÿ¶O2±b2¡Š)Â€ÖÆ0#Ÿ¢‡„­µ¤‰öŸÀù.1œkæ“J-YN(ºĞšqÍ$Íœ’¼3L÷.$(—µHâLÖì`)¸›¦´D½L-D–Ñûhı%ƒÏ¹@MVX€¨ 2—¢,¬ò®%	¢nÃ»ÂÖ Ô˜ºÌ‡Äï‚‘‚Éñšw,’©„Ó¢ >Ÿ˜zšZéqphŸƒ‰ìãe5Œ„P:C¦ŒånÏÁÎ6ÍT˜²î‘†L”4ã³lïò*$_s¶İºêˆÈ+ÏÊıT ÜÔB‚„;uc¨ó¸Ìˆ×hÏkÆŸXG±Dä@AH[QÉ:ÀÚ†5V‘1tŸ˜\IlUS…äÂùÀè:æIJ	Åo•³ cBIR¢Ë
-;ÏS(ÃÁzÀIYÆĞRW[”l) `Ñm‹ÜXM…43ö•›dÉ¨*ÁÃ*¤˜Ò)Ï ¯€Œe!Å’+ÖDM%¡6õr{ùÀÉcY4DÑä2*œ€¯aX¨íCB J°ò05RqRÅoäòŒ”
-6‡¾±±hAµf2'bú;K´
-É¥&4µt¨™3’Ö(ä·ëOI™J$/ĞìbM¬{É4…š¯`:àµÇ®bEŞ½®{gÜòÿuóõK'‚gaæ‚|X¿›g­¨L éæm›–yŠ&çÜ„ˆ¥‚Ğ›ğÀ]Î(«
-ø°ƒÀİÑ,´’°¤…IzeIÛÍàbİ(<ğ1ˆµízİ9cßìà
-–@"È`ôòÌ°÷6½:6òÖ¸.DÄw£"¹]0Ñ'”¢ôvÌ*dVò‘Q¾$t
-~,êclMÄlÆÜ¯A“dàò4ÙaÃÁ?­ãH¶.˜äèë’Ó¨s:øA:Ã²*¢üÛ¨t›(çè[›”Ü[ğC‚>d@SÂR®ÄLd`©Ğ0P²¢\“LäsT«4'CH6ˆ<UğhPÃ‚`”¦ËÂà67ùƒ:X1f€œÆÄîXYHÆœh¬ş19í³YÃ;1‚<l5ö“GUÔ·ê_I–rtqÁáÄ8Éû¤[,ŞUväØØßÄ×æt	ş5±Ğç§ñw{Dú»óN!¢‡^Øs«Gl{˜Xß&	 ™X÷8Âà~¿õÀGŒâa™¤V¼ûˆH‡|`™XÕ¦¬¡ÿÎ@5#+p@5—i…æÊ×vÚf×Çêo{G}ğ†¾[‰Úq—m82µ—%¬
-H¹ºQ©ŒÀ
-Éç˜<1rn†«‰œ^
-jƒ‰ŞAEÈ†ì4×Y#$&rÛd¨*¬€¶”ÏĞKÕäò
-|¶$FÏñ4TO¬ã¥ş®™ÄwÑh°ƒ%#\ÆµDäÙ»8ãá*i"…RÛ+¬r‰XN!I†8ÍZ·pÚ8ŞB(UÍÃw°Ø'rŠëÙö’•°şœ­Èå`°o0ØŸälåœÖjÀßFbÿ®Óí ñEØÙí–ÎpæQöÂ8­o…+EqßòÉBòoÈçèWŒh}BÌqLd‰ÿ&æ¤CNR0±Ö[Cº˜\, k`Ğ5˜˜Çxü·±4€ú{«¼¤~HNÜü6N4’f9ÆHªE×Á=™»•‹
-êv
-áugáuí0ŞB7r;ûiâ€©ñ&­Iâ®ï“¶ËÅv9şk<ö¶ğ¦2hoI™@ú+§¼ÑgLè©ÃÁd	Ô[0ºÒ„§ÃõúÁ­œ,Xg`ÛRHR°oª‰âk¢Yîtw&bC§,¯³E‘!l³h+£nnĞª`–¨¸~/ ƒ^@†Æ‡Ùï9sl2»ƒ ş²sqã ı»0¢±ÎP~a«:ğk+¿y^†©ÈIÌf,©ÎÍ*õG	ã>ü»!Ñ´„ØTÌêd:­€b,uy&ÈkÑÄcœæ4} ~ÓÌ¥@Í6¦O†}—>9ìB²=B [ünÁîB`ñ‚ŞÉhCÎè‹@@Í%A:c8âŞ0ˆ†oeÙ-m;ä¾s+¨Æ<j<êaÕ:åŠÄıFšéTÍ9"ƒhîÛ=öˆœc„gš V”;"9F;¿í 6lZ	szt7¯oMŠåÎWI<¡0Y-@:É«	Œ¢`†ıšnÚ[«¤y*–ÙÆŞoS†ı\AP`ôĞ$ãŠñ]Ö"™5ä§KAÚ8¡˜6¬¤Õ3sÚåÎKÉ&«jJ8'#á
-ø”ÕÕ9#äNŸ¨Ü)Ó+H$ÈğÔpÛ—4Á/ÚXî%ˆyóÈ!$Ÿ¡	¨îH—‚=×$g€c*y¶@87c«È}•††Ûú´¡ì%já«ö±Á¶;SV|m’-U¤YñdmWÿb.×$ ç2Ÿ6kÙùAÔ°WEŒêèHƒSY‰ @Çå7­(ó´ô«PVa¤¤9T€QÅ‘6ÆndÒŒÃ1êO›Hmà>²=1¶4‘º	—´€¤—²qı”‘)[Ğ'(ñHD®¸Âœ1Ù°>±F«»q ³¿J96JeÒ®Uo‚í,[3EÒdHÃ‰x–%—XÇ©ã¢€ÊQê^3XŸW)Æf~NK>Ÿ3’»VßXQ£@Œ:0f¹«:¼²Ùd2e9ŸçÈC*CğŞ©Uj¹ß€İl$ìM€¹†4‡‘¾vÊ'ÿO„”‚r0LÁˆÃ!èMåœéZB$\)Î—lE³Œ@½tuq.À°Âœ
-`fN³ªeÁŒó'ğéŒQŸ*Ô)bFh3Šã%Ë8Ao£ÎÅ£Y\+‚7vŒs¢%^„²ZM9Q´…»,õs•p·–üñ8Š®ƒ{Ğ÷àĞUPoé™ı\³™½ŒKvôşS¥ş«ü­5‚èœ|óŸ/Nàèñô¹Q2A2R pCıR |œÛ ¾z•,XŠ‡l+$ÿ‚eECÀ°n­CòÙqVå§ölˆ–Z,ÍB›\'d“éÌ%”e¡¦=Z*ĞŸP²ZÅ¹
-½qszüåäÖI—!®œ3Ræ†;«è\CÈ¬%Ÿ–Ğ
-ÌlÎšA°e¡YÒ¬Ì‘‰şMıòª–é­<SÓìVQÏkC`Š@\åÁÆ¸ÿø`9%Í„qC’íñ³«=„`UÍdGB>Ø¦"2:½÷œ:¨*‘E­ù ßÜÒÚ,Px›\/p6(êl“”Ì‘Œf„%v(˜œ	P‚ÿMàÑp4jÃ©èÇŸ©fpÓú(À“È‹Ş6æm­œQP&¸.Èœ²Š#'ÜèømòKÉS6Á(kò×ËéäšÑtCÚ}?LE²Ã¤'£m8Sä¤sVimLR–ñ'&Áåw5&µ“¬@5"„³œŠRb%²²›‘M[Ôí”ÚZ+¨&P£nwÎõ¢œBõmwÉ21y÷ãåm‡òNÒ¼ëêÜî·î.ã	în*’ƒÙğèpÚgÑa<¢ƒƒô(IF‡½!‹zıáôàp?éô§oÕRE‡€](Õ´²]eî]É“M˜ƒm£æ c	Îî¼#Ô¾\B2ÍÄïc[ñ6p+§ßeÊ!€*!åPöNæp9	{äô‰òIcËŸ
-iÎğ€*¬.ytõ7VœëÔÙÕ áMc®ôÍÊCÜ²©6Ó!Íò­ ³®"1«7û­ôE×$½]ıLÓEZápS£^5Â#s@“ñüQÕ5iv·[åo1˜ñ‹B\A(ä¼[;W]t»^ğ;÷û]äœƒ-±vµ+u5Ú@Ãë7êÒ¼Ü¸j¦zNPª#:qeá7^ »À0Èò0	z°¤HAs–¡m°Á„[â[İÁ/Ã]{S8g²7¶H®.vBİ¾o†‡”Æ†Bš>ØdóêuP™ÃÁ¾àíØFmí.mß((¹*%pœKl¿% .èƒo¾(`»ë&·›
-…÷úïKp»¦Ì6Ø-ÏjxÂ¦øÕ·­’tuV6P	æl”1Ü±TV$ğxÛàËnl V2nPWŸn|¼ıüéÕ$İºxjÉ¡f)R|çÇ[5“UñcU9é
-}'•tOl®¡!ğ[Ãf±U×<cTí"7X®ñÈw²-çÕËFÈ±ùªÑDÇ5âÕ¢Ô`õ-Èæ‹QÃM¶ø	_íxŸñdÍœcUºâ¶°®Ê/\•ï]·ƒMµc#z]æ`ç¹HM‘ao4ìuLêeaêw‹í±Ñt=´]·KUÓï0u«¶†Ùí	d­ÜÌq2ˆµÑ*ŞMƒB
-Ş+T16‚7_cÿæãI'îÃ¡M}dó–¶|ëm\ÿkµşQ”Yí12ß«à·…¹€ª€§¶Œ¿›J:Óö:lYhã¯¿İv½×
-Ğk¡æß­QË¬_ç¡œgbÚö~òğÚá:ä
-ßÔöLw²7&Í¯^~‰óïÁ@Nò&“bƒ/£˜L<÷:Œ5 Ø²Ú:TålÆ×ÿcì…Å&ñš3ãléï<YætWÂª©&&¸˜TE¬Á(Ó„ïB)ØØ£’F»cx4Ÿ¼%>øÜV¡lOŒ™ ¸-¤—}'Sø_¼¸ lXòŞÊªg—W“³ó‹O'·çg>œx|5^‘¡è,
-È}·ÓmÄ‹ïÈ·7ˆ÷¹ğòWˆ¡`B$‘R5ÿq/ïùÑ‚ì¼îÓ·Ñá
-ŸFï‹ÈYßCÃƒbû²úåAäŠĞ^âD¿Øî#§æ9_BÄ£iR™*›âë³`rDŒtBlØ5w]I&”Ê ½şåƒ¹Ä¦‚Ö?°ª¹épz•VÉ¹Õá°µ¦mÇø„­¡Ğ€f®ê8lÙ’ñlĞ¼!ELÇ÷§{‰«4±Áæ XîQ•pîíŞÖEW­¾¬_ıcû6@…èw"œr
-tÙ.èÂ‘€j-Õ¸šŞƒ…Í¼Ÿ&İO&ñlĞŒcüòŒÃ^Èû÷÷¹xŸ{nşí¸7õîs8ÄÇp(F5ÍÄ|àM”¥%cæ+¾øFŸGõä·›‚|éŞ”SˆáMcDº@óäùé…tÏanpà%6'¹âUÃû÷¹»úà[@îÚxMÌûÈ²'2©çm¼Z]7u>àù:´Ã¡=„GœIÏxÁ+b¯ä@&EE4´/èx~©Äª¾¯ˆ]íuÆ;“êº=Œ-yà­jP’)eojáŞãÌ<‹›ÿ|5@5z°°ÙÌH¼ûBºñ†§k5÷=_H÷®²ß€e!İ3NHA÷×êŠIŒ/rptI÷‚gpzÖ½€4ÆÃ—’™Ëvöº¡Û ¾W'ü]ğ¼ÊÜ{òı]^v¯‹±‰ÿ1’ÉúóÏÄƒ7à3¯ûüøB€Ô=rí5é‰|rÍ–€š=¼_ãå/C±wL·Á¼o.X;š;©ÜåP¼oÙ½ÂÊ‘gÇ×8	éB¶š~kr‡×P‹Ş¦P„‹—Ò…J/“ˆx®p€A\*x1~2 €“ıÖ7^ Œİu™æ+¾ZÎ±¬Éö®Y¦©¶|.Šµ9ÿˆ/¾ñ7D—
-pØ½áß˜Q ÒïùÆr,¿[û€t/Hûµsà¯©„´Oßp@¶_k¸sû¤{~«º Ïn¿CfQVçİY…ó0n.ìÔ4²©WôúB¡ ºo+xh1ÏîŞÜÎ³ÃÂy0kåTz±Z–›q{]f9]|ÿ¢S¸†ïüÒı•§ŠÜ5”ì´ÁÖÏ¹áèê©Q<N5!Œ½©‹òZ<Ÿ	¤–™^­ƒúáEWŸt!±+$io]lõ‘…PÖÚî•”k–”&`{»­:ß§9Í6Š+ßP­Hgcà-,UlO½^]t¢ğà>ÿçıšÅ÷kÖ¿_'³ûuÚ‡—v‹ÙL1°¨=£Šy0éfÛep(Fà8kÆU¯­L§3ß?.ÒÙŞxæ=sÀ¦˜ş¾eÔ ¶³hæYk-Ùlì†»ÑĞxŸ÷ñ}¹Ï{ÕÙûC2#Mø¸³2Ø]#¬{ä–eÚF½¨ìòm¶§–p®'ïómÑ­Cº×BhòlÅÃ2şe>ä¸Ã	w*µÙÑ3üy¹ÏÿùÏó¯[³š•f`xfœ2qœéÌ;6}3i• ÏeéìæÁ¯½ÁÃx<E„z–À5‚$®Q$n@²3ö âzşÃ¸IìÆ†Ú¯ß"úD3(®<rßn«w°Ş:-—…j?ã­råj¿40Í­*ŸL…Öb©¼Ñ¹ù_„› 6[û§D2©Îm&xjá¢ø0xõNÑ¾Âô7ŠÌƒ$š$otçŞÚx£‰%¼ÑAàÕ¬¡‹ÙB¥î¯HgÍ'@¶À£Y6©%Knê— æs=}¿UHï¢*y#|r…ÅÔò^ã­7¯ÑõÆê^|¿õPK    W7p]ö9²Œ¨/  q­     work/source_bundle.jsoní}kwÜ¸‘è÷û+öÌ¤tS$ûİ¶œ£‘ä±6ÛGÒd’5}Ú 	ª9f½|HêØº'Ÿòvï/Ì/¹§
+gŠĞ<r9õñ+¸‹©V™ŞFæ¦íMÑÆõ}‘½ò<ìM½Úë^S÷/_»ãn›ı•Ø=£ûÄíà¼¸5{ Ánw¿Pw;|÷şÖI²oÛÇ\ı¢9(M/quãŞ è­6ï®•ˆ•?ìÕÕéÔU…YÄÂƒ¤¸B9$‰â¥ûU›N%‰+›$a-¶†¼PK    |Ep]úkAkt  ”     native_host.pyOoÛ0Åïú‚/²±DF¯|Øa¤kP$§a0d™N¸Ê¢!ÒíòíÅé–n—]HxïG>Eñ8G-'Ğs©Ç¡×æÄ {ğB©fçà„’~A9éJO<9zrrb[…Âq¢$zi;;†•æ3«!ÑxQì®½srR‰Hšü*ÛvÀ m[ÙLáÊÊN.A\×dam‚ëÖLsòP×q.wn=¢$X3y£høÌÖ¥ãó·»ïÊ1Cç£.Ík"³2¿3™Jñ¾y{ºÍ³6Ÿ¾œÈ;AŠe†­‚ëêËë±ÓÙT•©ŸüY¦&Ë\–}6ë!Yø	¾]tåÒ^avûğ¹İ}Øiò:èÈ5ƒŸÊÙ:…Ã%[Óü	ö^i­õğpØïûÍ2ÍR{ŒG¶?˜¢¹uÜo¾nÚûÍşñãëòÅ5D4%dX;çŸÖ#Füñé°İş/âê¾:G‡±¬Ô/PK    |Ep]eÂ‚æ‚  S/     run_lab1a.pyµZëoÛ8¶ÿnÀÿ·sÊ[Y~¤M;Ñ™6íÛ&AšŞYÜÔéØæT&µ$ÕØ[ô_>dÙ±“¶ƒÛÅÇáã¼~ç>zôè…,KÈQÀJò–İ#
+t]—0cuiÈK™E–² Â51 ¹¬•†¾‚×\AAT-’nçŒşš°ªJsS®‰®«ª„%ÃÔš0QB‚&B¢™áz¶«|Åg<g†K$y.pöZ˜“RÎÉŒ— 	v#7µ(J(HÉnHÁäFâ
+Ü@ã(g2RA‘t;=êvfJ.I–ÍjS+È2Â—•T†0!¤±Kën'´©yÅ”†˜,˜^”ü&ö£K~“Ô†—1ùSK©c¢®E×7•’9hl[ë˜¾„˜ÔªÄYxm ßFÁ`wØDøv“ş#ø3¸~wÁÌ¢Ûév.ÏÏ¯Rüˆ²ï&Ëz‰-ËÏõ’Š)¦Ûy{ò[Š#´d7}-k•Ã d7ÿ±ş’}-sÚí¼=¾=ùm@K9×y­¸Y'¥œÓnçüÃ•ë”µ©j3˜qQp1×	ŞívÎNŞ¾O¿PG°”ó~Æò…Æ¸öˆõ¦7’©¢iÁaš/ë’á¸¯İÎo'ïOß¾9;M¯»BÇÃñqø¬?]‡“Ñ¼9{uN>hPD›º aP8æP dè:Ç»ŸÕe¹&öîFÏÆÉèy2LFCï!9ŒFä“Ë3òŠq¨Ši}+UAfR%¥Ù¡ó”X&<y2>­ãCdŸü(Ùñ½dŸÿ(Ù£ÃdŸLÆş^ÏÀÜJõ‰èœ	âøÅÍg„ÍÚXÚšŒÇñóaüäÉQ|t4<Ş»À³ÉÑQ‹q¬XrÁµQÈõÀ>Yœ;ív¬Ú©4(`r¢æ5šÛõÂˆ„EÆ|gDû}4@4Î’ç ÓkZXÓBc*¬¢Ó¸p¦-]½n‡©¹N=AûIj\åİùËSÜ…Np·sùáÌ«|æˆè ÇØdù©à*rj§Ó+UC+®M&?Ù¯^·Ãg$ºüp6 º^.™Z;Õé%vœz“n‡BãÈûµ6°<]qÑS¿a¥V¬‰›‘T„Â…a¹ù…Ô#3zArY­­\0"àÖšj<¯d**ŞÖSm˜2PdµÉé$¢DÈÛ(Ø¢¤6y/áZÎ¤Z2õì$šN®§±¿ÏÌYq(èä+5|ívò/"½v;Ú(`Kmû~åÔïv¤âs.X™¾=àY³›µË>#M£•‰@äMPJk3ë?§½DW%7%8áoi°%¯õjÎCqô$rÎ]“õt%0A4_õ‘¹ağÇ/DHë‰H¾`b…½Sgş¼ñqôöüu¼ßŠ&7ìïv
+˜‘\.—LQ`¶„8øV'Bxı²6éñpÄ£J7^&QµhÈo´Ñ1^Á;ŠA)©tJT%ËÆÚ¸@‹æÅ›‹Sl¥ÚÍï¯^¸jväÿöÜ¦¬\Gx€Ç41+C{½äVqUô}L	Mş”¼µáŞcúQĞÇUâ6_È’Ë&„>ÖFEU¢ÀÔ
+ÏnüCù=ği€	BöLw9¸¬à¯#¢//ÈÌšÕÉ·löº?~:N¦~q·©ZÜ­¤†VF±=œm”İÍÂĞ2Zi¿j&ÖÑhtLã¿[ÊÓmÒp9‹ç´+R²lÖ›¥UØö˜ö•»†À2YˆèíÁ+ö
+œ°ªQD³Ş‘¼°D®õZ'°‚¼6ì¦„˜ök”59ê÷·Ú$ÕšöbÜÏÔ
+0R9;,‡¹‹Øf%›ët†£¢ £/.OO®N³³óì7g/Ïÿ ñ°ç7¬R8Huˆ‹¬²H±A.Y%æ‘aj&ÜèOä+ÑKÄ¬7kk>jŠê nU-âÆkb·ª…àbN~¿ºº ñ$<“äFÉ[r˜(näŠHEÎß“`Mˆc}YÈL‘›îgêôÚ‚C©Ÿ¹’"™ƒ‰èÅåùëË“w¯Ş¼=}ıëùqÆôÅdp¡ä\±%yeQv´Â^o@ßñ\I-gfpZÌap‚ÖÒ¡ôÁRC1d2\jÏ*–şk)ç%^,”\n“Ïm“%?İ:Y*Ğ¤D•unâ¾pd4UãN{ñ™°1áJ¹&ØÑ6	Ö'^Ó›u® „^H“Y‹I§)µà6J6’m=ÆLÖ¢Hh›"
+’_zÉæ:¡lÖH*¸G46&½FñíÅ´ß_ +JĞÍ@¿à—ìÏ«Ú~ÙŸq¥ªqhğ§ï‰ôóäŸlç-…¼íkşHGÇÃa<=Ú”Ö~Áë\¥Îî:=E48p&ißmjw¸¹*?Ó·Ó…1Õd0(eÎJTôÉóápxiÔºÅ€{|Úú§'Oÿš‰°^-0msÆ¾7	Îbzç0Jğ-|æ¸ßÈ¤uL®©nk¨õ-7‹è†~\=ÿùâìõGõQ|\ØGAƒ­ù¥Ó´áB¢ t–ÖHËÑöé Ôm%øvEøÍ+RÁ+ıöx^œ½NÈ…ê3€’í™ıµmY¿f²d¢fe¹*«*Ó
+§“+ÇÖÓU…~î»u7l¹Ù_º˜Wt¶Ş±²”óÈ"Èpåˆ9ÛHæ£ğÀÀº‘xwrP‡µµ`•İ0›P‘ı?†Ueã¯Ôš1¿í`ñW²”B)xõ=u#nOw»[WgÇè Š†ÉÓ–dl+§]––b¸’”’::ÿpuoÑòjĞÜ“›0é^Ó9Pfè´÷{şx:áR‚GÇèˆø„D–ËZ ¤aèBÛÌa-p‚¿·È0ş_VÖ$Æÿ„µı±«‹ƒ·#ŒmdùÒ'Ae©”,êÜ)Bs±)°1Å ±È:Ş‹æGV1®ô–”üDNÊ[¶Ö„•¥¼%Ì˜6/³#äi_C.Eá"}.¨Ï¬$v·µ‚(Zbò49ò¬µq¯ØnïöFC”µãƒYnjV¦Zb8E«k—IÊäÁÿ]cø¾º¦.ƒ•ñŠN{ ¬ lI€¦”[ºZ¦óù@{K½Ø_°´s±V S–›½•R~ª+DÙ¦Ö(rôÒ%à|ÎäıÕ›ÑwéœLŠ°wÑnôY…İD¸s6¾ª·áYèÜÎÚmÅhV»‹zYi«•1˜]KÇ½{â-›"i²)-nşD0¸v÷y×ŞÇV ™±…pPÑh{‰sj5‡t;qšÜÔ¼,2Œ/@E;}J®Ö¿3L«èË×&˜ÙB˜0bÖ”Q/) #Åhû-ÖÓ_µQRÌÿá`Î^«Ó{L„aÈs<Æ†Š‚Ÿ±O v,‹_×÷oÉ~ m}k3àÆÜİAt‡.Ì²Üœrˆëó(©iJO²isÿİ:y/¿@tyºcO°-C]r)nä""º¨íî½¢.ëÒÂ×ëö—²¨KØ¥ïZİ
+¸V„ÿµfá§uy l4›¹	‘ûs‡|rşáêâÃUvqrõ{ƒøw3å;SŞ¿Ş¿“xÿ.Îyš
+D*C>Fõ×æïÒ/YI'Ö n{âÉ>ïc^+³à‡NJÑ÷$åz˜Ö@E™ìÕ˜.ø|A'º^¢‘Õ€ùD³¶–õwì¹Ç–Æt	¯—ûg¿s}÷Îo>&×ÑıL¿üç°©Ï”NCºÁ~‡Ü‰âbËøºÎxVÖzÑ6ø[x¥ÛÙ`´ûìğ¼ÒgPšK·í»ĞÒg”î™]ÙH”Ù°Ña8Ó/_’3œğõ+RµŞŠ‹y?—Â0.@imIÃ–A±õ£Ä"¹Ur»‰;¡ÏuBš¥ÆP„ÙÂ Î¿“2cÈ-s$äMÈ{#«‚¥üd-kEdéJ‹­RæÌ¤ä‚Zs1·­uË6ÙwMs)f|·àÛú¾¥5z'ó,ŞGªÆ¬_¿o}ş*ÚT]ëŞ-Tº=°ÒûGi#‘ş¦ø6m}ô±·‚­š8k'Ó?m`Ç ğõkÁ>3^b~ƒnR¥¶,Ğ8ëñğû.}‡Î–|·ò£´©Tî9¯‰EØŒ¬rubŒ)?ˆ¥,ì%øR™TIåªÜÍMbƒs9Püâ2„‹®ÈÀÕQíğµ5Ş!Øz¯&
+\]
+b¤…ä˜‹ÑË!Á¡ªK,/0reï y©ÈåÙk/â:ÄÕö¼é}ñhËuGmïÛ©ñ8¾èÕh„åTº)3Ò^ŒÍÃ'Çíæg´0n^+,Œ¥×¶š‚†“Çö'D½´&
+›Mœü-=šîlèÅ(»RŞfÍ¹i¼‰Ûı"½xävùğvÂ‚FGÛ×ãiºù™ø‚IÔ>u‹øq0åh3ûèÁÙOŞœtœ|6$9¯£ÿÒYXô=XX·ÿ\‘v4ìÇW£ád8š‡ÿw¸ºl@‡êòÏãd˜Œ“§¡º<[µğCÄÇ?L|ü0ñ'?L¼U'„Lïğá(pë9ğ€Ø±"néL³…»òè`÷xcË˜ëóğ³ƒõù»2ö$sY€éí=ÒÑ½GòÍÍÊ4ÕÖx3çR³–J¼âËìÛlÕàÇ{ˆ~¿R#ˆËC#ïw²m?È”¡Â¾L·İÈæ a³eUâSoÇ~"ïùŠh¨š»rMäRhâA„ŒL0ákÍj‰ñ3…\Ã¥"µØ.ùX{*
+°`TaOtÜÆM­Îhøÿ˜çsçM¿P(Y¥¡ğâ¥éd4ü{dwøx´AÚÙı±ÀÃ±È×}Ë7ÕI÷¹³E·éûÀ*?	K¾mî¦Şá­á&5x0!ømÂù0Ûáğ}•^Ãx™ÓğUŞÃ‚œPK.Ğ·ƒ_¾Ln7Q“,	Iâ&°	Kdşî±øà~ˆÖÔ‰=şàñ£Í`™&»ĞàåÆd¾Æ‡­ÇNmğØ´}İÇxİnœn~ï^öƒ<Û¼ŠC*Mm‡Ì¦áJFá¡Ì®M?ÍÂ›Çv»ç~ĞÆâÑJ0­@À«Ç©ıÃ¥ Ÿ„æ“ÃóüÛŸvw(Ü`¢VÁØ{å½üpF^¼y{ú2<Á!1Ú÷Ÿ¸Úà¶òZSs÷“ù7®1EI5ñÅ&ĞƒcØò'>”E”î/ÖgîYnšWAÄò¤eŒíû4Æá¡AK¢øÌµ&•,Ë¨·§mj‡ìUËM÷~åÄjËVˆ¹U-ÃG¾é7xÆBŞÚ0Í>„B7y0–j³TjÈüŒVÜd˜R¥ÓÔ­ÛzóMRWéœØ×îñIÛrÙ–$/ñ,;‚xÓèCÛÚø²kš†ÌÕ6~zL§©œ¸†Í>“¬
+>mv×ŸáÇ…S7M¿íQÏÖï{$¸?SïV{8Wï5§yH¨)ŒôúsùálÇÙÙÇTHÛ=åØ¨kóÍë"°ÒxÇzı¦è‹J…‰—dû…·{]…kL(ìq»öå¤}àJ ö2êÊ¦xwŸOZÁØ~M°ûió¾á.¹]Aë%’}?öÒòœ$7Ñ¨×íüPK    |Ep]ö9²Œ¦/  q­     work/source_bundle.jsoní}kwÜ¸‘è÷û+öÌ¤tS$ûİ¶œ£‘ä±6ÛGÒd’5}Ú 	ª9f½|HêØº'Ÿòvï/Ì/¹§
  	>ºİr<ÉŞ½ë9‰$( …B½QüØIØŠ§aÆ“ugÖYdÙ*Ş„Ù"w/—,â__÷hØóÖ.KRæåI˜­{uÓN·ãñå2Ì:³Î8N'nŸYÛµ¬ñØŸz¾ÇèĞ2Ëìİñdä™ã¾Ûév²„±ÇõÂˆ¥ÙÛÍYF?Œ¨kÑŞ2ÌÖK¹whÜ„Yxó„uº%÷aË4Gƒº^ÁßnÄ`º Y§o»l<©ïšşÔs‡¾Õ÷ÙÄ6'g±`8îß CøgÖ™Ùã~·“'‘†/º
 gˆÓÏcĞ|sI1	Ç‹ÛOÈ,f	Í˜O|–1/ã	áy¶Ê3'?œø7òW˜áÆVNìÄOÈ‹<ŠÈç×—gäøúú_N~OÜ<ö#FzÄçwqÄ©OR¶¢ >Z;1bøÅKVI˜²Í2ê}0~Iy, ¾Ygø}>_­=ê-Ø|~èÄÆjí‰\´;?=#4öÉë+‚[êÄÆmêqŸ:±úŒÂÏÓ«ùUÆæÄ×‹|é¦†ïŠŞ×l¹â	MÖªó‘-Wğ#â7Nü›ˆß¤‡
 Íğ¬óĞİN1§ÜûÀ€¶#ÅL†,°ÜM©ï½ñxêº®?NÇ®;ğ¦#ÛMF}Ë¦ÅXæø«SÌ#&QRÌ‹Ë×?’îÓ¬oXv/Â%àõç×—¿?=¿$‡t…ôqòúÍŸ
@@ -1301,7 +1248,7 @@ kfÁ
 õ°ƒèr£Ù—|{x"ıƒµOt³^:»Ì±‚T4[xıª±gdãƒÊ $ ß}¡˜°—v5#/©Wğ4¼W>¦ÿ‰7ÿÿoşYp¯0­‘G·êÒV™
 éBª"=<×<Å"Î|p`aÀèà@8*ë‰ªÄ­¶&Ê#l$iÜ©˜¢ØB$0Xe¹àY“™‚B†Î¾<N]X˜j•,Ëj ~»ÕYsIÀÂˆD.ªòí şxøq2Mş2Õ¤æ#KòxQ·âŞUäjA¡†¨C!YIU,£H"#Ëµø´‰ñC0¶ÛõHˆy²Dòà`k@Øõ½&ğÍ-!1Å–°	3àpT–D„Œ”)†¨ea\¬SÆ7¿N\ìÉ“'Ã*‡‘‘ù– fP¡î’İñ†DW©¾L‘_%šT™ñ÷KÒIé¹¢ar	]ÊC TQŒoÂHu ¸<8Â2·üüMËÔO>•Ù>W1Kpt‚SåüM—0ãÆ¨„'š³¥z0CN¸ØŠÆOÿë†5h3°Q]H™Ÿªù”ÁĞ!‹„‘ŞXHí ş“<ö¿¾Cı‘n~pÃÕ¢œ‘å
 ¯nµ2Š€R“×³”G·Xæâi0é×ï ]/|{˜”‹{›ç:â7ÿ9­Ÿ"IìQÎÈUÂ<ÑK‰J ÷n¹Gİ<Â»œ<‘‘93¡¤#¡é®Ùê—\Ò(ôBP~e¥r£Í3¶\Ep1%»ÏvôVú}jÛÓ‰;yŞx2°=o4¦ıáÔî¬ş8pã`0°Ò[9O¿º³ò“(•ÒUy,/Lè&k•ŸÎ0_Ø‘/$_°œ¸§ş9±
-,C7%8gN|&¹Ø¬FH…KaæÄÂ¥0sâŸkàM¨›+î“æéJPÁïôÁíÆà'ÂfIøg<#ÚŠ©¨Œ+7	Y ~Ÿ…2)ÈNô†lÁó¡;jO?ô‹4÷ê½Äı%¤,ĞÇÆØ¦œ?mqV”~
+,C7%8gN|&¹Ø¬FH…KaæÄÂ¥0sâŸkàM¨›+î“æéJPÁïôÁíÆà ÅÑ0fIøg<#ÚŠ©¨Œ+7	Y ~Ÿ…2)ÈNô†lÁó¡;jO?ô‹4÷ê½Äı%¤,ĞÇÆØ¦œ?mqV”~
 ”^Šßa€ógô\ø B#Eau‡VÜ‚E+•¦²äQ;û<±§‡-=
 ó¥$ Øà•oÙïv8zúıÕOœ9p™ç&ÁÈúÔbŸ˜}Ï˜ö``ÔöÌõ­òÄ~…k¨˜EyäPû™Ïƒn5Ìç$DæKhsy}
 6Y>]dË¨øC<ìK0d`P¾…›’/¯¯ß€û™¥ÙK
@@ -1315,42 +1262,43 @@ rØ =ÒœØpĞÅa:õ™8g‡ôù.ëÓ6èÑ‘÷J1y‘¯32çñ@”dcO@Bx
 &OÁ{Æ“ybö´?~JœxapÑ¹çò,ãËxk¤¹‹3‚FªûÀGı§õN“²’x\Û,Úx\¸?‚/Rf$ˆØıSrCW3báàAï.ğÿÅJh L_ö”TxJV`ĞÅ73bá]ø,é%ÔótF,œÑ2ŒÅ†A+|âòû^º >¿›“Ø«{XIn\ºgvá?Ãœìëƒ§YÂã›b£ÀÚš{°Šº÷>ËÈøJÃ4æ¯Bw5Óü¶˜-¸=é*e3¢~{Ú¶ÔGLh3(Ã!fÄZİ“”G¡Oø–?ô]uS˜%ğÌÂ›xF"dO!ú‡7&ÕÓŒ¯ôúf<aC6f®x½JXã½eY{\Òh0h ÏAĞDëöAÀ2¾z÷3¼È)F¡:ÍZş€ùñâÙ¡:[Ï€S†<ÃÚp.¼öÃ[âE4Mœ:NçùÉÚ‹BOó6`†¸Ò¹z-µT$›yvè‡·¸Ò(L ¨êùÜ
 ‹¢3X¾+„eM+­ZU 4ÜD‰ÓCµÀ*”YÅ¦åœ6€AUa0º%…º%Øz1üQƒ{]ææ«iè¬KÌö	„f;@ÕŒ¶bÆ"˜ù0o "±‹µ}D‡ÛHHã…Óy^½–®æ÷EõC1/¼Hàâ†nDú®„¼mÂâ¼	E[ìÂ~^¤’ÎÈôÙáÂFüQGtøóù“g‡Ùâ9ü¦|•ÅƒÂcY<ÑÏ>0„«²ì§¦_<(Ë›Ï”TAm	~3”\àãwß	 õ}PWĞTCCå;XÇ³.+FéŠÆGN”‰WEŒHÕ(b¾jó’‰‚ÿìPaG`±«p¸JX¡JCt?x@
 hB	BÍH˜Æ¸ÇDº¾öÚ=bÊ3ÚçóÎ®÷RhEÃ™Ô,›0(¼^ØÆ Ù>ş?z Â˜€/KÖ~C+Å@]§nnaï”Åşœ%	Oöæ@3¨JEO·–P:ªšú:0À_Pu_TÇHXºâqÊölÓlm Ï’=§#ëô®×+i#ƒ´CÄ>-TÇmC5 ]°ø&[ ,°Aï†uìï×{—Ó½ú»;,´…i¢¢·B‹pİÌ—Yq#6¥Šö’f3°Khµ.4ÇKmSWIg{¢ù–@séX	2GSk>:ù|©	ó¹ÓQ¾áq=jsªîí9ÓÀÿ`õ>³ßU´(W(Æv:å=Yµ‡pğa„!òo:]Dyº8ºNr¶¯OBxç,†Á÷wñ³—WÓwt³:úl2èSojzã‘?ìŞˆzı¡Ï,sèQêÆ®Vu8}u?û#¦ñ…~váZ—ğ´øîÑÓÒE¤‹¼ŒÈ§
-4Ş&)¼ë×Æ¢ò­ú»‹PşÒÿsnøl-n}ˆÇ1&·íìL¤“Ş‰_ütq1G¹Sï´µR0tşñüÕù£ºj!|9ø¦Âà ƒCƒ´ÏSĞNX|»çt6öŒ¬€÷¸µ¦ÂF¨­­Ä¡‚èÄêØ8˜2Qa`†qƒ·ÈŒÊßãõ»wäˆ||P¥N»?Cl¸(ƒ/UCÙ,¢i6_rnıø`,ršmh©6ä„õ6Ês™ó…”@ŞPù'„Àz@Äwç¼‰¸×U‘1Y^@ÌOŒ!NŒ!~à 42®Î¸>»ü±[}sãóW×¶Åœ»¹X3`O8À5Ê)ÅàMÂ™ï³!5DT~|J0Ñé^@ : Ê¢RÉZAí¤ì>L³tO—úÒqSkY@¨˜-j-+n¡êÖÊÂ svÉšÑ—šŸ¤s™Ü"3üg5òì:1b2ËWƒÇ(Éåïï*¸½T3¬ĞwÈƒ ô aÿ§Ë•Y‡ê©ä rÜb¦´š5èWÕ)KÓ¤¹@åŸU”·âuÕFÍo@Æñ(†)ä¼ú'“œÇêYim…>ªgÕ1Š¹…`%µuq‡z?vĞÒƒó2—šú¢pµk­ö»õ°ª•Và§®B‡)¡–/JïZ÷D
-Š¨†xjÑ ½’±ñÛV¦X¡¨¸­ÚtT)F²(L	âú}GFªT3:óúlXXÊ9Î‘()(6J>¬_ İì2ø"[5ƒ/	óè¡)àt 9—)Ëõ76U‰?¨ñ*§àPv9åéâî/p®$¼êyi®¡=^­3wQş4&äùªnİ–Ö
-*a·üú (
-²\åû{Iv>[%Ì¯Öô‘‡¹Û8£[*w©Ş°’ÒæãÚ:xáS¡PµI«…Ä‹X[é‡0ŠæŞì|ÛÂñÚw[·ïcûÀ?ì„Œ’‰?ä4Êî&‡.ß¶Œ$—Û Ô9U	eßHØ*¢ À:=¡„§³o ÿQ7Õ¿*…³ñVß<õè‘X*>r‘âIWOØo$5hUGª½+/dØ¹™7¡B¸³¢šI½	J„Y•(›9Yx¢FŸŠFSóàkM‹‡ÍöJé¬v(Ÿ6{¨[1•êˆ/õ~5é‚[¦§9 »XBÀ—BÛk¨y—€Ö¦Õù­–î&wP¤ª„Iš©¬qÌ•Ë*’Cj¼ÚĞ-Ï5%¾åmEwo{_¸X%„nË|!Å¦®[0ş ÖZ&T9zc–*ym¨ñ§.5 |#ætÚÓ¼ŠE1¾ˆÇPÍAÏ©ü+=µ—ÚÁÖæ'EYõ¾4eêT[T6aSµ÷U·œ¼c­ƒ«lF ÷öQø
-D¿<VuXtõ¬e	5€e[Ğ¨[tÔ˜Uµ“Ëy´§¡Q"·Ô\ŠÉ5l"Š^É®ŠÙ]±!­š_eÕüª½×W¨õtÉOqLùêgÿzõúÕ)Ó–ZÒ>'d÷£»>ƒq&‚+ˆ‹4(Y?V÷8ıÃŒ|d÷ŞCƒF[és’ª”Z IY%Ö–n§ØöımR®ò01¿ÛSN&#Ï¼}#L¹ğx–¤¿`ãÁ–Q#4áÚñ§ç^@r¸}u’{eµµ•{é~•)4­™üJ+Rsö°6(µä·0 gêt”^ªnX%Ü+"Zé*
-Ax)P]bí¿µŞÉçûoÍwåì„—YæÊ·&‘ëÒRV6(òo·™BòÚZyG¦ˆ³ß VDÔ·¯}`£î³Å€ÄTZİh˜¼#öŠg/ :-ì“ ¬²ÁİF ×¬Íµ%Êq¶ÚY›Ø§œ8kÅ4ˆGz®îÆIÒHgÊ	½ ½ü³${`0ä<Î—.äGã÷JÎ¡¬•Õ’p(.‘†Æc‰„ÁÕ›zAƒ’å¨ùAvg¬u¯ÉÚ«yÛNøûïÈoÄ­ÈÊ˜qÛm»Ï¬üÀµòš¾¬şé¢"‹øÜa„Lbòb¶_\ÌnS¤by kÃš7v.Ï]#ç&&Š o»HÄšiYX›• ;@¢„è²¡Fcª­"¹M]Š<Ç{WY›+§lurøMYá»VøÓ“Û@´áTS°°‰~lŠéÊÒvPÈ'ó÷6°i|éŞ~Í/'z??"]ø¿6•ºPd à×…"~#l¹ªæÚo¡Ò(‘pÑÒeˆ¾˜¡Î÷®„,Rw"ã-D²'ı t¨z5—;¨À]ÜìİDi–Ô êE™_pF§SÔ£ù¸‘ÖŠµm›½ÓÙ±ÍW9m*ë³¨³UhBXP«Ğ0æo%Èeoº³òq)®è¶V‡»ºêÊv¦B‹»é••]ı­"½d2Eqrù3(Ï:ßUvéËØ|€ÚñäH×ÙxŸô!JW0üÃÛ	GèISÉÄº0cË·-`‰:ÌM.şº#O'R ©¬í§»ªê¸ÊT”§©­û¦›ÑDt×ï	´8ø|ÛŒÑñÕ6[#ÙØ³ğ†µõ.^nƒPqŞµA©4Ø©ğ¬µA)İn[ ”®¶6š#nŒÂëÖ¢tÉmPIßWd ùƒ4
-áäël¯å‚ÈrÖ<¬»’°î+ßH¦[ÁôÕŒvm¦¦Ï´mÅR‘ÌYNÀ×º4„I©ô ]ª	§·š±¹ó·{M†+yıË¤W?y}şÇ^YÂ±¼ş¥³wı²¥0Gå?LöÄ©0é	œsşA%2I]£ƒæhûÅÈİ•‹„ ÏÕGèæ²bÀjÍï¨ŞA¬é²eAœÎl³ÆºıŠfåşÉã¯kV/b¶°Ş†	=3íàMŞM÷?Ñ=Õ>,ÈËÆ ûç°-WJëş¤í7L—UÏX£1à±`®s¶â®¯ÅùÖİ|q¶Õ3ákaroÄ€H£.<ãuFµ¿ÓÕØâV¤hPDQôÃˆé“Â÷R‚A?«Ÿ/WÇ³Wu ÀÃ‘­İôÖ4½rÙˆÆ¨Ç‹ãï‰uLzääO'ç'äôìúìäúõ%ùùüú%ysvyşúôüDèŒ—g/àµ&;¶x)Á…®:Ş3ò±õT?¨J];8á—»ø¸dVSÅaØ…ªr+şqøW(|àÛì T¹|5ù«]Ñİ¢ğ—cÔº·Ë…ÊŒqÖáJ¯,Wu×1Ä/’ şÜs:ß¾œ}ûãìÛ«†’ -J@c;;j¶k;&ÍVòÜÄ\‹`ƒ[ÕÉM±«Àé¼ıX¬ûá¹ÂŠF²n85u>ı 6b/İÚj>syD·_ğª_Do>ÊN€9åe£zŠ4Êç	™ƒ’@¸g¯õÌlÈ'h
-õÏMÔ•Ó!!¥c«=«nèõãå'˜Œ–	ï’Š-¸Ï.YÏXx¥'"ëe´còó¸ß·ÇîyÓõ,ßgcoäéÄZ#—MG¦g³iß7‹äçÉhòÕSŸ1‰2õY+9óáoX¡¬ØGY iFõD ÆÊš5xŞğ­ô4²D¤xˆ³Û‹øM¯Z;œÅ·aÂñdÅH­Ôªay°6»E>¯h'Êø—^1ñ;˜=K¸şB¤;ÏäOıN~&¨N²äŒäqÄÒ´'‰T±^¶óËQihÏÛ*è·ÖKãi+v:p=@Şø»ÑR¼ô–¶kõ/zµºğ[1¤öæïÀV»n3†€ìj[éîüÇŸ.¯Ï_·SŸµ#ş>³xÁá°Ğš¡¬¹¶£j¯A·#»²ıë¦.íÆãi?¹ÌL<:¶İ©9NÙÄ´Ù`X²«áÔúêìê“(ÙÕ7h„;q<~SfÿÛ‡jwÂTşÆgğ¥Q—îˆü+ãæ|óæê
-=2—PaYT³é²‚#’ûÊj	½“«ÎS–Èy!ôä`Yô£^Ş¸XÒ4cIónÃÆ‹°4¹{/y
-s=•[OüNµJ™®Dâµ”u-MÔ0§ƒÕ™¸L|W~ÉÉ
-uÇ7Ùû™¹òòéı”„—Ş{gæ%:J¥Ğİë´ß»fi&±«µÙßW¦i¶€¯‰”œ¤H°¢2qU¸·ĞÆÉ7@r +ÂÇk±b°!oµc|Ç•¹¶,ûødS­ÿŞEC»køNTg‡cØ( ¼«º0¢>sŞÈt×´Çöpàß3m:5-³?t‡ı±mÙå'KÆ_ÿü=båùûŸâíÿ‹·–ŞÅ­Ç~ gêO‡sdygNàã8}oìOm?ît:›£Ñé@û@Oÿ«Sû#&¡ŸgKşbñ5õÙñ%.˜&‚åŞoûĞ|4&…BãÂ{ŠT^¿ö…
-ü<ë¯ŠN—(Ã >ÌÇ‹«HEmÓBD4/2•KÒüğ¶XYYöşË?o¥òe«´òã-EP´]’¡øÂ+åw+R)¼B -/lU2wEŞ’¸^¤_×í}ıŞÖ®ô¿eOw-IÙ7ÇıQßØã`äî€¹lÊ‚şx:±üa0ê{Ã!³İayWvl}{ñ³(Juuo´bHéÃùäåã^OG¡†­¢}qEfFŞ
-…¡pië£Ô¯†N§-cWĞØ6¬J5§*5·¬–,QÉ~w*O~PØ0Móß*=ôü÷»¨«NGÿŠ…Ş¢vkÀéû°LšÀ÷‘–t³S@ğxZÜ¿/"¾gÀ»OâËV©8Jd¥>&-³!É»ò–,h
-Z…6ÜEÃ
-0å[¯×[YÙN¹[ú½ºYãR]ÅÙU»!·)³¥¸ş°[Ñ=Q)·W¤V¨*’ ³åÍ¶uiÍw\›~={Åg‹zb×>;ÅâFŸE¨NŠ|ÕU	±LåYÆXµV±…üÁ¬¦ãıÃææÇ<ê˜Ê´.8„ò£Œë¢J³^Ô!aK1_TbKäêªL½0šfIîA•‚ö1lfJ>úšƒÑÁc¨%¡şŸmØÅñƒïœøá³êIÂR–Í…ŸîŞ w0	†¶é'æÔtÍÑ˜õÍ€šşˆ¬I0œºCÓ
-ìaY Û}ıïg>bš7H¬=Ûü<Ò£ëÔ*Y(G†æÂ(ŒK¶ä·Lz"´ÕÇ MÅ— : MÕ6jÓ!ñ'EüÎ‰DøêcÌWœ™Zv¿r¤`¾ˆr¡|NÊ¯/íH"–mÁˆú&³ÁØ5ŞpÀ¦ÁÄüş`äõ£¥	7üú‹GLâ‘ÃŸuThüT~¼ƒ&ø±(ijms¤mÿ— µo.¯®Ïşx~}òúôŒôbFÌ†§¬öUN™qŠö$»áª·ÏHPá;«,VÀÄgşüŠcÆØÕKVÔ"š‘öo€ÕGTÏf›ƒøŠM²ŞIïJ~ÀÓVÏß$UX!UZ‡ü,Á¾ÿİËöÄô'}ÏÓÁ¸˜ÌšôíQà»So2¦thtĞ²œ‘=´Æ_ßG·û,¾°š‘VÀ(¡±Ï—;Ô3ÚT®h[‘¢G#ÚP§Rygs¤Fä‚‘°ßZ~ç¿Mq›"7¡^Õ½üîÀ¦<?õ¾]ö¾õ¯+	
-®’3s4-Ñ²#`® Ü•RÎTr>”(AÚ1¼‹2ğï­Ó)Ü–¶%÷¦x`×ôLÙTÌ€Ì‘ŠAàÄ ošf—¦P>­–©)bp1AÃÕÃ.®Ûú%Åò‚på~Ôæõ[>¯®Ş	
-Õ—ù}¹œw-h–úı<¾_Ñı:¢ûuD÷ˆämğ+yNÇ¶º¶İµû]{Øò=ˆšKºÙ`ØW&æ¤jÑ—ÛyK?ç:ß²ŸUWúGüQOoİ/¼7Ç[ªa¶ş:[†N}‡¬úZv}Ë Ù ÿ1
-#ú‹oU©?t×¿Óy÷hc á#ü°)ÈSCuıOfE"ó\Ü•Ù?f%Fë¸øTÇ£SˆQ…*ºó‹÷œÔ´Ü8…d*¸›*¿‡¬lœ"Şs­Ò¶ê$‹RŠÆ¿¼8ª€İ†lEñÁDæ‹Ü2|ÿ¡şñğ½t\	ÕBv¾½-SŸÇU1 Ü,¿(uG£¾ÇçeråÆ¼Ê]npÃ/ò˜ñkİ”=Z¤’¯•™¶¾¯^ÙäİçÒ:‹Y5Î[9_-1¯JÑE“½ım9vÿğôºÍÛüÉ¶ã¢¼$hÈ[í¨˜³ÑÔgöÔumßòGƒşÀ¸ö”²ñxHı‰g³ÁÄö§¥·âëËëS(µòÎÃ»‡ÿõPK    ‰8p]rk³ ±       work/source_verification.json­×M‹ÛFÀñ{ ßÁì9¶çı™É­@í¥ôVŠyŞfW]Ù2Ò˜f	ùîÅ»$ôP,¯¼'Yıí3ÒŒ¾¾·Zİz¦®ãÓİÇÕİCkÇéãv{ßµ‡mxØo÷Úu8lşå5vk~"'åÓØµ§u4İ}xñ°ßwíK&¯6;²@
+4Ş&)¼ë×Æ¢ò­ú»‹PşÒÿsnøl-n}ˆÇ1&·íìL¤“Ş‰_ütq1G¹Sï´µR0tşñüÕù£ºj!|9ø¦Âà ƒCƒ´ÏSĞNX|»çt6öŒ¬€÷¸µ¦ÂF¨­­Ä¡‚èÄêØ8˜2Qa`†qƒ·ÈŒÊßãõ»wäˆ||P¥N»?Cl¸(ƒ/UCÙ,¢i6_rnıø`,ršmh©6ä„õ6Ês™ó…”@ŞPù'„Àz@Äwç¼‰¸×U‘1Y^@ÌOŒ!NŒ!~à 42®Î¸>»ü±[}sãóW×¶Åœ»¹X3`O8À5Ê)ÅàMÂ™ï³!5DT~|J0Ñé^@ : Ê¢RÉZAí¤ì>L³tO—úÒqSkY@¨˜-j-+n¡êÖÊÂ svÉšÑ—šŸ¤s™Ü"3üg5òì:1b2ËWƒÇ(Éåïï*¸½T3¬ĞwÈƒ ô aÿ§Ë•Y‡ê©ä rÜb¦´š5èWÕ)KÓ¤¹@å¯*oÅëª"Œšß€ŒâQSÈyõO&9!Õ³ÒÚ
+}TÏªcsÁJjë&âõ~"ì ¤æ!d.5õEáj×ZíwëaT*­ÀO]…SB-_”Şµî‰Q%<ñÔ¢A{%c+â·­L±BQp[µé6¨RŒdQ˜Äõû"ŒT!¨ftæõÙ°°”rœ#QRPl”|X	¾@º/ØeğE¶j_
+æĞ;CSÀé@r.S–ë/nlªPãUNÀ¡ì(rÊÓÅİ_à\IxÕóÒ\C{¼<Zgîş¢ühLÈóUİº-'¬TÂnùô7@Pd-¸"Ê÷÷’ì|¶J˜^­é#s·qF·0TîşR¼a%¥ÍÇµuğ"Â§B¡j“V
+‰±¶ÒaÍ½Ø#ø¶…ãµï"¶nßÇö€Ø	%9Èi”/*ÜM]¾mI.·= ¨sªÊ¾‘°UDA€uzB	#Ngß@ÿ£n6ªU
+gã­¾)xêÑ#±T|ä"Å“®±ßHjĞªT{W^È°s3oB…pgE5“z”³*Q6s4²ğE>=¦æÁ×š›í•ÒYíP>möP·b*Ô-^êıjÒ·LOs@w±„€/…¶×Pó.: ­M«ó[-İMî HT'“4SYã˜9**—U$‡Ôxµ¡[kJ|ËÛŠîŞö¾p±J,İ–ùBŠM]·`üA­µL©rôÆ,Uò
+ÚPãO3\j,@ø*GÌé´§y‹b|¡šƒ!S#øWz6j/µƒ­ÍOŠ²ê}iÊÔ©¶¨lÂ¦6j#ï«n9yÇZWÙŒ îí0¢ğˆ~y¬ê°éêYËj Ë¶ Q·.è¨1«j'—óhOC£Dn©¹“kØE½’]³»bCZ5¿Ê
+ªùU{¯¯Pëé’Ÿâ<™ò/ÔÏşõêõ«S¦=-µ¤}(NÈî!Gw}5âLWiP²~¬îpú‡ùÈî½‡¶Òçş&$U)µ@’ş²J¬-İN±íûÛ¤\åa2b~·§œLFyûF˜ráñ,HÁÆƒ-£FhÂµãOÏ½€äpûê$÷ Êjk5*÷Òı*Sh [3ù•V¤æìam PjÉoa *ÎÔé(½,$Tİ6°J¸WD´6ÒU‚ğR ºÄÚk½“Ï÷ßšïÊÙ	:/.³Ì•oM"Ö¥1¤¬lPäßn3…äµµòLg¾A­ ˆ¨o_ûÀFİg!Š‰©´ºĞ0yFìÏ^@tZØ'Xe7‚»Œ@®?*Xš5"jK•ãlµ³6±O=9qÖŠ=iô\İ“¤‘Î”zA{ùgIöÀ`Èyœ/]ÈÆî•œCY+«%áP\"ÿŒÇ	%‚«7%ô‚%ËQóƒìÎXë^“µVó¶ğ÷ß‘ß‰[‘•1ã¶ÛvŸYù7jå5}Yı+ÒEEñ¸Ã™Å$äÅl¿¸˜İ¦HÅò Ö†5oì\»FÎ'LLŞ2v‘ˆ5Ó²°66/*Aw€D	ÑeCÆT[Er›ºx÷®:³6WNÙëäğ›²:Ãw­ğ¦'·hÃ©¦`aıØ;Ò•¥í O2æïm `ÒøÒ½ıš_Nô~~D6ºğm*u¡È@/À¯EüF8ÙrUÍµßB¥%.6,P"á¢¥'Ê}1!Cï]	Y¤(îDÆ[ˆd9NúAéPõj.wP»¸Ù»‰Ò$,©A(Ô=<Š2¿àŒN§¨Góq#­kÛ6{§³c›¯rÚTÖgQg«Ğ„° V¡aÌ!ßJËŞ.tgåãR\Ñm­.wuÕ•íL+<…wÓ++»ú[EzÉdŠâ:åò5fPt¾«
+ìÒ—±ù µ9âÉ‘®³#ğ>éC”®`ø‡·Ğ“¦’‰u`Æ–o[.Àu˜›\üuGN8¤ RYÛOwUÕ=q•©(OS[÷M7	4(¢‰è®ßhqğ=ø¶£ã«m¶*F²±gákë]¼Ü¡â¼kƒRi°RáYkƒRºİ¶@(]mm 4GÜ…×­Dé’Û¡’¾¯È@òiÂÉ×Ù^Ë‘ä¬yXw%aİW¾‘L·‚+è«íÚLMŸiÛŠ¥"™³4œ€¯)ti“<Ré7 º.T-No5cs;ço÷šş)Vòú1–I¯~òúü½²„cyıKgïúeKaË~˜ì‰?RaÒ48çüƒJd’>ºFÍÑö‹‘»96*	A«ĞÍeÅ€ÕšßQ½ƒXÓeË‚8ÙfuûÍÊı“Ç_×¬^Äla½ÿzfÚ=À›½›î¢{ª}X—öÿÎa[®”ÖıIÛo˜Ö<cÆ€Ç‚¹ÎÙŠ{¸¾ç[wóÅÙVÏ8„¯…É½"ºğŒ×ÕşNWc‹[‘¢AEÑ#¦O
+ßK	ı¬~¾\AÏ\ÕG¶>tÓ[ÓôÊAnd#£2/¿'Ö1é‘“?\œŸÓ³ë³“ë×—äçóë—äÍÙåùëÓó¡3^½€CÔšìØâ¥oZ¸êxÏÈÇÖSı *uíàh„_îàã’YM‡aKªÈ­øÇá_¡ğ7l³ƒPåòÕä¯vEw‹Â_QëŞ.*3ÆY‡K(½²\Õ]Ç¿HøsÏé|ûröí³o¯J‚´x*íì¨Ù®í˜4[ÉssA.‚nU'7Å®§óöc±î‡wä
++Éº1àÔÔùôƒÚˆ½tÿi«uXøÌåMeÜ>|yÀ«~½ø(8\ æ”—QŒê)Ò(Ÿ'd
+Há½Ö3³!Ÿ y(Ô?7aPWN„„”FŒ­ö¬z¸¡SÔ—Ÿ`2Z&¼K*¶à>»d=cá•,ˆd¬—ÑÉÏã~ß»CæML×³|Ÿ½‘?¤{j\6™Í¦}ß,’Ÿ'£ÉWO}~Ä$ÊÔg­\äÌ„K¼a…²be¤1Ô.,+kÖàyÃ·ÒÓÈ‘â!În/â7½jípß†	Ç#µRxª†åÁÚìù¼¢(ã_zzÄ8Äï4bô,áú‘î<“?õ78ù™ü¡:ÉZ3’ÇKÓ$RAÄzÙÎ/G¥¡U<oCª ßZ#,§­ØéÀõ yGàïFKñÒgXÚz®Õ¿èÕêÂoÅşÙ›¿CZíºÍ²«5l¥»óº8¾>İN}ÖøûÌâ‡ÃBk:„²æÚNŒª½İìÊö®7˜º´?§ı`ä20ñèØv§æh8eÓfƒaÉ®†Së«³«GL¢dWß` îÄñøM™ılªİ	SùŸÁ—fD]º#ò¯<Œ{˜óıÍ›«+ôÈ\B…eiP9Î¦Ë
+NüHî+«y$ôN®:OY"ç…Ğ“ƒeÑxzxãbIÓŒ%Í»/JÀ:Ğäî½ä)ÌõTn98<ñ;Õ*eº‰×RÖµ4QÃ0œVdâ2ñ	\ù%'k(ÔyCŞdïgæÊËo¤÷S\zïuA˜—è(•Bw¯Ò~ïš¥™Ä®Öf_™¦Ù¾Z$BPr’"ÁŠÊÄUáŞB_8'ß É®¯Å2ˆÀ†¼5ÖğWæÚ²ìà“MµşWx]í®á;Qa£€ğ®êÂˆúÌx#Ó\ÓÛÃ|Ï´éÔ´ÌşĞöÇ¶e—Ÿ,ıó÷ˆI”çïŠ·ÿ7.ŞşYz´û©?Ì‘å9ãô½±?µı`¸ÓétlFC:¦í=ı¯Ní˜„ş}-ù‹Å×TÔgSÄ—¸x`š–7x¿íCSğÑ˜
+ï)\PyıÚ*ğó¬w¼ş)8]¢ƒø0/®"µMÑ¼ÈT.JóÃWØbAdeÙû/ÿ¼!”Ê—­ÒÈ·AÑvI†â¯d”ß­0H¥8ğ
+€´¼°UÉÜyKâz‘~]K´xöõ{[»Òÿ–=İµ$eß÷G}{`ƒ‘¸æ²)úãéÄò‡Á¨ï‡Ìv‡å]Ù±ıõíÅGÌ¢<(ÕÕ½ĞŠ"¥Cä“—{=…¶ŠöÅ™y+†Â¥­R¿R8Eœ|X´Œ]AcÛ°*-Ôœª@ÔÜ²Z²D%ûİ©H<ùAaÃ4Í«ôĞóßwì¢®8ı+z‹Ú­§sìÃ2ißGZÒ5xÌNÁãiqwü¾ˆø| î>‰/[¥â|(‘•ø˜´Ìn„$ïÊ[² )|hÚp+tÂ”sl½^Wlee;åné÷êfKugWí†Ü¦Ì–âúÃnE÷D¥Ü^‘Z¡ªHÌ–K4ÛÖ¥5ßqmúõhìŸ-ê‰]ûì‹M\|¡:A(òUcT%Ä60•3dcÕZÅşñ³š÷?˜›?ó¨c*ÓºàÊ2®‹*ÍzQ‡„-yÆ|QEˆ-‘««2õÂ8Hhš%¹U
+şÙÇ°™)ùèchFÿ¡–„úO<~¶aÇ~¼sâ‡Ïª'	KY6~ºGxƒÜÁ$Ú¦?˜SÓ5GcÖ7jú#6°&ÁpêM+°‡el{ôõ¿ŸùˆIhŞ ±VôPlóóH®S«d¡š£X80.Ù’ß2é‰ĞT[€6_‚è€6UÛ¨M‡ÄŸXñ;'~á«-0_qRd:hÙıÊ‘‚ù"Ê…òy:)¿¾´#‰X¶=#ê›tÌc×d4xÃ›w<òûƒ‘×gŒ–&Üğë;,1‰G:+¨şÑø©üxMğcQÒÔÚæHÛş5.Ajß\_]ŸıñüúäõééÅŒ˜OYí«œ2ãíIvÂUoŸ‘
+ ÂwVY<­<€5ˆÏüùÇŒ±«—¬¨E4#íß «¨*Í6ñ	šd½+’Ş•ü€§­¿I8ª°Bª´ùY‚/|ÿ»—3ì‰éOú?¦ƒq?0™5éÛ£Àw§ŞdLéĞ
+è( e9#{h¿¾n÷Y|a5#­€QBcŸ/w¨g´©\Ñ¶"E(F´¡şN¥òÎæHÈ;#a¿µüÎ›â6EnB½ª{ùİMyê}»ì}ë_W6\%gæhZ¢e)FÀ\A¸+¥*œ©ä|(Q‚´cx%dàß[§S¸-mKîMñÀ®?è;™²©
+˜˜#ƒÀ ˆAß4Í.L¡|Z-RSÄàb‚†«‡]\·õKŠå=áÊı¨Íë·$|^]½ª/ó'úr9ïZĞ,õû9x|¿¢ûuD÷ëˆî7-<ÉÛàWò6œmum»k÷»ö°å{5—t³Á°¯LÌIÕ¢/'¶ó–~Îu¾e?«®ôø£(Şº_x?n·TÃlıu¶úYõ=´ìú–A²ş-$bFôßªRè®§óîÑ(Æ ÂGøaS§†êú=ÌŠDæ¹¸+³'~ÌJŒÖ9pñ©G§£
+Utç+ï9
+¨i¹q
+ÉTp7U~Y?Ø8E¼*æZ¥mÕI¥xqT»ÙŠâƒ‰Ì¹eøşCıãá{é>¸>ª…<ì|7z[¦>«b@¸3X~PêF}ÏËäÊy•»Üà†_ä1ã	Öº){´H%^+3m}_=¼²É»Ï¥u³jœ·r¾Zb^•¢‹&{ûÛrìşáéu›·ù“mÇEyIĞ?0¶ÚQ1g£©Ïì©ëÚ¾åı;qí)eãñúÏfƒ‰7ìOKoÅ×ÿ–×#¦Pjå‡wÿëÿPK    |Ep]rk³ ±       work/source_verification.json­×M‹ÛFÀñ{ ßÁì9¶çı™É­@í¥ôVŠyŞfW]Ù2Ò˜f	ùîÅ»$ôP,¯¼'Yıí3ÒŒ¾¾·Zİz¦®ãÓİÇÕİCkÇéãv{ßµ‡mxØo÷Úu8lşå5vk~"'åÓØµ§u4İ}xñ°ßwíK&¯6;²@
 +FÕ	rb¾_ø ü8İ}\ıy>]­¾¾V«»#¶‡sğü+ÛÉâzßµQ×ÓÀÛÍ}×ºûÃ0êKçù
 ırTn*»û®í¨è|¹w¤PÈHaŠb½hv&W¶Z#øÊâSúO¹°¿µ²ÇÆg@Oúòå·¯2~øQÇÚõ³ÆµZ
 Q$2@!"I± Qà’§œ¼uxÙ¸ ò†Æàô@2§eğ1©°õÀ5 &¢¯&3'2Ñ‘+—µ*o©ºı©Ç6ŒsZtÉ—MBõ0x›M„bYb¢*`¹¢/kTnÖşz>ßìgÇ³JDD¨©¸j­©Õar69ĞJl³ÏÉÏÜ¡*7ÿüÓ§ß>_AäÀŞÆê5Cœ¸pòYbLÏ$®æ<3e__¹™ˆìŸ¦nÚ5İ{lºi_ÚW<:W2¥Ä98æècq>Y•ÔƒÎpTnæşxmOsJHYB®‰ªG9ÿ¿l<›`\¦¢ã .y{Y¹ r»R›rÆ+©b‰¢9xäb’D_9!û(jMd”Bè2rAåväóÃvÍÃş8LºyÚ÷sVğŞEålˆ­ˆ'‰˜]±‰´$ÃN‹sÙº òÖı€²ÃÖw‚7ÇÉÎ‰âP} (¾&R	™“bÑlœ†8#^P¹YÜ÷ÓöûNtÓ÷³ƒ›P”'C•ŒƒÔ ló¼3œu3ƒûúÊÍÔçO×¯5EJ&Y®lòyğRœÔP©”&¥ˆ€á2tAå zh:ÇnÒõËl^ï»C·ù{³OdoÀ'ï‚ƒš¸RPÒ¢ÕCÉVbMcTG3{¥•›é£NÚvÃ©Oíš—B®ÑlŠ!“@½©h$i°¹ÆBÑØêâÌÚ³ r»ôtØõH× ­s)Ô„b4 Å8-5$ñ!±Wy­YP¹ùcwÅ
-Áe#Ù³ ğÕ¨ÍŞ¥*T8b´SÅ™vAe«òeº>¿‹?ªç šŠ¨+DN¬¤àer ¢dv2G_fæì‚Êÿ@Ï‡¿Ş¿ûö/PK    8p]™‚Û©  û     work/verify_source.pyeRÁnÜ ½û+¸hoÓSµ’Ïí1§\¶–…a¼&Á€`œlåß+À«nÕğæÍÌ›y˜5øHl‘i±fjÙKò®™£_Y”!f*ãIÒÒDï‰õåÎÇq6ÇQt“·oÈEdDGéü84Óæ´EÖ—ŠõR'ÎKş‘Á»¯Çä·¨p¬Ä.Ó ×’z$¼G§¼6îÒÃFóÃ¢Qª×ÔŸ‡fö‘Â•Çj3d9	†SÃc¡Ï½`åôPÁ1'œ!ÏC!iI²µçôA˜¸(¸T´IÛïKéÒ"ù“õƒC¢È-:“…èŠLäâ0Áïop(h·àU›&ÚVáæŸUÃé^Ox¨õx14æ^7BZdWQwÑ
-´°JRËíÙ÷wI_¢‘)a$&­åê¼S–×§òîª0Ñgÿøò†ÑÌFI2ŞİÜy†°ÚSlÕÛÿ„ˆÁ'C>~ÀéfÇ6´ üºúİß9R$À©_­qõßEûßhB48<i¨óXĞf3ö9Z¨âYùL^¤q‰ØOC¿¶‰³©˜:ÍPK     ª8p]›GAÀš  “>             ¶    build_writeup.pyPK     bAp]Œ?
-  b  )           ¶È  evidence/docker/A_baseline/dashboard.htmlPK     cAp](Kí*½  @ (           ¶   evidence/docker/A_baseline/dashboard.pngPK     bAp]è~ğÄ^  ²	  (           ¶A evidence/docker/A_baseline/findings.jsonPK     cAp]‘k+È   í   1           ¶ÀD evidence/docker/A_baseline/screenshot-capture.txtPK     =8p]"›ÊÍ   ×  '           ¶×E evidence/docker/A_baseline/security.logPK     fAp]áŸÚ±  ×
-  1           ¶éF evidence/docker/C1_below_threshold/dashboard.htmlPK     fAp]¬Êpéš  ·  0           ¶éK evidence/docker/C1_below_threshold/findings.jsonPK     cAp]&H,ˆÊ   Š  /           ¶ÑN evidence/docker/C1_below_threshold/security.logPK     iAp]£Íz¾  *  3           ¶èO evidence/docker/C2_different_sources/dashboard.htmlPK     iAp]i?†™  ·  2           ¶÷T evidence/docker/C2_different_sources/findings.jsonPK     fAp]kPÖ   İ  1           ¶àW evidence/docker/C2_different_sources/security.logPK     lAp]7ÔlE  ^  6           ¶Y evidence/docker/C3_new_source_threshold/dashboard.htmlPK     lAp]B}Kg  ²	  5           ¶^ evidence/docker/C3_new_source_threshold/findings.jsonPK     iAp]ş€lÿ   Ù  4           ¶Xb evidence/docker/C3_new_source_threshold/security.logPK     oAp]†€c    -           ¶©c evidence/docker/C4_second_scan/dashboard.htmlPK     oAp]IÁõˆ  ™  ,           ¶Wi evidence/docker/C4_second_scan/findings.jsonPK     lAp]”s·¶  2  +           ¶)m evidence/docker/C4_second_scan/security.logPK     ™Ap]Ë¹                ¶~n evidence/docker/cleanup.txtPK     ]Ap]ÓXwy    !           ¶po evidence/docker/compose-build.txtPK     YAp]®xÏû    "           ¶(t evidence/docker/compose-config.txtPK     ]Ap]­÷‘ñ   ù             ¶cv evidence/docker/compose-ps.txtPK     ”Ap]w›ú¾  v  2           ¶w evidence/docker/D_simulator_stopped/dashboard.htmlPK     ”Ap]c/KÒÜ  }  1           ¶í} evidence/docker/D_simulator_stopped/findings.jsonPK     Ap]‹Ô†xq  p  0           ¶‚ evidence/docker/D_simulator_stopped/security.logPK     ”Ap]şLÁ’s      %           ¶×ƒ evidence/docker/dashboard-runtime.txtPK     ”Ap]*dYAn  ğ	  $           ¶„ evidence/docker/detector-runtime.txtPK     YAp]|ªëy  3  "           ¶=† evidence/docker/docker-version.txtPK     —Ap]w£M
-  b  2           ¶ö‡ evidence/docker/E_restored_baseline/dashboard.htmlPK     —Ap]^GL`  ²	  1           ¶P evidence/docker/E_restored_baseline/findings.jsonPK     ”Ap]"›ÊÍ   ×  0           ¶ÿ evidence/docker/E_restored_baseline/security.logPK     YAp]­¾ãf   ’   '           ¶’ evidence/docker/existing-containers.txtPK     ‘Ap]²®ØZ¾   î  %           ¶Å’ evidence/docker/simulator-runtime.txtPK     pAp]Lm_  V  #           ¶Æ“ evidence/docker/simulator-start.txtPK     ‘Ap]­’Õh   ›   "           ¶f™ evidence/docker/simulator-stop.txtPK     ]Ap]L
-‹MI   H   %           ¶š evidence/docker/simulator-stopped.txtPK     ™Ap]€Œİª¸                ¶šš evidence/docker/summary.jsonPK     X7p]äğY7Í     *           ¶Œ lab-source/labs/lab1a-mitre-soc/.gitignorePK     X7p]ö%e+  C  5           ¶¡Ÿ lab-source/labs/lab1a-mitre-soc/analysis_template.txtPK     X7p]'_oB  "  ,           ¶¡ lab-source/labs/lab1a-mitre-soc/dashboard.pyPK     X7p]İ
-?Ò   d)  +           ¶«© lab-source/labs/lab1a-mitre-soc/detector.pyPK     X7p]Œ¿(x7  d  2           ¶ôµ lab-source/labs/lab1a-mitre-soc/docker-compose.ymlPK     X7p]'^^O   k   *           ¶{· lab-source/labs/lab1a-mitre-soc/DockerfilePK     X7p]¼¢Ù]   {   4           ¶¸ lab-source/labs/lab1a-mitre-soc/Dockerfile.dashboardPK     X7p]Ã±vP   n   4           ¶Á¸ lab-source/labs/lab1a-mitre-soc/Dockerfile.simulatorPK     X7p]ğ!Ä[  O  8           ¶c¹ lab-source/labs/lab1a-mitre-soc/download_attack_data.ps1PK     X7p]¨Zôe  š  (           ¶» lab-source/labs/lab1a-mitre-soc/Lab1a.mdPK     ™Ap]"›ÊÍ   ×  1           ¶¿Ç lab-source/labs/lab1a-mitre-soc/logs/security.logPK     =8p]"›ÊÍ   ×  5           ¶ÛÈ lab-source/labs/lab1a-mitre-soc/logs/security.log.bakPK     X7p]eıë  À  A           ¶ûÉ lab-source/labs/lab1a-mitre-soc/mitre/enterprise-attack-mini.jsonPK     X7p]zÔbÃ&  ã  /           ¶EÌ lab-source/labs/lab1a-mitre-soc/mitre/README.mdPK     X7p]           /           ¶¸Í lab-source/labs/lab1a-mitre-soc/output/.gitkeepPK     ˜Ap]"lQÃY  w	  4           ¶Î lab-source/labs/lab1a-mitre-soc/output/findings.jsonPK     X7p]8êN®Ï  Â  )           ¶²Ñ lab-source/labs/lab1a-mitre-soc/README.mdPK     X7p].µ~§     0           ¶ÈÙ lab-source/labs/lab1a-mitre-soc/reset_output.ps1PK     X7p]!÷	P  Ã  +           ¶½Ú lab-source/labs/lab1a-mitre-soc/run_lab.ps1PK     X7p] À©%å  Õ	  ,           ¶Ü lab-source/labs/lab1a-mitre-soc/simulator.pyPK     8p]úkAkt  ”             ¶Fà native_host.pyPK     ‰8p]¦éOçl  ˜.             ¶æá run_lab1a.pyPK     ÷Bp]òÎ\×#  SW             ¶|ò work/create_final_report.pyPK     W7p]ö9²Œ¨/  q­             ¶Œ work/source_bundle.jsonPK     ‰8p]rk³ ±               ¶iF work/source_verification.jsonPK     8p]™‚Û©  û             ¶UJ work/verify_source.pyPK    ? ? œ  1L   
+Áe#Ù³ ğÕ¨ÍŞ¥*T8b´SÅ™vAe«òeº>¿‹?ªç šŠ¨+DN¬¤àer ¢dv2G_fæì‚Êÿ@Ï‡¿Ş¿ûö/PK    |Ep]™‚Û©  û     work/verify_source.pyeRÁnÜ ½û+¸hoÓSµ’Ïí1§\¶–…a¼&Á€`œlåß+À«nÕğæÍÌ›y˜5øHl‘i±fjÙKò®™£_Y”!f*ãIÒÒDï‰õåÎÇq6ÇQt“·oÈEdDGéü84Óæ´EÖ—ŠõR'ÎKş‘Á»¯Çä·¨p¬Ä.Ó ×’z$¼G§¼6îÒÃFóÃ¢Qª×ÔŸ‡fö‘Â•Çj3d9	†SÃc¡Ï½`åôPÁ1'œ!ÏC!iI²µçôA˜¸(¸T´IÛïKéÒ"ù“õƒC¢È-:“…èŠLäâ0Áïop(h·àU›&ÚVáæŸUÃé^Ox¨õx14æ^7BZdWQwÑ
+´°JRËíÙ÷wI_¢‘)a$&­åê¼S–×§òîª0Ñgÿøò†ÑÌFI2ŞİÜy†°ÚSlÕÛÿ„ˆÁ'C>~ÀéfÇ6´ üºúİß9R$À©_­qõßEûßhB48<i¨óXĞf3ö9Z¨âYùL^¤q‰ØOC¿¶‰³©˜:ÍPK    |Ep]²#oø¡   í      EVIDENCE_NOTE.txt-ÎÑ1EÑV^ÃT€ø¡ÇL²;²Ft¿Ò°İû#¦ôez»Ïl¦Ø)àÒí-eÅmê)†p{4ÆÕú°·_á„R— iÁnşŒ¤ÃÊ ¸Œ±ì-+Îüå§~9äù ƒX.+n´#„§·ü@Ş¢MKÓ-dëI}Ä¶©ùgŠz7ò‚`Ñ¨–ÇÃT®¤›”õPK     |Ep]zÙş©»  	?             €    build_writeup.pyPK     |Ep]Œ?
+  b  )           €é  evidence/docker/A_baseline/dashboard.htmlPK     |Ep](Kí*½  @ (           €:   evidence/docker/A_baseline/dashboard.pngPK     |Ep]è~ğÄ^  ²	  (           €=A evidence/docker/A_baseline/findings.jsonPK     |Ep]æíÆ®   Æ   1           €áD evidence/docker/A_baseline/screenshot-capture.txtPK     |Ep]"›ÊÍ   ×  '           €ŞE evidence/docker/A_baseline/security.logPK     |Ep]áŸÚ±  ×
+  1           €ğF evidence/docker/C1_below_threshold/dashboard.htmlPK     |Ep]¬Êpéš  ·  0           €ğK evidence/docker/C1_below_threshold/findings.jsonPK     |Ep]&H,ˆÊ   Š  /           €ØN evidence/docker/C1_below_threshold/security.logPK     |Ep]£Íz¾  *  3           €ïO evidence/docker/C2_different_sources/dashboard.htmlPK     |Ep]i?†™  ·  2           €şT evidence/docker/C2_different_sources/findings.jsonPK     |Ep]kPÖ   İ  1           €çW evidence/docker/C2_different_sources/security.logPK     |Ep]7ÔlE  ^  6           €Y evidence/docker/C3_new_source_threshold/dashboard.htmlPK     |Ep]B}Kg  ²	  5           €¥^ evidence/docker/C3_new_source_threshold/findings.jsonPK     |Ep]ş€lÿ   Ù  4           €_b evidence/docker/C3_new_source_threshold/security.logPK     |Ep]†€c    -           €°c evidence/docker/C4_second_scan/dashboard.htmlPK     |Ep]IÁõˆ  ™  ,           €^i evidence/docker/C4_second_scan/findings.jsonPK     |Ep]”s·¶  2  +           €0m evidence/docker/C4_second_scan/security.logPK     |Ep]š6p€·   Š             €…n evidence/docker/cleanup.txtPK     |Ep]jùkb{  ê  !           €uo evidence/docker/compose-build.txtPK     |Ep]ÿöÍ“Ø  †  "           €/t evidence/docker/compose-config.txtPK     |Ep]äıúì   ó             €Gv evidence/docker/compose-ps.txtPK     |Ep]w›ú¾  v  2           €ow evidence/docker/D_simulator_stopped/dashboard.htmlPK     |Ep]c/KÒÜ  }  1           €Ì} evidence/docker/D_simulator_stopped/findings.jsonPK     |Ep]‹Ô†xq  p  0           €÷ evidence/docker/D_simulator_stopped/security.logPK     |Ep]šş áq      %           €¶ƒ evidence/docker/dashboard-runtime.txtPK     |Ep]P¼Âßi  î	  $           €j„ evidence/docker/detector-runtime.txtPK     |Ep]|ªëy  3  "           €† evidence/docker/docker-version.txtPK     |Ep]w£M
+  b  2           €Î‡ evidence/docker/E_restored_baseline/dashboard.htmlPK     |Ep]^GL`  ²	  1           €( evidence/docker/E_restored_baseline/findings.jsonPK     |Ep]"›ÊÍ   ×  0           €× evidence/docker/E_restored_baseline/security.logPK     |Ep]­¾ãf   ’   '           €ò‘ evidence/docker/existing-containers.txtPK     |Ep]Dñ[S¹   ì  %           €’ evidence/docker/simulator-runtime.txtPK     |Ep]Ó—»ó`  <  #           €™“ evidence/docker/simulator-start.txtPK     |Ep]Ç/èg   ™   "           €:™ evidence/docker/simulator-stop.txtPK     |Ep])€a¬B   F   %           €á™ evidence/docker/simulator-stopped.txtPK     |Ep]„[©               €fš evidence/docker/summary.jsonPK     |Ep]äğY7Í     *           €I lab-source/labs/lab1a-mitre-soc/.gitignorePK     |Ep]ö%e+  C  5           €^Ÿ lab-source/labs/lab1a-mitre-soc/analysis_template.txtPK     |Ep]'_oB  "  ,           €Ü  lab-source/labs/lab1a-mitre-soc/dashboard.pyPK     |Ep]İ
+?Òÿ  d)  +           €h© lab-source/labs/lab1a-mitre-soc/detector.pyPK     |Ep]Œ¿(x7  d  2           €°µ lab-source/labs/lab1a-mitre-soc/docker-compose.ymlPK     |Ep]'^^O   k   *           €7· lab-source/labs/lab1a-mitre-soc/DockerfilePK     |Ep]¼¢Ù]   {   4           €Î· lab-source/labs/lab1a-mitre-soc/Dockerfile.dashboardPK     |Ep]Ã±vP   n   4           €}¸ lab-source/labs/lab1a-mitre-soc/Dockerfile.simulatorPK     |Ep]ğ!Ä[  O  8           €¹ lab-source/labs/lab1a-mitre-soc/download_attack_data.ps1PK     |Ep]¨Zôe  š  (           €Ğº lab-source/labs/lab1a-mitre-soc/Lab1a.mdPK     |Ep]"›ÊÍ   ×  1           €{Ç lab-source/labs/lab1a-mitre-soc/logs/security.logPK     |Ep]"›ÊÍ   ×  5           €—È lab-source/labs/lab1a-mitre-soc/logs/security.log.bakPK     |Ep]eıë  À  A           €·É lab-source/labs/lab1a-mitre-soc/mitre/enterprise-attack-mini.jsonPK     |Ep]zÔbÃ&  ã  /           €Ì lab-source/labs/lab1a-mitre-soc/mitre/README.mdPK     |Ep]           /           €tÍ lab-source/labs/lab1a-mitre-soc/output/.gitkeepPK     |Ep]"lQÃY  w	  4           €ÃÍ lab-source/labs/lab1a-mitre-soc/output/findings.jsonPK     |Ep]8êN®Ï  Â  )           €nÑ lab-source/labs/lab1a-mitre-soc/README.mdPK     |Ep].µ~§     0           €„Ù lab-source/labs/lab1a-mitre-soc/reset_output.ps1PK     |Ep]!÷	P  Ã  +           €yÚ lab-source/labs/lab1a-mitre-soc/run_lab.ps1PK     |Ep] À©%å  Õ	  ,           €ÓÛ lab-source/labs/lab1a-mitre-soc/simulator.pyPK     |Ep]úkAkt  ”             €à native_host.pyPK     |Ep]eÂ‚æ‚  S/             €¢á run_lab1a.pyPK     |Ep]ö9²Œ¦/  q­             €Nò work/source_bundle.jsonPK     |Ep]rk³ ±               €)" work/source_verification.jsonPK     |Ep]™‚Û©  û             €& work/verify_source.pyPK     |Ep]²#oø¡   í              €ñ' EVIDENCE_NOTE.txtPK    ? ? ’  Á(   
 endstream
 endobj
 20 0 obj
 << /Type /Filespec /F (Lab1a_Evidence.zip) /Desc (Completed Docker run evidence and source snapshot) /EF << /F 19 0 R >> >>
 endobj
 21 0 obj
-<< /Title (Laboratory 1a - MITRE SOC Report) /Author (Lior Mashiach) /Subject (Docker execution, controlled experiments and SOC analysis) >>
+<< /Title (Laboratory 1a - MITRE SOC Report) /Subject (Docker execution, controlled experiments and SOC analysis) >>
 endobj
 xref
 0 22
@@ -1361,23 +1309,23 @@ xref
 0000000324 00000 n 
 0000000426 00000 n 
 0000000521 00000 n 
-0000012733 00000 n 
-0000012901 00000 n 
-0000067194 00000 n 
-0000067967 00000 n 
-0000068146 00000 n 
-0000076677 00000 n 
-0000076847 00000 n 
-0000084890 00000 n 
-0000085060 00000 n 
-0000092804 00000 n 
-0000092974 00000 n 
-0000100849 00000 n 
-0000101019 00000 n 
-0000257280 00000 n 
-0000257420 00000 n 
+0000012660 00000 n 
+0000012828 00000 n 
+0000067121 00000 n 
+0000067878 00000 n 
+0000068057 00000 n 
+0000076572 00000 n 
+0000076742 00000 n 
+0000084769 00000 n 
+0000084939 00000 n 
+0000092667 00000 n 
+0000092837 00000 n 
+0000101055 00000 n 
+0000101225 00000 n 
+0000248404 00000 n 
+0000248544 00000 n 
 trailer
 << /Size 22 /Root 1 0 R /Info 21 0 R >>
 startxref
-257577
+248677
 %%EOF
