@@ -123,7 +123,7 @@ def render(case, leads, selection):
                       "selected_leads": len(chosen)}}
 
 
-def explain_case(case, mode="llama", model=MODEL):
+def explain_case(case, mode="llama", model=MODEL, *, num_gpu=None):
     leads = review_leads(case)
     if mode == "baseline":
         # Reproducible comparator: most supporting rules, then earliest insertion.
@@ -147,5 +147,5 @@ def explain_case(case, mode="llama", model=MODEL):
               "lead's permitted_checks to resolve its uncertainty. Use a different lead for context only if "
               "it adds evidence; otherwise use none. ATT&CK entries are hypotheses. Return only the requested JSON.")
     answer = structured_review(model, prompt, {"leads": options, "check_definitions": CHECKS}, schema,
-                               lambda choice: render(case, leads, choice))
+                               lambda choice: render(case, leads, choice), num_gpu=num_gpu)
     return {"version": VERSION, **answer}

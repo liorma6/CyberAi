@@ -5,10 +5,12 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
 from pathlib import Path
 from threading import BoundedSemaphore
-from urllib.parse import urlsplit
+from urllib.parse import parse_qs, urlsplit
+from zipfile import BadZipFile
 
 from casebook import Casebook
 from case_review import explain_case
+from desk_import import Imports, LIMIT
 from local_llama import InferenceError
 
 ASSETS = {
@@ -44,8 +46,10 @@ class Desk:
 
 
 class Handler(BaseHTTPRequestHandler):
-    def __init__(self, *args, desk, **kwargs):
+    def __init__(self, *args, desk, imports=None, **kwargs):
         self.desk = desk
+        self.imports = imports
+        self.model_slot = desk.model_slot
         super().__init__(*args, **kwargs)
 
     def send_body(self, status, content_type, body):
@@ -64,11 +68,26 @@ class Handler(BaseHTTPRequestHandler):
     def json(self, status, value):
         self.send_body(status, "application/json", json.dumps(value, allow_nan=False).encode())
 
+    def select_dataset(self):
+        selected = parse_qs(urlsplit(self.path).query).get("dataset")
+        if selected is None:
+            return True
+        try:
+            if self.imports is None or len(selected) != 1:
+                raise KeyError
+            self.desk = self.imports.open(selected[0])
+        except (KeyError, OSError, ValueError):
+            self.json(404, {"error": "Imported dataset unavailable. Import its ZIP again."})
+            return False
+        return True
+
     def do_GET(self):
         path = urlsplit(self.path).path
         if path in ASSETS:
             name, kind = ASSETS[path]
             self.send_body(200, kind, Path(__file__).with_name(name).read_bytes())
+        elif not self.select_dataset():
+            return
         elif path == "/api/cases":
             self.json(200, self.desk.index)
         elif path.startswith("/api/cases/") and path[11:] in self.desk.book.cases:
@@ -77,6 +96,23 @@ class Handler(BaseHTTPRequestHandler):
             self.json(404, {"error": "Case or resource not found."})
 
     def do_POST(self):
+        if urlsplit(self.path).path == "/api/import" and self.imports is not None:
+            if self.headers.get("X-Night-Desk") != "import" or self.headers.get("Sec-Fetch-Site") == "cross-site":
+                self.json(403, {"error": "Import from the local desk."})
+                return
+            try:
+                size = int(self.headers.get("Content-Length", "0"))
+                if not 0 < size <= LIMIT:
+                    self.json(413, {"error": "Choose a ZIP of up to 12 MiB."})
+                    return
+                digest = self.imports.save(self.rfile.read(size))
+            except (BadZipFile, ValueError, TypeError, KeyError, IndexError, AttributeError, RuntimeError, OSError):
+                self.json(400, {"error": "Cannot import dataset. Check the manifest, checksums and event streams."})
+                return
+            self.json(201, {"dataset": digest})
+            return
+        if not self.select_dataset():
+            return
         case_path, _, action = urlsplit(self.path).path.rpartition("/")
         key = case_path.removeprefix("/api/cases/")
         if case_path == key or key not in self.desk.book.cases or action != "briefing":
@@ -87,7 +123,7 @@ class Handler(BaseHTTPRequestHandler):
                 or self.headers.get("Sec-Fetch-Site") == "cross-site"):
             self.json(403, {"error": "Request a briefing from Night Desk."})
             return
-        if not self.desk.model_slot.acquire(blocking=False):
+        if not self.model_slot.acquire(blocking=False):
             self.json(429, {"error": "Llama is reviewing another case. Try again shortly."})
             return
         try:
@@ -97,7 +133,7 @@ class Handler(BaseHTTPRequestHandler):
         else:
             self.json(200, result)
         finally:
-            self.desk.model_slot.release()
+            self.model_slot.release()
 
 
 def main():
@@ -107,7 +143,8 @@ def main():
     args = parser.parse_args()
     try:
         desk = Desk(Casebook(args.dataset))
-        with ThreadingHTTPServer(("127.0.0.1", args.port), partial(Handler, desk=desk)) as server:
+        handler = partial(Handler, desk=desk, imports=Imports(Path("runs/desk-imports"), Desk))
+        with ThreadingHTTPServer(("127.0.0.1", args.port), handler) as server:
             print(f"Night Desk ready at http://127.0.0.1:{server.server_port}/", flush=True)
             server.serve_forever()
     except (OSError, ValueError, KeyError) as exc:

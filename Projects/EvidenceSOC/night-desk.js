@@ -23,7 +23,10 @@ function button(text, cls, action) {
   return node;
 }
 async function api(path, options) {
-  const resp = await fetch(path, options);
+  const url = new URL(path, location.origin);
+  const dataset = new URLSearchParams(location.search).get("dataset");
+  if (dataset) url.searchParams.set("dataset", dataset);
+  const resp = await fetch(url, options);
   const body = await resp.json();
   if (!resp.ok) throw new Error(body.error || "Request failed.");
   return body;
@@ -331,4 +334,20 @@ $("next").addEventListener("click", () => {state.page++; renderQueue();});
 $("queue-toggle").addEventListener("click", () => setQueue($("queue-toggle").getAttribute("aria-expanded") !== "true"));
 window.addEventListener("hashchange", () => {if (state.storage) openCase();});
 document.querySelector(".skip").addEventListener("click", event => {event.preventDefault(); $("workspace").focus();});
+$("dataset-zip").addEventListener("change", async event => {
+  const input = event.target, file = input.files[0];
+  if (!file) return;
+  input.disabled = true;
+  $("import-status").textContent = "Verifying event streams and building the casebook…";
+  try {
+    const result = await api("/api/import", {method: "POST", headers: {"X-Night-Desk": "import"}, body: file});
+    const url = new URL("/", location.origin);
+    url.searchParams.set("dataset", result.dataset);
+    location.assign(url);
+  } catch (error) {
+    $("import-status").textContent = error.message;
+    input.value = "";
+    input.disabled = false;
+  }
+});
 init();

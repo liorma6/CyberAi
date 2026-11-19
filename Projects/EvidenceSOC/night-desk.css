@@ -950,3 +950,7 @@ footer {
     transition: background-color .12s,color .12s;
   }
 }
+.dataset-import { margin: 16px 0; font-size: .86rem; }
+.dataset-import summary { cursor: pointer; color: var(--forest); }
+.dataset-import label { display: block; margin: 10px 0; }
+.dataset-import input { max-width: 100%; }
