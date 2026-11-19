@@ -1,0 +1,35 @@
+name: EvidenceSOC checks
+
+on:
+  push:
+    paths:
+      - "Projects/EvidenceSOC/**"
+      - ".github/workflows/evidencesoc.yml"
+  pull_request:
+    paths:
+      - "Projects/EvidenceSOC/**"
+      - ".github/workflows/evidencesoc.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.13", "3.14"]
+    defaults:
+      run:
+        working-directory: Projects/EvidenceSOC
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Test rule windows, provenance and review validation
+        run: python -m unittest -v
+      - name: Exercise the command-line demo
+        run: |
+          python -m evidencesoc > demo-output.json
+          python -c "import json; d=json.load(open('demo-output.json')); assert d['event_count'] == 5 and [c['case_id'] for c in d['cases']] == ['case-E04', 'case-E05']"

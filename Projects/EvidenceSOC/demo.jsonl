@@ -1,0 +1,5 @@
+{"id":"E01","time":"2026-10-01T08:10:00Z","account":"acct-17","ip":"192.0.2.14","outcome":"failure"}
+{"id":"E02","time":"2026-10-01T08:11:00Z","account":"acct-17","ip":"192.0.2.14","outcome":"failure"}
+{"id":"E03","time":"2026-10-01T08:12:00Z","account":"acct-17","ip":"192.0.2.14","outcome":"failure"}
+{"id":"E04","time":"2026-10-01T08:14:00Z","account":"acct-17","ip":"192.0.2.14","outcome":"success"}
+{"id":"E05","time":"2026-10-01T23:42:00Z","account":"acct-31","ip":"198.51.100.7","outcome":"success"}
