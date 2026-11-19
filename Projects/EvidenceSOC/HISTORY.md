@@ -39,6 +39,14 @@ The [worked investigation](EVIDENCE-CASE.md) lists the five source log lines for
 
 A local RTX 2070 produced valid briefings for all 15 distinct review menus in the 192-case synthetic test set. The [run report](LLAMA-REVIEW.md) includes the selection method, timings and a worked investigation. [Stage 5 pull request and checks](https://github.com/liorma6/CyberAi/pull/4)
 
+## Stage 6
+
+| Date | Commit | Change | Verification |
+| --- | --- | --- | --- |
+| 2026-11-19 | [227903c](https://github.com/liorma6/CyberAi/commit/227903c5a15fadfb25420ae0956f71c923eb3ea2) | Connected the Night Desk queue, raw source inspector, case briefings and analyst assessments to the local casebook. | 29 tests passed locally. [CI passed on Python 3.13 and 3.14](https://github.com/liorma6/CyberAi/actions/runs/44515984660). |
+
+The seed-42 desk listed 192 cases and 261 triggers. In file 011, the browser opened lines 92 and 96 of the test stream, obtained a live local Llama briefing, filed a cited assessment and restored it after refresh. The filed filter isolated the case, and reopening allowed revision. Narrow-screen navigation was checked at a 390-pixel viewport. See the [launch instructions](README.md#open-night-desk) and [stage 6 pull request](https://github.com/liorma6/CyberAi/pull/5).
+
 ## Publishing and verification
 
 Publish each local commit to the feature branch with `git push origin feature/evidencesoc`. A commit made directly on GitHub is already published. In that case synchronize the local feature branch with `git pull --ff-only origin feature/evidencesoc`. Compare the local and remote revisions after publication using the commands below from the feature branch.
