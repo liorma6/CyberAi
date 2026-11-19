@@ -1,0 +1,19 @@
+{
+  "revision": "e79c7c53d13c08cc21ba3ad77d4f8f49bf64ff07",
+  "techniques": {
+    "T1110": {
+      "name": "Brute Force",
+      "stix_id": "attack-pattern--a93494bb-4b80-4ea1-8695-3236a49916fd",
+      "version": "2.8",
+      "modified": "2026-11-03T21:47:10.515Z",
+      "url": "https://attack.mitre.org/techniques/T1110"
+    },
+    "T1078": {
+      "name": "Valid Accounts",
+      "stix_id": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+      "version": "3.0",
+      "modified": "2026-05-12T15:12:00.707Z",
+      "url": "https://attack.mitre.org/techniques/T1078"
+    }
+  }
+}

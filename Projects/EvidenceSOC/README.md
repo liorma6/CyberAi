@@ -108,4 +108,8 @@ The forest fits 200 trees on 256-event subsamples of the earlier benign period, 
 
 On the held-out period the forest halved the number of benign scenarios flagged (96 to 48). Password-mistake scenarios account for much of that improvement (54 to 11). It also missed 26 suspicious scenarios, compared with 12 for the rules. Both detectors flagged every shared-gateway scenario. The results support retaining the rules when coverage matters and evaluating the model score as a prioritization signal.
 
-The project proceeds from this detector comparison to evidence cases and MITRE mapping (4), Llama explanations (5), the full analyst interface (6), end-to-end experiments (7), and submission (8).
+## Investigate a detection
+
+Run `python -m casebook runs/dataset-v1-seed-42` to list the correlated cases. Pass `--case CASE_ID` for a UTC timeline with the original event fields and file lines, or `--replay EVENT_ID` to verify a trigger's rule evidence, model inputs, score and candidate mappings. Run `python -m attack_catalog` to refresh the two official MITRE ATT&CK STIX records for online or offline use.
+
+The [worked investigation](EVIDENCE-CASE.md) follows two triggers for the same account through the original login records and documents the association criteria and the remaining uncertainty.
