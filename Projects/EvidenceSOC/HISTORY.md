@@ -55,6 +55,10 @@ The seed-42 desk listed 192 cases and 261 triggers. In file 011, the browser ope
 
 The [experiment report](EXPERIMENTS.md) links the raw results, figure and two independent rating packets. Human ratings and an independent teammate rerun await sign-off. [Stage 7 pull request](https://github.com/liorma6/CyberAi/pull/6)
 
+### EvidenceSOC naming and stage 7 team handoff
+
+The [team handoff](https://github.com/liorma6/CyberAi/pull/7) unifies the product name, provides separate portable forms from the original blinded packets, and adds a logged independent rerun. [Implementation](https://github.com/liorma6/CyberAi/commit/309eebaa80ba59aed75284868232f613de4fd47e) · [33 tests on Python 3.13 and 3.14](https://github.com/liorma6/CyberAi/actions/runs/44521432333) · [Hebrew group instructions](STAGE7-TEAM.md).
+
 ## Publishing and verification
 
 Publish each local commit to the feature branch with `git push origin feature/evidencesoc`. A commit made directly on GitHub is already published. In that case synchronize the local feature branch with `git pull --ff-only origin feature/evidencesoc`. Compare the local and remote revisions after publication using the commands below from the feature branch.
