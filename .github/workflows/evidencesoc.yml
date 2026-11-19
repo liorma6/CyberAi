@@ -27,7 +27,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
-      - name: Test rule windows, provenance and review validation
+      - name: Install pinned detector dependencies
+        run: python -m pip install -r requirements-ml.txt
+      - name: Test rules, evidence and the held-out model comparison
         run: python -m unittest -v
       - name: Exercise the command-line demo
         run: |
