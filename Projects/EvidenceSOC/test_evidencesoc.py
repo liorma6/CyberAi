@@ -36,6 +36,15 @@ class EvidenceTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "duplicate"):
             parse_events(rows + [rows[0]])
 
+    def test_burst_citation_requires_the_success_and_all_failures(self):
+        case = build_cases(read_events(Path(__file__).with_name("demo.jsonl")))[0]
+        review = {"reason": "failure_burst", "event_ids": ["E01", "E02", "E03", "E04"],
+                  "next_check": "verify_account_owner"}
+        self.assertEqual(validate_review(case, review)["event_ids"], review["event_ids"])
+        for missing in review["event_ids"]:
+            with self.subTest(missing=missing), self.assertRaises(InferenceError):
+                validate_review(case, review | {"event_ids": [i for i in review["event_ids"] if i != missing]})
+
     def test_adapter_distinguishes_review_and_placement(self):
         case = build_cases(read_events(Path(__file__).with_name("demo.jsonl")))[1]
         answer = {"reason": "overnight_utc", "event_ids": ["E05"], "next_check": "check_shift_schedule"}
