@@ -1,6 +1,8 @@
 # EvidenceSOC
 
-EvidenceSOC investigates suspicious authentication activity and records the event IDs behind each observation. This first milestone runs locally with the Python standard library. The demo contains five synthetic events and yields two investigation cases.
+EvidenceSOC investigates suspicious authentication activity and records the event IDs behind each observation. The five-event demo yields two investigation cases. For the full dataset, the historical rule engine detects suspicious patterns and measures alert workload on a separate calibration period.
+
+See the [development history](HISTORY.md) for published commits and their CI results.
 
 ## Run
 
@@ -20,7 +22,7 @@ With Python 3.13 or 3.14 installed, the same two Python commands also work witho
 - `case-E04` links three failures to a subsequent success for the same account and IP within an inclusive five-minute window. Each success resets that sequence.
 - `case-E05` records a successful sign-in in the 22:00–05:00 UTC window (end exclusive). Work schedules and local time zones are unknown, so this signal requires context.
 
-Both cases retain the source events. The two illustrative rules will serve as a baseline for the later detector comparison. Their thresholds have not been evaluated on a held-out dataset.
+Both demo cases retain the source events. The four rules used for the detector comparison are documented under [Historical features and rule baseline](#historical-features-and-rule-baseline).
 
 ## Try the local model
 
