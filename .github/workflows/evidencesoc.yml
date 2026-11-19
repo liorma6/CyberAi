@@ -35,3 +35,6 @@ jobs:
         run: |
           python -m evidencesoc > demo-output.json
           python -c "import json; d=json.load(open('demo-output.json')); assert d['event_count'] == 5 and [c['case_id'] for c in d['cases']] == ['case-E04', 'case-E05']"
+      - name: Refresh the two official MITRE STIX records
+        if: matrix.python == '3.13'
+        run: python -m attack_catalog
