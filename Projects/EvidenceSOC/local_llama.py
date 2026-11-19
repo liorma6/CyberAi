@@ -88,11 +88,14 @@ def explain(case, model=MODEL):
                              lambda answer: validate_review(case, answer))
 
 
-def structured_review(model, instruction, data, schema, validate):
+def structured_review(model, instruction, data, schema, validate, *, num_gpu=None):
+    options = {"temperature": 0, "seed": 42, "num_ctx": 4096, "num_predict": 256}
+    if num_gpu is not None:
+        options["num_gpu"] = num_gpu
     started = time.perf_counter()
     response = api("/api/chat", {
         "model": model, "stream": False, "format": schema, "keep_alive": "5m",
-        "options": {"temperature": 0, "seed": 42, "num_ctx": 4096, "num_predict": 256},
+        "options": options,
         "messages": [{"role": "system", "content": instruction},
                      {"role": "user", "content": json.dumps(data)}],
     })
@@ -116,4 +119,5 @@ def structured_review(model, instruction, data, schema, validate):
             "metrics": {"wall_seconds": round(elapsed, 3), "load_ns": response.get("load_duration"),
                         "output_tokens": response.get("eval_count"), "generation_ns": response.get("eval_duration"),
                         "model_digest": placement.get("digest"), "vram_bytes": placement.get("size_vram"),
+                        "resident_model_bytes": placement.get("size"),
                         "placement_error": placement_error}}

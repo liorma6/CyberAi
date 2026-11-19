@@ -21,6 +21,10 @@ Open [Night Desk on this computer](http://127.0.0.1:8798/) or the [worked invest
 
 Drafts, pins and decisions persist in this browser for the same origin and dataset fingerprint. The queue contains synthetic evidence. Filing a disposition records the analyst's judgment. The [held-out experiments](MODEL-COMPARISON.md) evaluate detector accuracy separately.
 
+To import a generated dataset from the case queue, create a ZIP with the manifest at its root and the three login streams in `events/`. For example, run `python -m generate_dataset --seed 43` followed by `python -m zipfile -c runs/seed43.zip runs/dataset-v1-seed-43/manifest.json runs/dataset-v1-seed-43/events`. Choose **Import dataset** and select the ZIP. The desk verifies the checksums and saves only those four files under `runs/desk-imports/`. The imported URL reopens the same dataset after a server restart.
+
+The [stage 7 experiment report](EXPERIMENTS.md) compares three detectors, audits 20 paired briefings, measures local CPU/GPU inference and records the browser restart test. It also links the independent reviewer packets and reproduction commands.
+
 ## Run
 
 From the repository root:
