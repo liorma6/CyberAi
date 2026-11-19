@@ -31,6 +31,14 @@ Work is published to `liorma6/CyberAi` on `feature/evidencesoc`. GitHub's [branc
 
 The [worked investigation](EVIDENCE-CASE.md) lists the five source log lines for a two-trigger case. [Stage 4 pull request and checks](https://github.com/liorma6/CyberAi/pull/3)
 
+## Stage 5
+
+| Date | Commit | Change | Verification |
+| --- | --- | --- | --- |
+| 2026-11-19 | [a77065e](https://github.com/liorma6/CyberAi/commit/a77065e21bf34c7d8445fd315269a2fafe885384) | Added evidence-linked Llama briefings and a deterministic comparison to the casebook. | 27 tests passed locally. [CI passed on Python 3.13 and 3.14](https://github.com/liorma6/CyberAi/actions/runs/44513035755). |
+
+A local RTX 2070 produced valid briefings for all 15 distinct review menus in the 192-case synthetic test set. The [run report](LLAMA-REVIEW.md) includes the selection method, timings and a worked investigation. [Stage 5 pull request and checks](https://github.com/liorma6/CyberAi/pull/4)
+
 ## Publishing and verification
 
 Publish each local commit to the feature branch with `git push origin feature/evidencesoc`. A commit made directly on GitHub is already published. In that case synchronize the local feature branch with `git pull --ff-only origin feature/evidencesoc`. Compare the local and remote revisions after publication using the commands below from the feature branch.
