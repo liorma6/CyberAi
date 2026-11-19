@@ -8,7 +8,9 @@ from pathlib import Path
 
 from anomaly_detection import COLUMNS, MODEL_VERSION, fit_detector, later_period, score_events, vector
 from attack_catalog import CACHE, REPOSITORY, read_catalog
+from case_review import explain_case
 from evidence import WINDOW, parse_events
+from local_llama import InferenceError
 from rule_baseline import verified_lines
 from rule_engine import RULES, VERSION, analyze
 
@@ -187,19 +189,31 @@ def main():
     view = parser.add_mutually_exclusive_group()
     view.add_argument("--case", metavar="CASE_ID", help="Print one case including its raw source records")
     view.add_argument("--replay", metavar="EVENT_ID", help="Recompute one trigger using its cited records")
+    parser.add_argument("--explain", nargs="?", const="llama", choices=("llama", "baseline"),
+                        help="Add a local Llama review or a deterministic baseline to --case")
     parser.add_argument("--attack-cache", type=Path, default=CACHE)
     args = parser.parse_args()
+    if args.explain and not args.case:
+        parser.error("--explain requires --case CASE_ID")
     try:
         book = Casebook(args.dataset, args.attack_cache)
+        exit_code = 0
         if args.case:
             result = {"case": book.detail(args.case)}
+            if args.explain:
+                try:
+                    result["explanation"] = explain_case(result["case"], args.explain)
+                except InferenceError as exc:
+                    result["explanation"] = {"source": "unavailable", "error": str(exc)}
+                    exit_code = 2
         elif args.replay:
             result = {"replay": book.replay(args.replay)}
+            exit_code = 0 if result["replay"]["verified"] else 1
         else:
             result = {"case_count": len(book.cases), "trigger_count": len(book.findings),
                       "cases": [book.summary(k) for k in book.cases]}
         print(json.dumps({"provenance": book.provenance, **result}, indent=2))
-        return 1 if args.replay and not result["replay"]["verified"] else 0
+        return exit_code
     except (OSError, ValueError, KeyError) as exc:
         parser.exit(1, f"Cannot build the evidence casebook: {exc}\n")
 

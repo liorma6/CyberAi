@@ -113,3 +113,16 @@ On the held-out period the forest halved the number of benign scenarios flagged 
 Run `python -m casebook runs/dataset-v1-seed-42` to list the correlated cases. Pass `--case CASE_ID` for a UTC timeline with the original event fields and file lines, or `--replay EVENT_ID` to verify a trigger's rule evidence, model inputs, score and candidate mappings. Run `python -m attack_catalog` to refresh the two official MITRE ATT&CK STIX records for online or offline use.
 
 The [worked investigation](EVIDENCE-CASE.md) follows two triggers for the same account through the original login records and documents the association criteria and the remaining uncertainty.
+
+## Request an analyst briefing
+
+Start the local Ollama service with the model listed above, then run either command from the project directory with the ML dependencies installed.
+
+```powershell
+python -m casebook runs/dataset-v1-seed-42 --case case-e-51d9170e7544d3e64f6f727a --explain
+python -m casebook runs/dataset-v1-seed-42 --case case-e-51d9170e7544d3e64f6f727a --explain baseline
+```
+
+The first command asks Llama to prioritize evidence and choose a follow-up. The second uses a reproducible template offline. Both return facts with event IDs, ATT&CK hypotheses with alternatives, missing information and recommended checks. The full evidence case accompanies the briefing. An unavailable model or an invalid answer leaves the case in the JSON output, marks the explanation unavailable and returns exit code 2.
+
+The [local Llama run](LLAMA-REVIEW.md) records the runtime, sample selection and a worked answer from the GPU.
