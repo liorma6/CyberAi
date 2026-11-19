@@ -64,4 +64,26 @@ Each detector input contains a timestamp, account, IP, outcome, device and count
 
 These are synthetic login records constructed offline. A scenario label records the simulator's intended context. The paired travel and unauthorized scenarios deliberately share the same observable pattern. An analyst would need additional evidence, such as a shift roster or account-owner confirmation, to resolve individual ambiguous cases.
 
-The [generated dataset profile](DATASET-PROFILE.md) gives the canonical seed's fingerprint, class counts and overlapping patterns. The next milestone implements historical features and rule evaluation before the Isolation Forest comparison.
+The [generated dataset profile](DATASET-PROFILE.md) gives the canonical seed's fingerprint, class counts and overlapping patterns.
+
+## Historical features and rule baseline
+
+```powershell
+python -m evidencesoc --rules --history runs/dataset-v1-seed-42/events/train.jsonl runs/dataset-v1-seed-42/events/calibration.jsonl
+python -m rule_baseline runs/dataset-v1-seed-42
+```
+
+Add `--feature-rows` to the first command to export features for every scored record, or `--json` to the second for machine-readable metrics. The existing `--explain` command runs the two-case Llama integration.
+
+| Rule | Trigger | Evidence |
+| --- | --- | --- |
+| R1 | Fifth failure for one account and IP within five minutes, or a success after at least three failures within that window | IDs of matching failures and the current event |
+| R2 | A failure increases the source IP's distinct failed accounts from three to four in five minutes | IDs of failures from the IP and the current event |
+| R3 | A success presents both an unseen device and an unseen country. The account must have at least five prior successes with device data and five with country data. | Current event, account history boundaries, sample counts and novelty flags |
+| R4 | On a success after at least ten prior successes, fewer than 5% of prior successes occurred in the current UTC hour or either adjacent hour. The band wraps at midnight. | Current event, account history boundaries and hour-band counts |
+
+Thresholds are fixed design choices for version `rules-v1`. The rolling failure windows include the five-minute boundary. Earlier input records break ties at the same timestamp. R1 counts failures throughout the window, including across intervening successes. R2 triggers on a fresh threshold crossing. History is updated after scoring each record. Missing device or country history yields an unknown novelty value. Historical rules use all prior successes for that account; a success establishes observed behavior, not an analyst verdict about legitimacy.
+
+Each alert carries the triggering event ID, feature values, rule IDs and supporting references. To reproduce a historical claim, replay that account's successes from the beginning of the history up to the trigger, excluding the trigger. The alert includes the first and last contributing IDs. Event IDs are lookup keys and should be excluded from the model feature matrix.
+
+The [calibration report](RULE-BASELINE.md) includes combined and individual rule metrics, scenario families and traceable examples. Evaluation attributes an alert to the scenario owning its trigger and counts repeated triggers separately when estimating analyst workload. The held-out period is reserved for the comparison with Isolation Forest.
