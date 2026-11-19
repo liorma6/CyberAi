@@ -15,6 +15,8 @@ Work is published to `liorma6/CyberAi` on `feature/evidencesoc`. GitHub's [branc
 
 ## Publishing and verification
 
+Stage 3 trained Isolation Forest on the earlier benign period and froze its threshold before scoring the held-out period. The [comparison report](MODEL-COMPARISON.md) includes false alerts, misses and traceable examples. The [report's commit history](https://github.com/liorma6/CyberAi/commits/feature/evidencesoc/Projects/EvidenceSOC/MODEL-COMPARISON.md) links to the implementation and its checks.
+
 Publish each local commit to the feature branch with `git push origin feature/evidencesoc`. A commit made directly on GitHub is already published. In that case synchronize the local feature branch with `git pull --ff-only origin feature/evidencesoc`. Compare the local and remote revisions after publication using the commands below from the feature branch.
 
 ```bash
