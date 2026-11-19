@@ -13,6 +13,15 @@ Work is published to `liorma6/CyberAi` on `feature/evidencesoc`. GitHub's [branc
 | 2026-11-19 | [32368e1](https://github.com/liorma6/CyberAi/commit/32368e154c015963b4e8dbf16a9cca7fa88fff46) | Stage 1. Generated reproducible synthetic scenarios and chronological dataset splits. | [Passed on both versions](https://github.com/liorma6/CyberAi/actions/runs/44503994434) |
 | 2026-11-19 | [bf2c644](https://github.com/liorma6/CyberAi/commit/bf2c6445774464361a0cd3eee4446cf0456336a7) | Stage 2. Added historical features, four detection rules and a reproducible [calibration report](RULE-BASELINE.md). | [Passed on both versions](https://github.com/liorma6/CyberAi/actions/runs/44505418141) |
 
+## Stage 3
+
+| Date | Commit | Change | Verification |
+| --- | --- | --- | --- |
+| 2026-11-19 | [b28a6a5](https://github.com/liorma6/CyberAi/commit/b28a6a569d7994a7410434a6ebb7de790640525f) | Trained Isolation Forest, froze the calibration threshold and published the [held-out comparison](MODEL-COMPARISON.md). | All 18 tests passed locally. The [existing CI workflow](https://github.com/liorma6/CyberAi/actions/runs/44508878099) also passed. |
+| 2026-11-19 | [f3fd46a](https://github.com/liorma6/CyberAi/commit/f3fd46acdd90732f43a6371f0c2797d3eda21717) | Installed the pinned model dependencies in CI so both Python versions exercise the forest and reproduce the published report. | [Passed on Python 3.13 and 3.14](https://github.com/liorma6/CyberAi/actions/runs/44508935352) |
+
+[Stage 3 pull request and checks](https://github.com/liorma6/CyberAi/pull/2)
+
 ## Publishing and verification
 
 Publish each local commit to the feature branch with `git push origin feature/evidencesoc`. A commit made directly on GitHub is already published. In that case synchronize the local feature branch with `git pull --ff-only origin feature/evidencesoc`. Compare the local and remote revisions after publication using the commands below from the feature branch.

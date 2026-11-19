@@ -22,7 +22,7 @@ def index_truth(truth, event_ids):
                 raise ValueError(f"Multiple truth assignments for {event_id}")
             owners[event_id] = scenario
     if set(owners) != set(event_ids):
-        raise ValueError("Calibration events and truth keys differ")
+        raise ValueError("Scored events and truth keys differ")
     return owners, families, labels
 
 
@@ -70,22 +70,22 @@ def evaluate(alerts, truth, events):
     return {"overall": score, "per_rule": per_rule, "families": table, "examples": samples}
 
 
+def verified_lines(root, manifest, name):
+    data = (root / name).read_bytes()
+    if hashlib.sha256(data).hexdigest() != manifest["sha256"][name]:
+        raise ValueError(f"Checksum mismatch: {name}")
+    return data.decode("utf-8").splitlines()
+
+
 def run(root):
     manifest_data = (root / "manifest.json").read_bytes()
     manifest = json.loads(manifest_data)
-
-    def verified_lines(name):
-        data = (root / name).read_bytes()
-        if hashlib.sha256(data).hexdigest() != manifest["sha256"][name]:
-            raise ValueError(f"Checksum mismatch: {name}")
-        return data.decode("utf-8").splitlines()
-
-    history = parse_events(verified_lines("events/train.jsonl"))
-    events = parse_events(verified_lines("events/calibration.jsonl"))
+    history = parse_events(verified_lines(root, manifest, "events/train.jsonl"))
+    events = parse_events(verified_lines(root, manifest, "events/calibration.jsonl"))
     if history[-1].time >= events[0].time:
         raise ValueError("Training and calibration periods must be strictly separated")
     _, alerts = analyze(events, history)
-    truth = [json.loads(line) for line in verified_lines("truth/calibration.jsonl")]
+    truth = [json.loads(line) for line in verified_lines(root, manifest, "truth/calibration.jsonl")]
     return {"version": VERSION, "seed": manifest["seed"],
             "manifest_sha256": hashlib.sha256(manifest_data).hexdigest(),
             "history_events": len(history), "calibration_events": len(events), "scenarios": len(truth),
