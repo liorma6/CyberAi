@@ -18,6 +18,8 @@ class Event:
     account: str
     ip: str
     outcome: str
+    device: str | None = None
+    country: str | None = None
 
 
 def read_events(path: Path) -> list[Event]:
@@ -28,13 +30,14 @@ def read_events(path: Path) -> list[Event]:
 def parse_events(lines: Iterable[str]) -> list[Event]:
     events = []
     seen = set()
+    required = {"id", "time", "account", "ip", "outcome"}
     for line_no, line in enumerate(lines, 1):
         if not line.strip():
             continue
         try:
             row = json.loads(line)
-            if not isinstance(row, dict) or set(row) != set(Event.__annotations__):
-                raise ValueError("expected id, time, account, ip and outcome")
+            if not isinstance(row, dict) or not required <= row.keys() <= required | {"device", "country"}:
+                raise ValueError("expected id, time, account, ip and outcome; optional device, country")
             if not all(isinstance(v, str) and v.strip() for v in row.values()):
                 raise ValueError("expected nonempty string fields")
             when = datetime.fromisoformat(row["time"])
@@ -42,6 +45,9 @@ def parse_events(lines: Iterable[str]) -> list[Event]:
                 raise ValueError("provide a UTC offset")
             if row["outcome"] not in {"success", "failure"}:
                 raise ValueError("unknown outcome")
+            if "country" in row and not (len(row["country"]) == 2 and row["country"].isascii()
+                                         and row["country"].isalpha() and row["country"].isupper()):
+                raise ValueError("country must be a two-letter uppercase code")
             if row["id"] in seen:
                 raise ValueError("duplicate event ID")
             event = Event(**(row | {"time": when.astimezone(UTC), "ip": str(ipaddress.ip_address(row["ip"]))}))
@@ -81,7 +87,8 @@ def build_cases(events: list[Event]) -> list[dict]:
             cases.append({
                 "case_id": f"case-{event.id}", "account": event.account,
                 "observations": observations,
-                "events": [vars(e) | {"time": e.time.isoformat()} for e in source],
+                "events": [{k: v for k, v in vars(e).items() if v is not None}
+                           | {"time": e.time.isoformat()} for e in source],
             })
         del pending[key]
     return cases
