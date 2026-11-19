@@ -88,7 +88,7 @@ Thresholds are fixed design choices for version `rules-v1`. The rolling failure 
 
 Each alert carries the triggering event ID, feature values, rule IDs and supporting references. To reproduce a historical claim, replay that account's successes from the beginning of the history up to the trigger, excluding the trigger. The alert includes the first and last contributing IDs. Event IDs are lookup keys and should be excluded from the model feature matrix.
 
-The [calibration report](RULE-BASELINE.md) includes combined and individual rule metrics, scenario families and traceable examples. Evaluation attributes an alert to the scenario owning its trigger and counts repeated triggers separately when estimating analyst workload. The held-out period is reserved for the comparison with Isolation Forest.
+The [calibration report](RULE-BASELINE.md) includes combined and individual rule metrics, scenario families and traceable examples. Evaluation attributes an alert to the scenario owning its trigger and counts repeated triggers separately when estimating analyst workload.
 
 ## Reproduce the held-out detector comparison
 
@@ -105,5 +105,7 @@ uv pip install --python .venv/Scripts/python.exe -r requirements-ml.txt
 On Linux, the environment interpreter is `.venv/bin/python`. For machine-readable metrics use `--json`. Use `--scores` to include every test event ID, its six input values, anomaly score, model decision and triggered rules.
 
 The forest fits 200 trees on 256-event subsamples of the earlier benign period, with random seed 42. Its inputs are the login outcome, recent account/IP failures, distinct failed accounts on the IP, device novelty, country novelty and the account's historical share of successes around the current UTC hour. Unknown novelty is encoded as −1. The score is the negative of scikit-learn's `score_samples`, so a larger value is more anomalous. The threshold admits the largest top-scoring group of calibration events that fits within the rules' alert count, including ties as a group. It remains fixed during the test period. Only the historical login features continue to update as events arrive.
+
+On the held-out period the forest halved the number of benign scenarios flagged (96 to 48). Password-mistake scenarios account for much of that improvement (54 to 11). It also missed 26 suspicious scenarios, compared with 12 for the rules. Both detectors flagged every shared-gateway scenario. The results support retaining the rules when coverage matters and evaluating the model score as a prioritization signal.
 
 The project proceeds from this detector comparison to evidence cases and MITRE mapping (4), Llama explanations (5), the full analyst interface (6), end-to-end experiments (7), and submission (8).
