@@ -1,0 +1,17 @@
+*{box-sizing:border-box}
+:root{color-scheme:light;--green:#234b37;--paper:#fcfbf2;--border:#c4cbbb}
+body{margin:0;background:#ebece1;color:#222d26;font:1rem/1.6 "Segoe UI",Arial,sans-serif}
+header{background:#192a21;color:#e5eedd;padding:12px 5vw}
+header div{max-width:920px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+header b{font:600 1.35rem Georgia,serif}header span{font-size:.88rem}
+main{max-width:960px;margin:24px auto 50px;padding:0 18px}h1{margin:0;font-size:clamp(1.9rem,4vw,3rem);line-height:1.25}h2{font-size:1.25rem;margin:0 0 8px}p{margin:8px 0 14px}
+nav,.actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:16px 0}nav{background:#dbe3d3;padding:10px 14px}
+section,.guide,.brief{padding:17px 20px;border:1px solid var(--border);background:var(--paper);margin:12px 0}
+.guide summary,summary{cursor:pointer;color:var(--green);font-weight:600}details details{margin:7px 0}details[open]>summary{margin-bottom:8px}
+a{color:var(--green);font-weight:600}button,select,textarea{font:inherit}button,select,.action{border:1px solid #81937d;background:#fffef5;padding:6px 11px;border-radius:3px;cursor:pointer}
+button:disabled{opacity:.5;cursor:default}.primary,.action{background:var(--green);color:#fff}.action{display:inline-block;text-decoration:none}
+:focus-visible{outline:3px solid #6e963c;outline-offset:2px}.ratings{display:flex;gap:12px;flex-wrap:wrap;border-top:1px solid var(--border);margin-top:15px;padding-top:9px}
+label{font-weight:600}label select{margin-inline-start:6px}.note{display:block;margin-top:8px}textarea{display:block;width:100%;padding:8px;border:1px solid #879982;margin-top:4px}
+.refs{max-height:16rem;overflow:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#e7eddf;padding:9px;font: .86rem/1.5 Consolas,monospace}code{direction:ltr;unicode-bidi:isolate}
+#status{color:var(--green)}.brief [dir=ltr]{text-align:left}.rolelink{margin-inline-end:16px}
+@media(max-width:540px){main{margin-top:15px;padding:0 12px}section,.guide,.brief{padding:12px}.ratings{display:grid}header span{font-size:.75rem}}

@@ -6,20 +6,26 @@ import json
 from pathlib import Path
 from threading import BoundedSemaphore
 from urllib.parse import parse_qs, urlsplit
-from zipfile import BadZipFile
+from zipfile import BadZipFile, ZipFile
 
 from casebook import Casebook
 from case_review import explain_case
 from desk_import import Imports, LIMIT
 from local_llama import InferenceError
+from stage7_team import ROLES
 
 ASSETS = {
-    "/": ("night-desk.html", "text/html; charset=utf-8"),
-    "/Night-Desk.html": ("night-desk.html", "text/html; charset=utf-8"),
-    "/night-desk.css": ("night-desk.css", "text/css; charset=utf-8"),
-    "/night-desk.js": ("night-desk.js", "text/javascript; charset=utf-8"),
-    "/night-desk.webp": ("night-desk.webp", "image/webp"),
+    "/": ("evidencesoc.html", "text/html; charset=utf-8"),
+    "/EvidenceSOC.html": ("evidencesoc.html", "text/html; charset=utf-8"),
+    "/evidencesoc.css": ("evidencesoc.css", "text/css; charset=utf-8"),
+    "/evidencesoc.js": ("evidencesoc.js", "text/javascript; charset=utf-8"),
+    "/evidencesoc.webp": ("evidencesoc.webp", "image/webp"),
+    "/stage7/": ("stage7-team.html", "text/html; charset=utf-8"),
+    "/stage7/team.css": ("stage7-team.css", "text/css; charset=utf-8"),
+    **{f"/stage7/EvidenceSOC-{role}.zip": (f"EvidenceSOC-{role}.zip", "application/zip") for role in ROLES},
 }
+FORM_TYPES = {"index.html": "text/html; charset=utf-8", "form.css": "text/css; charset=utf-8",
+              "form.js": "text/javascript; charset=utf-8", "packet.js": "text/javascript; charset=utf-8"}
 TITLES = {
     "R1": "Repeated sign-in failures", "R2": "Failures across accounts",
     "R3": "Unfamiliar device and country", "R4": "Unusual sign-in hour",
@@ -83,6 +89,18 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         path = urlsplit(self.path).path
+        if path == "/Night-Desk.html":
+            self.send_response(308)
+            self.send_header("Location", "/" + ("?" + urlsplit(self.path).query if urlsplit(self.path).query else ""))
+            self.end_headers()
+            return
+        if path.startswith("/stage7/"):
+            parts = path.split("/")
+            if len(parts) == 4 and parts[2] in ROLES and (parts[3] or "index.html") in FORM_TYPES:
+                name = parts[3] or "index.html"
+                with ZipFile(Path(__file__).with_name(f"EvidenceSOC-{parts[2]}.zip")) as packet:
+                    self.send_body(200, FORM_TYPES[name], packet.read(name))
+                return
         if path in ASSETS:
             name, kind = ASSETS[path]
             self.send_body(200, kind, Path(__file__).with_name(name).read_bytes())
@@ -97,7 +115,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         if urlsplit(self.path).path == "/api/import" and self.imports is not None:
-            if self.headers.get("X-Night-Desk") != "import" or self.headers.get("Sec-Fetch-Site") == "cross-site":
+            if self.headers.get("X-EvidenceSOC") != "import" or self.headers.get("Sec-Fetch-Site") == "cross-site":
                 self.json(403, {"error": "Import from the local desk."})
                 return
             try:
@@ -119,9 +137,9 @@ class Handler(BaseHTTPRequestHandler):
             self.json(404, {"error": "Case or resource not found."})
             return
         # Only the local desk may initiate model work. No request body is needed.
-        if (self.headers.get("X-Night-Desk") != "review"
+        if (self.headers.get("X-EvidenceSOC") != "review"
                 or self.headers.get("Sec-Fetch-Site") == "cross-site"):
-            self.json(403, {"error": "Request a briefing from Night Desk."})
+            self.json(403, {"error": "Request a briefing from EvidenceSOC."})
             return
         if not self.model_slot.acquire(blocking=False):
             self.json(429, {"error": "Llama is reviewing another case. Try again shortly."})
@@ -145,10 +163,10 @@ def main():
         desk = Desk(Casebook(args.dataset))
         handler = partial(Handler, desk=desk, imports=Imports(Path("runs/desk-imports"), Desk))
         with ThreadingHTTPServer(("127.0.0.1", args.port), handler) as server:
-            print(f"Night Desk ready at http://127.0.0.1:{server.server_port}/", flush=True)
+            print(f"EvidenceSOC ready at http://127.0.0.1:{server.server_port}/", flush=True)
             server.serve_forever()
     except (OSError, ValueError, KeyError) as exc:
-        parser.exit(1, f"Cannot open Night Desk: {exc}\n")
+        parser.exit(1, f"Cannot open EvidenceSOC: {exc}\n")
     except KeyboardInterrupt:
         pass
 

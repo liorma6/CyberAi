@@ -37,7 +37,7 @@ class ExperimentTests(unittest.TestCase):
 
     def test_only_verified_event_streams_survive_import_and_restart(self):
         from desk_import import FILES, Imports
-        from night_desk import Desk
+        from evidencesoc_web import Desk
         files = generate(43)
         def packed():
             stream = BytesIO()
@@ -86,3 +86,21 @@ class ExperimentTests(unittest.TestCase):
         sheets[1].write_text("\n".join(lines[:-1]))
         with self.assertRaisesRegex(ValueError, "Incomplete"):
             score(key, sheets)
+
+    def test_portable_forms_preserve_the_blinded_study(self):
+        from stage7_team import ROLES, packet
+        for role in ROLES:
+            source = packet(role)
+            with ZipFile(HERE / f"EvidenceSOC-{role}.zip") as z:
+                self.assertEqual(set(z.namelist()), {"index.html", "form.js", "form.css", "packet.js"})
+                data = z.read("packet.js").decode().removeprefix("const packet = ").strip().removesuffix(";")
+                self.assertEqual(json.loads(data), source)
+                for member, file in [("index.html", "stage7-form.html"), ("form.js", "stage7-form.js"),
+                                     ("form.css", "stage7-team.css")]:
+                    self.assertEqual(z.read(member).decode().splitlines(), (HERE / file).read_text(encoding="utf-8").splitlines())
+            self.assertEqual(source["role"], role)
+            for case in source["cases"]:
+                for side in case["sides"].values():
+                    for line in side.splitlines():
+                        if line.startswith("Sources: "):
+                            self.assertTrue(set(line[9:].split(", ")) <= case["sources"].keys())

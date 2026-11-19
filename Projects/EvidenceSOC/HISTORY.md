@@ -43,9 +43,9 @@ A local RTX 2070 produced valid briefings for all 15 distinct review menus in th
 
 | Date | Commit | Change | Verification |
 | --- | --- | --- | --- |
-| 2026-11-19 | [227903c](https://github.com/liorma6/CyberAi/commit/227903c5a15fadfb25420ae0956f71c923eb3ea2) | Connected the Night Desk queue, raw source inspector, case briefings and analyst assessments to the local casebook. | 29 tests passed locally. [CI passed on Python 3.13 and 3.14](https://github.com/liorma6/CyberAi/actions/runs/44515984660). |
+| 2026-11-19 | [227903c](https://github.com/liorma6/CyberAi/commit/227903c5a15fadfb25420ae0956f71c923eb3ea2) | Connected the EvidenceSOC queue, raw source inspector, case briefings and analyst assessments to the local casebook. | 29 tests passed locally. [CI passed on Python 3.13 and 3.14](https://github.com/liorma6/CyberAi/actions/runs/44515984660). |
 
-The seed-42 desk listed 192 cases and 261 triggers. In file 011, the browser opened lines 92 and 96 of the test stream, obtained a live local Llama briefing, filed a cited assessment and restored it after refresh. The filed filter isolated the case, and reopening allowed revision. Narrow-screen navigation was checked at a 390-pixel viewport. See the [launch instructions](README.md#open-night-desk) and [stage 6 pull request](https://github.com/liorma6/CyberAi/pull/5).
+The seed-42 desk listed 192 cases and 261 triggers. In file 011, the browser opened lines 92 and 96 of the test stream, obtained a live local Llama briefing, filed a cited assessment and restored it after refresh. The filed filter isolated the case, and reopening allowed revision. Narrow-screen navigation was checked at a 390-pixel viewport. See the [launch instructions](README.md#open-evidencesoc) and [stage 6 pull request](https://github.com/liorma6/CyberAi/pull/5).
 
 ## Stage 7
 
@@ -54,6 +54,10 @@ The seed-42 desk listed 192 cases and 261 triggers. In file 011, the browser ope
 | 2026-11-19 | [59e2476](https://github.com/liorma6/CyberAi/commit/59e2476d4f4e51ca3c51055cab1c9a0bc7b1c485) | Published detector, paired briefing and matched hardware experiments. Added verified dataset import and documented the browser restart test. | 32 tests passed locally. [CI reproduced the detector results on Python 3.13 and 3.14](https://github.com/liorma6/CyberAi/actions/runs/44518561571). |
 
 The [experiment report](EXPERIMENTS.md) links the raw results, figure and two independent rating packets. Human ratings and an independent teammate rerun await sign-off. [Stage 7 pull request](https://github.com/liorma6/CyberAi/pull/6)
+
+### EvidenceSOC naming and stage 7 team handoff
+
+The [team handoff](https://github.com/liorma6/CyberAi/pull/7) unifies the product name, provides separate portable forms from the original blinded packets, and adds a logged independent rerun. [Implementation](https://github.com/liorma6/CyberAi/commit/309eebaa80ba59aed75284868232f613de4fd47e) · [33 tests on Python 3.13 and 3.14](https://github.com/liorma6/CyberAi/actions/runs/44521432333) · [Hebrew group instructions](STAGE7-TEAM.md).
 
 ## Publishing and verification
 

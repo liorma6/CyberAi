@@ -4,16 +4,18 @@ EvidenceSOC investigates suspicious authentication activity and records the even
 
 See the [development history](HISTORY.md) for published commits and their CI results.
 
-## Open Night Desk
+The [stage 7 team guide](STAGE7-TEAM.md) contains the two blinded rating forms and the independent rerun instructions.
+
+## Open EvidenceSOC
 
 From `Projects/EvidenceSOC`, use the Python environment containing [the detector dependencies](requirements-ml.txt). The first command generates or verifies the reproducible synthetic dataset.
 
 ```powershell
 python -m generate_dataset --seed 42
-python -m night_desk
+python -m evidencesoc_web
 ```
 
-Open [Night Desk on this computer](http://127.0.0.1:8798/) or the [worked investigation, file 011](http://127.0.0.1:8798/#case-e-51d9170e7544d3e64f6f727a). Keep the server running while using the desk. Pass a dataset directory and `--port` to work with another generated dataset or port. The server builds the casebook once at startup.
+Open [EvidenceSOC on this computer](http://127.0.0.1:8798/) or the [worked investigation, file 011](http://127.0.0.1:8798/#case-e-51d9170e7544d3e64f6f727a). Keep the server running while using the desk. Pass a dataset directory and `--port` to work with another generated dataset or port. The server builds the casebook once at startup.
 
 1. Search the queue by file number, account, IP, rule or ATT&CK ID. Select a timeline event to see its original JSON fields, source file and line.
 2. Open **Briefing** for the deterministic template or select **Ask local Llama** for a live Ollama review. Open a citation to inspect its source, including historical records outside the recent timeline.

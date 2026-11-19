@@ -193,7 +193,7 @@ async function askLlama() {
   if (state.pending.has(key)) return;
   state.pending.add(key); state.errors.delete(key); renderReview();
   try {
-    const result = await api("/api/cases/" + encodeURIComponent(key) + "/briefing", {method: "POST", headers: {"X-Night-Desk": "review"}});
+    const result = await api("/api/cases/" + encodeURIComponent(key) + "/briefing", {method: "POST", headers: {"X-EvidenceSOC": "review"}});
     state.reviews.set(key, result);
   } catch (error) { state.errors.set(key, error.message); }
   finally {
@@ -340,7 +340,7 @@ $("dataset-zip").addEventListener("change", async event => {
   input.disabled = true;
   $("import-status").textContent = "Verifying event streams and building the casebook…";
   try {
-    const result = await api("/api/import", {method: "POST", headers: {"X-Night-Desk": "import"}, body: file});
+    const result = await api("/api/import", {method: "POST", headers: {"X-EvidenceSOC": "import"}, body: file});
     const url = new URL("/", location.origin);
     url.searchParams.set("dataset", result.dataset);
     location.assign(url);

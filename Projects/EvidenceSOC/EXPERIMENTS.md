@@ -2,7 +2,7 @@
 
 On 19 November 2026 the combined detector caught 56 of 66 suspicious scenarios in the canonical test period. The rules caught 54 and Isolation Forest caught 40. The union also produced the most false event alerts per 1,000 logins. The paired briefing audit and workstation benchmark below measure different parts of the investigation workflow.
 
-[Measurements and browser evidence](stage7-measurements.zip) · [Independent reviewer packets](stage7-blind-review.zip) · [Night Desk](README.md#open-night-desk)
+[Measurements and browser evidence](stage7-measurements.zip) · [Independent reviewer packets](stage7-blind-review.zip) · [EvidenceSOC](README.md#open-evidencesoc)
 
 ![Detector scores and individual CPU and GPU response times](stage7-results.png)
 
@@ -53,6 +53,8 @@ The follow-up differed in 8 of 20 files. Support requires the exact reference se
 
 **Independent human ratings are pending.** Each reviewer receives 20 pairs with shuffled case order and balanced A/B source positions. The reviewers receive source records, the two unlabeled briefings and independent CSVs. They score the specificity of missing information (0–2) and usefulness for triage (1–5). Ties are allowed. Send only the assigned R1 or R2 folder from the reviewer archive to each person. Keep the measurements archive and report with the organizer until both sheets are returned. The scorer rejects incomplete or duplicate sheets. Its unit tests use synthetic ratings solely to check the scorer.
 
+The [team guide](STAGE7-TEAM.md) links the two portable rating forms and gives the independent reproduction and return instructions. The forms preserve the published study ID and A/B assignments.
+
 ## Matched CPU and GPU benchmark
 
 Workstation: AMD Ryzen 5 3600X (6 cores), NVIDIA GeForce RTX 2070 (8 GiB), driver 621.14, Ollama 0.40.16. Every request used `llama3.1:8b-instruct-q4_K_M` with digest `46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e`. Temperature 0, seed 42, context 4,096, output cap 256. CPU requested zero GPU layers. GPU used the workstation's ordinary automatic placement. Each response was accepted only with the expected VRAM placement and digest.
@@ -69,7 +71,7 @@ Workstation: AMD Ryzen 5 3600X (6 cores), NVIDIA GeForce RTX 2070 (8 GiB), drive
 
 Four device blocks ran in CPU, GPU, GPU, CPU order. Each began with the target model absent from the running-model list. A request for the worked two-trigger file measured cold latency, including loading. Three further requests per block covered that case, a shared-source failure and a forest-only case. The second repetition reversed warm order on both devices. The warm medians give a **14.7×** wall-time speedup on this workload. Tokens per second uses generated-token count divided by generation time. Chat timing excludes casebook construction, placement lookup and UI rendering. Cold denotes unloaded model weights in Ollama; OS disk caching was uncontrolled. The memory figures describe the loaded model, not peak system memory. Small sample sizes and prompt caching can affect these numbers. See `runtime.json` for individual latencies and token counts.
 
-## Night Desk acceptance
+## EvidenceSOC acceptance
 
 1. Started the local server on port 8817 with the canonical seed-42 queue.
 2. In the browser, imported a seed-43 ZIP containing only the manifest and three event streams. The queue showed seed 43. File 001 opened the failed authentication at 06:29:16 UTC in `events/test.jsonl:4`.

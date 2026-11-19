@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EvidenceSOC | השלמת שלב 7</title><link rel="stylesheet" href="/stage7/team.css"></head>
+<body><header><div><b dir="ltr">EvidenceSOC</b><a href="/" class="action">לממשק החקירה</a></div></header>
+<main><h1>השלמת שלב 7</h1><p>רכז הקבוצה אוסף שלושה קבצים: שני גיליונות דירוג ולוג הרצה אחד. בחרו לכל משתתף תפקיד לפני שפותחים טופס.</p>
+<section><h2>בודקים 1 ו־2 · הערכה עצמאית</h2>
+<ol><li>כל בודק פותח רק את הטופס שהוקצה לו. במחשב אחר מורידים את ה־ZIP המתאים, מחלצים את כל הקבצים ופותחים את <code>index.html</code>. הטופס פועל גם בלי התקנה.</li>
+<li>בכל אחד מ־20 התיקים קוראים את תדריך A ואת תדריך B באנגלית. לחיצה על הפניה מציגה את שורת הלוג. אפשר לקרוא גם את ציר הזמן.</li>
+<li>לכל תדריך בוחרים שני ציונים: עד כמה הוא מזהה מידע שחסר לחקירה (0–2), ועד כמה הוא עוזר להחליט מה לבדוק עכשיו (1–5). בטופס מופיע פירוש לכל ציון. מוסיפים הערה קצרה על מה שהשפיע על הדירוג. מותר לתת תיקו.</li>
+<li>כשהמונה מגיע ל־40 מתוך 40, לוחצים על <strong>הורדת CSV למסירה</strong>. שומרים את הקובץ ושולחים אותו לרכז. עד ששני הבודקים מסיימים, עובדים בנפרד ושומרים את דוח התוצאות ומפתח הזיהוי אצל הרכז.</li></ol>
+<p><a class="action" href="/stage7/R1/">פתיחת טופס R1</a> <a class="rolelink" href="/stage7/EvidenceSOC-R1.zip" download>הורדת הערכה לבודק 1</a></p>
+<p><a class="action" href="/stage7/R2/">פתיחת טופס R2</a> <a class="rolelink" href="/stage7/EvidenceSOC-R2.zip" download>הורדת הערכה לבודק 2</a></p></section>
+<section id="rerun"><h2>חבר הצוות השלישי · שחזור מעותק נקי</h2>
+<p>מריצים במחשב של חבר צוות אחר, עם Git ו־Python 3.13 או 3.14. פתחו PowerShell בתיקייה שבה מותר ליצור עותק חדש, והדביקו את הפקודות האלה. ההרצה מתקינה את התלויות בסביבה נפרדת. נדרש אינטרנט להורדת הקוד והתלויות. אין צורך בכרטיס מסך, ב־Docker או ב־Ollama לבדיקת השחזור הזאת.</p>
+<pre dir="ltr">$copy = "EvidenceSOC-clean-" + (Get-Date -Format "yyyyMMdd-HHmmss")
+git clone https://github.com/liorma6/CyberAi.git $copy
+if ($LASTEXITCODE -eq 0) {
+    Set-Location (Join-Path $copy "Projects/EvidenceSOC")
+    python reproduce_stage7.py
+}</pre>
+<p>הסקריפט רושם את הקומיט, מערכת ההפעלה, גרסת Python, הפקודות והתוצאות. הוא מריץ את הבדיקות, כולל יצירה מחדש של שלושת מערכי הניסוי והשוואה לתוצאות שפורסמו. חפשו <code>PASS</code> או <code>FAIL</code> בשורה האחרונה. החזירו לרכז את <code>reproduction-….txt</code> מתוך <code>runs/stage7-reproduction</code> וציינו מי הריץ. גם במקרה של כשל, שמרו את הלוג כדי שנוכל לאבחן אותו.</p></section>
+<section><h2>רכז הקבוצה · מסירה</h2><p>צרפו לצ׳אט הזה את <code>R1-ratings.csv</code>, את <code>R2-ratings.csv</code> ואת לוג השחזור. אחרי שנקבל אותם נוכל לאמת שלמות, לחשב ציונים ופערים בין הבודקים, ולהוסיף את תוצאת השחזור לדוח. שלב 7 נסגר אחרי שני דירוגים מלאים ושחזור שעבר.</p></section></main></body></html>

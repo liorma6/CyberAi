@@ -11,10 +11,10 @@ from unittest.mock import Mock, patch
 from local_llama import InferenceError
 
 
-@unittest.skipUnless(find_spec("sklearn"), "Install requirements-ml.txt for Night Desk")
+@unittest.skipUnless(find_spec("sklearn"), "Install requirements-ml.txt for EvidenceSOC")
 class DeskHttpTests(unittest.TestCase):
     def setUp(self):
-        from night_desk import Desk, Handler
+        from evidencesoc_web import Desk, Handler
 
         book = Mock()
         book.cases = {"case-A": ["event-A"]}
@@ -43,12 +43,12 @@ class DeskHttpTests(unittest.TestCase):
         status, _, data = self.request("/api/cases")
         self.assertEqual(status, 200)
         self.assertEqual(json.loads(data)["cases"][0]["title"], "Repeated sign-in failures")
-        for route, file in [("/", "night-desk.html"), ("/night-desk.js", "night-desk.js"),
-                            ("/night-desk.css", "night-desk.css"), ("/night-desk.webp", "night-desk.webp")]:
+        for route, file in [("/", "evidencesoc.html"), ("/evidencesoc.js", "evidencesoc.js"),
+                            ("/evidencesoc.css", "evidencesoc.css"), ("/evidencesoc.webp", "evidencesoc.webp")]:
             status, _, content = self.request(route)
             self.assertEqual(status, 200)
             self.assertEqual(content, Path(__file__).with_name(file).read_bytes())
-        with patch("night_desk.explain_case", return_value={"source": "template"}) as review:
+        with patch("evidencesoc_web.explain_case", return_value={"source": "template"}) as review:
             status, _, data = self.request("/api/cases/case-A")
             self.assertEqual(status, 200)
             self.assertEqual(json.loads(data)["case"]["timeline"], ["event-A"])
@@ -58,12 +58,12 @@ class DeskHttpTests(unittest.TestCase):
 
     def test_model_failure_does_not_block_evidence_or_the_next_review(self):
         route = "/api/cases/case-A/briefing"
-        headers = {"X-Night-Desk": "review"}
+        headers = {"X-EvidenceSOC": "review"}
         self.assertEqual(self.request(route, "POST")[0], 403)
         self.assertEqual(self.request(route, "POST", {**headers, "Sec-Fetch-Site":"cross-site"})[0], 403)
         with self.desk.model_slot:
             self.assertEqual(self.request(route, "POST", headers)[0], 429)
-        with patch("night_desk.explain_case", side_effect=[InferenceError("Offline"), {"source": "ollama"}]):
+        with patch("evidencesoc_web.explain_case", side_effect=[InferenceError("Offline"), {"source": "ollama"}]):
             status, _, data = self.request(route, "POST", headers)
             self.assertEqual((status, json.loads(data)), (503, {"error": "Offline"}))
             status, _, data = self.request(route, "POST", headers)
