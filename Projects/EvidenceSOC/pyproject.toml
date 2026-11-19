@@ -1,0 +1,9 @@
+[project]
+name = "evidencesoc"
+version = "0.1.0"
+description = "Evidence-linked login investigations for the HIT cybersecurity project"
+requires-python = ">=3.13,<3.15"
+dependencies = []
+
+[tool.uv]
+package = false
