@@ -43,9 +43,9 @@ A local RTX 2070 produced valid briefings for all 15 distinct review menus in th
 
 | Date | Commit | Change | Verification |
 | --- | --- | --- | --- |
-| 2026-11-19 | [227903c](https://github.com/liorma6/CyberAi/commit/227903c5a15fadfb25420ae0956f71c923eb3ea2) | Connected the Night Desk queue, raw source inspector, case briefings and analyst assessments to the local casebook. | 29 tests passed locally. [CI passed on Python 3.13 and 3.14](https://github.com/liorma6/CyberAi/actions/runs/44515984660). |
+| 2026-11-19 | [227903c](https://github.com/liorma6/CyberAi/commit/227903c5a15fadfb25420ae0956f71c923eb3ea2) | Connected the EvidenceSOC queue, raw source inspector, case briefings and analyst assessments to the local casebook. | 29 tests passed locally. [CI passed on Python 3.13 and 3.14](https://github.com/liorma6/CyberAi/actions/runs/44515984660). |
 
-The seed-42 desk listed 192 cases and 261 triggers. In file 011, the browser opened lines 92 and 96 of the test stream, obtained a live local Llama briefing, filed a cited assessment and restored it after refresh. The filed filter isolated the case, and reopening allowed revision. Narrow-screen navigation was checked at a 390-pixel viewport. See the [launch instructions](README.md#open-night-desk) and [stage 6 pull request](https://github.com/liorma6/CyberAi/pull/5).
+The seed-42 desk listed 192 cases and 261 triggers. In file 011, the browser opened lines 92 and 96 of the test stream, obtained a live local Llama briefing, filed a cited assessment and restored it after refresh. The filed filter isolated the case, and reopening allowed revision. Narrow-screen navigation was checked at a 390-pixel viewport. See the [launch instructions](README.md#open-evidencesoc) and [stage 6 pull request](https://github.com/liorma6/CyberAi/pull/5).
 
 ## Stage 7
 

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17231f">
+  <title>EvidenceSOC</title>
+  <link rel="stylesheet" href="/evidencesoc.css">
+  <script src="/evidencesoc.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#workspace">Skip to investigation</a>
+<header class="mast"><div class="mast-inner"><div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>Evidence<span>SOC</span></div><span class="mast-divider"></span><span class="mast-label">Analyst workspace</span><span class="local"><i></i>Local session</span></div></header>
+<section class="hero" aria-labelledby="desk-title">
+  <div class="hero-inner"><div class="operation"><span></span> Authentication investigations</div><h1 id="desk-title">EvidenceSOC</h1><p id="shift-period">Loading investigation period…</p></div>
+</section>
+<div class="shift"><div class="shift-inner"><span class="shift-label">Shift ledger</span><span><b id="total-cases">–</b> cases</span><span><b id="total-triggers">–</b> triggers</span><span><b id="total-filed">–</b> filed</span><span id="dataset-label">Synthetic dataset</span></div></div>
+<main class="desk">
+  <aside class="queue" aria-label="Case queue">
+    <div class="queue-head"><h2>Case queue</h2><button id="queue-toggle" type="button" aria-controls="queue-body" aria-expanded="false">Browse cases</button></div>
+    <div id="queue-body">
+      <label class="search"><span aria-hidden="true"></span><input type="search" id="search" placeholder="Search cases, accounts, IPs" aria-label="Search cases, accounts or IPs"></label>
+      <div class="filters" aria-label="Filter queue"><button data-filter="all" aria-pressed="true">All</button><button data-filter="open" aria-pressed="false">Open</button><button data-filter="filed" aria-pressed="false">Filed</button></div>
+      <div id="case-list" aria-live="polite"></div>
+      <div class="pager"><button id="previous" aria-label="Previous page">Prev</button><span id="page-info"></span><button id="next" aria-label="Next page">Next</button></div>
+      <details class="dataset-import"><summary>Import dataset</summary>
+        <label for="dataset-zip">Dataset ZIP containing the manifest and event streams</label>
+        <input id="dataset-zip" type="file" accept=".zip">
+        <p id="import-status" role="status"></p>
+      </details>
+    </div>
+  </aside>
+  <section id="workspace" class="workspace" tabindex="-1" aria-label="Investigation dossier">
+    <div class="folder-tab"><span class="folder-icon" aria-hidden="true"></span> Investigation file</div>
+    <article class="paper"><div id="case-header"><p class="loading">Opening casebook…</p></div>
+      <nav id="views" class="views" aria-label="Dossier views" hidden><button data-view="trail" aria-pressed="true">Evidence trail</button><button data-view="brief" aria-pressed="false">Briefing</button><button data-view="assess" aria-pressed="false">Assessment <span id="pin-count"></span></button></nav>
+      <div id="panel" class="panel"></div>
+    </article>
+  </section>
+</main>
+<footer><span>EvidenceSOC</span><a href="/stage7/" lang="he">השלמת שלב 7</a><span>All event times in UTC</span></footer>
+<p class="sr" id="announce" role="status"></p>
+</body>
+</html>

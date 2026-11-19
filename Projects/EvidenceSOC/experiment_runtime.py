@@ -1,4 +1,4 @@
-"""Measure matched Night Desk reviews on a local CPU and GPU."""
+"""Measure matched EvidenceSOC reviews on a local CPU and GPU."""
 import argparse
 import json
 from pathlib import Path

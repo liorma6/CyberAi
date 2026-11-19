@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EvidenceSOC | דירוג תדריכים</title><link rel="stylesheet" href="form.css"><script src="packet.js" defer></script><script src="form.js" defer></script></head>
+<body><header><div><b dir="ltr">EvidenceSOC</b><span>שלב 7 · הערכה עצמאית</span></div></header>
+<main><h1>דירוג תדריכי חקירה</h1><p id="role"></p>
+<details open class="guide"><summary>איך מדרגים</summary>
+<p>בכל תיק קראו את הראיות ואת שני התדריכים באנגלית. דמיינו שעליכם להחליט מה לבדוק עכשיו. דרגו כל תדריך בפני עצמו. מותר לתת ציונים זהים. עבדו בנפרד מהבודק האחר עד למסירת הקבצים.</p>
+<ul><li><strong>מידע חסר, 0–2.</strong> 0 – לא צוין פער או שהוא מטעה. 1 – צוין פער כללי. 2 – צוין פרט חסר מסוים שיכול לשנות את החקירה.</li>
+<li><strong>שימושיות, 1–5.</strong> 1 – אי אפשר להיעזר בתדריך. 2 – דורש עיבוד משמעותי. 3 – נקודת פתיחה סבירה. 4 – אפשר לפעול אחרי בדיקה קטנה. 5 – הצעד הבא ברור, מתועדף ומסויג בהתאם לראיות.</li></ul>
+<p>אם תדריך אינו זמין, תנו 0 למידע החסר ו־1 לשימושיות. כתבו הערה קצרה על פרט שהשפיע עליכם. בסוף הורידו את ה־CSV והחזירו לרכז הקבוצה.</p></details>
+<nav aria-label="בחירת תיק"><label for="case">תיק</label><select id="case"></select><span id="count" aria-live="polite"></span></nav>
+<section><h2 id="file" dir="ltr"></h2><p id="context" dir="ltr"></p><details><summary>שורות המקור בציר הזמן</summary><div id="timeline" dir="ltr"></div></details></section>
+<div id="sides"></div>
+<div class="actions"><button id="prev" type="button">התיק הקודם</button><button id="next" type="button">התיק הבא</button><button class="primary" id="download" type="button">הורדת CSV למסירה</button></div>
+<p id="status" role="status"></p></main></body></html>
