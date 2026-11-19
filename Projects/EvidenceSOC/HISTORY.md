@@ -22,6 +22,15 @@ Work is published to `liorma6/CyberAi` on `feature/evidencesoc`. GitHub's [branc
 
 [Stage 3 pull request and checks](https://github.com/liorma6/CyberAi/pull/2)
 
+## Stage 4
+
+| Date | Commit | Change | Verification |
+| --- | --- | --- | --- |
+| 2026-11-19 | [96fb5ac](https://github.com/liorma6/CyberAi/commit/96fb5acb5b6d506ff09f651933ec7f14c40817ae) | Correlated rule and model triggers, retained original login lines and replayed each finding. Added conditional ATT&CK candidates and a versioned STIX cache. | [22 tests on both Python versions](https://github.com/liorma6/CyberAi/actions/runs/44510922690) |
+| 2026-11-19 | [4414d71](https://github.com/liorma6/CyberAi/commit/4414d711f02bff999628b822dc5b81b206830b70) | Added a live check of the official MITRE STIX refresh on Python 3.13. | [Live refresh and regression tests passed](https://github.com/liorma6/CyberAi/actions/runs/44510991335) |
+
+The [worked investigation](EVIDENCE-CASE.md) lists the five source log lines for a two-trigger case. [Stage 4 pull request and checks](https://github.com/liorma6/CyberAi/pull/3)
+
 ## Publishing and verification
 
 Publish each local commit to the feature branch with `git push origin feature/evidencesoc`. A commit made directly on GitHub is already published. In that case synchronize the local feature branch with `git pull --ff-only origin feature/evidencesoc`. Compare the local and remote revisions after publication using the commands below from the feature branch.
