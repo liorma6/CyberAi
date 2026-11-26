@@ -4,27 +4,31 @@ Assigned profile: **attack_surge** (5000 events), compared with a **normal** bas
 Lab code: [lab2b-morpheus-lite-high-load](https://github.com/akojukhov-bit/lab2b-morpheus-lite-high-load) @ `abffb66`.
 
 ## Key result
-The **detector** is the bottleneck. Its service time is about 29.7 ms per event, which caps it at about 30 events/s,
-while arrivals ran at 177.5 events/s. The ingress backlog peaked at **4,323** events and mean E2E latency was
-**72.4 s**, more than 99 % of it queue waiting. The orchestrator kept pace with the detector: alert backlog stayed at
-28 or below.
+The **detector** is the bottleneck. Its service time is about 31.1 ms per event, which caps it at about 32 events/s,
+while arrivals ran at 157.9 events/s. That arrival rate is only 32 % of the profile's 500 events/s target, so the
+measured overload is a lower bound. The ingress backlog peaked at **4,363** events and mean E2E latency was
+**78.3 s**, more than 99 % of it queue waiting. The orchestrator kept pace with the detector: alert backlog stayed at
+15 or below. Reaching the 500 events/s target would take about 23 detector instances and about 22 orchestrator
+instances to stay under 70 % utilization.
 
-| Measure | Normal (`881e71e6`) | attack_surge (`dc6e32cf`) |
+| Measure | Normal (`881e71e6`) | attack_surge (`4e981da1`) |
 |---|---:|---:|
-| Mean generator throughput (events/s) | 25.6 | 187.5 |
-| Mean detector throughput (events/s) | 25.1 | 30.0 |
-| Mean orchestrator throughput (alerts/s) | 27.5 | 30.0 |
-| Max ingress backlog (events) | 4 | 4,323 |
-| Max alert backlog (alerts) | 32 | 28 |
-| Mean detector utilization (%) | 67.2 | 87.6 |
-| Mean orchestrator utilization (%) | 71.3 | 84.4 |
-| Mean detector queue wait (ms) | 7.6 | 71,930.6 |
-| Mean detector processing (ms) | 28.3 | 29.7 |
-| Mean orchestrator queue wait (ms) | 217.4 | 409.3 |
-| Mean orchestrator processing (ms) | 30.1 | 28.6 |
-| Mean full-pipeline E2E latency (ms) | 284.5 | 72,420.6 |
+| Mean generator throughput (events/s) | 25.6 | 168.4 |
+| Mean detector throughput (events/s) | 25.1 | 29.0 |
+| Mean orchestrator throughput (alerts/s) | 27.5 | 29.0 |
+| Max ingress backlog (events) † derived | 4 | 4,363 |
+| Max alert backlog (alerts) † derived | 32 | 15 |
+| Mean detector utilization (%) ‡ derived | 67.2 | 87.6 |
+| Mean orchestrator utilization (%) ‡ derived | 71.3 | 83.2 |
+| Mean detector queue wait (ms) | 7.6 | 77,884.3 |
+| Mean detector processing (ms) | 28.3 | 31.1 |
+| Mean orchestrator queue wait (ms) | 217.4 | 210.3 |
+| Mean orchestrator processing (ms) | 30.1 | 29.6 |
+| Mean full-pipeline E2E latency (ms) | 284.5 | 78,278.5 |
 
-All values are in [summary_table.csv](summary_table.csv), and the full write-up is in the analysis PDF.
+† Backlog is computed from cumulative counters (sent − processed). ‡ Utilization is computed per second as
+events × mean stage ms / 1000. Neither is a column in the CSV. All values are in
+[summary_table.csv](summary_table.csv), and the full write-up is in the analysis PDF.
 
 ## Files
 | File | What |
@@ -45,8 +49,11 @@ All values are in [summary_table.csv](summary_table.csv), and the full write-up 
    CSV and took a screenshot.
 4. Clean run: stopped the services, deleted `data/high_load_metrics.jsonl` only, and restarted
    detector → orchestrator → dashboard.
-5. Ran `python telemetry_generator.py --profile attack_surge --events 5000`. The generator finished in 28 s, and the
-   orchestrator finished all 5000 alerts at about 167 s. Then exported the CSV and took a screenshot.
+5. Ran `python telemetry_generator.py --profile attack_surge --events 5000`. I took the screenshot mid-run, at about
+   19 s, with status OVERLOADED and ingress backlog 2,620 / 500. The generator finished at 31.8 s, and the
+   orchestrator finished all 5000 alerts at about 175 s. Then I exported the CSV.
+   (An earlier attack_surge run, `dc6e32cf`, gave the same diagnosis. Its screenshot was taken only after the queues
+   drained, so I replaced it with this run.)
 
 The CSVs contain exactly what the dashboard's **Download Lab 2b metrics CSV** button produces. They were written with
 that same pandas code path (latest `run_id`, the long-format `run_df.to_csv`). Single machine (Windows 10 laptop, all
