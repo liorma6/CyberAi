@@ -1,7 +1,7 @@
 """Lab 2b analysis: summary statistics + charts from the exported dashboard CSVs.
 
 Usage (from this folder):  python analyze_lab2b.py
-Inputs : Lab2B_STUDENTID_normal.csv, Lab2B_STUDENTID_attack_surge.csv
+Inputs : Lab2B_normal.csv, Lab2B_attack_surge.csv
 Outputs: summary_table.csv, chart_throughput.png, chart_backlog.png, chart_latency.png
 """
 from pathlib import Path
@@ -13,8 +13,8 @@ import pandas as pd
 
 HERE = Path(__file__).parent
 RUNS = {
-    "normal": HERE / "Lab2B_STUDENTID_normal.csv",
-    "attack_surge": HERE / "Lab2B_STUDENTID_attack_surge.csv",
+    "normal": HERE / "Lab2B_normal.csv",
+    "attack_surge": HERE / "Lab2B_attack_surge.csv",
 }
 
 

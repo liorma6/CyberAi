@@ -1,4 +1,4 @@
-"""Build Lab2B_STUDENTID_attack_surge_analysis.pdf from summary_table.csv and the chart PNGs.
+"""Build Lab2B_attack_surge_analysis.pdf from summary_table.csv and the chart PNGs.
 Run analyze_lab2b.py first.  Requires: reportlab, pandas.
 """
 from pathlib import Path
@@ -11,7 +11,7 @@ from reportlab.lib.units import cm
 from reportlab.platypus import Image, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 HERE = Path(__file__).parent
-OUT = HERE / "Lab2B_STUDENTID_attack_surge_analysis.pdf"
+OUT = HERE / "Lab2B_attack_surge_analysis.pdf"
 
 ROWS = [
     "Run ID / profile",
@@ -68,7 +68,7 @@ def main():
     P = lambda s: Paragraph(s, body)
     story = [
         Paragraph("Lab 2b — High-Load Cybersecurity: Analysis (Morpheus Lite v0.3.4)", h1),
-        Paragraph("Student ID: STUDENTID &nbsp;|&nbsp; Assigned profile: <b>attack_surge</b> (5000 events) compared with "
+        Paragraph("Assigned profile: <b>attack_surge</b> (5000 events) compared with "
                   "<b>normal</b> (500 events) &nbsp;|&nbsp; Normal run_id 881e71e6-07f1-4f14-9114-73c0ab292fe4; "
                   "attack_surge run_id dc6e32cf-e7da-4fce-acc8-5b7c31e327ed. Source: dashboard CSV exports only.", small),
         Spacer(1, 4),
