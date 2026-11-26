@@ -1,0 +1,23 @@
+Measure,normal,attack_surge
+Run ID / profile,881e71e6 / normal,4e981da1 / attack_surge
+Events generated / detected / orchestrated,500 / 500 / 500,5000 / 5000 / 5000
+"Mean generator throughput (events/s, rolling 5 s samples)",25.62378378463881,168.3539045055317
+"Mean detector throughput (events/s, rolling 5 s samples)",25.066833342665024,28.952525239133017
+"Mean orchestrator throughput (alerts/s, rolling 5 s samples)",27.510756992717823,28.961133278904267
+Generator active-period rate (events/s),25.06265664160401,157.87811809283232
+Detector active-period rate (events/s),25.06265664160401,28.486782133090248
+Orchestrator active-period rate (alerts/s),26.76659528907923,28.506271379703534
+Generator / detector / orchestrator active duration (s),19.9 / 19.9 / 18.7,31.7 / 175.5 / 175.4
+"Same window, 0 s to last generated event: gen / det / orch rate (events/s)",0–20.1 s: 24.9 / 24.9 / 24.8,0–31.8 s: 157.3 / 20.0 / 20.0
+Detector drain rate after generator stops (events/s),,30.32177357703802
+Maximum ingress backlog (events),4.0,4363.0
+Maximum alert backlog (alerts),32.0,15.0
+Mean detector utilization (%),70.72391894852036,87.85773017292902
+Mean orchestrator utilization (%),73.99751894977102,83.27164643632169
+Detector / orchestrator utilization: seconds ≥ 90 % / seconds averaged,0/19  ·  1/19,25/174  ·  0/174
+Mean detector queue wait (ms),7.6257823372659415,77884.25543086017
+Mean detector processing (ms),28.327814257871097,31.09047427952921
+Mean orchestrator queue wait (ms),217.41866622432585,210.31917637135479
+Mean orchestrator processing (ms),30.108846386475676,29.558566377250813
+Mean full-pipeline E2E latency (ms),284.4564756704288,78278.47779889542
+Max full-pipeline E2E latency (ms),1443.52001953125,144139.93017578125
