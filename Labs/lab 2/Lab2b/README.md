@@ -4,30 +4,38 @@ Assigned profile: **attack_surge** (5000 events), compared with a **normal** bas
 Lab code: [lab2b-morpheus-lite-high-load](https://github.com/akojukhov-bit/lab2b-morpheus-lite-high-load) @ `abffb66`.
 
 ## Key result
-The **detector** is the bottleneck. Its service time is about 31.1 ms per event, which caps it at about 32 events/s,
-while arrivals ran at 157.9 events/s. That arrival rate is only 32 % of the profile's 500 events/s target, so the
-measured overload is a lower bound. The ingress backlog peaked at **4,363** events and mean E2E latency was
-**78.3 s**, more than 99 % of it queue waiting. The orchestrator kept pace with the detector: alert backlog stayed at
-15 or below. Reaching the 500 events/s target would take about 23 detector instances and about 22 orchestrator
-instances to stay under 70 % utilization.
+The **detector** is the bottleneck. Over the same window, from 0 s to the last generated event at 31.8 s, the
+generator produced 157.3 events/s, while the detector and orchestrator each completed only 20.0 events/s. That gap
+of about 137 events/s is exactly how fast the ingress backlog grew, to a peak of **4,363** events. After generation
+stopped, the detector drained at 30.3 events/s. The 10 events/s difference is CPU contention with the generator on
+the same laptop. Mean E2E latency was **78.3 s**, more than 99 % of it queue waiting. The orchestrator kept pace
+with the detector, and its backlog stayed at 15 or below.
+
+The generator reached only about 31.5 % of the profile's 500 events/s target. Behaviour at a real 500 events/s was
+not measured. A first estimate for that rate, assuming linear scaling, is about 24 detector instances under 70 %
+utilization, or about 36 if they share a host with the producers.
 
 | Measure | Normal (`881e71e6`) | attack_surge (`4e981da1`) |
 |---|---:|---:|
 | Mean generator throughput (events/s) | 25.6 | 168.4 |
 | Mean detector throughput (events/s) | 25.1 | 29.0 |
 | Mean orchestrator throughput (alerts/s) | 27.5 | 29.0 |
+| Same-window rate, gen / det / orch (events/s) | 24.9 / 24.9 / 24.8 | 157.3 / 20.0 / 20.0 |
+| Detector drain rate after generator stops (events/s) | n/a | 30.3 |
 | Max ingress backlog (events) † derived | 4 | 4,363 |
 | Max alert backlog (alerts) † derived | 32 | 15 |
-| Mean detector utilization (%) ‡ derived | 67.2 | 87.6 |
-| Mean orchestrator utilization (%) ‡ derived | 71.3 | 83.2 |
+| Mean detector utilization (%) ‡ estimate | 70.7 | 87.9 |
+| Mean orchestrator utilization (%) ‡ estimate | 74.0 | 83.3 |
 | Mean detector queue wait (ms) | 7.6 | 77,884.3 |
 | Mean detector processing (ms) | 28.3 | 31.1 |
 | Mean orchestrator queue wait (ms) | 217.4 | 210.3 |
 | Mean orchestrator processing (ms) | 30.1 | 29.6 |
 | Mean full-pipeline E2E latency (ms) | 284.5 | 78,278.5 |
 
-† Backlog is computed from cumulative counters (sent − processed). ‡ Utilization is computed per second as
-events × mean stage ms / 1000. Neither is a column in the CSV. All values are in
+† Backlog is computed from cumulative counters (sent − processed). ‡ Utilization is estimated from processing
+times. Each operation's duration is split across the seconds it spans, then averaged over complete seconds.
+Neither is a column in the CSV. The "500" on the dashboard is `high_load.queue_capacity`, a reference value for the
+dashboard's display and status, not a Kafka limit. All values are in
 [summary_table.csv](summary_table.csv), and the full write-up is in the analysis PDF.
 
 ## Files

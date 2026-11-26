@@ -9,6 +9,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 
 HERE = Path(__file__).parent
@@ -57,12 +58,42 @@ def active_rate(df, component, metric):
 
 
 def utilization(df, component):
-    """Per-second utilisation = events completed in that second x mean stage ms / 1000 (as %)."""
-    st = series(df, component, "stage_latency_ms").copy()
-    st["sec"] = st.elapsed_s.astype(int)
-    g = st.groupby("sec").agg(n=("value", "size"), ms=("value", "mean"))
-    u = (g.n * g.ms / 10.0).clip(upper=100.0)
-    return u
+    """Estimated per-second utilisation (%) from processing times.
+
+    Each stage_latency_ms record is an operation that ended at its timestamp and lasted
+    `value` ms, i.e. busy over [end - value, end]. That busy time is split across every
+    1-second bin it overlaps (not charged to the second it ended in). Only complete
+    seconds between the first operation start and the last operation end are returned;
+    the partial first and last seconds are dropped. Not clipped, so values > 100 % would
+    reveal overlapping or mis-timed records.
+    """
+    st = df[(df.component == component) & (df.metric == "stage_latency_ms")]
+    t0 = df["timestamp"].min()
+    end = (st["timestamp"] - t0).dt.total_seconds().to_numpy()
+    start = end - st["value"].to_numpy() / 1000.0
+    first, last = int(np.ceil(start.min())), int(np.floor(end.max()))
+    busy = np.zeros(last - first)
+    for s, e in zip(start, end):
+        for sec in range(max(first, int(np.floor(s))), min(last, int(np.ceil(e)))):
+            busy[sec - first] += max(0.0, min(e, sec + 1) - max(s, sec))
+    return pd.Series(busy * 100.0, index=range(first, last), name="util_pct")
+
+
+def window_rates(df):
+    """Same-window comparison: completions from t=0 to the last generated event."""
+    gen_end = series(df, "generator", "events_sent").elapsed_s.max()
+    out = {}
+    for comp, met in [("generator", "events_sent"), ("detector", "events_processed"),
+                      ("orchestrator", "events_processed")]:
+        s = series(df, comp, met)
+        out[comp] = s[s.elapsed_s <= gen_end].value.max() / gen_end
+    d = series(df, "detector", "events_processed")
+    after = d[d.elapsed_s > gen_end]
+    done_at_end = d[d.elapsed_s <= gen_end].value.max()
+    out["drain"] = ((after.value.max() - done_at_end) / (after.elapsed_s.max() - gen_end)
+                    if len(after) > 1 else float("nan"))
+    out["gen_end"] = gen_end
+    return out
 
 
 def summarize(name, df):
@@ -71,6 +102,8 @@ def summarize(name, df):
     det_rate, det_dur = active_rate(df, "detector", "events_processed")
     orch_rate, orch_dur = active_rate(df, "orchestrator", "events_processed")
     bl = counters(df)
+    w = window_rates(df)
+    du, ou = utilization(df, "detector"), utilization(df, "orchestrator")
     return {
         "Run ID / profile": f"{run_id[:8]} / {name}",
         "Events generated / detected / orchestrated": (
@@ -84,10 +117,15 @@ def summarize(name, df):
         "Detector active-period rate (events/s)": det_rate,
         "Orchestrator active-period rate (alerts/s)": orch_rate,
         "Generator / detector / orchestrator active duration (s)": f"{gen_dur:.1f} / {det_dur:.1f} / {orch_dur:.1f}",
+        "Same window, 0 s to last generated event: gen / det / orch rate (events/s)": (
+            f"0–{w['gen_end']:.1f} s: {w['generator']:.1f} / {w['detector']:.1f} / {w['orchestrator']:.1f}"),
+        "Detector drain rate after generator stops (events/s)": w["drain"],
         "Maximum ingress backlog (events)": bl.ingress_backlog.max(),
         "Maximum alert backlog (alerts)": bl.alert_backlog.max(),
-        "Mean detector utilization (%)": utilization(df, "detector").mean(),
-        "Mean orchestrator utilization (%)": utilization(df, "orchestrator").mean(),
+        "Mean detector utilization (%)": du.mean(),
+        "Mean orchestrator utilization (%)": ou.mean(),
+        "Detector / orchestrator utilization: seconds ≥ 90 % / seconds averaged": (
+            f"{int((du >= 90).sum())}/{len(du)}  ·  {int((ou >= 90).sum())}/{len(ou)}"),
         "Mean detector queue wait (ms)": series(df, "detector", "queue_wait_ms").value.mean(),
         "Mean detector processing (ms)": series(df, "detector", "stage_latency_ms").value.mean(),
         "Mean orchestrator queue wait (ms)": series(df, "orchestrator", "queue_wait_ms").value.mean(),
@@ -117,7 +155,12 @@ def main():
             s = series(df, comp, "throughput_eps")
             ax.plot(s.elapsed_s, s.value, label=comp, color=colors[comp], lw=1.2)
         gen_end = series(df, "generator", "events_sent").elapsed_s.max()
+        run_end = series(df, "orchestrator", "events_processed").elapsed_s.max()
         ax.axvline(gen_end, ls="--", color="grey", lw=1)
+        if run_end - gen_end > 2:
+            ax.axvspan(gen_end, run_end, color="grey", alpha=0.10)
+            ax.text((gen_end + run_end) / 2, ylims.get(name, 1) * 0.55, "drain period\n(generator stopped)",
+                    ha="center", fontsize=8.5, color="dimgrey")
         ax.set_ylim(0, ylims.get(name))
         ax.set_title(f"Stage throughput — {name}", fontsize=11)
         ax.set_xlabel("Elapsed time (s)", fontsize=10)
@@ -138,14 +181,26 @@ def main():
         ax.plot(bl.elapsed_s, bl.ingress_backlog, label="Ingress (telemetry → detector)", color="#d62728", lw=1.2)
         ax.plot(bl.elapsed_s, bl.alert_backlog, label="Alert (detector → orchestrator)", color="#2ca02c", lw=1.2)
         gen_end = series(df, "generator", "events_sent").elapsed_s.max()
+        run_end = series(df, "orchestrator", "events_processed").elapsed_s.max()
         ax.axvline(gen_end, ls="--", color="grey", lw=1, label="Generator stops")
+        if run_end - gen_end > 2:
+            ax.axvspan(gen_end, run_end, color="grey", alpha=0.10, label="Drain period")
+            # Inset: the alert backlog is invisible next to a 4,000+ ingress backlog.
+            ins = ax.inset_axes([0.56, 0.56, 0.41, 0.36])
+            ins.plot(bl.elapsed_s, bl.alert_backlog, color="#2ca02c", lw=0.8)
+            ins.axvline(gen_end, ls="--", color="grey", lw=0.8)
+            ins.set_ylim(0, max(20, bl.alert_backlog.max() * 1.2))
+            ins.set_title("Alert backlog (zoom)", fontsize=8, pad=2)
+            ins.tick_params(labelsize=7)
+            ins.grid(alpha=.3)
         ax.set_title(f"Kafka backlog — {name}", fontsize=11)
         ax.set_xlabel("Elapsed time (s)", fontsize=10)
         ax.set_ylabel("Backlog (messages)", fontsize=10)
         ax.tick_params(labelsize=9)
         ax.grid(alpha=.3)
-        ax.legend(fontsize=9, loc="upper right")
-    fig.tight_layout()
+    handles, labels = axes[1].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="lower center", ncol=4, fontsize=9, frameon=False)
+    fig.tight_layout(rect=(0, 0.07, 1, 1))
     fig.savefig(HERE / "chart_backlog.png", dpi=160)
 
     # Chart 3: E2E latency + decomposition
