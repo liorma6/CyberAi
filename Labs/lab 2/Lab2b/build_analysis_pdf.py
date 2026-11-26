@@ -77,7 +77,9 @@ def main():
         Paragraph("Lab 2b — High-Load Cybersecurity: Analysis (Morpheus Lite v0.3.4)", h1),
         Paragraph("Assigned profile: <b>attack_surge</b> (5000 events) compared with "
                   "<b>normal</b> (500 events) &nbsp;|&nbsp; Normal run_id 881e71e6-07f1-4f14-9114-73c0ab292fe4; "
-                  "attack_surge run_id 4e981da1-06eb-445c-bf22-de1174241f08. Source: dashboard CSV exports only.", small),
+                  "attack_surge run_id 4e981da1-06eb-445c-bf22-de1174241f08. Source: dashboard CSV exports only. "
+                  "Environment check: <b>python -m pytest -q → 14 passed in 0.65 s</b>. All services (Redpanda in Docker, "
+                  "generator, detector, orchestrator, dashboard) on one Windows 10 laptop.", small),
         Spacer(1, 4),
         Paragraph("1. Summary statistics", h2),
         table,
@@ -90,8 +92,8 @@ def main():
                   "rate samples, and the active-period rate (final counter ÷ time between that stage's first and last "
                   "record), which excludes idle time. E2E latency = orchestrator completion time − generator timestamp.", small),
         Paragraph("2. Charts", h2),
-        Image(str(HERE / "chart_throughput.png"), width=17.5 * cm, height=5.8 * cm),
-        Image(str(HERE / "chart_backlog.png"), width=17.5 * cm, height=5.8 * cm),
+        Image(str(HERE / "chart_throughput.png"), width=18 * cm, height=7.2 * cm),
+        Image(str(HERE / "chart_backlog.png"), width=18 * cm, height=7.2 * cm),
         Paragraph("3. Engineering analysis", h2),
         P("<b>Offered load vs target.</b> The attack_surge profile targets 500 events/s (label.target_rate = 500), but the "
           "single local Python generator reached only <b>157.9 events/s</b> over its active period (≈32 % of target; "
@@ -100,15 +102,19 @@ def main():
         P("<b>Q6 — Bottleneck.</b> The <b>detector</b>. (a) Arrivals averaged 157.9 events/s during the 31.7 s generator "
           "window, while the detector completed only 28.5 events/s — a ≈5.5× arrival/service ratio (≈17.5× at the "
           "500 events/s target). (b) The ingress topic (telemetry → detector) backlog peaked at 4,363 events, 8.7× the "
-          "configured 500-message capacity, while the alert backlog (detector → orchestrator) never exceeded 15. "
+          "dashboard's 500-message backlog threshold (Kafka itself has no such limit), while the alert backlog (detector → orchestrator) never exceeded 15. "
           "(c) Detector queue wait averaged 77,884 ms versus 31.1 ms of actual detector processing. With ≈31.1 ms per "
           "event the detector's ceiling is ≈1000/31.1 ≈ 32 events/s, consistent with the observed plateau at ~29 events/s "
-          "and 87.6 % utilization."),
+          "and 87.6 % utilization. (d) <b>CPU contention, measured:</b> while the generator was running (0–31.8 s) the "
+          "detector completed only 637 events (<b>20.1 events/s</b>, 43.7 ms per event; the mid-run screenshot shows "
+          "380 detected at ≈19 s). After the generator stopped it ran at <b>30.3 events/s</b> (29.3 ms per event). The "
+          "orchestrator slowed the same way (36.6 vs 28.6 ms). Sharing one machine with the generator cost the detector "
+          "about a third of its capacity, so per-instance capacity under load is ≈20–23 events/s, not 32."),
         P("<b>Q7 — Backlog trend.</b> During the active period (0–31.8 s) the ingress backlog <b>grew</b> almost linearly at "
-          "≈137 events/s (stair-steps match the 500-event bursts). It peaked exactly when the generator stopped (t = 31.8 s) "
+          "≈137 events/s. It peaked exactly when the generator stopped (t = 31.8 s) "
           "and then <b>drained</b> linearly at ≈30 events/s, reaching zero at ≈175 s, so drainage happened only "
           "<i>after</i> the generator stopped. In the normal run the backlog was transient: a 32-alert start-up spike at "
-          "the orchestrator (it began consuming ~1.5 s after the first alert) drained by 6.7 s while the generator was "
+          "the orchestrator drained by 6.7 s while the generator was "
           "still running."),
         P("<b>Q8 — Queue wait vs processing.</b> Under attack_surge E2E latency was overwhelmingly <b>queue waiting</b>: "
           "mean E2E 78,279 ms ≈ detector queue wait 77,884 ms + orchestrator wait 210 ms + ~61 ms of processing; processing "
@@ -127,7 +133,9 @@ def main():
         P("<b>Q11 — Recommended improvement (sized to the 500 events/s target).</b> Scale the detector horizontally: "
           "partition the telemetry topic and run detector consumers in one consumer group, keyed by user/host. At ≈32 "
           "events/s per instance, 500 events/s needs ≥16 instances at 100 % utilization, or <b>≈23 instances</b> to stay "
-          "under the 70 % warning threshold (500 / (32.2 × 0.7)), so provision ≥24 partitions. Because every event became "
+          "under the 70 % warning threshold (500 / (32.2 × 0.7)), so provision ≥24 partitions. This assumes instances on "
+          "hosts separate from the producers; at the contended ≈20 events/s measured in Q6(d), 500 events/s would need "
+          "≈36 instances, so isolating the detector from other CPU load is part of the fix. Because every event became "
           "an alert, the orchestrator needs the same: ≈34 alerts/s each ⇒ ≥15 instances, ≈22 at 70 %. Scaling only the "
           "detector would move the bottleneck straight to the orchestrator. <i>Security trade-off:</i> per-user "
           "fingerprinting and Isolation-Forest state become split across instances unless events are keyed by user/host; "

@@ -108,35 +108,45 @@ def main():
     colors = {"generator": "#1f77b4", "detector": "#d62728", "orchestrator": "#2ca02c"}
 
     # Chart 1: throughput by stage vs elapsed time
-    fig, axes = plt.subplots(1, 2, figsize=(12, 4))
+    # y-axis is clipped so the steady state is readable; the generator's first-second
+    # start-up spike (~270 events/s, rolling window not yet filled) is cut off.
+    ylims = {"normal": 50, "attack_surge": 250}
+    fig, axes = plt.subplots(1, 2, figsize=(9, 3.6))
     for ax, (name, df) in zip(axes, data.items()):
         for comp in ("generator", "detector", "orchestrator"):
             s = series(df, comp, "throughput_eps")
-            ax.plot(s.elapsed_s, s.value, label=comp, color=colors[comp], lw=1)
-        ax.set_title(f"Stage throughput — profile: {name}")
-        ax.set_xlabel("Elapsed time (s)")
-        ax.set_ylabel("Throughput (events/s or alerts/s)")
-        ax.grid(alpha=.3)
-        ax.legend()
-    fig.tight_layout()
-    fig.savefig(HERE / "chart_throughput.png", dpi=130)
-
-    # Chart 2: backlog vs elapsed time
-    fig, axes = plt.subplots(1, 2, figsize=(12, 4))
-    for ax, (name, df) in zip(axes, data.items()):
-        bl = counters(df)
-        ax.plot(bl.elapsed_s, bl.ingress_backlog, label="Ingress backlog (telemetry → detector)", color="#d62728")
-        ax.plot(bl.elapsed_s, bl.alert_backlog, label="Alert backlog (detector → orchestrator)", color="#2ca02c")
+            ax.plot(s.elapsed_s, s.value, label=comp, color=colors[comp], lw=1.2)
         gen_end = series(df, "generator", "events_sent").elapsed_s.max()
         ax.axvline(gen_end, ls="--", color="grey", lw=1)
-        ax.text(gen_end, ax.get_ylim()[1] * .9, " generator stops", color="grey", fontsize=8)
-        ax.set_title(f"Kafka backlog — profile: {name}")
-        ax.set_xlabel("Elapsed time (s)")
-        ax.set_ylabel("Backlog (messages)")
+        ax.set_ylim(0, ylims.get(name))
+        ax.set_title(f"Stage throughput — {name}", fontsize=11)
+        ax.set_xlabel("Elapsed time (s)", fontsize=10)
+        ax.set_ylabel("Throughput (events/s, alerts/s)", fontsize=10)
+        ax.tick_params(labelsize=9)
         ax.grid(alpha=.3)
-        ax.legend(fontsize=8)
+    axes[0].legend(fontsize=9, loc="lower right")
+    axes[1].legend(fontsize=9, loc="upper right")
+    fig.text(0.5, 0.005, "Dashed line = generator stops. y-axis clipped: first-second generator start-up spike (~270 events/s) not shown.",
+             ha="center", fontsize=8, color="grey")
+    fig.tight_layout(rect=(0, 0.04, 1, 1))
+    fig.savefig(HERE / "chart_throughput.png", dpi=160)
+
+    # Chart 2: backlog vs elapsed time
+    fig, axes = plt.subplots(1, 2, figsize=(9, 3.6))
+    for ax, (name, df) in zip(axes, data.items()):
+        bl = counters(df)
+        ax.plot(bl.elapsed_s, bl.ingress_backlog, label="Ingress (telemetry → detector)", color="#d62728", lw=1.2)
+        ax.plot(bl.elapsed_s, bl.alert_backlog, label="Alert (detector → orchestrator)", color="#2ca02c", lw=1.2)
+        gen_end = series(df, "generator", "events_sent").elapsed_s.max()
+        ax.axvline(gen_end, ls="--", color="grey", lw=1, label="Generator stops")
+        ax.set_title(f"Kafka backlog — {name}", fontsize=11)
+        ax.set_xlabel("Elapsed time (s)", fontsize=10)
+        ax.set_ylabel("Backlog (messages)", fontsize=10)
+        ax.tick_params(labelsize=9)
+        ax.grid(alpha=.3)
+        ax.legend(fontsize=9, loc="upper right")
     fig.tight_layout()
-    fig.savefig(HERE / "chart_backlog.png", dpi=130)
+    fig.savefig(HERE / "chart_backlog.png", dpi=160)
 
     # Chart 3: E2E latency + decomposition
     fig, axes = plt.subplots(1, 2, figsize=(12, 4))

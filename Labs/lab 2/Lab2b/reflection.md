@@ -18,7 +18,7 @@ and the alert backlog was only 2 / 500. Some figures on screen were still mislea
 - **Contradicted** the orchestrator-pressure hypothesis. The alert backlog never went above 15 and orchestrator queue
   wait averaged 0.2 s. The **detector** was the stage that could not keep up.
 - **Added the peak the dashboard cannot show.** Rebuilding the counters over time shows the ingress backlog peaked at
-  **4,363 events**, 8.7× the configured capacity, at t = 31.8 s when the generator stopped. The dashboard only ever
+  **4,363 events**, 8.7× the dashboard's 500-message backlog threshold (Kafka itself has no such limit), at t = 31.8 s when the generator stopped. The dashboard only ever
   shows the current value.
 - **Confirmed** that latency was almost all queue waiting. Mean E2E was 78.3 s, against about 61 ms of real processing.
 - **Confirmed** that the backlog drained only after the generator stopped. It fell linearly at about 30 events/s, so
@@ -34,9 +34,16 @@ been the bottleneck. Only the per-queue backlog and queue-wait series separate t
 - The orchestrator is only about 5 % faster than the detector. With the detector scaled out, the orchestrator becomes
   the next bottleneck almost immediately. The diagnosis describes this machine and this configuration, not a fixed
   property of the design.
-- Every process (generator, detector, orchestrator, dashboard, Redpanda in Docker) ran on one Windows laptop. CPU
-  contention probably inflated the detector's roughly 31 ms service time, which is far above the configured 2 ms
-  artificial delay. It also limited the generator to about 32 % of its target rate.
+- Every process (generator, detector, orchestrator, dashboard, Redpanda in Docker) ran on one Windows laptop, and the
+  CSV shows this CPU contention directly:
+  - **While the generator ran (0–31.8 s):** the detector completed only 637 events, 20.1 events/s at 43.7 ms per
+    event. The mid-run screenshot agrees: 380 detected at about 19 s.
+  - **After the generator stopped:** the same detector ran at 30.3 events/s and 29.3 ms per event.
+  - **Orchestrator:** it slowed the same way, 36.6 ms vs 28.6 ms per event.
+
+  So the detector lost about a third of its capacity while it competed with the generator. The generator was limited
+  too, reaching about 32 % of its target rate. Even uncontended, about 29 ms is far above the configured 2 ms
+  artificial delay, so most of the service time is real model and Kafka work.
 - Utilization is a derived and noisy measure. It averaged 87.6 % and was at or above 90 % in only 50 of 176 seconds,
   even though the queue was saturated the whole time. Some per-event time (Kafka poll/commit, metrics file writes)
   falls outside the measured "stage" window, so utilization understates true busy time.
@@ -47,7 +54,8 @@ been the bottleneck. Only the per-queue backlog and queue-wait series separate t
 ## What would I change in the architecture, and why?
 1. **Partition the telemetry topic and run several detector consumers** in one consumer group, keyed by user/host so
    per-user fingerprints stay consistent. Size for the 500 events/s target: about 23 detector instances to stay
-   under 70 % utilization. Then scale the orchestrator the same way (about 22 instances), since every event became
+   under 70 % utilization, on hosts kept separate from the producers. At the contended 20 events/s it would take
+   about 36. Then scale the orchestrator the same way (about 22 instances), since every event became
    an alert.
 2. **Alert on queue wait and backlog growth rate, not utilization.** Queue wait passed 1 s at t = 1.3 s and rose
    steadily. Utilization moved between 70 % and 91 % in the same period.
